@@ -1,0 +1,12 @@
+hello world	你好 世界
+good morning	早上好
+goodbye friend	再见 朋友
+see you	再见
+take care	小心
+welcome back	欢迎 回来
+how are you	你好 吗
+our world	我们的 世界
+our sky	我们的 天空
+smile sky	微笑的 天空
+can you speak english	你能 说 英语 吗
+thank you	谢谢 你

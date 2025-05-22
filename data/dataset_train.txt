@@ -1,0 +1,74 @@
+hello world	你好 世界
+good morning	早上好
+goodbye friend	再见 朋友
+see you	再见
+take care	小心
+welcome back	欢迎 回来
+how are you	你好 吗
+our world	我们的 世界
+our sky	我们的 天空
+smile sky	微笑的 天空
+can you speak english	你能 说 英语 吗
+thank you	谢谢 你
+the weather is nice today	今天 天气 很好
+i like eating apples	我 喜欢 吃 苹果
+what's your name	你 叫 什么 名字
+what time is it now	现在 几点 了
+this is my book	这是 我的 书
+let's go to the park	我们 去 公园 吧
+i live in beijing	我 住在 北京
+see you tomorrow	明天 见
+how much is this	这个 多少 钱
+i'm a little tired	我 有点 累了
+please help me	请 帮 我 一下
+where are you from	你 来自 哪里
+have a nice weekend	周末 愉快
+i understand	我 明白 了
+thank you for your help	谢谢 你的 帮助
+happy birthday to you	祝 你 生日 快乐
+i don't agree	我 不 同意
+this is a good idea	这 是个 好 主意
+he is learning chinese	他 在 学习 中文
+invalid syntax	无效的 语法
+name is not defined	名称 未 定义
+list index out of range	列表 索引 超出 范围
+expected an indented block	需要 一个 缩进 的 代码块
+no such file or directory	没有 这样的 文件 或 目录
+maximum call stack size exceeded	超出 最大 调用 堆栈 大小
+uri malformed	URI 格式 不 正确
+too much recursion	递归 过深
+invalid argument	无效的 参数
+file not found	文件 未 找到
+segmentation fault	段 错误
+out of memory	内存 不足
+stack overflow	堆栈 溢出
+division by zero	除以 零 错误
+timeout expired	超时 已过期
+permission denied	权限 被拒绝
+connection refused	连接 被拒绝
+resource temporarily unavailable	资源 暂时 不 可用
+operation not permitted	操作 不 被允许
+error count exceeds number	错误 太多
+unexpected end of file found	意外的 文件 结束
+cannot open include file	无法 打开 头文件
+newline in constant	常量 中 有 换行符
+undeclared identifier	未 声明 的 标识符
+syntax error	语法 错误
+identifier not found	找不到 标识符
+must return a value	必须 返回 一个 值
+this function or variable may be unsafe	此 函数 或 变量 可能 不 安全
+pure virtual method called	调用 了 纯 虚函数
+double free or corruption	双重 释放 或 内存 损坏
+memory corruption	内存 损坏
+stack smashing detected	检测到 堆栈 破坏
+floating point exception	浮点 异常
+microsoft visual c++ runtime library runtime error	微软 visual c++ 运行时 库 运行时 错误
+vector subscript out of range	向量 下标 越界
+undefined symbol in function	函数 中 未 定义 的 符号
+ambiguous operators need parentheses	不 明确 的 运算 需要 用 括号 括起
+array bounds missing	丢失 数组 界限符
+array size too large	数组 尺寸 太大
+bad character in parameters	参数 中 有 不 适当 的 字符
+call of non-function	调用 非 函数
+cannot modify a const object	不能 修改 常量 对象
+go home	回家
