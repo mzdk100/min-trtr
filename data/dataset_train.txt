@@ -154,3 +154,85 @@ new features	新功能
 changes to the com registration fixing tool	更改COM注册修复工具
 bug fixes	错误修复
 certain section elements are now correctly recognized as editable controls in visual studio code	某些部分元素现在被正确识别为VSC中的可编辑控件
+proper support for phi-4	对Phi4的适当支持
+add phi-4 support	添加Phi4支持
+fix docs quantized qwen3	修复文档量化Qwen3
+update olmo-2 to example	将Olmo2更新为示例
+clippy fix	Clippy修复
+optimize kv cache to reduce gpu memory usage	优化KV缓存以减少GPU内存使用率
+add resize to onnx ops	将调整大小添加到ONNX OPS
+cleanup and added other unused options for this op	清理并添加了此OP的其他未使用的选项
+fixed image loading to make output work	修复图像加载以使输出工作
+cleanup and removed unused variables	清理和删除未使用的变量
+qwen3 quantized implementation	Qwen3量化的实现
+clippy fixes	Clippy修复
+add some testing	添加一些测试
+another test	另一个测试
+fixed compile error	修复编译错误
+different qwen variants working	不同的Qwen变体正在工作
+added moe model	添加了MOE模型
+added additional eos token	添加了额外的EOS令牌
+translated korean comments to english as well as i can	将韩语注释翻译为英语
+running the example	运行示例
+cast the audio data to the correct sampling rate for the model	将音频数据转换为适合模型的正确采样率
+pre-process the inputs	预处理输入
+explicitly encode then decode the audio inputs	明确编码然后解码音频输入
+or the equivalent with a forward pass	或等效的前向传播
+follow kyutai	关注Kyutai
+feature extraction	特征提取
+model card	模型卡
+use this model	使用此模型
+edit model card	编辑模型卡
+model card for mimi	Mimi的模型卡
+model details	模型详细信息
+model description	模型描述
+model sources	模型源代码
+how to get started with the model	如何开始使用模型
+usage with transformers	与Transformer一起使用
+load a demonstration datasets	加载演示数据集
+usage with moshi	与Moshi一起使用
+see the main readme file	查看主要的说明文件
+direct use	直接使用
+the model is not intended to be used to impersonate other people or any malicious use of any kind	该模型不可用于冒充他人或任何形式的恶意使用
+training details	训练详情
+training data	训练数据
+the training data is detailled in the paper	训练数据详见论文
+training procedure and hyper-parameters	训练过程和超参数
+the different stages of the training procedure are detailled in the paper along with the hyper-parameters	论文详细介绍了训练过程的不同阶段以及超参数
+model card authors	模型卡作者
+downloads last month	上个月下载
+model size	模型大小
+tensor type	张量类型
+files info	文件信息
+inference providers	推理提供者
+select the account to bill	选择帐户账单
+hf inference api	HF推理API
+your sentence here	在这里输入你的句子
+view code	查看代码
+spaces using	空间使用
+system theme	系统主题
+repositories search results	存储库搜索结果
+filter by type	按类型筛选
+your search did not match any repositories	您的搜索未匹配到任何仓库
+alternatively try one of the tips below	或者尝试以下小提示之一
+search across an organization	跨组织搜索
+saved searches	保存的搜索
+you could try an advanced search	您可以尝试高级搜索
+repository search results	存储库搜索结果
+explore sponsorable projects	探索赞助项目
+how can we improve search	我们如何改进搜索
+supporting two stream models	支持两种流模型
+revert debug change	恢复调试更改
+revert debug value	还原调试值
+missing revert	缺少恢复
+new import script	新的导入脚本
+adding empty mimi possibility	增加空的Mimi可能性
+adding reset support	添加重置支持
+no comment	没有注释
+fixing bug with weight shared import in rust	修复Rust中权重共享导入的错误
+more stuff i need	我需要的更多东西
+remove dbg	移除DBG
+doc and new fields	文档和新的字段
+initial implem for missing data support	初始实施缺少数据支持
+removing torch compile and fixes	删除torch编译并修复
+prefix dict has been built successfully	前缀字典已成功构建

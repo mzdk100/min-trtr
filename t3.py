@@ -106,7 +106,7 @@ def inference(model, src_sentence, src_vocab, tgt_vocab, max_len=500):
 if __name__ == "__main__":
     with open('data/vocab_source.txt', 'r', encoding='utf-8') as f1, open('data/vocab_target.txt', 'r', encoding='utf-8') as f2:                                                                                           
         src_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f1]}                              
-        tgt_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f2]}                              
+        tgt_vocab = {k: int(v) for k, v in [i.rstrip().split('\t') for i in f2]}                              
 
     # 模型初始化
     model_path = "checkpoint/translation_model.pt"
@@ -133,6 +133,6 @@ if __name__ == "__main__":
 
     # 流式推理
     while (msg := input('请输入英文句子:')) != 'exit':
-        for word in inference(model, msg, src_vocab, tgt_vocab):
+        for word in inference(model, msg.lower(), src_vocab, tgt_vocab):
             print(word, end='')
         print()
