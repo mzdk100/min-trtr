@@ -1,12 +1,23 @@
-hello world	你好 世界
+hello world	你好世界
+bug fixes	错误修复
 good morning	早上好
-goodbye friend	再见 朋友
+support for windows command prompt and console applications	支持Windows命令提示符和控制台应用程序
+goodbye friend	再见朋友
+do not share my personal information	不要分享我的个人信息
 see you	再见
+footer navigation	页脚导航
 take care	小心
-welcome back	欢迎 回来
-how are you	你好 吗
-our world	我们的 世界
-our sky	我们的 天空
-smile sky	微笑的 天空
-can you speak english	你能 说 英语 吗
-thank you	谢谢 你
+improve image file preview style	改进图像文件预览样式
+welcome back	欢迎回来
+what's changed	发生了什么变化
+how are you	你好吗
+add this repository to a list	将此存储库添加到列表
+our world	我们的世界
+recent activity	近期活动
+our sky	我们的天空
+you have no unread notifications	您没有未读的通知
+smile sky	微笑的天空
+navigation menu	导航菜单
+can you speak english	你能说英语吗
+stanford university	斯坦福大学
+thank you	谢谢你

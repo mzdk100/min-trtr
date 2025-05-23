@@ -1,74 +1,156 @@
-hello world	你好 世界
+hello world	你好世界
 good morning	早上好
-goodbye friend	再见 朋友
+goodbye friend	再见朋友
 see you	再见
 take care	小心
-welcome back	欢迎 回来
-how are you	你好 吗
-our world	我们的 世界
-our sky	我们的 天空
-smile sky	微笑的 天空
-can you speak english	你能 说 英语 吗
-thank you	谢谢 你
-the weather is nice today	今天 天气 很好
-i like eating apples	我 喜欢 吃 苹果
-what's your name	你 叫 什么 名字
-what time is it now	现在 几点 了
-this is my book	这是 我的 书
-let's go to the park	我们 去 公园 吧
-i live in beijing	我 住在 北京
-see you tomorrow	明天 见
-how much is this	这个 多少 钱
-i'm a little tired	我 有点 累了
-please help me	请 帮 我 一下
-where are you from	你 来自 哪里
-have a nice weekend	周末 愉快
-i understand	我 明白 了
-thank you for your help	谢谢 你的 帮助
-happy birthday to you	祝 你 生日 快乐
-i don't agree	我 不 同意
-this is a good idea	这 是个 好 主意
-he is learning chinese	他 在 学习 中文
-invalid syntax	无效的 语法
-name is not defined	名称 未 定义
-list index out of range	列表 索引 超出 范围
-expected an indented block	需要 一个 缩进 的 代码块
-no such file or directory	没有 这样的 文件 或 目录
-maximum call stack size exceeded	超出 最大 调用 堆栈 大小
-uri malformed	URI 格式 不 正确
-too much recursion	递归 过深
-invalid argument	无效的 参数
-file not found	文件 未 找到
-segmentation fault	段 错误
-out of memory	内存 不足
-stack overflow	堆栈 溢出
-division by zero	除以 零 错误
-timeout expired	超时 已过期
-permission denied	权限 被拒绝
-connection refused	连接 被拒绝
-resource temporarily unavailable	资源 暂时 不 可用
-operation not permitted	操作 不 被允许
-error count exceeds number	错误 太多
-unexpected end of file found	意外的 文件 结束
-cannot open include file	无法 打开 头文件
-newline in constant	常量 中 有 换行符
-undeclared identifier	未 声明 的 标识符
-syntax error	语法 错误
-identifier not found	找不到 标识符
-must return a value	必须 返回 一个 值
-this function or variable may be unsafe	此 函数 或 变量 可能 不 安全
-pure virtual method called	调用 了 纯 虚函数
-double free or corruption	双重 释放 或 内存 损坏
-memory corruption	内存 损坏
-stack smashing detected	检测到 堆栈 破坏
-floating point exception	浮点 异常
-microsoft visual c++ runtime library runtime error	微软 visual c++ 运行时 库 运行时 错误
-vector subscript out of range	向量 下标 越界
-undefined symbol in function	函数 中 未 定义 的 符号
-ambiguous operators need parentheses	不 明确 的 运算 需要 用 括号 括起
-array bounds missing	丢失 数组 界限符
-array size too large	数组 尺寸 太大
-bad character in parameters	参数 中 有 不 适当 的 字符
-call of non-function	调用 非 函数
-cannot modify a const object	不能 修改 常量 对象
+welcome back	欢迎回来
+how are you	你好吗
+our world	我们的世界
+our sky	我们的天空
+smile sky	微笑的天空
+can you speak english	你能说英语吗
+thank you	谢谢你
+the weather is nice today	今天天气很好
+i like eating apples	我喜欢吃苹果
+what's your name	你叫什么名字
+what time is it now	现在几点了
+this is my book	这是我的书
+let's go to the park	我们去公园吧
+i live in beijing	我住在北京
+see you tomorrow	明天见
+how much is this	这个多少钱
+i'm a little tired	我有点累了
+please help me	请帮我一下
+where are you from	你来自哪里
+have a nice weekend	周末愉快
+i understand	我明白了
+thank you for your help	谢谢你的帮助
+happy birthday to you	祝你生日快乐
+i don't agree	我不同意
+this is a good idea	这是个好主意
+he is learning chinese	他在学习中文
+invalid syntax	无效的语法
+name is not defined	名称未定义
+list index out of range	列表索引超出范围
+expected an indented block	需要一个缩进的代码块
+no such file or directory	没有这样的文件或目录
+maximum call stack size exceeded	超出最大调用堆栈大小
+uri malformed	URI格式不正确
+too much recursion	递归过深
+invalid argument	无效的参数
+file not found	文件未找到
+segmentation fault	段错误
+out of memory	内存不足
+stack overflow	堆栈溢出
+division by zero	除以零错误
+timeout expired	超时已过期
+permission denied	权限被拒绝
+connection refused	连接被拒绝
+resource temporarily unavailable	资源暂时不可用
+operation not permitted	操作不被允许
+error count exceeds number	错误太多
+unexpected end of file found	意外的文件结束
+cannot open include file	无法打开头文件
+newline in constant	常量中有换行符
+undeclared identifier	未声明的标识符
+syntax error	语法错误
+identifier not found	找不到标识符
+must return a value	必须返回一个值
+this function or variable may be unsafe	此函数或变量可能不安全
+pure virtual method called	调用了纯虚函数
+double free or corruption	双重释放或内存损坏
+memory corruption	内存损坏
+stack smashing detected	检测到堆栈破坏
+floating point exception	浮点异常
+microsoft visual c++ runtime library runtime error	微软visualc++运行时库运行时错误
+vector subscript out of range	向量下标越界
+undefined symbol in function	函数中未定义的符号
+ambiguous operators need parentheses	不明确的运算需要用括号括起
+array bounds missing	丢失数组界限符
+array size too large	数组尺寸太大
+bad character in parameters	参数中有不适当的字符
+call of non-function	调用非函数
+cannot modify a const object	不能修改常量对象
 go home	回家
+privacy policy	隐私政策
+data access	数据访问
+usage policy	使用政策
+report a bug	报告一个错误
+system status	系统状态
+get help	获取帮助
+rust foundation	Rust基金会
+latest updates	最近更新
+show all	显示全部
+change color scheme	更改配色方案
+getting started	入门
+install cargo	安装Cargo
+most downloaded	下载次数最多
+just updated	刚刚更新
+most recent downloads	最近下载
+popular keywords	流行的关键词
+popular categories	热门分类
+run the following cargo command in your project directory	在项目目录中运行以下Cargo命令
+stats overview	统计数据概览
+build it in rust	使用Rust构建
+command line	命令行
+contribute code	贡献代码
+corporate sponsors	企业赞助商
+see foundation members	查看基金会成员
+ask a question on the users forum	在用户论坛上提问
+terms and policies	条款和政策
+code of conduct	行为守则
+logo policy and media guide	徽标政策和媒体指南
+security disclosures	安全披露
+privacy notice	隐私声明
+all policies	所有政策
+other changes	其他变化
+get in-depth tutorials for beginners and advanced developers	获取针对初学者和高级开发人员的深入教程
+view tutorials	查看教程
+find development resources and get your questions answered	查找开发资源并解答您的问题
+view resources	查看资源
+first name	名字
+last name	姓氏
+technical advisory council	技术咨询委员会
+cloud credit program	云信用计划
+run this command	运行此命令
+quick start with cloud partners	与云合作伙伴快速入门
+google cloud platform	谷歌云平台
+browse projects	浏览项目
+featured projects	特色项目
+read case studies	阅读案例研究
+pushing the state of the art in nlp and multi-task learning	推动NLP和多任务学习的最新技术
+stanford university	斯坦福大学
+view docs	查看文档
+skip to content	跳到内容
+navigation menu	导航菜单
+open global navigation menu	打开全局导航菜单
+search or jump to	搜索或跳至
+you have no unread notifications	您没有未读的通知
+open user navigation menu	打开用户导航菜单
+suggest next steps for an issue	针对问题提出后续步骤建议
+show more	显示更多
+recent activity	近期活动
+read more	阅读更多
+see more	查看更多
+popular projects among people you follow	您关注的人中的流行项目
+add this repository to a list	将此存储库添加到列表
+new feature	新功能
+support table topic to seamless ingest kafka records to iceberg table	支持表主题无缝提取Kafka记录到Iceberg表
+support deploy on kubernetes	支持在Kubernetes上部署
+what's c	什么是C
+what's changed	发生了什么变化
+last week	上周
+fallback tauri version to fix image loading failure issue	回退Tauri版本以修复图像加载失败问题
+improve image file preview style	改进图像文件预览样式
+zig library for reading and writing different image formats	用于读取和写入不同图像格式的Zig库
+footer navigation	页脚导航
+manage cookies	管理Cookie
+do not share my personal information	不要分享我的个人信息
+easy to use talking installer	易于使用的语音安装程序
+announcing controls and text while using touch gestures	使用触摸手势时宣布控件和文本
+support for windows command prompt and console applications	支持Windows命令提示符和控制台应用程序
+security fixes	安全修复
+new features	新功能
+changes to the com registration fixing tool	更改COM注册修复工具
+bug fixes	错误修复
+certain section elements are now correctly recognized as editable controls in visual studio code	某些部分元素现在被正确识别为VSC中的可编辑控件

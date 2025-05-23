@@ -1,6 +1,6 @@
 # min-trtr
 
-使用Transformer网络构建的机器翻译模型(Translation Model)，他注重轻量化，Transformer是重新实现的，并非torch中提供的标准模型，除此之外没有引用其他第三方python库，因此可以轻松构建和使用（包括从零训练和微调）。
+使用Transformer网络构建的机器翻译模型(Translation Model)，他注重轻量化，Transformer是重新实现的，并非torch中提供的标准模型，除了pytorch和jieba之外没有引用其他第三方python库，因此可以轻松构建和使用（包括从零训练和微调）。
 在`infer`文件夹中还提供了一个rust的推理代码，方便跨平台部署。
 
 ## 配置环境
@@ -10,6 +10,7 @@ git clone https://github.com/mzdk100/min-trtr.git
 cd min-trtr
 python -m venv .venv
 ./.venv/Scripts/activate
+pip install jieba
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
 
@@ -49,9 +50,19 @@ python onnxinf.py
 
 ## Rust推理
 
+1. 桌面平台
+
 ```shell
 cd infer
 cargo run --example infer
+```
+
+2. 安卓平台
+
+```shell
+cd infer/examples/android
+cargo install apk2
+./run
 ```
 
 ## 代码结构

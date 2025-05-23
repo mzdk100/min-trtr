@@ -1,15 +1,13 @@
 from torch import nn, optim, utils, isnan, LongTensor, load, save, full, long, zeros, bool, ones, cat
-import os
+import jieba, os
 from dataset import TranslationDataset, collate_fn
 from model import TranslationTransformer
 from onnxexp import export_onnx
 
 def get_data_loader(src_vocab, tgt_vocab, train=True):
-    t = 'train' if train else 'test'
-    with open('data/dataset_%s.txt' % t, 'r', encoding='utf-8') as f:
-        lines = [i.strip().split('\t') for i in f]
-    source_sentences = [i[0] for i in lines]  # 源语言句子列表
-    target_sentences = [i[1] for i in lines]  # 目标语言句子列表
+    source_sentences, target_sentences = TranslationDataset.get_raw_data(train=train)
+    source_sentences = [line.split(' ') for line in source_sentences]
+    target_sentences = [list(jieba.cut(line)) for line in target_sentences]
     dataset = TranslationDataset(source_sentences, target_sentences, src_vocab, tgt_vocab)
     return utils.data.DataLoader(dataset, batch_size=32, shuffle=True, collate_fn=collate_fn)
 
@@ -106,9 +104,9 @@ def inference(model, src_sentence, src_vocab, tgt_vocab, max_len=500):
 
 
 if __name__ == "__main__":
-    with open('data/vocab_source.txt', 'r', encoding='utf-8') as f1, open('data/vocab_target.txt', 'r', encoding='utf-8') as f2:
-        src_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f1]}
-        tgt_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f2]}
+    with open('data/vocab_source.txt', 'r', encoding='utf-8') as f1, open('data/vocab_target.txt', 'r', encoding='utf-8') as f2:                                                                                           
+        src_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f1]}                              
+        tgt_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f2]}                              
 
     # 模型初始化
     model_path = "checkpoint/translation_model.pt"

@@ -12,3 +12,7 @@ ort.path = "F:\\rust\\ort"
 [dev-dependencies]
 anyhow = "1.0.98"
 tokio = { version = "1.45.0",features = ["macros", "rt-multi-thread"] }
+
+[workspace]
+members = ["examples/android"]
+resolver = "3"
