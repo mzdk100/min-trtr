@@ -5,7 +5,7 @@ async fn main() -> anyhow::Result<()> {
     let stream = translate_stream(
         "../checkpoint/translation_encoder.onnx",
         "../checkpoint/translation_decoder.onnx",
-        "thank for your help",
+        "Thank for your help.",
     )
     .await?;
 

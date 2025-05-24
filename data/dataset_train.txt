@@ -62,7 +62,7 @@ double free or corruption	双重释放或内存损坏
 memory corruption	内存损坏
 stack smashing detected	检测到堆栈破坏
 floating point exception	浮点异常
-microsoft visual c++ runtime library runtime error	微软visualc++运行时库运行时错误
+microsoft visual c++ runtime library runtime error	微软Visual C++运行时库运行时错误
 vector subscript out of range	向量下标越界
 undefined symbol in function	函数中未定义的符号
 ambiguous operators need parentheses	不明确的运算需要用括号括起
@@ -236,3 +236,85 @@ doc and new fields	文档和新的字段
 initial implem for missing data support	初始实施缺少数据支持
 removing torch compile and fixes	删除torch编译并修复
 prefix dict has been built successfully	前缀字典已成功构建
+rust based mimi with python bindings	基于Rust的Mimi与Python绑定
+install from pip	从pip安装
+if you want to compile the package run from the root of the repo	如果要编译包，请从仓库的根目录运行
+rust server	Rust服务端
+rust command line	Rust命令行
+the present code is provided under the apache license	本代码是在Apache许可证下提供的
+the connection takes place using a websocket	连接使用WebSocket进行
+this handles the message lengths for us	这为我们处理消息长度
+the binary protocol for messages is as follows	消息的二进制协议如下
+the protocol uses little endian encoding	该协议使用小端序字节编码
+each message starts by a single byte indicating the message type `MT`	每条消息以一个字节开头，表示消息类型“MT”
+the format for the rest of the message, aka the payload, depends on `MT`	其余消息的格式（又称有效载荷）取决于“MT”
+the payload is made of two fields	有效载荷由两个字段组成
+the payload is made of a single field	有效载荷由单个字段组成
+utf8 encoded string	UTF8编码的字符串
+this is not used in full streaming mode	这在整个流模式下不使用
+i'm glad	我很高兴
+one byte b describing the control itself	一个字节B描述控制本身
+utf8 encoded string with json data	带JSON数据的UTF8编码的字符串
+utf8 encoded string containing the error description	包含错误描述的UTF8编码的字符串
+no payload, this message type is currently unused	无有效负载，此消息类型当前未使用
+messages with an unknown message types should be discarded	应丢弃消息类型未知的消息
+moshi is a speech-text foundation model and full-duplex spoken dialogue framework	Moshi是一个语音文本基础模型和全双工口语对话框架
+it uses mimi, a state-of-the-art streaming neural audio codec	它使用Mimi——一种最先进的流神经音频编解码器
+this is the pytorch implementation for moshi and mimi	这是Moshi和Mimi的PyTorch实现
+while we hope that the present codebase will work on windows, we do not provide official support for it	虽然我们希望当前的代码库能在Windows上使用，但我们不为此提供官方支持
+this package provides a streaming version of the audio tokenizer (mimi) and the lm model (moshi)	此软件包提供了音频标记器（Mimi）和LM模型（Moshi）的流式版本
+in order to run in interactive mode, you need to start a server which will run the model, you can then use either the web ui or a command line client	为了以交互模式运行，您需要启动一个运行模型的服务端，然后您可以使用Web UI或命令行客户端
+alternatively, you might want to use ssh to redirect your connection	另外，您可能需要使用SSH重定向连接
+however note, that unlike the web browser, this client is barebone	但是请注意，与Web浏览器不同，此客户端是基本的
+it does not perform any echo cancellation, nor does it try to compensate for a growing lag by skipping frames	它不执行任何回声消除，也不试图通过跳过帧来补偿不断增长的延迟
+you can use programmatically the mimi/moshi as follows	您可以按以下方式编程使用Mimi/Moshi
+supports streaming too	也支持流式
+now if you have a gpu around	现在，如果你周围有GPU
+now we will stream over both moshi i/o, and decode on the fly with mimi	现在，我们将通过Moshi I/O进行流式传输，并使用Mimi进行实时解码
+streaming execution mask	流执行掩码
+it is possible to run on desynchronized batches, e.g. batch for which not all items are coming in at the same rate	可以在不同步的批次上运行，例如，并非所有项目都以相同的速率进入的批次
+from the point of view of the first and third entries, nothing has happen	从第一个和第三个条目的角度来看，什么都没有发生
+the codes for those two should simply be discarded	这两个的代码应该简单地丢弃
+if you wish to install from a clone of this repository, maybe to further develop moshi, you can do the following	如果您想从此存储库的克隆中安装，也许要进一步开发Moshi，您可以执行以下操作
+from the current folder (e.g. `moshi/`)	从当前文件夹（例如`moshi/`）
+the present code is provided under the mit license	本代码根据MIT许可证提供
+if you use either mimi or moshi, please cite the following paper	如果您使用Mimi或Moshi，请引用以下论文
+how was your day today	你今天过得怎么样
+i watched a great movie yesterday	我昨天看了一部很棒的电影
+could you help me with that bag	你能帮我拿一下那个包吗
+the food at this restaurant is really delicious	这家餐厅的菜真的很美味
+i prefer tea to coffee	我更喜欢喝茶而不是咖啡
+deep learning is a subfield of machine learning	深度学习是机器学习的一个子领域
+quantum computers use qubits for computation	量子计算机利用量子比特进行计算
+blockchain technology provides decentralized solutions	区块链技术提供了去中心化的解决方案
+neural networks consist of multiple interconnected layers	神经网络由多个相互连接的层组成
+nlp enables computers to understand human language	自然语言处理使计算机能理解人类语言
+spring festival is the most important traditional holiday in china	春节是中国最重要的传统节日
+the eiffel tower is an iconic landmark in paris	埃菲尔铁塔是巴黎的地标性建筑
+in france, it's common to place bread directly on the table during meals	在法国，用餐时把面包直接放在桌上是常见的
+japanese tea ceremony embodies the spirit of "harmony, respect, purity and tranquility"	日本茶道体现了“和敬清寂”的精神
+italians are known for their hospitality	意大利人以热情好客著称
+please find attached the project proposal as requested	随函附上您要求的项目提案
+the board meeting will be held next wednesday at 3pm	董事会将于下周三下午三点召开
+we are honored to invite you to this seminar	我们很荣幸邀请您参加本次研讨会
+this contract shall take effect from the date of signing by both parties	本合同自双方签字之日起生效
+should you have any questions about this product, please feel free to contact customer service	如对本产品有任何疑问，请随时联系客服
+although it was raining, they decided to continue the hike	尽管下雨了，他们还是决定继续徒步旅行
+this book is not only rich in content but also beautifully bound	这本书不仅内容丰富，而且装帧精美
+the earlier you submit the application, the greater the chance of approval	你越早提交申请，获得批准的机会就越大
+it is reported that this new drug is highly effective in treating the disease	据报道，这种新药对治疗该疾病非常有效
+all factors considered, this solution is the most feasible	考虑到所有因素，这个方案是最可行的
+try it now	立即试用
+discover the technology	发现技术
+slowly and not without struggle, america began to listen	美国缓慢地开始倾听，但并非没有艰难曲折
+some of these may have been generated by your ide	这其中的一些文件可能已经由IDE生成
+dithering is a technique that blends your colors together, making them look smoother, or just creating interesting textures	抖动是关于颜色混合的技术，使你的作品看起来更圆滑，或者只是创作有趣的材质
+the second encounter relates to my grandfather's treasure box	第二次邂逅与我祖父的宝箱有关
+when you eat dinner out, reduce the temptation to clean your plate by setting aside one-third of your meal	当你在外吃晚餐的时候，把你晚餐中三分之一的食物放置在一边
+sang lan is one of the best athletes in our country	桑兰是我国最好的运动员之一
+miaoxiang son know the devil tricks, white three quick deployment	苗香儿知道了鬼子的诡计，白三部署速战速结
+further development of the central cell mainly involved changes in the orientation of the polar nuclei and the distribution of the cytoplasm	中央细胞的后续发育主要表现为极核排列方向的变化及细胞质分布的动态调整
+the first parameter to the script is saved to a variable called $ip	脚本的第一个参数被保存为一个名为$IP的变量
+she just gaped at me when i told her the news	我告诉她这个消息时，她简直目瞪口呆
+they walked in a stooped posture, the shoulders well forward, the head still farther forward, the eyes bent upon the ground	他们弯腰前行，肩膀前倾，脑袋更加前倾，眼睛专注地盯着地面
+i like blue skies and white clouds	我喜欢蓝天白云

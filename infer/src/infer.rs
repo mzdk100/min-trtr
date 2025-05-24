@@ -5,11 +5,28 @@ use {
     futures_util::Stream,
     ndarray::{Array, Axis, Slice},
     ort::{inputs, session::RunOptions, session::Session, value::TensorRef},
+    regex::{Error as RegexError, Regex},
     std::{
         path::Path,
+        sync::LazyLock,
         time::{Duration, SystemTime},
     },
 };
+
+fn split_word<S>(sentence: S) -> Result<Vec<String>, TranslationError>
+where
+    S: AsRef<str>,
+{
+    static RE: LazyLock<Result<Regex, RegexError>> =
+        LazyLock::new(|| Regex::new(r#"\b[\w'-]+\b|[^\w\s]"#));
+
+    Ok(RE
+        .as_ref()
+        .map_err(|e| e.to_owned())?
+        .captures_iter(sentence.as_ref())
+        .map(|i| i[0].to_owned())
+        .collect())
+}
 
 /// 使用给定的编码器和解码器模型对输入的英文句子进行翻译，并返回一个异步流，其中包含翻译后的中文词语和每个词语的翻译时间。
 ///
@@ -45,7 +62,7 @@ use {
 ///     while let Some(item) = stream.next().await {
 ///         println!("{:?}", item?);
 ///     }
-/// 
+///
 ///     Ok(())
 /// }
 /// ```
@@ -58,7 +75,7 @@ where
     P: AsRef<Path>,
     S: AsRef<str>,
 {
-    const MAX_LEN: usize = 10;
+    const MAX_LEN: usize = 20;
 
     let mut encoder = Session::builder()?.commit_from_file(encoder)?;
     let mut decoder = Session::builder()?.commit_from_file(decoder)?;
@@ -66,7 +83,7 @@ where
     let sos = get_word_id(false, "<sos>")?;
     let eos = get_word_id(false, "<eos>")?;
 
-    let src = get_word_ids(true, &en_text.as_ref().split(' ').collect::<Vec<_>>())?;
+    let src = get_word_ids(true, &split_word(en_text.as_ref().to_lowercase())?)?;
     let src = Array::from_shape_vec((1, src.len()), src)?;
     let src_pad_mask = Array::from_elem((1, src.len(), src.len()), false);
     let options = RunOptions::new()?;

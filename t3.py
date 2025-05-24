@@ -1,12 +1,14 @@
 from torch import nn, optim, utils, isnan, LongTensor, load, save, full, long, zeros, bool, ones, cat
-import jieba, os
+import argparse, jieba, os, re
 from dataset import TranslationDataset, collate_fn
 from model import TranslationTransformer
 from onnxexp import export_onnx
 
+TOKEN_PATTERN = re.compile(r"\b[\w'-]+\b|[^\w\s]")
+
 def get_data_loader(src_vocab, tgt_vocab, train=True):
     source_sentences, target_sentences = TranslationDataset.get_raw_data(train=train)
-    source_sentences = [line.split(' ') for line in source_sentences]
+    source_sentences = [TOKEN_PATTERN.findall(line) for line in source_sentences]
     target_sentences = [list(jieba.cut(line)) for line in target_sentences]
     dataset = TranslationDataset(source_sentences, target_sentences, src_vocab, tgt_vocab)
     return utils.data.DataLoader(dataset, batch_size=32, shuffle=True, collate_fn=collate_fn)
@@ -83,7 +85,7 @@ def inference(model, src_sentence, src_vocab, tgt_vocab, max_len=500):
     map = {v: k for k, v in tgt_vocab.items()}
 
     model.eval()  # 设置模型为评估模式
-    src_indexes = [src_vocab[word] for word in src_sentence.split()]
+    src_indexes = [src_vocab[word] for word in TOKEN_PATTERN.findall(src_sentence)]
     src = LongTensor(src_indexes).unsqueeze(0).to(next(model.parameters()).device)
     src_pad_mask = TranslationTransformer.get_attn_pad_mask(src, src)  # [batch_size, src_len, src_len]
     memory = model.encoder(src, src_pad_mask)
@@ -104,6 +106,11 @@ def inference(model, src_sentence, src_vocab, tgt_vocab, max_len=500):
 
 
 if __name__ == "__main__":
+    # 解析命令行参数
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--num-epochs", type=int, default=10)
+    args = parser.parse_args()
+
     with open('data/vocab_source.txt', 'r', encoding='utf-8') as f1, open('data/vocab_target.txt', 'r', encoding='utf-8') as f2:                                                                                           
         src_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f1]}                              
         tgt_vocab = {k: int(v) for k, v in [i.rstrip().split('\t') for i in f2]}                              
@@ -119,7 +126,7 @@ if __name__ == "__main__":
 
     # 训练模型
     data_loader = get_data_loader(src_vocab, tgt_vocab)
-    train(model, data_loader, optimizer, criterion, num_epochs=10)
+    train(model, data_loader, optimizer, criterion, num_epochs=args.num_epochs)
 
     # 训练完成后保存模型
     save(model.state_dict(), model_path)

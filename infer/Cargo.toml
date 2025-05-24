@@ -8,6 +8,7 @@ async-stream="0.3.6"
 futures-util = "0.3.31"
 ndarray = "0.16.1"
 ort.path = "F:\\rust\\ort"
+regex = "1.11.1"
 
 [dev-dependencies]
 anyhow = "1.0.98"

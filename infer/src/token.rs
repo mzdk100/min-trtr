@@ -54,11 +54,11 @@ where
 
 pub fn get_word_ids<S>(is_src_vocab: bool, words: &[S]) -> Result<Vec<i64>, TranslationError>
 where
-    S: AsRef<str> + Copy,
+    S: AsRef<str>,
 {
     let mut ids = Vec::with_capacity(words.len());
     for i in 0..words.len() {
-        ids.push(get_word_id(is_src_vocab, words[i])?);
+        ids.push(get_word_id(is_src_vocab, words[i].as_ref())?);
     }
 
     Ok(ids)

@@ -1,6 +1,7 @@
 use {
     ndarray::ShapeError,
     ort::Error as OrtError,
+    regex::Error as RegexError,
     std::{
         error::Error,
         fmt::{Display, Formatter, Result as FmtResult},
@@ -15,6 +16,7 @@ pub enum TranslationError {
     Io(IoError),
     Ort(OrtError),
     ParseInt(ParseIntError),
+    Regex(RegexError),
     Shape(ShapeError),
     SystemTime(SystemTimeError),
     WordTokenNotFound(String),
@@ -27,6 +29,7 @@ impl Clone for TranslationError {
             Self::Io(e) => Self::Io(IoError::new(e.kind(), e.to_string())),
             Self::Ort(e) => Self::Ort(OrtError::new(e.message())),
             Self::ParseInt(e) => Self::ParseInt(e.clone()),
+            Self::Regex(e) => Self::Regex(e.clone()),
             Self::Shape(e) => Self::Shape(e.clone()),
             Self::SystemTime(e) => Self::SystemTime(e.clone()),
             Self::WordTokenNotFound(e) => Self::WordTokenNotFound(e.to_owned()),
@@ -42,15 +45,19 @@ impl Display for TranslationError {
             Self::Io(e) => Display::fmt(e, f),
             Self::Ort(e) => Display::fmt(e, f),
             Self::ParseInt(e) => Display::fmt(e, f),
+            Self::Regex(e) => Display::fmt(e, f),
             Self::Shape(e) => Display::fmt(e, f),
             Self::SystemTime(e) => Display::fmt(e, f),
             Self::WordTokenNotFound(w) => {
-                write!(f, "WordTokenNotFound: the word `{w}` is not in vocab.")
+                write!(
+                    f,
+                    "WordTokenNotFound: the word `{w}` is not found in vocab."
+                )
             }
             Self::WordIdTokenNotFound(id) => {
                 write!(
                     f,
-                    "WordIdTokenNotFound: the word id `{id}` is not in vocab."
+                    "WordIdTokenNotFound: the word id `{id}` is not found in vocab."
                 )
             }
         }
@@ -86,5 +93,11 @@ impl From<IoError> for TranslationError {
 impl From<ParseIntError> for TranslationError {
     fn from(value: ParseIntError) -> Self {
         Self::ParseInt(value)
+    }
+}
+
+impl From<RegexError> for TranslationError {
+    fn from(value: RegexError) -> Self {
+        Self::Regex(value)
     }
 }
