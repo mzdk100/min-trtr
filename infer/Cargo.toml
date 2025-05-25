@@ -12,7 +12,7 @@ regex = "1.11.1"
 
 [dev-dependencies]
 anyhow = "1.0.98"
-tokio = { version = "1.45.0",features = ["macros", "rt-multi-thread"] }
+tokio = { version = "1.45.1",features = ["macros", "rt-multi-thread"] }
 
 [workspace]
 members = ["examples/android"]

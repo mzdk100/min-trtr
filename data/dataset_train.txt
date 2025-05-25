@@ -318,3 +318,203 @@ the first parameter to the script is saved to a variable called $ip	脚本的第
 she just gaped at me when i told her the news	我告诉她这个消息时，她简直目瞪口呆
 they walked in a stooped posture, the shoulders well forward, the head still farther forward, the eyes bent upon the ground	他们弯腰前行，肩膀前倾，脑袋更加前倾，眼睛专注地盯着地面
 i like blue skies and white clouds	我喜欢蓝天白云
+an error happened while trying to locate the file on the hub and we cannot find the requested files in the local cache	尝试在Hub上查找文件时出错，我们在本地缓存中找不到请求的文件
+please check your connection and try again or make sure your internet connection is on	请检查您的连接并重试，或确保您的互联网连接已打开
+cannot find a working triton installation	找不到可用的Triton安装
+either the package is not installed or it is too old	该软件包未安装或太旧
+no packages published	未发布任何包
+development repository for the triton language and compiler	Triton语言和编译器的开发仓库
+public repository	公共存储库
+main branch	主分支
+open more actions menu	打开更多操作菜单
+folders and files	文件夹和文件
+last commit date	最后提交日期
+latest commit	最新提交
+open commit details	打开提交详细信息
+view all files	查看所有文件
+repository files navigation	存储库文件导航
+edit file	编辑文件
+triton logo	Triton标志
+this is the development repository of triton, a language and compiler for writing highly efficient custom deep-learning primitives	这是Triton的开发仓库，Triton是一种用于编写高效自定义深度学习原语的语言和编译器
+the aim of triton is to provide an open-source environment to write fast code at higher productivity than cuda, but also with higher flexibility than other existing dsls	Triton的目标是提供一个开源环境，以比CUDA更高的生产力编写快速代码，同时比其他现有DSL具有更高的灵活性
+an intermediate language and compiler for tiled neural network computations	分层神经网络计算的中间语言和编译器
+please consider citing this work if you use triton	如果您使用Triton，请考虑引用这项工作
+the official documentation contains installation instructions and tutorials	官方文档包含安装说明和教程
+see also these third-party triton puzzles, which can all be run using the triton interpreter -- no gpu required	另请参阅这些第三方Triton示例程序，它们均可通过Triton解释器运行——无需GPU支持
+quick installation	快速安装
+you can install the latest stable release of triton from pip	您可以从pip安装Triton的最新稳定发行版
+install from source	从源代码安装
+or with a virtualenv	或者使用虚拟环境
+building with a custom llvm	用自定义LLVM构建
+triton uses llvm to generate code for gpus and cpus	Triton使用LLVM为GPU和CPU生成代码
+normally, the triton build downloads a prebuilt llvm, but you can also build llvm from source and use that	通常，Triton构建会下载预构建的LLVM，但您也可以从源代码构建LLVM并使用
+llvm does not have a stable api, so the triton build will not work at an arbitrary llvm version	LLVM没有稳定的API，因此Triton构建无法在任意LLVM版本上工作
+find the version of llvm that triton builds against	查找Triton构建的LLVM版本
+check to see the current version	检查以查看当前版本
+for example, if it says	例如，如果它说
+this means that the version of triton you have builds against llvm	这意味着您当前使用的Triton版本是基于LLVM构建的
+git checkout llvm at this revision	使用Git将LLVM检出至该修订版本
+optionally, make additional modifications to llvm	（可选）对LLVM进行其他修改
+build llvm	构建LLVM
+grab a snack, this will take a while	吃点零食，这需要一段时间
+build triton as above, but set the following environment variables	如上所述构建Triton，但需设置以下环境变量
+modify as appropriate to point to your llvm build	根据需要进行修改，以指向您的LLVM构建
+tips for building	构建小提示
+set as an environment variable to use clang and lld	设置为环境变量以使用clang和lld
+lld in particular results in faster builds	lld尤其能加快构建速度
+set to change the location of the directory where triton's cache is located and downloads are stored during the build	用于设置Triton构建过程中缓存目录和下载存储目录的位置
+by default, this is the user's home directory	默认情况下，这是用户的主目录
+it can be changed anytime	可以随时更改
+if you're running out of memory when building triton, specify the environment variable to limit the number of jobs	如果在构建Triton时内存不足，请指定环境变量以限制作业数量
+running tests	运行测试
+there currently isn't a turnkey way to run all the triton tests, but you can follow the following recipe	目前尚无开箱即用的方法可一键运行所有Triton测试，但您可以按以下步骤操作
+one-time setup	一次性设置
+note this will reinstall local triton because torch	请注意，由于PyTorch的原因这将重新安装本地Triton
+overwrites it with the public version	用公共版本覆盖它
+to run all tests (requires a gpu)	运行所有测试（需要GPU）
+or, to run tests without a gpu	或者，在没有GPU的情况下运行测试
+tips for hacking	黑客技巧
+for detailed instructions on how to debug triton's frontend, please refer to this tutorial	有关如何调试Triton的前端的详细说明，请参阅本教程
+the following includes additional tips for hacking on triton's backend	以下包含针对Triton后端进行深度开发的额外实用技巧
+configuration knobs	配置旋钮
+you can set those knobs directly in python or use environment variables to control them	您可以直接在Python中设置这些旋钮，也可以使用环境变量来控制它们
+triton cache can interfere with the dump	Triton缓存可能会干扰转储
+when enabling the address sanitizer it is recommended to disable various memory caching strategies both within the rocm stack and pytorch	启用地址清理程序时，建议禁用ROCm堆栈和PyTorch中的各种内存缓存策略
+this will give the address sanitizer the best chance at finding the memory fault where it originates	这将使地址清理程序有最好的机会找到内存故障的根源
+see this test for more details	有关更多详细信息，请参阅此测试
+this can provide a direct mapping from the ir to llir/ptx	这可以提供从IR到llir/ptx的直接映射
+when used with performance tools, it can provide a breakdown on ir instructions	结合性能工具使用时，能对IR指令进行细粒度分析
+otherwise, it will be parsed as a list of flags to disable llvm optimizations	否则，它将被解析为禁用LLVM优化的标志列表
+warnings, remarks, stacktraces, operations	警告，备注，堆栈，操作
+use comma-separated values to customize output	使用逗号分隔值自定义输出
+by default, only errors are shown	默认情况下，只显示错误
+setting warnings includes errors and warnings	设置警告包括错误和警告
+remarks includes errors, warnings, and remarks	备注包括错误、警告和备注
+those are only relevant to the c++ layer(s), hence they don't exist in the python layer	这些只与C++层相关，因此它们不存在于Python层中
+kernel override steps	内核覆盖步骤
+delete the stages that you do not want to override and modify the stage you do want to override	删除不想覆盖的阶段，并修改要覆盖的阶段
+run the kernel again to see the overridden result	再次运行内核以查看覆盖的结果
+many, many bug fixes	许多错误修复
+performance improvements	性能改进
+backend rewritten to use mlir	后端重写以使用MLIR
+support for kernels that contain back-to-back matmuls (e.g., flash attention)	支持包含连续矩阵乘法（如Flash Attention）的计算内核
+community contributions are more than welcome, whether it be to fix bugs or to add new features at github	我们诚挚欢迎社区贡献，无论是修复漏洞还是为GitHub仓库添加新功能
+for more detailed instructions, please visit our contributor's guide	有关更详细的说明，请访问我们的贡献者指南
+supported platforms	支持的平台
+supported hardware	支持的硬件
+development container (dev container)	开发容器（Dev Container）
+dev containers for the triton project are available from the triton-dev-containers repository	Triton项目的Dev Containers可从triton-dev-containers存储库获取
+key benefits	关键优势
+all developers can work with the same development environment, ensuring uniform behavior across different systems	所有开发人员都可以使用相同的开发环境，确保不同系统之间的行为一致
+the container prevents potential conflicts with software installed on your local machine	容器可防止与本地计算机上安装的软件发生潜在冲突
+easily share the development environment with team members, minimizing onboarding time and setup issues	轻松与团队成员共享开发环境，最大限度地减少入职时间和设置问题
+how to use the dev container	如何使用开发容器
+for detailed instructions on how to use the dev containers please see the dev container user guide	有关如何使用开发容器的详细说明，请参阅开发容器用户指南
+if you have a bug or an idea, read the contributing guidelines before opening an issue	如果你发现了一个Bug或有一个想法，请在打开问题之前阅读贡献指南
+new issue	创建新问题
+search results	搜索结果
+filter by author	按作者筛选
+filter by label	按标签筛选
+more actions	更多操作
+not planned (skipped)	未计划（跳过）
+closed (abandoned)	已关闭（废弃）
+changes requested	请求更改
+add python abi tag to the filename of cached c binary	将Python ABI标签添加到缓存的C二进制文件的文件名中
+merged (completed)	已合并（完成）
+when can cu128 be supported	什么时候可以支持CU128
+closed (completed)	已关闭（完成）
+steady error when using triton to do floating-point arithmetic	使用Triton进行浮点运算时的稳态误差
+python stable abi in jit cache	JIT缓存中Python稳定的ABI
+see all checks	查看所有检查
+use env builtin implementation from llvm's lit utility for platform independence	使用LLVM的lit实用程序中的env内置实现，实现平台独立性
+not able to install dependencies file	无法安装依赖项文件
+pull requests that update a dependency file	更新依赖文件的拉取请求
+python int too large to convert to c long	Python int 太大而无法转换为 C long
+update cmake files with windows related changes	使用与Windows相关的更改来更新CMake文件
+build smaller llvm binaries for triton	为Triton构建较小的LLVM二进制文件
+next page	下一页
+copy link	复制链接
+issue body actions	问题主体操作
+you've been using triton on windows iirc	您一直在Windows IIRC上使用Triton
+what's your progress on it	你的进展如何
+the current status is that we can build the code and successfully pass most of the unit tests on intel gpu	目前的状态是，我们可以在英特尔GPU上构建代码并成功通过大多数单元测试
+you've written most of the details	大部分细节都是你写的
+the code should build on windows but i had no opportunity to run it on nvidia gpu so i cannot say whether it works or not	代码应该在Windows上构建，但我没有机会在Nvidia GPU上运行它，所以我不能说它是否有效
+however, this was previously noted to time out on macos frequently (because macos scans newly built executables for viruses, or something...) but the timeout argument was incorrectly specified	然而，之前已经注意到这在MacOS上经常超时（因为MacOS会扫描新构建的可执行文件中的病毒或其他东西……），不过超时参数的指定不正确
+by setting a reproducer path, the pass manager will dump a standard mlir reproducer before each pass manager invocation	通过设置再现文件路径，传递管理器将在每次调用前转储标准的MLIR再现文件
+this pr also enables additional local crash reproducer generation (to the same path set through the env var), which tries to narrow down the specific pass that failed, if the pass pipeline fails at any point	本次拉取请求（PR）还启用了额外的本地崩溃再现文件生成功能（保存至通过环境变量设置的同一路径），当传递流水线在任何环节失败时，该功能将尝试定位导致失败的具体传递
+really both of these should be nvidia-specific but the first is exposed in the triton ir to keep support for the by-value tma descriptor api around while we figure out if it's possible to update to the new style	实际上这两者本应都是Nvidia专用的，但第一个功能被保留在Triton中间表示（IR）中以继续支持按值传递的TMA描述符API，同时我们正在评估是否可能迁移到新式设计
+i hope this implementation will suit triton, or maybe one can suggest other options	我希望这种实现方式适合Triton，或者可以提出其他选择
+this requires the following changes	这需要进行以下更改
+please advise on the merging strategy	请就合并策略提出建议
+i noticed this rather obvious pattern was missing	我注意到这个相当明显的模式不见了
+it might come up for example if you have an expression like	例如，如果你有一个表达式，它可能会出现
+fix incorrect mask operand used in for loop pipeliner	修复for循环流水线中使用的掩码操作数不正确的问题
+however, if the load memory requires a layout change, the wrong mask operand was being passed to the `arith.select`, causing a shape mismatch	但是，如果加载内存需要更改布局，则传递给“arith.select”的掩码操作数错误，导致形状不匹配
+cleanup redundant broadcast combine pattern	清理冗余广播组合模式
+summary of changes	变更摘要
+reorder the triton-combine pass to come after the canonicalize pass, to simplify pattern matching	将Triton组合过程重新排序到规范化过程之后，以简化模式匹配
+it was duplicated due to resolving merge conflicts	由于解决合并冲突，它被复制
+default diagnostic handler only filters for errors	默认诊断处理程序仅过滤错误
+refactor instruction scheduling hints	重构指令调度提示
+renamed instruction scheduling variants	重命名指令调度变体
+added documentation regarding current variants	增加了有关当前变体的文档
+enable mixed precision matmul test	启用混合精度矩阵测试
+this commit enables mixed precision matmul test for amd backend	此提交允许对AMD后端进行混合精度矩阵测试
+this leads to a segfault (which can be reproed on the base rev with the lit test added in this pr)	这会导致段错误（可通过本PR中添加的lit测试在基础版本上复现）
+p.s. the lit test added in this pr is not exactly minimal	附言：本PR中添加的lit并不完全是最小测试
+fix argument passing for internal parameters in function declarations	修复函数声明中内部参数的参数传递问题
+use reference instead of copies in few places	在少数地方使用引用而不是副本
+apply fixes suggested by coverity static analysis	应用覆盖率静态分析建议的修复
+add missing precondition in optimize acc init	在优化acc-init中添加缺少的先决条件
+we need scalar select to be able to do this optimization	我们需要标量选择才能进行此优化
+fix accumulator init optimization for integer matmuls	修复整数matmul的累加器初始化优化问题
+define an extract slice operation	定义提取切片操作
+it enables breaking down large tiles of tensors into smaller ones for better instruction interleaving and scheduling	该功能支持将大型张量分块（Tiling）分解为更小的单元，以实现更优的指令交错（Interleaving）和调度优化（Scheduling）
+this can be useful for hiding global memory latency when a global load/store can be efficiently split into several loads/stores to be overlapped with compute for attention	这一技术能有效隐藏全局内存访问延迟——当全局加载/存储操作可被高效拆分为多次独立的内存访问时，即可与注意力机制的计算过程重叠执行
+add a comment	添加评论
+new comment	新评论
+markdown input: edit mode selected	Markdown输入：已选择编辑模式
+unordered list	无序列表
+numbered list	数字列表
+task list	任务列表
+saved replies	已保存的回复
+slash commands	斜杠命令
+use markdown to format your comment	使用Markdown格式化您的评论
+add files	添加文件
+close issue	关闭问题
+more options	更多选项
+remember, contributions to this repository should follow its contributing guidelines	请记住，对该存储库的贡献应遵循其贡献指南
+no labels	没有标签
+no type	没有类型
+no projects	没有项目
+no milestone	没有里程碑
+none yet	暂无
+code with copilot agent mode	使用Copilot Agent模式编写代码
+select code repository	选择代码存储库
+no branches or pull requests	无分支或拉取请求
+you're not receiving notifications from this thread	您没有收到来自该主题的通知
+issue actions	问题操作
+describe the bug	描述错误
+environment details	环境详细信息
+open edits	开放编辑
+couldn't load	无法加载
+try again	再试一次
+looks like something went wrong	看起来出了问题
+comment actions for comment	评论的评论操作
+no one assigned	没有人分配
+browse files	浏览文件
+support online build on windows	支持在Windows上的在线构建
+expand file tree	展开文件树
+search within code	在代码中搜索
+open diff view settings	打开Diff视图设置
+customizable line height	可自定义的行高
+the default line height has been increased for improved accessibility	默认行高已增加，以提高可访问性
+you can choose to enable a more compact line height from the view settings menu	您可以从视图设置菜单中选择启用更紧凑的行高
+enable compact line height	启用紧凑的行高
+copy file name to clipboard	将文件名复制到剪贴板
+expand all lines	展开所有行
+original file line number	原始文件行号
+diff line number	Diff行号
+diff line change	Diff行更改
+already up to date	已经更新
