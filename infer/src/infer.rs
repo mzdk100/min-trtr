@@ -2,10 +2,10 @@ pub use futures_util::{StreamExt, pin_mut};
 use {
     super::{TranslationError, get_word, get_word_id, get_word_ids},
     async_stream::stream,
+    fancy_regex::{Error as RegexError, Regex},
     futures_util::Stream,
     ndarray::{Array, Axis, Slice},
     ort::{inputs, session::RunOptions, session::Session, value::TensorRef},
-    regex::{Error as RegexError, Regex},
     std::{
         path::Path,
         sync::LazyLock,
@@ -17,13 +17,15 @@ fn split_word<S>(sentence: S) -> Result<Vec<String>, TranslationError>
 where
     S: AsRef<str>,
 {
-    static RE: LazyLock<Result<Regex, RegexError>> =
-        LazyLock::new(|| Regex::new(r#"\b[\w'-]+\b|[^\w\s]"#));
+    static RE: LazyLock<Result<Regex, RegexError>> = LazyLock::new(|| {
+        Regex::new(r#"\b\w(?:[\w'-]*\w)?\b|\d{3}(?=\d{3})|\d{1,3}(?!\d)|[^\w\s]"#)
+    });
 
     Ok(RE
         .as_ref()
         .map_err(|e| e.to_owned())?
         .captures_iter(sentence.as_ref())
+        .filter_map(|i| i.ok())
         .map(|i| i[0].to_owned())
         .collect())
 }

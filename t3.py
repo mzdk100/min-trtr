@@ -4,14 +4,14 @@ from dataset import TranslationDataset, collate_fn
 from model import TranslationTransformer
 from onnxexp import export_onnx
 
-TOKEN_PATTERN = re.compile(r"\b[\w'-]+\b|[^\w\s]")
+TOKEN_PATTERN = re.compile(r"\b\w(?:[\w'-]*\w)?\b|\d{3}(?=\d{3})|\d{1,3}(?!\d)|[^\w\s]")
 
-def get_data_loader(src_vocab, tgt_vocab, train=True):
+def get_data_loader(src_vocab, tgt_vocab, batch_size=128, train=True):
     source_sentences, target_sentences = TranslationDataset.get_raw_data(train=train)
     source_sentences = [TOKEN_PATTERN.findall(line) for line in source_sentences]
     target_sentences = [list(jieba.cut(line)) for line in target_sentences]
     dataset = TranslationDataset(source_sentences, target_sentences, src_vocab, tgt_vocab)
-    return utils.data.DataLoader(dataset, batch_size=32, shuffle=True, collate_fn=collate_fn)
+    return utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True, collate_fn=collate_fn)
 
 def train(model, data_loader, optimizer, criterion, num_epochs=10):
     model.train()
@@ -121,7 +121,7 @@ if __name__ == "__main__":
     if os.path.exists(model_path):
         model.load_state_dict(load(model_path))
 
-    optimizer = optim.Adam(model.parameters(), lr=0.0003)
+    optimizer = optim.Adam(model.parameters(), lr=0.0005)
     criterion = nn.CrossEntropyLoss(ignore_index=0, label_smoothing=.1)  # 使用交叉熵损失函数，忽略填充标记的损失
 
     # 训练模型

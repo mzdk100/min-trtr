@@ -518,3 +518,141 @@ original file line number	原始文件行号
 diff line number	Diff行号
 diff line change	Diff行更改
 already up to date	已经更新
+fork of the triton language and compiler for windows support and easy installation	Triton语言和编译器的分支，支持Windows，并且易于使用
+mit license	MIT许可证
+triton fork for windows support	支持Windows的Triton分支
+the main-windows branch is unstable and may be force pushed	main-windows分支不稳定，可能会被强制推送
+thank you all	谢谢大家
+free software should run on non-free platforms, as per richard stallma	按照Richard Stallma的说法，自由软件应该在非自由平台上运行
+this is required by torch.compile, and torchao, sageattention, unsloth, and more packages	这是torch.compile、torchao、SageAttention、Uncloth等软件包所必需的
+memory/disk swap on wsl is hard	WSL上的内存/磁盘交换很困难
+triton.jit and torch.compile just work	triton.jit和torch.compile刚刚开始
+all unit tests passed (thanks comfy org for generously providing the ci runners!)	所有单元测试均已通过（感谢Comfy Org慷慨提供CI运行器！）
+when i run flux or hunyuanvideo in comfyui on windows, it's almost as fast as on wsl on the same machine	当我在Windows上的ComfyUI中运行Flux或HunyuanVideo时，它几乎和在同一台机器上的WSL上一样快
+windows 10 and 11 are supported	支持Windows10和11
+only nvidia gpu is supported, help wanted to support other backends	仅支持Nvidia GPU，希望帮助支持其他后端
+triton accelerates your ai model by compiling things on your computer	Triton通过在您的计算机上编译东西来加速您的AI模型
+you need to install it in the correct environment	您需要在正确的环境中安装它
+check your gpu model	检查GPU型号
+technically they're categorized by 'compute capability' (also known as 'cuda arch' or 'sm'), and here i use rtx models for example	从技术上讲，它们按“计算能力”（也称为“CUDA arch”或“sm”）分类，这里我使用RTX型号作为示例
+python environment	Python环境
+check how your python is installed	检查您的Python安装的如何
+either of the following environments is supported	支持以下任一环境
+embeded: you use an all-in-one package of comfyui (or some other ai software)	嵌入式：您使用ComfyUI（或其他一些AI软件）的一体化软件包
+other ai software may put this folder at a different path	其他AI软件可能会将此文件夹放在其他路径上
+in this case, don't directly run python, but use the full path	在这种情况下，不要直接运行Python，而要使用完整的路径
+also, don't directly run pip, but instead run	另外，不要直接运行pip，而是运行
+conda: you create a virtual environment using conda	Conda：您使用Conda创建虚拟环境
+python venv: you create a virtual environment using venv or virtualenv	Python venv：使用venv或virtualenv创建虚拟环境
+for other environment managers like poetry or uv, if you find problems, please open an issue	对于其他环境管理器，如Poetry或uv，如果你发现有困难，请打开一个问题
+make sure what environment you're using	确定你使用的是什么环境
+if you see multiple python installations, make sure that you install and run everything from the first one	如果你看到多个Python安装，请确保从第一个开始安装并运行所有内容
+if you're using comfyui with embeded python, then don't use conda or venv	如果您将ComfyUI与嵌入式Python一起使用，请不要使用Conda或venv
+if you're already using conda, then always create a new env using conda, and don't use python venv	如果您已经在使用Conda，请始终使用Conda创建一个新的Env，并且不要使用Python venv
+although technically triton can be used alone, in the following let's assume you use it with pytorch	尽管从技术上可以单独使用Triton，但在下面，让我们假设您将其与PyTorch一起使用
+check your pytorch version	检查你的PyTorch版本
+pytorch 2.3 and older are not supported	PyTorch2.3及更早版本不受支持
+pytorch tagged with cuda 12 is required	标有CUDA12的PyTorch是必需的
+cuda 11 is not supported	CUDA11不受支持
+since the release triton-windows==3.2.0.post11, a minimal cuda toolchain is bundled in the triton wheels, so you don't need to manually install it	自triton-windows==3.2.0.post11版本发布起，Triton的wheel包中已捆绑最小化的CUDA工具链，因此您无需手动安装它
+triton 3.1 and 3.2 bundles cuda 12.4, and triton 3.3 bundles cuda 12.8	Triton3.1和3.2捆绑CUDA12.4，Triton3.3捆绑CUDA12.8
+they should be compatible with other cuda 12.x because of the minor version compatibility of cuda	由于CUDA的次要版本兼容性，它们应该与其他CUDA12.x兼容
+cuda 11 and older are not supported	CUDA11及更早版本不受支持
+if you need to override the cuda toolchain, you can set the environment variable cuda_path	如果需要覆盖CUDA工具链，可以设置环境变量CUDA_PATH
+instructions for older or custom wheels without bundled cuda	未捆绑CUDA的旧版本或定制wheel的说明
+c compiler	C编译器
+since the release triton-windows==3.2.0.post13, tinycc is bundled in the triton wheels, so you don't need to manually install a c compiler to use triton	自发布triton-windows==3.2.0.post13起，TinyCC被捆绑在Triton wheel中，因此您不需要手动安装C编译器来使用Triton
+packages that directly call triton.jit, such as sageattention, will just work	直接调用triton.jit的包，如SageAttention，将正常工作
+you still need to install a c++ compiler if you use torch.compile targeting cpu	如果你使用针对CPU的torch.compile，你仍然需要安装一个C++编译器
+this may happen when you use nodes like 'compilemodel' in comfyui	当您在ComfyUI中使用“CompileModel”等节点时，可能会出现这种情况
+triton does not affect how pytorch configures the c++ compiler in this case	在这种情况下，Triton不会影响PyTorch配置C++编译器的方式
+the new policy will affect the way we do business	新政策将影响我们做生意的方式
+does second hand smoke affect the health of all of us	二手烟会影响我们所有人的健康吗
+the patient showed flat affect	患者表现出情感淡漠
+the effect of the medication was immediate	药物的效果是立即的
+the beneficial effects of exercise are well documented	锻炼的益处是有据可查的
+the law will effect changes in the tax system	法律将使税收系统发生变化
+if you need to override the c compiler, you can set the environment variable cc	如果需要覆盖C编译器，可以设置环境变量CC
+msvc, gcc, and clang are supported for the jit compilation in triton	Triton中的JIT编译支持MSVC、GCC和Clang
+instructions for older or custom wheels without bundled tinycc	不带捆绑TinyCC的旧版本或定制wheel的说明
+note on automatically adding the path	关于自动添加路径的说明
+if you've installed an old version of triton, first uninstall it	如果您安装了旧版本的Triton，请先卸载它
+now you can install triton-windows 3.3, or upgrade the already installed version	现在，您可以安装triton-windows3.3，或升级已安装的版本
+to prevent breaking with your installed pytorch when a new version of triton is released in future, you can limit the version to be < 3.4	为避免未来Triton新版本发布时与已安装的PyTorch产生兼容性问题，您可将Triton版本限制在3.4以下
+note again that if you're using the embeded python, then instead of directly run pip, you need	再次注意，如果您使用的是嵌入式Python，那么您不需要直接运行pip，而是需要
+for triton 3.2, you need	对于Triton3.2，您需要
+special notes for comfyui with embeded python	ComfyUI与嵌入式Python的特别说明
+there should be a python folder	应该有一个Python文件夹
+other ai software may put the python folder at a different path	其他AI软件可能会将Python文件夹放在不同的路径上
+if you created a venv, depending on how you created it, the python folder may be the venv folder or the venv\scripts\ folder	如果你创建了一个venv，根据你创建它的方式，Python文件夹可能是venv文件夹或venv\Scripts\文件夹
+you need to put two folders include and libs into the python folder to make triton work	您需要将两个文件夹include和libs放入Python文件夹中，才能使Triton工作
+be careful: it is 'libs', not 'lib'	小心：这是“libs”，不是“lib”
+there may already be a folder lib in the python folder, containing things like site-packages or __future__.py	Python文件夹中可能已经有一个文件夹Lib，其中包含站点包或__future__.py等内容
+if you're using framepack with python 3.10, then download the two folders here	若您正在Python3.10环境下使用FramePack，请在此处下载这两个文件夹
+the minor version (3.9/3.10 ...) must be correct, but the patch version (3.10.6/3.10.7 ...) can be different	次要版本（3.9/3.10 ...）必须正确，但是补丁版本（3.10.6/3.10.7 ...）可能是不同的
+test if it works	测试是否工作
+before using triton in larger projects like comfyui, please run the following script to test if triton itself works	在ComfyUI等大型项目中使用Triton之前，请运行以下脚本来测试Triton本身是否正常工作
+when you open an issue, please show the command you use to run this test, and the full error log	提交问题时，请提供您运行测试所使用的命令及完整的错误日志
+troubleshoot the test above	对上述测试进行故障排除
+no module named 'triton.language'; 'triton' is not a package	没有名为“triton.language”的模块；“triton”不是一个包
+don't name the test script triton.py	不要将测试脚本命名为triton.py
+also, check if there is a folder named triton in your current directory	此外，请检查当前目录中是否有名为triton的文件夹
+if so, python will think it's the 'triton' package and fail to import	如果是这样，Python会认为它是“triton”包，从而无法导入
+module 'pkgutil' has no attribute 'impimporter'	模块'pkgutil'没有属性'ImpImporter'
+did you mean: 'zipimporter'	你是说：“zipimporter”吗
+this is because your setuptools is outdated	这是因为您的setuptools已经过时
+run the following and try again	运行以下命令，然后重试
+access is denied	访问被拒绝
+this is because of the permission settings of your user folder	这是因为您的用户文件夹的权限设置
+dll load failed while importing libtriton	导入libtriton时DLL加载失败
+this is usually because your vcredist dlls are too old	这通常是因为你的vcredist DLL太旧了
+if you're using conda, then you may try	如果你正在使用Conda，那么你可以试试
+if you're not using conda, then you need to find the vcredist dlls (vcruntime140.dll, vcruntime140_1.dll) in your python installation folder	如果你没有使用Conda，那么你需要在Python安装文件夹中找到vcredist DLL（vcruntime140.dll，vcruntime140_1.dll）
+embeded python (you use an all-in-one package of comfyui or some other ai software)	嵌入式Python（您可以使用ComfyUI或其他一些AI软件的一体化包）
+other python installation (system-wide/user-wide/venv)	其他Python安装（系统范围/用户范围/venv）
+after finding the dlls in the python installation folder, you can install the latest vcredist, then copy the dlls msvcp140.dll, vcruntime140.dll, vcruntime140_1.dll from c:\windows\system32\ to the python installation folder, and replace the existing ones	在Python安装文件夹中找到DLL后，您可以安装最新的vcredist，然后将dll msvcp140.dll、vcruntime140.dll、vcruntime140_1.dll从C:\Windows\System32\复制到Python安装文件夹，并替换现有的DLL
+you can right-click the dll -> properties -> details to see its version	您可以右键单击DLL->属性->详细信息以查看其版本
+a new enough version, such as 14.42, is required by my triton wheels	我的Triton wheel需要一个足够的新版本，例如14.42
+dll load failed while importing cuda_utils	导入cuda_utils时DLL加载失败
+delete the cache folders	删除缓存文件夹
+you may also need to delete these cache folders when you change the python version, install another version of triton, or change the c compiler or cuda	当您更改Python版本、安装其他版本的Triton或更改C编译器或CUDA时，可能还需要删除这些缓存文件夹
+it's ok if these folders do not exist on your computer	如果您的计算机上不存在这些文件夹，也没关系
+the first folder exists only if you have used triton.jit (which is used by packages like sageattention), and the second folder exists only if you have used torch.compile	第一个文件夹仅在您使用triton.jit（由SageAttention等包使用）时存在，第二个文件夹仅在您使用torch.compile时存在
+double check your python version: you can run get-command -all python in powershell (or where python in cmd) to see the installation path of python, and python --version to see its version	请仔细检查您的Python版本：在PowerShell中可运行Get-Command -All python（或在CMD中运行where python）查看Python安装路径，运行python --version查看其版本号
+if you're using comfyui with embeded python, make sure that you copy-pasted the folders include and libs from the correct version of python	如果您将ComfyUI与嵌入式Python一起使用，请确保从正确版本的Python复制粘贴文件夹include和libs
+you also need to delete the cache folders above	您还需要删除上面的缓存文件夹
+if the above still doesn't work, you may try	如果上述方法仍然无效，您可以尝试
+install dlltracer in the same python environment	在同一Python环境中安装dlltracer
+in an administrator powershell, run the following script	在管理员PowerShell中，运行以下脚本
+open an issue	打开一个问题
+security reminder: you don't need the administrator privilege to run triton and other usual python code	安全提示：运行Triton和其他常见的Python代码不需要管理员权限
+it's only dlltracer that needs it	只有dlltracer需要它
+if it shows failed \device\...\cuda_utils.pyd, please also	如果显示失败\Device\...\cuda_utils.pyd，也请
+find cuda_utils.pyd at this location	在此位置找到cuda_utils.pyd
+use dependenciesgui (or similar tools) to check what dlls this cuda_utils.pyd depends on, and send a screenshot (or other related information) in the issue	使用DepentenciesGui（或类似工具）检查此cuda_utils.pyd依赖于哪些DLL，并在问题中发送屏幕截图（或其他相关信息）
+known issues	已知问题
+windows file path length limit (260) causes compilation failure	Windows文件路径长度限制（260）导致编译失败
+torch.compile may create temp files with very long filenames, causing errors like	torch.compile可能创建具有很长的文件名的临时文件，从而导致错误
+or errors like	或如错误
+the filename or extension is too long	文件名或扩展太长
+the solution is to enable windows' long path support	解决方案是启用Windows的长路径支持
+a reboot is required after the modification	修改后需要重启
+fp8 is not supported on rtx 30xx and older gpus	RTX30xx及更早版本的GPU不支持fp8
+if you see errors like	如果您看到类似的错误
+and in the full error log you find	然后在完整的错误日志中您可以找到
+fp8e4nv data type is not supported on cuda arch < 89	CUDA arch<89不支持fp8e4nv数据类型
+then it's because in triton, fp8 only works on nvidia gpus with sm >= 89, such as rtx 40xx and newer	那么这是因为在Triton中，fp8仅适用于sm>=89的Nvidia GPU，如RTX40xx及更高版本
+you may disable fp8 in the node or the code	您可以在节点或代码中禁用fp8
+this is not windows-specific	这不是特定于Windows平台的
+help wanted if anyone has time for this	诚邀有时间者协助
+error with os.rename	os.rename的错误
+cannot create a file when that file already exists	当该文件已经存在时，无法创建文件
+then you need	那么你需要
+this has been fixed since pytorch 2.6	自PyTorch2.6起，这个问题已经修复
+error with model offloading	模型卸载错误
+if you're using comfyui, the model is compiled, and you see error messages like	如果您使用的是ComfyUI，则模型会被编译，您会看到类似的错误消息
+pointer argument (at 0) cannot be accessed from triton (cpu tensor?)	无法从Triton（CPU张量？）访问指针参数（在0处）
+then you may use --gpu-only when launching comfyui to disable model offloading	然后，您可以仅在启动ComfyUI时使用--gpu-only来禁用模型卸载
+no module named 'triton.ops'	没有名为“triton.ops”的模块
+triton.ops was removed in triton 3.1, and this is because some of your python package is outdated (most likely bitsandbytes)	Triton3.1中删除了triton.ops，这是因为您的一些Python包已经过时（最有可能是bitsandbytes）
+this is for developers	这是为开发人员准备的

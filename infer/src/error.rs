@@ -1,7 +1,7 @@
 use {
+    fancy_regex::Error as RegexError,
     ndarray::ShapeError,
     ort::Error as OrtError,
-    regex::Error as RegexError,
     std::{
         error::Error,
         fmt::{Display, Formatter, Result as FmtResult},
