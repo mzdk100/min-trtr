@@ -715,3 +715,42 @@ add .patch or .diff to the end of urls for git’s plaintext views	在Git纯文�
 successfully merging this pull request may close these issues	成功合并此拉取请求可能会关闭这些问题
 audiocraft is a library for audio processing and generation with deep learning	Audiocraft是一个用于深度学习音频处理和生成的库
 it features the state-of-the-art encodec audio compressor / tokenizer, along with musicgen, a simple and controllable music generation lm with textual and melodic conditioning	它具有最先进的EnCodec音频压缩器/标记器，以及MusicGen，一个简单可控的音乐生成LM，具有文本和旋律调节功能
+custom properties	自定义属性
+audiocraft is a pytorch library for deep learning research on audio generation	AudioCraft是一个PyTorch库，用于音频生成的深度学习研究
+audiocraft contains inference and training code for two state-of-the-art ai generative models producing high-quality audio: audiogen and musicgen	AudioCraft包含两个最先进的AI生成模型的推理和训练代码，这两个模型可以产生高质量的音频：AudioGen和MusicGen
+audiocraft requires python 3.9, pytorch 2.1.0	AudioCraft需要Python3.9，PyTorch2.1.0
+to install audiocraft, you can run the following	要安装AudioCraft，您可以运行以下命令
+best to make sure you have torch installed first, in particular before installing xformers	最好确保先安装torch，特别是在安装xformers之前
+you might need the following before trying to install the packages	在尝试安装软件包之前，您可能需要以下内容
+then proceed to one of the following	然后进行以下操作之一
+bleeding edge	最前沿
+we also recommend having installed, either through your system or anaconda:ffmpeg	我们还建议通过您的系统或Anaconda安装：FFMPEG
+or if you are using anaconda or miniconda	或者如果您使用的是Anaconda或Minconda
+at the moment, audiocraft contains the training code and inference code for	目前，AudioCraft包含以下训练代码和推理代码
+musicgen: a state-of-the-art controllable text-to-music model	MusicGen：最先进的可控文本到音乐模型
+audiogen: a state-of-the-art text-to-sound model	AudioGen：最先进的文本转声音模型
+encodec: a state-of-the-art high fidelity neural audio codec	EnCodec：最先进的高保真神经音频编解码器
+multi band diffusion: an encodec compatible decoder using diffusion	多频带扩散模型：基于扩散算法的EnCodec兼容解码器
+magnet: a state-of-the-art non-autoregressive model for text-to-music and text-to-sound	MAGNeT：一种最先进的文本到音乐和文本到声音的非自回归模型
+audioseal: a state-of-the-art audio watermarking	AudioSeal：一种最先进的音频水印技术
+musicgen style: a state-of-the-art text-and-style-to-music model	MusicGen风格：最先进的文本和风格到音乐模型
+jasco: "high quality text-to-music model conditioned on chords, melodies and drum tracks"	JASCO：“基于和弦、旋律与鼓轨的高质量文本生成音乐模型”
+training code	训练代码
+audiocraft contains pytorch components for deep learning research in audio and training pipelines for the developed models	AudioCraft包含用于音频深度学习研究的PyTorch组件及已开发模型的训练流水线
+for a general introduction of audiocraft design principles and instructions to develop your own training pipeline, refer to the audiocraft training documentation	如需获取AudioCraft设计原则的全面介绍以及开发自定义训练流水线的指导说明，请参阅AudioCraft训练文档
+for reproducing existing work and using the developed training pipelines, refer to the instructions for each specific model that provides pointers to configuration, example grids and model/task-specific information and faq	如需复现现有成果并使用已开发的训练流水线，请参阅各具体模型的说明文档，其中包含配置指引、示例配置网格、模型/任务特定信息及常见问题解答
+api documentation	API文档
+we provide some api documentation for audiocraft	我们为AudioCraft提供了一些API文档
+is the training code available	训练代码是否可用
+yes! we provide the training code for encodec, musicgen,multi band diffusion and jasco	是的！我们为EnCodec、MusicGen、多频带扩散和JASCO提供训练代码
+where are the models stored	模型存放在哪里
+hugging face stored the model in a specific location, which can be overridden by setting the environment variable for the audiocraft models	Hugging Face将模型存储在特定位置，可以通过为AudioCraft模型设置环境变量来覆盖该位置
+in order to change the cache location of the other hugging face models, please check out the hugging face transformers documentation for the cache setup	如需修改其他Hugging Face模型的缓存路径，请查阅Hugging Face Transformers文档中的缓存设置说明
+finally, if you use a model that relies on demucs (e.g. musicgen-melody) and want to change the download location for demucs, refer to the torch hub documentation	最后，如果您使用依赖于Demucs的模型（例如musicgen-melody）并想要更改Demucs的下载位置，请参阅Torch Hub文档
+the code in this repository is released under the mit license as found in the license file	此存储库中的代码根据LICENSE文件中的MIT许可证发布
+the models weights in this repository are released under the cc-by-nc 4.0 license as found in the license_weights file	此存储库中的模型权重根据LICENSE_weights文件中的CC-BY-NC 4.0许可证发布
+for the general framework of audiocraft, please cite the following	对于Audiocraft的一般框架，请引用以下内容
+when referring to a specific model, please cite as mentioned in the model specific readme, e.g ./docs/musicgen.md, ./docs/audiogen.md, etc	引用特定模型时，请按照该模型专属README文档中的说明进行标注，例如参考./docs/MUSICGEN.md、./docs/AUDIOGEN.md等文件中的指引
+compression models or wrapper around existing models	压缩模型或围绕现有模型的包装
+in particular, provides the implementation for mimi	特别是为Mimi提供了实现
+also defines the main interface that a model must follow to be usable as an audio tokenizer	还定义了模型必须遵循的主要接口，以便可用作音频标记器
