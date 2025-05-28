@@ -656,3 +656,62 @@ then you may use --gpu-only when launching comfyui to disable model offloading	�
 no module named 'triton.ops'	没有名为“triton.ops”的模块
 triton.ops was removed in triton 3.1, and this is because some of your python package is outdated (most likely bitsandbytes)	Triton3.1中删除了triton.ops，这是因为您的一些Python包已经过时（最有可能是bitsandbytes）
 this is for developers	这是为开发人员准备的
+an implementation of regexes, supporting a relatively rich set of features, including backreferences and look-around	正则表达式的一种实现，支持相对丰富的功能集，包括回溯引用和环视断言
+python bindings for symphonia/opus - read various audio formats from python and write opus files	symphonia/opus的Python绑定——从Python读取多种音频格式并写入opus文件
+python bindings for the symphonia and opus crates	symphonia和opus库的Python绑定
+easily load various audio file formats into numpy arrays	轻松地将各种音频文件格式加载到Numpy数组中
+read/write ogg/opus audio files with streaming support	支持流式读取/写入Ogg/Opus音频文件
+the python wheels are available on pypi	Python wheel可在PYPI上找到
+if you're seeing an issue with cmake saying "compatibility with cmake < 3.5 has been removed from cmake.", this is because building opus is not compatible with cmake 4.x	如果您看到CMake的问题说“与CMake<3.5的兼容性已从CMake中删除。”这是因为构建Opus与CMake4.x不兼容
+install a 3.x version (e.g. 3.31) and then set the cmake environment variable to use it, e.g.	安装3.x版本（例如3.31），然后设置CMAKE环境变量以使用它，例如
+or use your system's package manager	或使用系统的软件包管理器
+download some sample audio file	下载一些示例音频文件
+read an audio file	读取一个音频文件
+save as wav	保存为wav
+could you pass me the salt, please	请把盐递给我好吗
+i'll call you back later	我稍后回电给你
+the algorithm improves computational efficiency by 40%	该算法将计算效率提高了40%
+quantum entanglement challenges classical physics	量子纠缠现象挑战了经典物理学
+data encryption ensures information security	数据加密技术保障信息安全
+the summit addressed climate change mitigation	峰会讨论了气候变化缓解措施
+global trade volumes declined by 2.3% this quarter	本季度全球贸易量下降2.3%
+the autumn leaves danced like golden flames in the wind	秋叶如金色火焰般在风中起舞
+had i known the truth, i would have acted differently	早知道真相，我就会采取不同行动
+the contract shall be governed by the laws of china	本合同受中国法律管辖
+symptoms typically manifest within 24 hours	症状通常在24小时内显现
+critical thinking enhances problem-solving skills	批判性思维能提升问题解决能力
+use a tanh activation in the xlm-roberta classification head	在XLM-RoBERTa模型的分类头中使用tanh激活函数
+last month	上个月
+files changed	文件更改
+show options	显示选项
+sorry for making the commit on this day, but i'm really, really not fooling	很抱歉在这一天做出提交，但我真的不是在开玩笑
+however, this is not thoroughly tested by myself, i can't guarantee that it's free of bugs	然而，这并没有经过我自己的彻底测试，我不能保证它没有错误
+the --classpath option(s) of d8 doesn't act like that of javac: the :/; separator is likely to cause problems here	d8工具的--classpath选项与javac行为不同，使用:或;分隔符可能导致问题
+the multidex format may cause problem on old android versions (loading it using dexclassloader instead of inmemorydexclassloader introduced in api 26), even if there is only one classes.dex output file	即使只有一个classes.dex输出文件，Multidex格式在旧版Android上也可能会导致问题（使用DexClassLoader而不是API26中引入的InMemoryDexClassLoader进行加载）
+specifying --min-api 20 solves this problem	指定--min-api 20解决了这个问题
+newer jdk versions (including jdk 21 and above) may not work with android d8 if there are anonymous classes in the java code, which produces files like cls$1.class	如果Java代码中存在匿名类，则较新的JDK版本（包括JDK21及更高版本）可能无法与Android D8兼容，从而产生类似Cls$1.class的文件
+this is fixed in build tools 35.0.0	在构建工具35.0.0中已经修复此问题
+i'm not sure if it's good to add this warning here	我不确定在此处添加此警告是否合适
+i'm not printing cargo:rerun-if-changed=path for all input files used in javabuild and dexer	我没有为JavaBuild和Dexer使用的所有输入文件打印cargo:rerun-if-changed=PATH指令
+i just used it for env variables being used inside this crate	我只是用它来表示这个库内使用的环境变量
+i thought the user can do so for their source files (if required)	我认为用户可以为其源代码文件这样做（如果需要）
+feel free to change this behavior, though	不过，请随时改变这种行为
+add or remove reactions	添加或移除反应
+view reviewed changes	查看审查的更改
+thanks very much	非常感谢
+great work on the documentation, it's very nice	文档做得很好，非常细致
+can you add the "notes" that you posted in the pr description as doc comments on the dexer type such that future users of said type will be made aware of those caveats	您能否将您在PR描述中发布的“注释”添加为Dexer类型的文档注释，以便该类型的未来用户了解这些注意事项
+fix dexer docs	修复Dexer文档
+i've made these requested changes	我已经做了这些要求的更改
+--lib and --classpath options are probably redundant under --no-desugaring, but they don't cause any problem under my test case	--lib和--classpath选项在--no-desugaring下可能是多余的，但它们在我的测试用例下不会引起任何问题
+thanks, much appreciated	谢谢，非常感谢
+i'll release the crate to crates.io shortly	我会很快把库发布到crates.io
+published v0.1.2 to crates.io	已发布V0.1.2到crates.io
+thanks again	再次感谢
+merge info	合并信息
+pull request successfully merged and closed	拉取请求已成功合并并关闭
+you're all set — the branch has been merged	一切就绪，分支已合并
+add .patch or .diff to the end of urls for git’s plaintext views	在Git纯文本视图的URL末尾添加.patch或.diff
+successfully merging this pull request may close these issues	成功合并此拉取请求可能会关闭这些问题
+audiocraft is a library for audio processing and generation with deep learning	Audiocraft是一个用于深度学习音频处理和生成的库
+it features the state-of-the-art encodec audio compressor / tokenizer, along with musicgen, a simple and controllable music generation lm with textual and melodic conditioning	它具有最先进的EnCodec音频压缩器/标记器，以及MusicGen，一个简单可控的音乐生成LM，具有文本和旋律调节功能
