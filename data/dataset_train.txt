@@ -754,3 +754,130 @@ when referring to a specific model, please cite as mentioned in the model specif
 compression models or wrapper around existing models	压缩模型或围绕现有模型的包装
 in particular, provides the implementation for mimi	特别是为Mimi提供了实现
 also defines the main interface that a model must follow to be usable as an audio tokenizer	还定义了模型必须遵循的主要接口，以便可用作音频标记器
+tencent cloud codebuddy (hereinafter referred to as codebuddy) is a self-developed development and programming efficiency-enhancing tool by tencent cloud	腾讯云CodeBuddy（以下简称CodeBuddy）是腾讯云自主研发的开发和编程效率提升工具
+driven by the dual-model framework of tencent hunyuan and deepseek, it is designed to be developer-friendly, easy to use, and practical	由腾讯混元和DeepSeek双模型框架驱动，注重开发者友好性、易用性和实用性
+codebuddy provides developers with ai-powered technical q&a, the craft software coding intelligent agent, intelligent code completion, unit testing, intelligent code review, code repair, and other agent-based extended capabilities	CodeBuddy为开发者提供AI驱动的技术问答、Craft软件编码智能代理、智能代码补全、单元测试、智能代码审查、代码修复以及其他基于代理的扩展能力
+it is compatible with the mcp open ecosystem and supports team knowledge base management, custom intelligent agents and command management, multi-model integration, and enterprise account integration	它与MCP开放生态系统兼容，支持团队知识库管理、自定义智能代理和命令管理、多模型集成和企业帐户集成
+codebuddy assists developers in improving coding efficiency and quality, helping r&d teams enhance productivity and effectiveness	CodeBuddy帮助开发人员提高编码效率和质量，帮助研发团队提高生产力和效率
+note: product features are continuously updated, and some ides may experience delays due to version release schedules	注意：产品功能会不断更新，一些IDE可能会因版本发布时间表而出现延迟
+ai-powered tech chat: intelligent ai-driven conversations to effortlessly tackle complex technical challenges	AI技术聊天：智能AI驱动的对话，轻松应对复杂的技术挑战
+supports flexible configuration and switching between multiple models, including third-party deepseek model integration	支持灵活配置和切换多种模型，并支持第三方DeepSeek模型接入
+integrated ide tech chat: supports one-click insertion of code from conversations directly into the compilation area for rapid q&a	集成IDE技术聊天：支持一键将对话中的代码直接插入编译区域，以便快速问答
+code completion: smart suggestions to efficiently complete your programming tasks	代码完成：智能建议，高效完成您的编程任务
+release notes	发行说明
+user agreement	用户协议
+review now	立即查看
+remind me later	稍后提醒我
+open search	打开搜索
+open main menu	打开主菜单
+free for non-commercial use	非商业用途免费
+a powerhouse ide for rust developers	Rust开发人员的强大IDE
+request a demo	请求演示
+rustrover goes ai	RustRover走向人工智能
+less routine, more coding joy	减少无聊，增添编码乐趣
+all refined jetbrains ai tools – right in your ide, for free	所有精炼的JetBrains AI工具–直接在您的IDE中免费使用
+coding agent	代码智能体
+unlimited code completion	无限的代码完成
+offline mode	离线模式
+latest ai models	最新的AI模型
+codebase context	代码库上下文
+multi-file edits	多文件编辑
+vcs assistance	VCS协助
+discover more	发现更多
+focus on what matters while	专注于重要的事情
+rustrover handles the rest	剩下的交给RustRover处理
+code faster	编码速度更快
+save time	节省时间
+explore codebase	探索代码库
+run, debug, test	运行、调试、测试
+manage projects	管理项目
+previous item	上一个项目
+next item	下一个项目
+write your code faster	更快地编写代码
+benefit from context-aware code completion and generation, on-the-fly analysis and quick-fixes, smart refactorings, live templates, and more	受益于上下文感知代码完成和生成、即时分析和快速修复、智能重构、实时模板等
+develop applications for the web	开发Web应用程序
+rustrover provides seamless integration with frontend development workflows	RustRover提供与前端开发工作流程的无缝集成
+issue requests and analyze responses with the built-in http client	使用内置的HTTP客户端发出请求并分析响应
+use the docker tool to manage various project components and explore your database schemas and tables with the database tooling	使用Docker工具管理各种项目组件，并使用数据库工具探索数据库模式和表
+work in a team efficiently	高效团队合作
+rustrover comes with all the teamwork tools you need	RustRover带有您需要的所有团队合作工具
+code together in real time and talk to others right from the ide	实时一起编写代码，并直接从IDE与他人交谈
+share your project configuration, including the code style settings	共享您的项目配置，包括代码样式设置
+work smoothly with git, github, and gitlab, exploring commits and pull requests, creating branches, and reviewing code	与Git、GitHub和GitLab顺畅协作，探索提交和拉取请求，创建分支，审查代码
+ready to use out of the box	开箱即用
+start coding immediately without the hassle of installing and configuring numerous plugins	立即开始编码，无需安装和配置大量插件
+rustrover provides a comprehensive development environment with seamless integration of rust, cargo, and cargo.toml	RustRover提供了一个全面的开发环境，实现了Rust、Cargo和Cargo.toml的无缝集成
+it includes features like remote support, database management, git integration, and more	它包括远程支持、数据库管理、Git集成等功能
+web technologies from webstorm and database tools from datagrip are also available	WebStorm的Web技术和DataGrip的数据库工具也可用
+explore documentation	浏览文档
+recommended by rust community members	Rust社区成员推荐
+charlie marsh	查理·马什
+founder of astral, creator of ruff and uv	Ruff和UV的创建者Astral的创始人
+rustrover has been my ide of choice since the early access releases	自Early Access发布以来，RustRover一直是我选择的IDE
+and now it powers all of my development time across ruff, uv, and other large-scale rust projects	现在，它为我在Ruff、UV和其他大型Rust项目上的所有开发时间提供了动力
+with rustrover, i can perform complex refactors spanning hundreds of thousands of lines of code, navigate across complex dependency trees, and, ultimately, write rust with confidence	有了RustRover，我可以执行跨越数十万行代码的复杂重构，在复杂的依赖树中导航，并最终自信地编写Rust
+all you’ll ever need for rust development	Rust开发所需的一切
+try for free	免费试用
+if you use rustrover for non-commercial purposes, meaning you do not receive any direct financial compensation for the work you do with it, you can use the ide for free	如果您将RustRover用于非商业用途，即您不会因使用该软件的工作获得任何直接经济补偿，则可以免费使用该集成开发环境(IDE)
+content creation	内容创建
+you can use rustrover in your videos or content for educational purposes, like tutorials or demonstrations, even if you charge to access that content	您可以在视频或内容中使用RustRover进行教育，如教程或演示，即使您对访问该内容收费
+this means that you can use the product in your teaching materials or online courses without worrying about licensing restrictions	这意味着您可以在教材或在线课程中使用该产品，而无需担心许可限制
+check out the jetbrains content creators program to discover more options	查看JetBrains内容创作者计划，了解更多选项
+hobbies and learning	爱好和学习
+according to stack overflow↗, 68% of developers code outside of work as a hobby, and nearly 40% do so for professional growth or self-paced learning	根据Stack Overflow↗的调查，68%的开发人员将工作之余编写代码作为一种爱好，近40%的开发人员这样做是为了职业发展或自主学习
+enjoy free time coding in rust and develop your project with rustrover	享受免费Rust编程，通过RustRover开发您的项目
+open-source project development	开源项目开发
+rust is known for its strong open-source community	Rust以其强大的开源社区而闻名
+enhance your project with rustrover and contribute to the thriving rust ecosystem	使用RustRover增强您的项目，为繁荣的Rust生态系统做出贡献
+explore more about jetbrains support for open-source projects	探索更多有关JetBrains对开源项目的支持
+what qualifies as non-commercial use	什么才算非商业用途
+which license should i choose if i want to use rustrover for both non-commercial and commercial projects	如果我想将RustRover用于非商业和商业项目，我应该选择哪个许可证
+what features are included under the free license	免费许可证包含哪些功能
+how does a free trial work	免费试用是如何运作的
+does my ide send any data to jetbrains	我的IDE是否向JetBrains发送任何数据
+can i use rustrover when my paid subscription is over	付费订阅结束后，我可以使用RustRover吗
+still not sure if rustrover is right for you	仍然不确定RustRover是否适合您
+contact us and we will answer any questions you may have	联系我们，我们将回答您的任何问题
+subscribe to rustrover news	订阅RustRover新闻
+i agree that my personal data will be processed for this purpose	我同意为此目的处理我的个人数据
+follow us	关注我们
+rustrover blog	RustRover博客
+bug and issue tracker	Bug和问题跟踪器
+team tools	团队工具
+all products	所有产品
+c++ tools	C++工具
+data tools	数据工具
+game development	游戏开发
+tools for business	商业工具
+jetbrains research	JetBrains研究
+open source projects	开源项目
+academic licensing	学术许可
+open source partnerships	开源合作伙伴关系
+user groups	用户组
+developer recognition	开发者表彰
+content creators	内容创作者
+sales support	销售支持
+product support	产品支持
+licensing faq	许可常见问题
+events and livestreams	活动和直播
+industry reports	行业报告
+desktop art	桌面艺术
+our commitment	我们的承诺
+brand assets	品牌资产
+partners and resellers	合作伙伴和经销商
+merchandise store	商品店
+trust center	信任中心
+jetbrains on facebook	Facebook上的JetBrains
+jetbrains on x (formerly twitter)	X上的JetBrains（以前称为Twitter）
+jetbrains on linkedin	LinkedIn上的JetBrains
+jetbrains on youtube	YouTube上的JetBrains
+jetbrains on instagram	Instagram上的JetBrains
+jetbrains on tiktok	TikTok上的JetBrains
+jetbrains blog	JetBrains博客
+jetbrains rss feed	JetBrains的RSS源
+jetbrains merchandise store	JetBrains商品店
+china mainland	中国大陆
+privacy & security	隐私与安全
+terms of use	使用条款
+genuine tools	正版工具
+developed with drive and intellij idea	用热忱与IntelliJ IDEA打造
