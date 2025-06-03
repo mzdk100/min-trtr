@@ -24,7 +24,7 @@ please help me	请帮我一下
 where are you from	你来自哪里
 have a nice weekend	周末愉快
 i understand	我明白了
-thank you for your help	谢谢你的帮助
+thank for your help	谢谢你的帮助
 happy birthday to you	祝你生日快乐
 i don't agree	我不同意
 this is a good idea	这是个好主意
@@ -881,3 +881,20 @@ privacy & security	隐私与安全
 terms of use	使用条款
 genuine tools	正版工具
 developed with drive and intellij idea	用热忱与IntelliJ IDEA打造
+thank you for downloading rustrover	感谢您下载RustRover
+we'd love to learn about your goals with rustrover - take a quick survey to share your thoughts	我们很想通过RustRover了解您的目标——进行快速调查以分享您的想法
+your download should start shortly	您的下载应该很快开始
+if it doesn't, please use the direct link	如果没有，请使用直链
+download and verify the file sha-256 checksum	下载并验证文件SHA-256校验和
+learn more about the digital signatures of jetbrains binaries	了解有关JetBrains二进制文件的数字签名的更多信息
+browse the documentation↗ to get an overview of rustrover, learn how to navigate inside the ide, and find out what features are available in the product	浏览文档↗获取RustRover的概述，了解如何在IDE内部导航，并找出产品中可用的功能
+let’s stay in touch	让我们保持联系
+enter your email to receive occasional news related to rustrover	输入您的电子邮件以接收与RustRover有关的偶尔新闻
+remote development	远程开发
+the ultimate coding experience for a remote world	远程世界的终极编码体验
+get access to your remote environments right from your jetbrains ide	直接从JetBrains IDE访问远程环境
+learn more	了解更多
+the ide for professional development in java and kotlin	Java和Kotlin的专业开发IDE
+the only python ide you need	你唯一需要的Python IDE
+powerful continuous integration out of the box	开箱即用的强大持续集成
+powerful project management for all your teams	为您的所有团队提供强大的项目管理
