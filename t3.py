@@ -4,12 +4,19 @@ from dataset import TranslationDataset, collate_fn
 from model import TranslationTransformer
 from onnxexp import export_onnx
 
-TOKEN_PATTERN = re.compile(r"\b\w(?:[\w'-]*\w)?\b|\d{3}(?=\d{3})|\d{1,3}(?!\d)|[^\w\s]")
+TOKEN_PATTERN = re.compile(r"\d{3}(?=\d*\b)|\d{2}\b|\d\b|\b\w(?:[\w'-]*\w)?\b|[^\w\s]")
 
 def get_data_loader(src_vocab, tgt_vocab, batch_size=128, train=True):
     source_sentences, target_sentences = TranslationDataset.get_raw_data(train=train)
     source_sentences = [TOKEN_PATTERN.findall(line) for line in source_sentences]
-    target_sentences = [list(jieba.cut(line)) for line in target_sentences]
+    sentences = []
+    for line in target_sentences:
+        words = []
+        for word in jieba.cut(line):
+            for t in TOKEN_PATTERN.findall(word):
+                words.append(t)
+        sentences.append(words)
+    target_sentences = sentences
     dataset = TranslationDataset(source_sentences, target_sentences, src_vocab, tgt_vocab)
     return utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True, collate_fn=collate_fn)
 
@@ -111,9 +118,9 @@ if __name__ == "__main__":
     parser.add_argument("--num-epochs", type=int, default=10)
     args = parser.parse_args()
 
-    with open('data/vocab_source.txt', 'r', encoding='utf-8') as f1, open('data/vocab_target.txt', 'r', encoding='utf-8') as f2:                                                                                           
-        src_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f1]}                              
-        tgt_vocab = {k: int(v) for k, v in [i.rstrip().split('\t') for i in f2]}                              
+    with open('data/vocab_source.txt', 'r', encoding='utf-8') as f1, open('data/vocab_target.txt', 'r', encoding='utf-8') as f2:
+        src_vocab = {k: int(v) for k, v in [i.strip().split('\t') for i in f1]}
+        tgt_vocab = {k: int(v) for k, v in [i.rstrip().split('\t') for i in f2]}
 
     # 模型初始化
     model_path = "checkpoint/translation_model.pt"

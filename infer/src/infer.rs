@@ -18,7 +18,7 @@ where
     S: AsRef<str>,
 {
     static RE: LazyLock<Result<Regex, RegexError>> = LazyLock::new(|| {
-        Regex::new(r#"\b\w(?:[\w'-]*\w)?\b|\d{3}(?=\d{3})|\d{1,3}(?!\d)|[^\w\s]"#)
+        Regex::new(r#"\d{3}(?=\d*\b)|\d{2}\b|\d\b|\b\w(?:[\w'-]*\w)?\b|[^\w\s]"#)
     });
 
     Ok(RE

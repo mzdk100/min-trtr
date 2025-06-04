@@ -898,3 +898,58 @@ the ide for professional development in java and kotlin	Java和Kotlin的专业�
 the only python ide you need	你唯一需要的Python IDE
 powerful continuous integration out of the box	开箱即用的强大持续集成
 powerful project management for all your teams	为您的所有团队提供强大的项目管理
+adding script for making voice conditionings	添加用于制作语音条件的脚本
+the sun rises in the east	太阳从东方升起
+she enjoys reading novels in her free time	她闲暇时喜欢读小说
+artificial intelligence is transforming many industries	人工智能正在改变许多行业
+they decided to postpone the meeting until next week	他们决定将会议推迟到下周
+this restaurant serves authentic italian cuisine	这家餐厅提供正宗的意大利菜
+the researchers published their findings in a scientific journal	研究人员在科学期刊上发表了他们的发现
+he apologized for arriving late to the appointment	他为约会迟到而道歉
+the government announced new policies to boost the economy	政府宣布了提振经济的新政策
+children should learn to respect cultural differences	孩子们应该学会尊重文化差异
+the software update improved the system's performance significantly	软件更新显著提高了系统性能
+opus is a codec for interactive speech and audio transmission over the internet	Opus是一种用于通过互联网进行交互式语音和音频传输的编解码器
+opus can handle a wide range of interactive audio applications, including voice over ip, video conferencing, in-game  chat, and even remote live music performances	Opus可以处理各种交互式音频应用程序，包括IP的语音，视频会议，游戏中聊天，甚至远程现场音乐表演
+it can scale from low bit-rate narrowband speech to very high quality stereo music	它可以从低比特率的窄带语音扩展到非常高质量的立体声音乐
+opus, when coupled with an appropriate container format, is also suitable for non-realtime stored-file applications such as music distribution, game soundtracks, portable music players, jukeboxes, and other applications that have historically used high latency formats such as mp3, aac, or vorbis	Opus与适当的容器格式结合使用时，也适用于非实时存储文件应用程序，例如音乐分发、游戏配乐、便携式音乐播放器、点唱机以及其他历史上使用高延迟格式（例如MP3、AAC或Vorbis）的应用程序
+opus is specified by ietf rfc 6716	Opus由IETF RFC 6716指定
+the opus format and this implementation of it are subject to the royalty-free patent and copyright licenses specified in the file copying	Opus格式及其实现受文件COPYING中规定的免版税专利和版权许可的约束
+this package implements a shared library for encoding and decoding raw opus bitstreams	此包实现了一个用于编码和解码原始Opus比特流的共享库
+the package also includes a number of test tools used for testing the correct operation of the library	该软件包还包含若干用于测试库正确运行的测试工具
+the bitstreams read/written by these tools should not be used for opus file distribution: they include additional debugging data and cannot support seeking	这些工具读写的比特流不应用于Opus文件分发：它们包含额外的调试数据且不支持随机访问
+an opus-tools package is available which provides encoding and decoding of ogg encapsulated opus files and includes a number of useful features	opus-tools软件包提供对Ogg封装的Opus文件的编码和解码，并包含许多有用的功能
+deep learning and opus	深度学习和Opus
+lossy networks continue to be a challenge for real-time communications	有损网络仍然是实时通信的挑战
+while the original implementation of opus provides an excellent packet loss concealment mechanism, the team has continued to advance the methodology used to improve audio quality in challenge network environments	虽然Opus的原始实现已具备卓越的丢包隐藏机制，但开发团队仍在持续优化用于提升挑战性网络环境下音频质量的技术方案
+in opus 1.5, we added a deep learning based redundancy encoder that enhances audio in lossy networks by embedding one second of recovery data in the padding data of each packet	在Opus1.5中，我们添加了基于深度学习的冗余编码器，通过在每个数据包的填充数据中嵌入一秒的恢复数据来增强有损网络中的音频
+the underlying algorithm behind encoding and decoding the recovery data is called the deep redundancy (dred) algorithm	编码和解码恢复数据背后的底层算法称为深度冗余(DRED)算法
+by leveraging the padding data within the packet, opus 1.5 is fully backward compatible with prior revisions of opus	通过利用数据包内的填充数据，Opus1.5实现了与旧版本Opus的完全向后兼容
+please see the readme under the "dnn" subdirectory to understand dred	请参阅“dnn”子目录下的README以了解DRED
+dred was developed by a team that amazon web services initially sponsored, who open-sourced the implementation as well as began the standardization process at the ietf	DRED（深度冗余编码）技术由亚马逊云服务（AWS）最初赞助的团队开发，该团队不仅开源了实现方案，还启动了IETF标准化进程
+the license behind opus or the intellectual property position of opus does not change with opus 1.5	Opus所遵循的许可协议及其知识产权状态在1.5版本中保持不变
+compiling libopus	编译libopus
+to build from a distribution tarball, you only need to do the following	要从发行版tarball构建，您只需要执行以下操作
+to build from the git repository, the following steps are necessary	要从Git存储库构建，需要执行以下步骤
+set up a development environment	设置开发环境
+on an ubuntu or debian family linux distribution	在Ubuntu或Debian家族Linux发行版上
+on a fedora/redhat based linux	基于Fedora/Redhat的Linux
+or for older redhat/centos linux releases	或者对于较旧的Redhat/Centos Linux版本
+on apple macos, install xcode and brew.sh, then in the terminal enter	在Apple macOS上，安装Xcode和brew.sh，然后在终端中输入
+clone the repository	克隆存储库
+compiling the source	编译源码
+on x86, it's a good idea to use a -march= option that allows the use of avx2	在x86上，最好使用-march=选项，允许使用AVX2
+install the codec libraries (optional)	安装编解码器库（可选）
+once you have compiled the codec, there will be a opus_demo executable in the top directory	一旦编译完编解码器，顶部目录中将有一个opus_demo可执行文件
+input and output are little-endian signed 16-bit pcm files or opus bitstreams with simple opus_demo proprietary framing	输入和输出为16位有符号小端序PCM文件，或采用opus_demo简单专有封装格式的Opus比特流
+this package includes a collection of automated unit and system tests which should be run after compiling the package especially the first time it is run on a new platform	此包包括一组自动化单元和系统测试，这些测试应在编译包后运行，特别是在首次在新平台上运行时
+to run the integrated tests	运行集成测试
+there is also collection of standard test vectors which are not included in this package for size reasons but can be obtained from	还有一组标准测试向量，由于尺寸原因，这些向量不包含在本包中，但可以从以下地方获得
+compiling libopus for windows and alternative build systems	Windows平台及替代构建系统下的libopus编译
+see cmake/readme.md or meson/readme.md	参见cmake/README.md或meson/README.md
+portability notes	可移植性说明
+this implementation uses floating-point by default but can be compiled to use only fixed-point arithmetic by setting --enable-fixed-point (if using autoconf) or by defining the fixed_point macro (if building manually)	该实现默认使用浮点运算，但可通过两种方式编译为纯定点运算：使用autoconf时设置--enable-fixed-point参数，或手动构建时定义FIXED_POINT宏
+the fixed point implementation has somewhat lower audio quality and is slower on platforms with fast fpus, it is normally only used in embedded environments	定点实现的音频质量稍低，在具有快速FPU的平台上速度较慢，通常仅用于嵌入式环境
+the implementation can be compiled with either a c89 or a c99 compiler	该实现可以用C89或C99编译器编译
+while it does not rely on any _undefined behavior_ as defined by c89 or c99, it relies on common _implementation-defined behavior_ for two's complement architectures	虽然该实现不依赖C89或C99标准定义的任何未定义行为，但需要依赖二进制补码架构中常见的实现定义行为
+releases 5	发行版5
