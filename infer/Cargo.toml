@@ -7,7 +7,7 @@ edition = "2024"
 async-stream="0.3.6"
 futures-util = "0.3.31"
 ndarray = "0.16.1"
-ort="2.0.0-rc.10"
+ort = "2.0.0-rc.10"
 fancy-regex = "0.14.0"
 
 [dev-dependencies]

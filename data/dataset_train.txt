@@ -953,3 +953,169 @@ the fixed point implementation has somewhat lower audio quality and is slower on
 the implementation can be compiled with either a c89 or a c99 compiler	该实现可以用C89或C99编译器编译
 while it does not rely on any _undefined behavior_ as defined by c89 or c99, it relies on common _implementation-defined behavior_ for two's complement architectures	虽然该实现不依赖C89或C99标准定义的任何未定义行为，但需要依赖二进制补码架构中常见的实现定义行为
 releases 5	发行版5
+edit and raw actions	编辑和原始操作
+using cmake for the opus project	在Opus项目中使用CMake
+this guide provides instructions for using cmake to build the opus project with various configuration options	本指南提供了使用CMake构建具有各种配置选项的Opus项目的说明
+cmake is a widely used build system generator that helps manage the build process across different platforms	CMake是一个广泛使用的构建系统生成器，有助于跨不同平台管理构建过程
+note: please keep in mind that software documentation can sometimes go out of date as new versions are released	注意：请记住，随着新版本的发布，软件文档有时会过时
+it is always recommended to refer to the official cmake documentation for the most up-to-date and accurate information	始终建议参考CMake官方文档以获取最新和最准确的信息
+you can find the official cmake documentation at cmake.org/documentation	您可以在cmake.org/documentation上找到CMake的官方文档
+before proceeding, make sure you have the following prerequisites installed	在继续之前，请确保已安装以下先决条件
+git (optional, but recommended for version control integration)	Git（可选，但建议用于版本控制集成）
+working c compiler	可用的C编译器
+build instructions	构建说明
+follow the steps below to build the opus project using cmake	按照以下步骤使用CMake构建Opus项目
+clone the opus repository using git	使用Git克隆Opus存储库
+create a build directory within the opus repository	在Opus存储库中创建构建目录
+configure the build with cmake	使用CMake配置构建
+you can set the desired configuration options using cmake's -d flag	您可以使用CMake的-D标志设置所需的配置选项
+here are some available options	这里是一些可用的选项
+for example, to enable the custom modes and build programs, use the following command	例如，要启用自定义模式和生成程序，请使用以下命令
+build the opus project	构建Opus项目
+after a successful build, you can find the compiled opus library and associated files in the build directory	成功构建后，您可以在构建目录中找到已编译的Opus库和相关文件
+testing with ctest	使用CTest进行测试
+opus provides a comprehensive test suite to ensure the functionality and correctness of the project	Opus提供了一个全面的测试套件，以确保项目的功能和正确性
+you can execute the tests using ctest, a part of the cmake build system	您可以使用CMake构建系统的一部分CTest执行测试
+ctest allows for automated testing and provides useful features for managing and evaluating the test results	CTest允许自动测试，并为管理和评估测试结果提供了有用的功能
+to run the opus tests using ctest, follow these steps	要使用CTest运行Opus测试，请执行以下步骤
+navigate to the build directory after configuring and building the project with cmake	使用CMake配置和构建项目后，导航到构建目录
+execute the tests using ctest	使用CTest执行测试
+note: for windows you need to specify which configuration to test	注意：对于Windows，您需要指定要测试的配置
+platform support and bug reporting	平台支持和Bug报告
+cmake aims to provide broad platform support, allowing the opus project to be built and used on major operating systems and platforms	CMake旨在提供广泛的平台支持，允许Opus项目在主要操作系统和平台上构建和使用
+the supported platforms include	支持的平台包括
+cmake achieves platform support by generating platform-specific build files (e.g., makefiles, visual studio projects) based on the target platform	CMake通过基于目标平台生成特定于平台的构建文件（例如Makefiles、Visual Studio项目）来实现平台支持
+this allows developers to build and configure the opus project consistently across different operating systems and environments	这允许开发人员在不同的操作系统和环境中一致地构建和配置Opus项目
+while cmake strives to ensure compatibility and stability across platforms, bugs or issues may still arise in specific configurations	虽然CMake努力确保跨平台的兼容性和稳定性，但在特定配置中仍可能出现错误或问题
+if you encounter any problems during the configuration process or while building the opus project, we encourage you to file an issue in the project's issue tracker	如果您在配置过程中或构建Opus项目时遇到任何问题，我们建议您在项目的问题跟踪器中提交问题
+when reporting an issue, please provide the following information to help us understand and reproduce the configuration problem effectively	在报告问题时，请提供以下信息，以帮助我们有效地理解和重现配置问题
+detailed description of the issue, including any error messages or unexpected behavior observed	问题的详细描述，包括观察到的任何错误消息或意外行为
+steps to reproduce the problem, including the cmake command and any specific configuration options used	重现问题的步骤，包括CMake命令和使用的任何特定配置选项
+operating system and version (e.g., windows 10, macos big sur, ubuntu 20.04)	操作系统和版本（例如，Windows10、macOS Big Sur、Ubuntu20.04）
+cmake version (e.g., cmake 3.21.1)	CMake版本（例如CMake3.21.1）
+any relevant information about the platform, toolchain, or dependencies used	有关所用平台、工具链或依赖关系的任何相关信息
+additional context or details that might assist in troubleshooting the issue	可能有助于解决问题的额外上下文或详细信息
+we appreciate your help in identifying and addressing any configuration-related problems, ensuring a better experience for all users of the opus project	我们感谢您在识别和解决任何与配置相关的问题方面提供的帮助，确保Opus项目的所有用户都能获得更好的体验
+platform specific examples	平台特定示例
+note: examples can go out of date	注意：示例可能会过时
+always refer to documentation for latest reference	请始终查阅文档以获取最新参考信息
+cross compiling for android	Android的交叉编译
+for more information about cross compiling for android, you can refer to the cross compiling for android documentation	有关Android交叉编译的更多信息，请参阅Android交叉编译文档
+cross compiling for ios	iOS的交叉编译
+for more information about cross compilation for ios, you can refer to the cross compiling for ios documentation	有关iOS交叉编译的更多信息，请参阅iOS交叉编译文档
+for more information about the visual studio generator options and additional customization, you can refer to the visual studio generator documentation	有关Visual Studio生成器选项和其他自定义的详细信息，可以参考Visual Studio生成器文档
+email settings	电子邮件设置
+manage your email settings on medium	在Medium上管理您的电子邮件设置
+pick what types of email you want to receive and their frequency	选择您想要接收的电子邮件类型及其频率
+you have unsubscribed from the digest	您已取消订阅文摘
+changes will take effect within 24 hours	更改将在24小时内生效
+emails from medium	来自Medium的电子邮件
+medium digest	Medium文摘
+the best stories on medium personalized based on your interests, as well as outstanding stories selected by our editors	Medium上根据您的兴趣定制的最佳故事，以及我们编辑挑选的优秀故事
+recommended reading	推荐阅读
+featured stories, columns, and collections that we think you’ll enjoy based on your reading history	根据您的阅读历史，我们认为您会喜欢的特色故事、专栏和收藏
+emails from writers and publications	来自作家和出版物的电子邮件
+new stories added to lists you’ve saved	添加到已保存列表中的新故事
+emails from publications	来自出版物的电子邮件
+receive email digests from publications you follow	接收您关注的出版物的电子邮件文摘
+manage publications	管理出版物
+social notifications	社交通知
+notifications when someone follows you or highlights the same passage in a story	当有人关注你或在故事中标注相同段落时发送通知
+mention notifications	提及通知
+notifications when people mention you in their stories on medium	当人们在Medium上的故事中提到你时的通知
+updates on your stories and lists	更新您的故事和列表
+notifications on your stories	关于您故事的通知
+notifications on your lists	列表中的通知
+editor requests to feature your stories	编辑请求推荐您的故事
+updates from medium	Medium的更新
+new product features on medium	Medium上的新产品功能
+information about medium membership	Medium会员信息
+writing updates and announcements	撰写更新和公告
+all email	所有电子邮件
+control whether to receive email from medium	控制是否从Medium接收电子邮件
+you’ll still receive administrative emails even if this setting is off	即使关闭此设置，您仍会收到管理类邮件
+visit medium’s help center	访问Medium的帮助中心
+uh oh	哦哦
+something went wrong and we couldn’t save your settings	出现问题，我们无法保存您的设置
+please try again later	请稍后再试
+status of medium	Medium的状态
+learn about writing on medium	学习如何在Medium上写作
+visit medium’s blog	访问Medium的博客
+view open job positions at medium	查看Medium平台的开放职位
+read medium’s policies	阅读Medium的政策
+read medium’s terms of service	阅读Medium的服务条款
+more about medium	更多关于Medium
+v built successfully	V构建成功
+to add v to your path, run `./v.exe symlink`	要将V添加到您的PATH，请运行“./v.exe symlink”
+note: antivirus programs may sometimes tell you there is a virus in v (there aren't any)	注意：防病毒程序有时可能会告诉您V中有病毒（没有任何病毒）
+they can also slow compilation by a considerable amount	它们也会大大减缓编译速度
+consider adding exemptions for the v install directory as well as your v project folders	考虑为V安装目录以及V项目文件夹添加排除项
+checking system %path%	正在检查系统%PATH%
+system %path% was not configured	未配置系统%PATH%
+adding symlink directory to system %path%	正在将符号链接目录添加到系统%PATH%
+notifying running processes to update their environment	通知正在运行的进程更新其环境
+note: restart your shell/ide to load the new %path%	注意：重新启动Shell/IDE以加载新的%PATH%
+after restarting your shell/ide, give `v version` a try in another directory	重新启动Shell/IDE后，请在另一个目录中尝试运行`v version`
+updating v	正在更新V
+v is already updated	V已经更新
+input your project description	输入您的项目描述
+input your project version	输入您的项目版本
+input your project license	输入您的项目许可证
+v android bootstrapper	V安卓引导程序
+v android bootstrapper is the currently supported way to compile, package, sign and deploy v graphical apps on android based devices	V Android Bootstrapper是当前支持的在Android设备上编译、打包、签名和部署V图形应用程序的工具
+it can be used as a v module (import vab) and also provides a standalone executable (vab) for building apps from the command-line	它可以用作V模块（import vab），还提供了一个独立的可执行文件（vab）用于从命令行构建应用程序
+linux, macos and windows build hosts are supported	支持Linux、macOS和Windows构建主机
+scanning `vab`	正在扫描`vab`
+installing `vab`	正在安装`vab`
+symlink (optional)	符号链接（可选）
+you can symlink vab to your $path so it works as a global shell command	您可以将vab符号链接到$PATH，使其作为全局Shell命令工作
+shell tab completion (optional)	Shell Tab键补全（可选）
+you can install tab completions for your shell by following the instructions here	您可以按照此处的说明为您的Shell安装Tab键补全
+vab can be used both from the command line and as a module in v code	vab既可以从命令行使用，也可以作为V代码中的模块使用
+in either case the following dependencies is required before vab will work as intented	无论哪种情况，在vab按预期工作之前，都需要以下依赖项
+runtime dependencies	运行时依赖项
+android studio is not required	不需要Android Studio
+if vab fail to detect your environment you can set env variables to help it	如果vab无法自动检测您的环境，您可以通过手动设置环境变量来解决此问题
+notice: falling back to api level "34"	通知：回退到API级别“34”
+sdk api level 36 > highest ndk api level 34	SDK API级别36>最高NDK API级别34
+vab: input should be a v file, an apk, aab or a directory containing v sources	vab：输入应该是V文件、APK、AAB或包含V源代码的目录
+development (debug builds)	开发（调试构建）
+the fast way from v source to an apk is	从V源代码到APK的快速方法是
+yes, that's it	是的，就是这样
+your apk should now reside in the current directory	您的APK现在应该位于当前目录中
+the fast way from source to a run on the device (build, package, deploy and launch app on device) is	从源代码到在设备上运行（在设备上构建、打包、部署和启动应用程序）的快速方法是
+the --archs flag control what architectures your app is built for	--archs标志控制应用程序的构建架构
+you can specify multiple archs with --archs 'armeabi-v7a, arm64-v8a'	您可以使用--archs参数指定多个架构，例如'armeabi-v7a,arm64-v8a'
+by default vab will build for all 4 supported cpu architectures (arm64-v8a, armeabi-v7a, x86 and x86_64)	默认情况下，vab将为所有4种受支持的CPU架构（arm64-v8a、armeabi-v7a、x86和x86_64）构建
+you can build an android app ready for the play store with the following command	您可以使用以下命令构建适用于Play Store的Android应用
+do not submit apps using default values	不要使用默认值提交应用
+please make sure to adhere to all guidelines of the app store you're publishing to	请务必遵守您所发布应用商店的所有指南要求
+aab package format	AAB包格式
+vab supports outputting android app bundles (aab)	vab支持输出Android应用捆绑包（AAB）
+to output an .aab file you can specify the package format with the --package flag	要输出.aab文件，可以使用--package标志指定包格式
+alternatively it will be inferred if you use the --output/-o flag	或者，如果您使用--output/-o标志，则会推断出
+environment variables	环境变量
+if vab should fail to detect a tool or location on your build host you can use the following env variables to help vab understand your android development setup	如果vab在构建主机上无法检测到某个工具或路径位置，您可以通过设置以下环境变量来帮助vab识别您的Android开发环境配置
+complete list of env variables recognized	已识别的环境变量完整列表
+see all options	查看所有选项
+vab has support for downloading it's dependencies automatically, except the java jdk	vab支持自动下载其依赖项，除了Java JDK
+if you have nerves to let it try and figure things out automatically simply do	如果您愿意让它尝试自动处理配置，只需执行
+installing java jdk using homebrew	使用homebrew安装Java JDK
+you should be able to find a way to install java jdk >= 8 with your package manager of choice	您应该能够找到一种方法，使用您选择的包管理器安装Java JDK>=8
+termux (experimental)	Termux（实验）
+note currently only tested for arm64 on android 9 and above	注：目前仅在Android9及更高版本上针对arm64进行了测试
+you must install java 17 and few more things	您必须安装Java17和其他一些东西
+download, unzip and set environment variables to the sdk and ndk from	下载、解压并配置SDK和NDK的环境变量
+you may have to set the sdk version to be compatible with the ndk (sdkmanager install/uninstall platform-version)	您可能需要设置SDK版本以兼容NDK（使用sdkmanager安装/卸载平台版本）
+enjoy using vab on termux	尽情在Termux上使用vab吧
+the accompaning script used in the video can be found here	视频中使用的脚本可以在这里找到
+see "where is the examples folder?" in the faq	请参阅常见问题解答中的“示例文件夹在哪里？”
+vab, like many other v modules, can be tested with v test .	vab与许多其他V模块一样，可以使用“v test .”进行测试
+note that vab has runtime tests that requires all runtime dependencies to be installed in order for the tests to run correctly	请注意，vab具有运行时测试，需要安装所有运行时依赖项才能正确运行
+runtime tests can be run with vab test-runtime (also part of vab test-all)	运行时测试可以使用vab test-runtime运行（也是vab test-all的一部分）
+extending vab	扩展vab
+the vab command-line tool can be extended with custom user commands	vab命令行工具可以通过自定义用户命令进行扩展
+see the "extending vab" section in the documentation	请参阅文档中的“扩展vab”部分
+vab targets as low an api level as possible by default for maximum compatibility, you can however tell it to target newer android versions by using the --api flag	vab默认会尽可能选择最低的API级别以实现最大兼容性，但您可以通过--api参数指定更高的Android版本作为目标平台
+installed api levels can be listed with vab --list-apis	可通过执行vab --list-apis命令列出已安装的API级别
+android is a complex ecosystem that has differences between build hosts and tool versions - consult our faq for answers to frequently asked questions	Android是一个复杂的生态系统，构建主机和工具版本之间存在差异——请参阅我们的常见问题解答

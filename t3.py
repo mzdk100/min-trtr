@@ -13,6 +13,9 @@ def get_data_loader(src_vocab, tgt_vocab, batch_size=128, train=True):
     for line in target_sentences:
         words = []
         for word in jieba.cut(line):
+            if len(word) < 2:
+                words.append(word)
+                continue
             for t in TOKEN_PATTERN.findall(word):
                 words.append(t)
         sentences.append(words)
@@ -128,7 +131,7 @@ if __name__ == "__main__":
     if os.path.exists(model_path):
         model.load_state_dict(load(model_path))
 
-    optimizer = optim.Adam(model.parameters(), lr=0.0005)
+    optimizer = optim.AdamW(model.parameters(), lr=0.0003)
     criterion = nn.CrossEntropyLoss(ignore_index=0, label_smoothing=.1)  # 使用交叉熵损失函数，忽略填充标记的损失
 
     # 训练模型

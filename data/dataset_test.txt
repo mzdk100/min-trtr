@@ -21,3 +21,4 @@ navigation menu	导航菜单
 can you speak english	你能说英语吗
 stanford university	斯坦福大学
 thank you	谢谢你
+input your project version	输入您的项目版本
