@@ -1119,3 +1119,43 @@ see the "extending vab" section in the documentation	请参阅文档中的“扩
 vab targets as low an api level as possible by default for maximum compatibility, you can however tell it to target newer android versions by using the --api flag	vab默认会尽可能选择最低的API级别以实现最大兼容性，但您可以通过--api参数指定更高的Android版本作为目标平台
 installed api levels can be listed with vab --list-apis	可通过执行vab --list-apis命令列出已安装的API级别
 android is a complex ecosystem that has differences between build hosts and tool versions - consult our faq for answers to frequently asked questions	Android是一个复杂的生态系统，构建主机和工具版本之间存在差异——请参阅我们的常见问题解答
+dear valued client	尊敬的客户
+happy summer from byethost.com and ifastnet	谨代表Byethost.com和iFastNet，祝您夏日愉快
+we would like to wish you greetings from all of the staff here at your webhost	我们全体主机服务商员工在此向您致以诚挚的问候
+to celebrate we are giving you a special discount coupon that will get you 25% off any web new hosting plan from ifastnet.com, the coupon code is	为表庆祝，我们特此为您提供专属优惠码，可在iFastNet.com购买任何新主机方案时享受25%折扣，优惠码为
+use this code to buy any hosting plan and get 25% discount	使用此代码订购任意主机方案，即可获得25%优惠
+premium hosting is powered by our special cluster of premium servers	高端主机服务由我们特制的高性能服务器集群驱动
+utilizing cloud server technology and ultra fast distributed nvme cluster storage	采用云服务器技术与超高速分布式NVMe集群存储
+we manage and build all our own server infrastructure here at ifastnet and are proud to be able to offer you unique and fast hosting services with hardware and software specially designed for webhosting	iFastNet自主管理和构建全部服务器基础设施，我们自豪能为您提供独特且快速的主机服务，其硬件和软件均专为网站托管而设计
+as usual all our premium hosting plans include a free top level domain to get your new site online without any complications	我们所有高端主机方案均照例包含免费顶级域名，助您轻松上线新网站
+free ssl certificates are also provided by us on every domain you host with us for maximum https security and search rankings	我们为托管的所有域名提供免费SSL证书，确保最高级别的HTTPS安全性和搜索排名优势
+we also support added node.js and python, softaculous installer and website builder, all running on the latest cpanel software	我们还支持Node.JS和Python环境，配备Softaculous一键安装工具和网站构建器，全部运行于最新版cPanel控制面板
+don't miss your chance to get 25% off hosting with a free domain from ifastnet.com on our super fast new servers	不要错过在iFastNet.com上用我们的超快新服务器享受托管25%折扣并免费获得域名的机会
+use holidays coupon at	请使用Holidays优惠券
+thanks for reading and happy holidays	感谢您的阅读，祝您假期愉快
+if you do not want to receive this email again put this link into your browser	如果您不想再次收到此电子邮件，将此链接输入到您的浏览器中（访问）
+syntax highlighting	语法高亮
+the plugin provides basic syntax highlighting for v based on keywords, along with semantic highlighting based on what the element is	该插件基于关键字为V提供了基本的语法突出显示，以及基于元素的语义突出显示
+also, the plugin provides the following code highlighting enhancements	此外，该插件还提供了以下代码突出显示增强功能
+inferred types for local variables	推断局部变量的类型
+local variable hints	局部变量提示
+highlighting mutable variables	突出显示可变变量
+mutable variables	可变变量
+parameter names for function calls	函数调用的参数名称
+parameter hints	参数提示
+captured variables in lambda functions	lambda函数中捕获的变量
+captured variables	捕获的变量
+hints for range expressions	范围表达式提示
+range hints	范围提示
+customize the highlighting palette	自定义突出显示调色板
+go to settings / preferences | editor | color scheme | v	转到设置/首选项|编辑器|配色方案|V
+adjust the highlighting settings	调整突出显示设置
+colors scheme settings	配色方案设置
+jetbrains marketplace on x (twitter)	X（推特）上的JetBrains市场
+jetbrains marketplace on bluesky	Bluesky上的JetBrains市场
+jetbrains marketplace blog	JetBrains市场博客
+jetbrains marketplace issue tracker	JetBrains市场问题跟踪器
+jetbrains marketplace community	JetBrains市场社区
+jetbrains marketplace on youtube	YouTube上的JetBrains市场
+jetbrains marketplace on linkedin	LinkedIn上的JetBrains市场
+report content	报告内容
