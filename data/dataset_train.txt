@@ -1159,3 +1159,122 @@ jetbrains marketplace community	JetBrains市场社区
 jetbrains marketplace on youtube	YouTube上的JetBrains市场
 jetbrains marketplace on linkedin	LinkedIn上的JetBrains市场
 report content	报告内容
+a cross-platform ide for c and c++	C和C++的跨平台IDE
+harness the power	释放力量
+cut the complexity	化繁为简
+a single ide for all your c and c++ needs	一个IDE满足您所有的C和C++需求
+no matter how you use c and c++, clion helps make your development experience smoother and more productive	无论您如何使用C和C++，CLion都有助于使您的开发体验更加流畅和高效
+for safe and easy modern c++	安全便捷的现代C++
+using the latest language standard or plan to migrate	使用最新的语言标准或计划迁移
+clion’s got its finger on the pulse	CLion实时掌握技术动向
+its coding assistance and on-the-fly analyzer can help improve the quality of your code, speed up your work, and assist with migration to newer standards and guidelines	其代码辅助功能与实时分析器可帮助提升代码质量、加速开发流程，并协助迁移至更新的标准与规范
+for integrated embedded development	用于集成嵌入式开发
+clion covers the majority of the steps for your embedded workflow in one place	CLion可一站式覆盖嵌入式工作流中的大部分开发步骤
+create projects, code in c, c++, python, and assembly for a variety of hardware types and toolchains, flash firmware, and on-chip debugging capabilities – all without leaving your ide	创建项目、使用C/C++/Python/汇编语言适配多种硬件类型与工具链、烧录固件并实现片上调试——全程无需离开集成开发环境
+for collaborative and remote development	用于协作和远程开发
+create shared sessions to work on your code, review, and debug together in real time	创建共享会话，实现代码实时协作编辑、审查与调试
+harness the full power of clion for projects located in a remote environment: just set up the connection, and clion will take care of the rest	充分发挥CLion在远程环境项目中的全部能力：只需建立连接，CLion将自动处理后续所有开发流程
+for learning and teaching c++	用于学习和教学C++
+if you're just starting out on your c++ journey, clion will support you every step of the way	如果你刚刚开始你的C++旅程，CLion将提供全程支持
+check out our c/c++ courses, get a free license as a student or teacher, and start learning language best practices with an industry-standard tool from the very beginning	探索我们的C/C++课程，以学生或教师身份获取免费许可证，从入门伊始即可使用行业标准工具学习语言最佳实践
+participating and @mentions	参与和@提及
+all activity	所有活动
+never be notified	从不被通知
+companies worldwide trust jetbrains ides	全球企业都选用JetBrains集成开发环境
+proven compliance and security	经验证的合规性和安全性
+jetbrains tools adhere to industry-leading security standards, including soc 2 certification, ensuring your organization’s data is protected and our products are compliant with global regulations	JetBrains工具遵循行业领先的安全标准，包括SOC2认证，确保贵组织的数据得到保护，并且我们的产品符合全球法规
+download clion	下载CLion
+clion does the job	CLion负责这项工作
+smart c and c++ editor	智能C和C++编辑器
+clion understands even the most intricate parts of your code	CLion甚至可以理解代码中最复杂的部分
+it shows inferred types, function signatures, and documentation for the code snippet you’re working on	它会显示你正在处理的代码片段的推断类型、函数签名和文档
+save time on typing with context-aware code completion and ai-based code generation	通过上下文感知代码完成和基于AI的代码生成节省打字时间
+discover all features	发现所有功能
+static and dynamic code analysis for safe code	用于安全代码的静态与动态代码分析
+clion’s code analyzer works as you type, even before you compile the code	CLion的代码分析器会在您输入时实时工作，即在编译代码之前进行
+data flow analysis (dfa), clangd-based checks, and clang-tidy are included and help to detect unused or unreachable code, dangling pointers, null pointers dereferencing, and other issues	包含数据流分析（DFA）、基于Clangd的检查和Clang-Tidy，有助于检测未使用或无法访问的代码、悬空指针、空指针解引用和其他问题
+quick-fixes and reliable refactorings help you keep your code high quality	快速修复和可靠的重构可帮助您保持代码高质量
+it also integrates with google sanitizers and valgrind to help you catch runtime errors	它还与Google Sanitizer和Valgrind集成，帮助您捕获运行时错误
+search and navigation	搜索和导航
+regardless of your project’s size, clion allows you to jump between definitions and declarations quickly, navigate through code hierarchies, and search for usages of any symbol	无论项目的大小如何，CLion都允许您在定义和声明之间快速跳转，浏览代码层次结构，并搜索任何符号的用法
+clion’s search everywhere feature is there for you to find anything, be it a class, a file, or an ide action	CLion的随处搜索功能可帮助您查找任何内容，无论是类、文件还是IDE操作
+c++ toolset	C++工具集
+clion integrates with the most popular testing frameworks	CLion与最流行的测试框架集成
+write tests with assistance, analyze the results in a tree view, and create a complete test base with the built-in code coverage tool	借助辅助功能编写测试，在树状视图中分析结果，并通过内置的代码覆盖率工具创建完整的测试基础
+external libraries are always at hand thanks to in-built package managers	得益于内置的包管理器，外部库始终触手可及
+for databases and sql, clion is integrated with datagrip	对于数据库和SQL，CLion与DataGrip集成
+integrated debugger	集成调试器
+clion’s debugger is your powerful assistant when it comes to investigating problems in applications and tests	CLion调试器是您在排查应用程序和测试问题时的高效助手
+reveal what’s happening under the hood of your code with the memory and disassembly views	通过内存与反汇编视图，您可以深入洞察代码底层运行机制
+you can even attach to processes or debug core dumps and cmake scripts	你甚至可以附加到进程、调试核心转储及CMake脚本
+whatever your remote development scenario, clion has a solution for you	无论您的远程开发场景如何，CLion都能为您提供解决方案
+whether you use a thin ide client, full remote mode with automatic source code synchronization, local docker containers, wsl toolchain, or remote debugging configurations, clion’s got you covered	无论您使用轻量级IDE客户端、全远程模式（带自动源代码同步）、本地Docker容器、WSL工具链还是远程调试配置，CLion均能全面覆盖您的开发需求
+embedded development	嵌入式开发
+clion fully supports the stm32cubemx and platformio projects	CLion完全支持STM32CubeMX和PlatformIO项目
+you can use any embedded toolchain, including the iar toolchain, and set up a custom compiler	您可以使用任何嵌入式工具链，包括IAR工具链，并设置自定义编译器
+moreover, the on-chip debugging functionality includes rtos integration and peripheral view	此外，其片上调试功能还集成了RTOS支持与外设视图功能
+what’s new in clion 2025.1	CLion2025.1版本的新特性
+support for out-of-project files in clion nova	CLion Nova现已支持项目外文件
+clion nova now provides complete code analysis and code assistance functionality for header and source files that are not included in a project	CLion Nova目前可为未包含在项目中的头文件与源文件提供完整的代码分析及代码辅助功能
+this can be helpful, for example, when you just need to edit some code in a .cpp file that is not part of the build	例如，当您仅需编辑某个未参与构建的.cpp文件时，此功能将非常实用
+discover all updates	发现所有更新
+qt renderers in the debugger	调试器中的Qt渲染器
+when you’re examining a suspended qt application, the debugger now allows you to view variables in a human-readable form	当您检查暂停的Qt应用程序时，调试器现在支持以人类可读的形式（human-readable form）查看变量
+this makes it easier to develop and debug cross-platform applications with the qt framework in clion	此功能显著简化了基于Qt框架的跨平台应用开发与调试流程
+west build options and sysbuild support	west build选项与sysbuild支持
+when working with zephyr projects, you can now use the west build command options, as well as sysbuild as your primary build system	在开发Zephyr项目时，您现在可以使用west build命令选项，并将sysbuild作为主构建系统
+this provides more flexibility when configuring zephyr projects, including those involving hardware	这为配置Zephyr项目（包括涉及硬件的项目）提供了更高的灵活性
+st-link debug server experimental	ST-LINK调试服务器（实验性）
+we’ve added an st-link debug server template designed specifically for stm32 chips	我们新增了一个专为STM32芯片设计的ST-LINK调试服务器模板
+it contains only the most basic and essential settings, simplifying debugging for stm32 projects	它仅包含最基础且必要的设置，可显著简化STM32项目的调试流程
+clion goes ai	CLion走向AI
+all essential integrations in one place	一站式集成所有关键功能
+a complete coding experience so you can develop in c and c++ quickly and safely without switching to external tools	完整的编码体验，因此您可以快速安全地使用C和C++进行开发，而无需切换到外部工具
+build systems and project models	构建系统和项目模型
+unit testing frameworks	单元测试框架
+what developers say about clion	开发人员对CLion的评价
+matt godbolt	马特·戈德博特
+compiler explorer	编译器探索者
+clion takes a lot of the toil out of c++, allowing me to concentrate on the interesting part: problem solving	CLion省去了C++的大量工作，让我能够专注于有趣的部分：解决问题
+jason turner	杰森·特纳
+clion has been indispensable for me when refactoring large codebases	重构大型代码库时，CLion对我来说是必不可少的
+the refactoring tools and the real-time feedback in the ide about which lines still need to be updated are excellent time savers	其重构工具和IDE中关于哪些代码行仍需更新的实时反馈功能，极大地节省了时间
+each release gets better and more responsive than the last	每个新版本都比前一版更加强大且响应迅速
+prof. dr. rodriguez-losada	Rodriguez-Losada教授
+clion is fantastic, finally the c++ high quality cross-platform ide with cmake as first class build system we were waiting for	CLion太棒了，我们终于等到了C++高质量跨平台IDE，并且以CMake作为一流的构建系统
+erkki salonen	埃尔基·萨洛宁
+software developer	软件开发人员
+clion’s powerful refactoring and code model that understands dependencies between items have already changed my software design process	CLion强大的重构功能与能理解项目间依赖关系的代码模型，已经彻底改变了我的软件设计流程
+one can dig out quite a bunch of bugs even before running the application	开发者甚至能在运行应用程序前就发现大量潜在错误
+matthew davey	马修·戴维
+both of these tools (clion and rider) help our team on a daily basis, allowing developers to perform their tasks quickly and efficiently, all the while seamlessly integrating with numerous parts of our pipeline	这两款工具（CLion和Rider）在日常工作中为我们的团队提供了极大帮助，不仅让开发者能够快速高效地完成任务，还能无缝集成到我们开发流程的多个环节中
+jetbrains clion faq	JetBrains CLion常见问题解答
+pricing and licensing details (including free options)	定价和许可详情（包括免费选项）
+how to get started quickly with clion	如何快速开始使用CLion
+how to migrate to clion from other ides/editors	如何从其他IDE/编辑器迁移到CLion
+how does clion work in combination with ai assistant	CLion如何与AI助手结合使用
+how to report feedback/request a feature	如何上报反馈/请求功能
+start now	现在开始
+get clion now	立即获取CLion
+contact support	联系技术支持
+get in touch	取得联系
+contact sales	联系销售
+contact us	联系我们
+clion quick start	CLion快速开始
+community forum	社区论坛
+clion blog	CLion博客
+customers & awards	客户与奖项
+screen reader detected	检测到屏幕阅读器
+do you want to enable screen reader support in clion	您想在CLion中启用屏幕阅读器支持吗
+other options	其他选项
+skip import	跳过导入
+import settings	导入设置
+frame header	框架头部
+import settings options	导入设置选项
+rustrover 2025.1, used yesterday	RustRover2025.1，昨天用过
+intellij idea ultimate 2025.1, used 3 weeks ago	IntelliJ IDEA Ultimate2025.1，使用于3周前
+ui settings: includes theme, editor font, toolbar, and notifications	UI设置：包括主题、编辑器字体、工具栏和通知
+keymaps: current keymap	键盘映射：当前键盘映射
+code settings: includes code style, file types, and live templates	代码设置：包括代码样式、文件类型和实时模板
+tools: includes version control and debugger	工具：包括版本控制和调试器
+system settings	系统设置
