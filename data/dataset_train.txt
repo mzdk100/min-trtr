@@ -1315,3 +1315,66 @@ please submit your report before the deadline	请在截止日期前提交你的�
 the children are playing happily in the park	孩子们在公园里开心地玩耍
 this software supports multiple languages, including chinese	该软件支持包括中文在内的多种语言
 scientists discovered a new species of deep-sea fish	科学家发现了一种新的深海鱼类
+additional navigation options	其他导航选项
+create a new fork	创建一个新复刻
+a fork is a copy of a repository	复刻是存储库的副本
+forking a repository allows you to freely experiment with changes without affecting the original project	复刻存储库允许您在不影响原始项目的情况下自由尝试修改
+view existing forks	查看现有复刻
+required fields are marked with an asterisk (*)	必填字段用星号（*）标记
+repository owner and name	存储库所有者和名称
+repository name	存储库名称
+ui is available	ui可用
+by default, forks are named the same as their upstream repository	默认情况下，复刻的名称与其上游存储库相同
+you can customize the name to distinguish it further	您可以自定义名称以进一步区分它
+description (optional)	描述（可选）
+a cross-platform ui library written in v	一个用V编写的跨平台UI库
+copy the master branch only	仅复制主分支
+contribute back to vlang/ui by adding your own branch	通过添加自己的分支为vlang/ui做出贡献
+you are creating a fork in your personal account	您正在您的个人帐户中创建复刻
+create fork	创建复刻
+edit pull request title	编辑Pull Request标题
+changes from all commits	所有提交的更改
+file filter	文件筛选
+jump to	跳转到
+ask copilot	询问Copilot
+review this pull request in a codespace	在代码空间中审阅此拉取请求
+toggle diff contents	切换差异内容
+8 changes: 0 additions & 8 deletions	8个更改：0个添加和8个删除
+comment on this file	评论此文件
+load diff	加载差异
+this file was deleted	该文件已被删除
+21 changes: 0 additions & 21 deletions	21个更改：0个添加和21个删除
+18 changes: 0 additions & 18 deletions	18个更改：0个添加和18个删除
+6 changes: 0 additions & 6 deletions	6个更改：0个添加和6个删除
+20 changes: 0 additions & 20 deletions	20个更改：0个添加和20个删除
+expand all	全部展开
+1 change: 1 addition & 0 deletions	1个更改：1个添加和0个删除
+display the source diff	显示源代码差异
+display the rich diff	显示丰富的差异
+expand up	向上展开
+expand down	向下展开
+29 changes: 29 additions & 0 deletions	29个更改：29个添加和0个删除
+46 changes: 27 additions & 19 deletions	46个更改：27个添加和19个删除
+jump to bottom	跳至底部
+1 workflow awaiting approval	1个工作流等待批准
+this workflow requires approval from a maintainer	此工作流需要维护人员的批准
+learn more about approving workflows	了解有关批准工作流程的更多信息
+approve workflows to run	批准运行工作流程
+no conflicts with base branch	与基础分支无冲突
+merging can be performed automatically	合并可以自动执行
+merge pull request	合并拉取请求
+select merge method	选择合并方式
+you can also merge this with the command line	你也可以通过命令行合并
+view command line instructions	查看命令行说明
+markdown is supported	支持Markdown
+paste, drop, or click to add files	粘贴、拖放或点击以添加文件
+close pull request	关闭拉取请求
+remember, contributions to this repository should follow our github community guidelines	请记住，对此存储库的贡献应遵循我们的GitHub社区指南
+add comments to specific lines under files changed	在更改文件下的特定行中添加注释
+still in progress	仍在进行
+convert to draft	转换为草稿
+no one	没有人
+assign yourself	分配自己
+you’re receiving notifications because you’re watching this repository	您收到通知是因为您关注了此仓库
+maintainers are allowed to edit this pull request	允许维护人员编辑此拉取请求
+lock conversation	锁定对话
