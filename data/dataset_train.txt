@@ -1378,3 +1378,397 @@ assign yourself	分配自己
 you’re receiving notifications because you’re watching this repository	您收到通知是因为您关注了此仓库
 maintainers are allowed to edit this pull request	允许维护人员编辑此拉取请求
 lock conversation	锁定对话
+enter the characters you see below	输入您在下面看到的字符
+sorry, we just need to make sure you're not a robot	抱歉，我们只需要确保你不是机器人
+for best results, please make sure your browser is accepting cookies	为了获得最佳效果，请确保您的浏览器接受Cookie
+type the characters you see in this image	键入您在此图像中看到的字符
+try different image	尝试不同的图像
+type characters	键入字符
+continue shopping	继续购物
+conditions of use	使用条款
+shortcuts menu	快捷菜单
+deliver to	配送至
+search in	搜索范围
+search amazon	搜索亚马逊
+getting started with v programming	V编程入门
+choose a language for shopping in amazon united states	选择在美国亚马逊进行购物的语言
+the current selection is english (en)	当前的选择是英语（En）
+expand to change language or country	展开以更改语言或国家
+hello, sign in	您好，登录
+account & lists	账户及清单
+expand account and lists	扩展账户和清单
+returns& orders	退货和订单
+0 items in cart	购物车中有0件商品
+international shopping transition alert	国际购物转移提醒
+open all categories menu	打开所有分类菜单
+today's deals	今日特价
+skip to	跳到
+main content	主要内容
+gift cards	礼品卡
+customer service	客户服务
+click to call our disability customer support line, or reach us directly at 1-888-283-1678	单击以致电我们的残障客户支持热线，或拨打1-888-283-1678直接联系我们
+kindle books	Kindle电子书
+deals & rewards	优惠与奖励
+best books of 2025 so far	2025年至今最佳书籍
+kindle store	Kindle商店
+kindle ebooks	Kindle电子书
+computers & technology	计算机、科技
+software design, testing & engineering	软件设计、测试与工程
+software development	软件开发
+available instantly	即时可用
+other used and new from $24.35	其他二手和全新$24.35起
+$18.49 with 38 percent savings	$18.49，节省38%
+digital list price: $29.99	数字定价：$29.99
+learn more about amazon pricing and savings	了解有关亚马逊定价和优惠的更多信息
+buy now with 1-click	一键购买
+getting started with v programming: an end-to-end guide to adopting the v language from basic variables and modules to advanced concurrency	V编程入门：采用V语言从基本变量和模块到高级并发的端到端指南
+by placing an order, you're purchasing a content license & agreeing to kindle's store terms of use	下单即表示您购买了内容许可证并同意Kindle商店的使用条款
+sold by amazon.com services llc	由亚马逊服务有限责任公司销售
+ebook features	电子书功能
+highlight, take notes, and search in the book	高亮显示、做笔记和在书中搜索
+in this edition, page numbers are just like the physical edition	在此版本中，页码就像纸质版页码一样
+read with our free app	使用我们的免费应用阅读
+deliver to your kindle library	发送到您的Kindle书库
+buy for others	为他人购买
+give as a gift or purchase for a team or group	作为礼物或购买送给团队或团体
+buy this kindle book for others now	立即为他人购买这本Kindle电子书
+send a free sample	发送免费样品
+add to list	添加到列表
+read sample	阅读样品
+follow the author	关注作者
+get new release updates & improved recommendations	获取新版本更新和改进的建议
+1st edition, kindle edition	第一版，Kindle版
+by navule pavan kumar rao(author)	Navule Pavan Kumar Rao（作者）
+format: kindle edition	格式：Kindle版
+4.3 out of 5 stars	4.3（满分5星）
+20 ratings	20个评分
+see all formats and editions	查看所有格式和版本
+learn a new statically compiled programming language to build maintainable and fast software with the help of this comprehensive guide to v programming	通过这本全面的V语言指南，学习一门新的静态编译型编程语言，构建可维护且高效的软件
+key features	主要特点
+explore the features of the v programming language step by step with this beginner's guide	通过本初学者指南，逐步探索V编程语言的特性
+gain strong foundational knowledge of core programming concepts such as modules, functions, and structs	掌握核心编程概念（如模块、函数和结构体）的扎实基础知识
+learn how to write super-fast programs and applications that compile in a matter of seconds	学习如何编写在几秒钟内编译的超快速程序和应用
+book description	书籍描述
+a new language on the block, v comes with a promising set of features such as fast compilation and interoperability with other programming languages	作为一门新兴语言，V语言自带一系列前景广阔的特性，包括快速编译和与其他编程语言的互操作性
+this is the first book on the v programming language, packed with concise information and a walkthrough of all the features you need to know to get started with the language	这是首部关于V语言的专著，内容精炼全面，系统导览了入门所需掌握的所有核心特性
+the book begins by covering the fundamentals to help you learn about the basic features of v and the suite of built-in libraries available within the v ecosystem	本书开篇即涵盖基础知识，帮助读者掌握V语言的核心特性及其生态系统中完整的内置库套件
+you'll become familiar with primitive data types, declaring variables, arrays, and maps	您将熟悉基本数据类型、声明变量、数组和映射
+in addition to basic programming, you'll develop a solid understanding of the building blocks of programming, including functions, structs, and modules in the v programming language	除基础编程知识外，您还将深入理解编程基础构件，包括V语言中的函数、结构体和模块等核心要素
+as you advance through the chapters, you'll learn how to implement concurrency in v programming, and finally learn how to write test cases for functions	随着章节的深入，您将学习如何在V编程中实现并发，最后学习如何为函数编写测试用例
+this book takes you through an end-to-end project that will guide you to build fast and maintainable restful microservices by leveraging the power of v and its built-in libraries	本书将带您完成一个端到端项目，该项目将指导您利用V及其内置库的强大功能构建快速且可维护的RESTful微服务
+by the end of this v programming book, you'll be well-versed with the v programming language and be able to start writing your own programs and applications	在本V编程书结束时，您将精通V编程语言，并能够开始编写自己的程序和应用
+what you will learn	你将学到什么
+become familiar with the basic building blocks of programming in the v language	熟悉V语言中的编程基础构件
+install the v language on various operating systems	在各种操作系统上安装V语言
+understand how to work with arrays and maps in v programming	了解如何在V编程中使用数组和映射
+discover how to implement concurrency in v programming	了解如何在V编程中实现并发
+understand best practices of sharing memory by letting coroutines communicate with each other using channels in v	掌握V语言中通过通道实现协程间通信的共享内存最佳实践
+write modular code and build on your knowledge of structs and functions in v	编写模块化代码，并在V语言中深化结构体与函数的应用能力
+get acquainted with writing tests in v programming	熟悉用V编程编写测试
+get to grips with building and querying restful microservice in v	掌握在V中构建和查询RESTful微服务
+who this book is for	这本书是写给谁的
+whether you're a beginner interested in learning a programming language or an experienced programmer looking to switch to a new and better statically compiled programming language, this v programming book is for you	无论您是对学习编程语言感兴趣的初学者，还是希望切换到新的、更好的静态编译编程语言的有经验的程序员，这本V编程书都适合您
+table of contents	目录
+introduction to v programming	V程序设计导论
+installing v programming	安装V编程
+variables, constants and code comments	变量、常量和代码注释
+primitive data types	基本数据类型
+arrays and maps	数组和映射
+conditionals and iterative statements	条件语句和迭代语句
+channels: an advanced concurrency pattern	通道：一种高级并发模式
+introduction to json and orm	JSON和ORM简介
+building a microservice	构建微服务
+next slide of product details	下一张产品详细信息幻灯片
+see all details	查看所有详细信息
+report an issue with this product or seller	报告此产品或卖家的问题
+this title is only available on select devices and the latest version of the kindle app	此标题仅适用于部分设备和最新版本的Kindle应用程序
+please refer to the supported device list before purchase	购买前请参阅支持的设备列表
+available on these devices	在这些设备上可用
+email settings – medium	电子邮件设置——Medium
+don’t be a stranger	不要做陌生人
+you can re-subscribe in your settings	您可以在设置中重新订阅
+you have unsubscribed from announcements about new product features	您已取消订阅有关新产品功能的公告
+customers who read this book also read	阅读本书的客户也会阅读
+page 1 of 13	第1页，共13页
+previous set of slides	上一组幻灯片
+understanding the odin programming language	理解Odin编程语言
+5.0 out of 5 stars, 2 ratings	5.0星（满分5星），2个评分
+kindle edition	Kindle版
+introduction to zig: a project-based book	Zig简介：一本基于项目的书
+pedro duarte faria	佩德罗·杜阿尔特·法里亚
+4.5 out of 5 stars, 13 ratings	4.5星（满分5星），13个评分
+print list price: $25.00	印刷定价：$25.00
+the rust programming language, 2nd edition	Rust编程语言，第二版
+steve klabnik	史蒂夫·克拉布尼克
+4.8 out of 5 stars, 414 ratings	4.8星（满分5星），414个评分
+print list price: $49.99	印刷定价：$49.99
+c# 12 in a nutshell: the definitive reference	C#12果壳中的：权威参考
+joseph albahari	约瑟夫·阿尔巴哈里
+4.6 out of 5 stars, 70 ratings	4.6星（满分5星），70个评分
+digital list price: $59.99	数字定价：$59.99
+next set of slides	下一组幻灯片
+editorial reviews	编辑评论
+this is a class a book on my scale, which will quickly bring interested developers up to speed with v	按我的评价标准，这是一本顶级书籍，它能帮助感兴趣的开发者快速上手V语言
+ivo balbaert, author of the way to go: a thorough introduction to the go programming language and many other popular books	伊沃·巴尔伯特（Ivo Balbaert），《Go入门指南：Go编程语言全面导引》作者，另著有多本畅销技术书籍
+about the author	关于作者
+navule pavan kumar rao is a full-stack software consultant with product development experience in the banking, finance, corporate tax, and automobile domains	Navule Pavan Kumar Rao是一名全栈软件顾问，在银行、金融、公司税务和汽车领域拥有产品开发经验
+he pursued an executive m.tech in data science from the indian institute of technology (iit), hyderabad	他在海德拉巴的印度理工学院（IIT）攻读数据科学执行理学硕士学位
+he also pursued an executive mba in it specialization from the indian school of business management and administration, and also holds a b.tech in electronics and communication engineering from vaagdevi institute of technology and science	他还获得印度商业管理与行政学院（ISBM）颁发的高级管理人员工商管理硕士（IT方向），并持有Vaagdevi技术与科学学院（印度安得拉邦）的电子与通信工程工学学士学位
+he is a microsoft certified professional (mcp) and microsoft certified technology specialist (mcts)	他是微软认证专家（MCP）和微软认证技术专家（MCTS）
+he has played key roles in identifying business requirements and converting them into viable products with the help of his vast software development skills at various companies	凭借其丰富的软件开发技能，他曾在多家企业发挥关键作用，成功识别业务需求并将其转化为可行的产品
+he also played a key role in the architecting, development, and deployment of software applications that become a part of the ci/cd pipeline to cloud platforms such as azure, gcp, and also to on-premise infrastructures	他在软件应用的架构设计、开发部署中发挥了关键作用，这些应用最终成为CI/CD流水线的重要组成部分，被部署至Azure、谷歌云（GCP）等云平台及本地基础设施
+product details	产品详细信息
+publisher ‏ : ‎ packt publishing	出版社‏:‎Packt出版
+accessibility ‏ : ‎ accessibility: learn more	可访问性‏:‎可访问性：了解更多
+publication date ‏ : ‎ december 10, 2021	出版日期‏:‎2021年12月10日
+edition ‏ : ‎ 1st	版本‏:‎第一版
+language ‏ : ‎ english	语言‏:‎英语
+file size ‏ : ‎ 9.7 mb	文件大小‏:‎9.7MB
+screen reader ‏ : ‎ supported	屏幕阅读器‏:‎受支持
+enhanced typesetting ‏ : ‎ enhanced typesetting: enabled	增强排版‏:‎增强排版：已启用
+x-ray ‏ : ‎ not enabled	X射线‏:‎未启用
+word wise ‏ : ‎ word wise: not enabled	生词提示功能‏:‎生词提示功能：未启用
+print length ‏ : ‎ print length: 408 pages	纸书页数‏:‎纸书页数：408页
+page flip ‏ : ‎ page flip: enabled	快速翻书‏:‎快速翻书：已启用
+best sellers rank: #1,800,592 in kindle store (see top 100 in kindle store)	Kindle商店畅销书排名：#1800592（请参阅Kindle商店前100名）
+#154 in c programming	#154 C程序设计
+#292 in c programming language	#292 C编程语言
+#440 in software design tools	#440软件设计工具
+customer reviews	顾客评论
+help others learn more about this product by uploading a video	上传视频以帮助其他人了解更多关于本产品的信息
+upload your video	上传您的视频
+follow authors to get new release updates, plus improved recommendations	关注作者，获得新版本更新，以及改进的建议
+navule pavan kumar rao is working as a solutions architect at amazon web services	Navule Pavan Kumar Rao是亚马逊云服务(AWS)的解决方案架构师
+he has thorough product development experience in the health care services, banking, finance, corporate tax, and automobile domains	他在医疗保健服务、银行金融、企业税务及汽车领域拥有全面的产品开发经验
+he is a published author for the book 'getting started with v programming'	他是《V编程入门》一书的出版作者
+he pursued executive m.tech in data science from the indian institute of technology (iit), hyderabad	他在印度理工学院海德拉巴分校（IIT Hyderabad）攻读数据科学方向的高级技术硕士（在职）学位（Executive M.Tech）
+he also pursued executive mba in it specialization from the indian school of business management and administration, and also holds a b.tech in electronics and communication engineering from vaagdevi institute of technology and science	他还在印度商学院管理学院（Indian School of Business Management and Administration）攻读了信息技术方向的高级管理人员工商管理硕士（Executive MBA），并持有瓦格德维理工学院（Vaagdevi Institute of Technology and Science）颁发的电子与通信工程学士学位（B.Tech）
+he is a aws certified solutions architect professional, a microsoft certified professional (mcp) and microsoft certified technology specialist (mcts)	他是亚马逊云科技认证解决方案架构师-专家级（AWS Certified Solutions Architect Professional）、微软认证专家（Microsoft Certified Professional, MCP）和微软认证技术专家（Microsoft Certified Technology Specialist, MCTS）
+about this item	关于此项目
+very poor	很差
+hide for 30 days	隐藏30天
+related books	相关书籍
+page 1 of 3	第1页，共3页
+leave feedback on sponsored ad	在赞助商广告上留下反馈
+previous page	上一页
+sponsored video, click to navigate to featured page	广告视频，点击跳转至精选页面
+play sponsored video	播放赞助视频
+learning c# by developing games with unity: get to grips with coding in c# and build simple 3d games in unity 2023 from the ground up	通过使用Unity开发游戏来学习C#：掌握C#编码并从头开始在Unity2023中构建简单的3D游戏
+rated 4.3 out of 5 stars from 117 reviews	评分4.3星（满分5星），来自117条评论
+how to market a book: overperform in a crowded market (reedsy marketing guides book 1)	如何销售书籍：在拥挤的市场中表现出色（Reedsy营销指南1书）
+rated 4.5 out of 5 stars from 1,444 reviews	评分4.5星（满分5星），来自1444条评论
+digital list price:$2.99	数字定价：$2.99
+20 global ratings	整体20个评分
+61 percent of reviews have 5 stars	61%的评论有5星
+18 percent of reviews have 4 stars	18%的评论有4星
+17 percent of reviews have 3 stars	17%的评论有3星
+4 percent of reviews have 2 stars	4%的评论有2星
+1 star	1星
+how customer reviews and ratings work	客户评论和评级的运作方式
+review this product	评论该商品
+share your thoughts with other customers	与其他顾客分享您的想法
+write a customer review	撰写客户评论
+top reviews from the united states	来自美国的热门评论
+dana booth	达娜·布斯
+5.0 out of 5 stars	5.0星（满分5星）
+better than most language beginner books	比大多数语言初学者的书要好
+reviewed in the united states on february 27, 2024	2024年2月27日在美国发布评论
+format: paperback	格式：平装
+verified purchase: learn more how customers reviews work on amazon	已确认购买：了解更多客户评论在亚马逊上运作的方式
+computer language tutorials are a crapshoot, this one is good in explaining why something is what it is	计算机语言教程的质量参差不齐，这份教程的出色之处在于它能透彻解释事物的本质原理
+mark review as helpful	将评论标记为有用
+report review by dana booth	举报达娜·布斯的评论
+michael isaacs	迈克尔·艾萨克斯
+want to get started in the future of programming	想要开启编程之路
+start here	从这开始
+reviewed in the united states on august 24, 2023	2023年8月24日在美国发布评论
+format: kindle	格式：Kindle
+excellent book	优秀的书
+i love it	我喜欢
+report review by michael isaacs	举报迈克尔·艾萨克斯的评论
+amazon customer	亚马逊客户
+good read	读起来不错
+ben okri's latest novel is a good read	本·奥克里的最新小说是一本好的读物
+the geography of thought is quite a good read	《思维的版图》非常值得一读
+reviewed in the united states on january 10, 2023	2023年1月10日在美国发布评论
+good read so far	到目前为止读得不错
+i have no complaints	我没有怨言
+report review by amazon customer	举报亚马逊客户的评论
+mark lynch	马克·林奇
+reviewed in the united states on june 15, 2022	2022年6月15日在美国发布评论
+great book, examples well written, and hope more down the line , from the author	伟大的书，例子写得很好，希望作者能写得更多
+report review by mark lynch	举报马克·林奇的评论
+4.0 out of 5 stars	4.0星（满分5星）
+told me what i needed to know about the v programming language	详细介绍了V编程语言的核心要点
+reviewed in the united states on december 11, 2021	2021年12月11日在美国发布评论
+when i first got this book, i thought, "oh, no, 400 pages?"	当我第一次拿到这本书时，我想：“天啊，400页？”
+while i found a few redundancies, they weren't excessive, and main reason that it's 400 pages is that the author gave lots of examples for each language feature	虽然发现少量冗余内容，但并未过度冗长，该书达400页的主要原因是作者为每个语言特性都提供了大量示例
+i think that would make it a good reference if you want to get started with v, and found the official documentation a little too terse	我认为对于V语言初学者而言，这本书会是很好的参考资料，因为官方文档略显简略
+i read it from cover to cover as a general introduction to the language, looking for how it differs (or not) from other languages i already know	我通读了全书作为该语言的入门指南，旨在找出它与我已经掌握的其他语言的异同
+i don't think that reading it straight through would be necessary for most folks	我认为对大多数人来说，没必要从头到尾通读
+after reading the book, i can say that the author persuaded me that i did not really want to spend the time needed (at least not now) to learn how to do production programming in v	读完这本书后，我可以说作者成功说服了我——我其实并不想投入所需的时间（至少现在不想）去学习如何用V语言进行生产级编程
+that was certainly not the author's intention -- he's obviously a fan of v -- but the language is not quite ready for prime time, and i already know c and c++, and have gotten quite good at both of those in the 30-odd years i've done programming for a living, so i don't really need v for anything	这显然并非作者本意——他显然是V语言的拥趸——但该语言尚未完全成熟。而我已掌握C和C++，在30余年的职业编程生涯中对这两门语言驾轻就熟，因此V语言对我而言实无必要
+i certainly don't need a c front-end that sort-of makes it a bit like python (only faster, with c integration, etc.)	我确实不需要一个将C语言勉强改造得有点像Python的前端（尽管它能更快运行且支持C语言集成等特性）
+the fact that i don't particularly like the language is not really a reflection on this book	尽管我个人并不特别青睐该编程语言，但这并不构成对本书质量的否定
+it did a good job of covering the basics and giving understandable examples	该教材出色地涵盖了基础知识体系，并提供了易于理解的范例
+i could say i'm glad i read the book, because it gave me the information i needed to accurately evaluate the v programming language	可以说我很庆幸阅读了此书，它提供了准确评估V编程语言所需的完整信息体系
+read more of this review	阅读此评论的更多内容
+7 people found this helpful	7人觉得有帮助
+report review by customer review	举报Customer Review的评论
+an emerging new programming language	一种新兴的编程语言
+reviewed in the united states on january 15, 2022	2022年1月15日在美国发布评论
+the v book is a well-written book on the subject by a professional and reviewed by one of the contributors of v programming language	《V语言权威指南》是由专业开发者撰写并经V语言核心贡献者审阅的技术专著
+the authors started explaining what v programming language is, its features and capability including building an operating system (os) called vinix	作者在开篇系统阐释了V语言的特性与能力，包括构建名为Vinix的操作系统
+chapter 2 is on the several ways to install v programming language in several oses	第2章介绍了在多个操作系统中安装V编程语言的几种方法
+i tried to follow their instructions and it is straight forward and easy to follow	经实测步骤清晰易行
+after section 1 that cover the first two-chapter, section 3 is discussing syntax of v programming language	第一部分涵盖前两章基础内容后，第三部分深入解析V语言语法体系
+i found that their syntax is a mix from many programming languages such pascal (the variable declaration), c/c++, python, and other programming languages	我发现其融合了Pascal（变量声明）、C/C++、Python等多语言语法特性
+the v programming language has a new data type called rune data type which is compound unsigned integer data type in unicode	创新引入Unicode复合无符号整型的rune数据类型
+the syntax of array data type reminds me of c++ programming syntax	数组数据类型的语法使我想起C++编程语法
+maps data type and match control is similar to dictionary data type and control flow in python	映射数据类型和匹配控制类似于Python中的字典数据类型和控制流
+the next and last section 3 is the advanced concepts in v programming covering concurrency, testing, json, orm, and building microservice	下一部分也是最后的部分3是V编程的高级概念，涵盖并发、测试、JSON、ORM和构建微服务
+i read this book with try to find a computer graphics application in my mind and i did not find it which is a bit disappointing	我读这本书心里想着能尝试找到关于图形编程应用的内容，不过遗憾的是未能找到
+i look through their github repository and found one ray tracing application	我浏览了他们的GitHub存储库，发现了一个光线追踪应用程序
+report review by iwan njoto sandjaja	举报Iwan Njoto Sandjaja的评论
+joe d	乔·D
+good introduction and reference to v language	不错的V语言介绍和参考资料
+reviewed in the united states on december 20, 2021	2021年12月20日在美国发布评论
+this book is a relatively easy to follow primer on the v programming language	这本书是关于V编程语言的一本相对容易上手的入门指南
+installation was clean and i was able to get started immediately on verifying the code examples and writing my own simple routines	安装过程干净利落，我能够立即开始验证代码示例并编写自己的简单例程
+i was pleased that the code examples actually worked in practice	令我满意的是，这些代码示例在实践中确实能够运行
+in the past, i have been given code snippets in other manuals that don’t execute or compile	过去，我曾遇到过其他手册中提供的无法执行或编译的代码片段
+very frustrating	非常令人沮丧
+the language has powerful functions that can be utilized	该语言具有可被利用的强大功能
+certain advanced topics like concurrency were explained very well and thoroughly	某些高级主题（如并发）的讲解非常透彻且详尽
+there are complex examples that can be skipped	有一些复杂的例子可以跳过
+however, they can be explored further if one wants to challenge oneself or expects to use that code feature in their development	但是，如果有人想挑战自己或计划在开发中使用这些代码特性，则可以进一步探索
+the last chapters tie it all together by showing how v can be used to interact with a screen interface	最后几章通过展示如何用V语言与屏幕界面交互，将所有内容串联起来
+the following critique relates to the language itself, not the book	以下批评针对的是V语言本身，而非本书
+v contains a test mode which is explained thoroughly	V语言包含一个被详细解释的测试模式
+however, i could see no clear advantage to using it versus traditional testing methods	然而，与传统测试方法相比，我看不出使用它有明显的优势
+arrays are not clear, particularly the usage/difference between a map and an array	数组的定义不够清晰，尤其是映射（Map）与数组之间的用法/区别
+that said, there is a ‘clone array’ function that is very useful	提到的‘克隆数组’功能非常实用
+the text could do a slightly better job explaining the following topics	文字在解释以下主题时可以稍加改进
+boolean examples	布尔值示例
+use of globals vs constants	全局变量与常量的使用对比
+enum type usage	枚举类型的用法
+structure setup	结构体的设置
+lastly there are some features beyond my need like promoting numerics and runes	最后，有一些超出我需求的功能，例如数值提升（Promoting Numerics）和符文类型（Runes）
+again, one can skim over these topics	同样，读者可以略读这些主题
+in conclusion a worthwhile introduction/guide to v language	总之，这是一本值得推荐的V语言入门指南
+the text will get you started and serve as a good reference when you get involved in using the language	本书能帮助你快速入门，并在实际使用这门语言时作为一本很好的参考书
+3 people found this helpful	3人觉得有帮助
+report review by joe d	举报乔·D的评论
+see more reviews	查看更多评论
+customers who bought this item also bought	购买此商品的顾客也同时购买
+page 1 of 2	第1页，共2页
+learning go: an idiomatic approach to real-world go programming	《Go语言精要：真实世界编程的惯用实践》
+jon bodner	乔恩·博纳
+4.7 out of 5 stars, 106 ratings	4.7星（满分5星），106个评分
+digital list price: $56.99	数字定价：$56.99
+build a large language model (from scratch)	构建大型语言模型（从头开始）
+sebastian raschka	塞巴斯蒂安·拉斯卡卡
+4.6 out of 5 stars, 205 ratings	4.6星（满分5星），205个评分
+#1 best seller	#1最畅销商品
+in data processing	在数据处理中
+print list price: $59.99	印刷定价：$59.99
+mastering go: leverage go's expertise for advanced utilities, empowering you to develop professional software	《精通Go语言：运用Go的专业能力开发高级工具，助力构建专业级软件》
+4.8 out of 5 stars, 30 ratings	4.8星（满分5星），30个评分
+digital list price: $43.99	数字定价：$43.99
+code: the hidden language of computer hardware and software	《编码：计算机硬件与软件的隐匿语言》
+charles petzold	查尔斯·佩佐尔德
+4.8 out of 5 stars, 782 ratings	4.8星（满分5星），782个评分
+digital list price: $37.99	数字定价：$37.99
+customers who viewed this item also viewed	浏览此商品的顾客也同时浏览
+report an issue	报告问题
+does this item contain inappropriate content	此项目是否包含不恰当的内容
+do you believe that this item violates a copyright	你认为这个项目侵犯了版权吗
+does this item contain quality or formatting issues	此项目是否包含质量或格式问题
+best sellers in kindle ebooks	Kindle电子书中的畅销书
+death row (alibis collection)	《死囚区：不在场证明档案集》
+freida mcfadden	弗里达·麦克法登
+3.9 out of 5 stars, 47,584 ratings	3.9星（满分5星），47584个评分
+in kindle store	在Kindle商店中
+the tenant	《房客》
+4.2 out of 5 stars, 73,376 ratings	4.2星（满分5星），73376个评分
+in psychological thrillers	在心理惊悚片中
+till summer do us part	《夏约将我们分开》
+meghan quinn	梅根·奎因
+4.4 out of 5 stars, 4,451 ratings	4.4星（满分5星），4451个评分
+in comedy	在喜剧中
+the wedding people: a novel	小说：《婚礼众生相》
+in women's domestic life fiction	在女性家庭生活小说中
+see personalized recommendations	查看个性化推荐
+sign in	登录
+new customer	新客户
+back to top	回到顶部
+get to know us	了解我们
+about amazon	关于亚马逊
+investor relations	投资者关系
+amazon devices	亚马逊设备
+amazon science	亚马逊科学
+make money with us	与我们一起赚钱
+sell products on amazon	在亚马逊上销售产品
+sell on amazon business	在亚马逊企业购上销售
+sell apps on amazon	在亚马逊上销售应用程序
+become an affiliate	加入联盟
+advertise your products	宣传您的产品
+self-publish with us	自行出版
+host an amazon hub	运营亚马逊取件站点
+see more make money with us	查看“与我们一起赚钱”的更多信息
+amazon payment products	亚马逊支付服务商品
+amazon business card	亚马逊商业信用卡
+shop with points	用积分购物
+reload your balance	充值账户余额
+amazon currency converter	亚马逊货币货币换算器
+let us help you	让我们来帮助你
+amazon and covid-19	亚马逊与新冠肺炎
+your account	您的帐户
+your orders	您的订单
+shipping rates & policies	运费和政策
+returns & replacements	退换货
+manage your content and devices	管理您的内容和设备
+amazon us home	亚马逊美国站首页
+choose a language for shopping	选择购物语言
+current selection is english	当前选择为英语
+$usd - u.s. dollar	$USD——美元
+choose a country/region for shopping	选择购物的国家/地区
+the current selection is united states	当前选择为美国
+amazon music	亚马逊音乐
+stream millions of songs	畅听海量歌曲
+amazon ads	亚马逊广告
+404 “this is not the web page you are looking for”	404“这不是您要查找的网页”
+reach customers wherever they spend their time	无论客户在哪里活跃，都可以触达他们
+score deals on fashion brands	抢购时尚品牌限时优惠
+books, art & collectibles	图书、艺术和收藏品
+audiobook publishing made easy	有声读物出版变得简单
+sell on amazon	在亚马逊上销售
+start a selling account	开通卖家账户
+shipping software	运输软件
+inventory management	库存管理
+amazon business	亚马逊商业
+everything for your business	一切为了您的业务
+ship orders internationally	国际运输订单
+amazon web services	亚马逊云服务
+scalable cloud computing services	可扩展的云计算服务
+listen to books & original audio performances	收听书籍和原创音频表演
+find movie box office data	查找电影票房数据
+book reviews & recommendations	书评与推荐
+movies, tv & celebrities	电影、电视和名人
+get info entertainment professionals need	获取娱乐专业人士所需的信息
+kindle direct publishing	Kindle直接出版
+indie digital & print publishing made easy	独立数字和印刷出版变得简单
+prime video direct	Prime Video直接分发
+video distribution made easy	视频分发变得简单
+designer fashion brands	设计师时尚品牌
+deals and shenanigans	限时优惠和欢乐购
+shoes & clothing	鞋靴和服装
+smart home security systems	智能家居安防系统
+stream 4k video in every room	全屋4K流媒体传输
+smart security for every home	全宅智能安防
+real-time crime & safety alerts	实时犯罪和安全警报
+amazon subscription boxes	亚马逊订阅箱
+top subscription boxes – right to your door	精选订阅箱——直送上门
+pharmacy simplified	简化药房
+consumer health data privacy disclosure	消费者健康数据隐私披露
+your ads privacy choices	您的广告隐私选择
