@@ -1772,3 +1772,41 @@ top subscription boxes – right to your door	精选订阅箱——直送上门
 pharmacy simplified	简化药房
 consumer health data privacy disclosure	消费者健康数据隐私披露
 your ads privacy choices	您的广告隐私选择
+table of content	目录
+quick use: directly use openvoice without installation	快速使用：无需安装即可直接使用OpenVoice
+linux install: for researchers and developers only	Linux安装：仅供研究人员和开发人员使用
+install on other platforms: unofficial installation guide contributed by the community	在其他平台上安装：社区提供的非官方安装指南
+quick use	快速使用
+the input speech audio of openvoice can be in any language	OpenVoice的输入语音音频可以是任何语言
+openvoice can clone the voice in that speech audio, and use the voice to speak in multiple languages	OpenVoice可以克隆该语音音频中的声音，并使用该语音用多种语言说话
+for quick use, we recommend you to try the already deployed services	为了快速使用，我们建议您尝试已经部署的服务
+british english	英式英语
+american english	美式英语
+indian english	印度英语
+australian english	澳大利亚英语
+minimal demo	最小演示
+for users who want to quickly try openvoice and do not require high quality or stability, click any of the following links	对于想要快速尝试OpenVoice并且不需要高质量或稳定性的用户，请单击以下任意链接
+linux install	Linux安装
+this section is only for developers and researchers who are familiar with linux, python and pytorch	本节仅适用于熟悉Linux、Python和PyTorch的开发人员及研究人员
+clone this repo, and run	克隆此仓库并运行
+no matter if you are using v1 or v2, the above installation is the same	无论您使用的是V1还是V2，上述安装都相同
+download the checkpoint from here and extract it to the checkpoints folder	从此处下载检查点并将其解压缩到checkpoints文件夹
+flexible voice style control	灵活的语音风格控制
+please see demo_part1.ipynb for an example usage of how openvoice enables flexible style control over the cloned voice	请参阅demo_part1.ipynb，了解OpenVoice如何对克隆语音进行灵活风格控制的示例用法
+cross-lingual voice cloning	跨语言语音克隆
+please see demo_part2.ipynb for an example for languages seen or unseen in the msml training set	。请参阅demo_part2.ipynb，了解MSML训练集包含或未包含语言的演示案例
+gradio demo	Gradio演示
+we provide a minimalist local gradio demo here	我们在这里提供极简的本地Gradio演示
+we strongly suggest the users to look into demo_part1.ipynb, demo_part2.ipynb and the qna if they run into issues with the gradio demo	如果在Gradio演示中遇到问题，我们强烈建议用户查看demo_part1.ipynb、demo_part2.ipynb和QnA
+launch a local gradio demo with python -m openvoice_app --share	使用`python -m openvoice_app --share`在本地启动Gradio演示
+download the checkpoint from here and extract it to the checkpoints_v2 folder	从此处下载检查点并将其解压缩到checkpoints_v2文件夹
+install melotts	安装MeloTTS
+demo usage	演示用法
+please see demo_part3.ipynb for example usage of openvoice v2	请参阅demo_part3.ipynb，了解OpenVoice V2的示例用法
+now it natively supports english, spanish, french, chinese, japanese and korean	现在原生支持英语、西班牙语、法语、中文、日语和韩语
+install on other platforms	在其他平台上安装
+this section provides the unofficial installation guides by open-source contributors in the community	本节提供社区开源贡献者的非官方安装指南
+guide by @alienpups	@Alienpups的指南
+you are welcome to contribute if you have a better installation guide	如果您有更好的安装指南，欢迎您投稿
+we will list you here	我们将在这把你列出
+guide by @stevenjscf	@StevenJSCF的指南
