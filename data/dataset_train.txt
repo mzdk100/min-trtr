@@ -334,7 +334,7 @@ open commit details	打开提交详细信息
 view all files	查看所有文件
 repository files navigation	存储库文件导航
 edit file	编辑文件
-triton logo	Triton标志
+triton logo	Triton徽标
 this is the development repository of triton, a language and compiler for writing highly efficient custom deep-learning primitives	这是Triton的开发仓库，Triton是一种用于编写高效自定义深度学习原语的语言和编译器
 the aim of triton is to provide an open-source environment to write fast code at higher productivity than cuda, but also with higher flexibility than other existing dsls	Triton的目标是提供一个开源环境，以比CUDA更高的生产力编写快速代码，同时比其他现有DSL具有更高的灵活性
 an intermediate language and compiler for tiled neural network computations	分层神经网络计算的中间语言和编译器
@@ -1810,3 +1810,60 @@ guide by @alienpups	@Alienpups的指南
 you are welcome to contribute if you have a better installation guide	如果您有更好的安装指南，欢迎您投稿
 we will list you here	我们将在这把你列出
 guide by @stevenjscf	@StevenJSCF的指南
+modules are up to date	模块都是最新的
+license:cc-by-nc-sa-4.0	许可证：cc-by-nc-sa-4.0
+2 contributors	2位贡献者
+history:1 commit	历史：1次提交
+history:12 commits	历史：12次提交
+update license	更新许可证
+official model for	官方模型
+spark-tts: an efficient llm-based text-to-speech model with single-stream decoupled speech tokens	Spark-TTS：一种基于大语言模型的高效文本转语音模型——单流解耦语音令牌架构
+spark-tts logo	Spark-TTS徽标
+spark-tts is an advanced text-to-speech system that uses the power of large language models (llm) for highly accurate and natural-sounding voice synthesis	Spark-TTS是一个先进的文本到语音系统，它利用大型语言模型（LLM）的强大功能进行高度准确和自然的语音合成
+it is designed to be efficient, flexible, and powerful for both research and production use	用于研究与生产用途的高效、灵活和强大的设计
+simplicity and efficiency: built entirely on qwen2.5, spark-tts eliminates the need for additional generation models like flow matching	简单高效：Spark-TTS完全基于Qwen2.5构建，不需要额外的生成模型，如流匹配
+instead of relying on separate models to generate acoustic features, it directly reconstructs audio from the code predicted by the llm	它不依赖于单独的模型来生成声学特征，而是直接从LLM预测的代码中重建音频
+this approach streamlines the process, improving efficiency and reducing complexity	这种方法简化了流程，提高了效率并降低了复杂性
+high-quality voice cloning: supports zero-shot voice cloning, which means it can replicate a speaker's voice even without specific training data for that voice	高质量语音克隆：支持零样本语音克隆，这意味着即使没有特定说话人的训练数据，也能复现其声音特征
+this is ideal for cross-lingual and code-switching scenarios, allowing for seamless transitions between languages and voices without requiring separate training for each one	该特性尤其适用于跨语言和语码转换场景，可实现语言与语音的无缝切换，且无需为每种语言或声音单独训练
+bilingual support: supports both chinese and english, and is capable of zero-shot voice cloning for cross-lingual and code-switching scenarios, enabling the model to synthesize speech in multiple languages with high naturalness and accuracy	双语支持：支持中文和英文，并具备跨语言和语码转换场景下的零样本语音克隆能力，使模型能够以高度自然度和准确度合成多种语言的语音
+controllable speech generation: supports creating virtual speakers by adjusting parameters such as gender, pitch, and speaking rate	可控语音生成：支持通过调整性别、音高和语速等参数来创建虚拟说话者
+inference overview of voice cloning	语音克隆的推理概述
+inference overview of controlled generation	受控生成的推理概述
+clone and install	克隆并安装
+clone the repo	克隆仓库
+install conda: please see https://docs.conda.io/en/latest/miniconda.html	安装Conda：请参阅https://docs.conda.io/en/latest/miniconda.html
+create conda env	创建Conda环境
+if you are in mainland china, you can set the mirror as follows	如果你在中国大陆，你可以按如下方式设置镜像
+model download	模型下载
+download via python	通过Python下载
+download via git clone	通过Git克隆下载
+basic usage	基本用法
+you can simply run the demo with the following commands	您只需使用以下命令即可运行演示
+alternatively, you can directly execute the following command in the command line to perform inference	或者，您可以直接在命令行中执行以下命令以运行推理
+ui usage	UI用法
+you can start the ui interface by running python webui.py, which allows you to perform voice cloning and voice creation	您可以通过运行`python webui.py`启动UI界面，该界面允许您执行语音克隆和语音创建
+voice cloning supports uploading reference audio or directly recording the audio	语音克隆支持上传参考音频或直接录制音频
+voice cloning	语音克隆
+voice creation	语音创建
+to-do list	待办事项列表
+release the spark-tts paper	发布Spark-TTS论文
+release the training code	发布训练代码
+release the training dataset, voxbox	发布训练数据集VoxBox
+the model's license has been updated from apache 2.0 to cc by-nc-sa due to the licensing terms of some training data	由于一些训练数据的许可条款，该模型的许可证已从Apache2.0更新为CC BY-NC-SA
+key changes	关键变化
+the model can only be used for non-commercial purposes	该模型只能用于非商业目的
+any modifications or derivatives must also be released under cc by-nc-sa 4.0	任何修改或衍生产品也必须根据CC BY-NC-SA4.0发布
+proper attribution is required when using or modifying the model	使用或修改模型时，必须进行适当的署名
+please ensure compliance with the new license terms	请确保遵守新的许可条款
+usage disclaimer	使用免责声明
+this project provides a zero-shot voice cloning tts model intended for academic research, educational purposes, and legitimate applications, such as personalized speech synthesis, assistive technologies, and linguistic research	本项目提供零样本语音克隆TTS模型，适用于学术研究、教育目的及合法应用场景，例如个性化语音合成、辅助技术和语言学研究
+please note	请注意
+do not use this model for unauthorized voice cloning, impersonation, fraud, scams, deepfakes, or any illegal activities	禁止将本模型用于未经授权的语音克隆、冒充、欺诈、诈骗、深度伪造（deepfakes）或任何非法活动
+ensure compliance with local laws and regulations when using this model and uphold ethical standards	确保在使用此模型时遵守当地法律法规，并恪守道德标准
+the developers assume no liability for any misuse of this model	开发人员对任何人滥用此模型的行为不承担任何责任
+we advocate for the responsible development and use of ai and encourage the community to uphold safety and ethical principles in ai research and applications	我们倡导负责任的人工智能开发与应用，并鼓励社区在AI研究和实践中恪守安全与伦理原则
+if you have any concerns regarding ethics or misuse, please contact us	如果您对道德或滥用有任何疑问，请联系我们
+this model isn't deployed by any inference provider	本模型未被任何推理提供者部署
+5 models	5个模型
+2 models	两个模型
