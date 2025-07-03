@@ -1867,3 +1867,104 @@ if you have any concerns regarding ethics or misuse, please contact us	如果您
 this model isn't deployed by any inference provider	本模型未被任何推理提供者部署
 5 models	5个模型
 2 models	两个模型
+the requested device is no longer available	请求的设备不再可用
+for example, it has been unplugged	例如，它已被拔出
+fast and extensible multi-platform http/1-2-3 web server with automatic https	快速且可扩展的多平台HTTP/1-2-3 Web服务器，支持自动HTTPS
+every site on https	全站HTTPS
+caddy is an extensible server platform that uses tls by default	Caddy是一款可扩展的服务器平台，默认启用TLS证书
+releases · documentation · get help	发布·文档·获取帮助
+build from source	从源代码构建
+for development	用于开发
+with version information and/or plugins	带有版本信息和/或插件
+quick start	快速开始
+full documentation	完整文档
+getting help	获取帮助
+powered by	技术支持
+easy configuration with the caddyfile	使用Caddyfile轻松配置
+powerful configuration with its native json config	凭借原生JSON配置实现强大管理能力
+dynamic configuration with the json api	使用JSON API动态配置
+config adapters if you don't like json	如果你不喜欢JSON配置，另有适配器方案可选
+automatic https by default	默认情况下自动HTTPS
+zerossl and let's encrypt for public names	ZeroSSL与Let's Encrypt签发公开域名证书
+fully-managed local ca for internal names & ips	专为内部名称与IP地址提供完全托管的本地证书颁发机构
+can coordinate with other caddy instances in a cluster	可以与集群中的其他Caddy实例协调
+multi-issuer fallback	多颁发机构回退机制
+encrypted clienthello (ech) support	加密ClientHello（安全服务器名称指示）支持
+stays up when other servers go down due to tls/ocsp/certificate-related issues	可规避TLS/OCSP/证书问题所致停机风险，持续保持高可用性
+production-ready after serving trillions of requests and managing millions of tls certificates	成熟稳定——历经万亿级请求与百万级TLS证书管理验证
+scales to hundreds of thousands of sites as proven in production	经过生产验证，可扩展到数十万个站点
+http/1.1, http/2, and http/3 all supported by default	默认情况下支持HTTP/1.1、HTTP/2和HTTP/3
+highly extensible modular architecture lets caddy do anything without bloat	高度可扩展的模块化架构让Caddy在不臃肿的情况下做任何事情
+runs anywhere with no external dependencies (not even libc)	在任何地方运行，没有外部依赖（甚至没有libc）
+written in go, a language with higher memory safety guarantees than other servers	优于其他服务器，用Go编写（这是一种具有更高内存安全保证的语言）
+actually fun to use	其实使用起来很有趣
+so much more to discover	还有很多东西待您发现
+the simplest, cross-platform way to get started is to download caddy from github releases and place the executable file in your path	最简单、跨平台的入门方式是从GitHub Releases下载Caddy，并将可执行文件放入您的PATH环境变量中
+see our online documentation for other install instructions	有关其他安装说明，请参阅我们的在线文档
+go 1.24.0 or newer	Go1.24.0或更高版本
+note: these steps will not embed proper version information	注意：这些步骤不会嵌入正确的版本信息
+for that, please follow the instructions in the next section	为此，请按照下一节中的说明进行操作
+when you run caddy, it may try to bind to low ports unless otherwise specified in your config	运行Caddy时，它可能会尝试绑定到低端口，除非在配置中另有指定
+if your os requires elevated privileges for this, you will need to give your new binary permission to do so	若您的操作系统需管理员权限才能执行此操作，则需授予新的二进制文件相应权限
+on linux, this can be done easily with: sudo setcap cap_net_bind_service=+ep ./caddy	在Linux上，这可以通过以下命令轻松完成：sudo setcap cap_net_bind_service=+ep ./caddy
+if you prefer to use go run which only creates temporary binaries, you can still do this with the included setcap.sh like so	若您倾向使用`go run`（该命令仅生成临时二进制文件），仍可通过内置的setcap.sh脚本实现权限配置，操作如下
+if you don't want to type your password for setcap, use sudo visudo to edit your sudoers file and allow your user account to run that command without a password, for example	若您希望免密执行setcap命令，可使用`sudo visudo`编辑sudoers配置文件，为您的用户账户添加免密执行权限，例如
+replacing username with your actual username	将username替换为您的实际用户名
+please be careful and only do this if you know what you are doing	请务必谨慎操作，仅当您充分了解操作后果时方可执行
+we are only qualified to document how to use caddy, not go tooling or your computer, and we are providing these instructions for convenience only; please learn how to use your own computer at your own risk and make any needful adjustments	我们仅负责说明Caddy的使用方式，无权指导Go工具链或您的计算机；此处提供的操作指引仅出于便利目的，请自行承担学习计算机操作的风险并作出必要调整
+using our builder tool, xcaddy	使用我们的构建工具xcaddy
+the following steps are automated	以下步骤是自动化的
+create a new folder: mkdir caddy	创建一个新文件夹：mkdir caddy
+change into it: cd caddy	切换到它：cd caddy
+copy caddy's main.go into the empty folder	将Caddy的main.go复制到空文件夹中
+add imports for any custom plugins you want to add	为您想要添加的任何自定义插件添加导入
+initialize a go module: go mod init caddy	初始化Go模块：go mod init caddy
+(optional) pin caddy version: go get github.com/caddyserver/caddy/v2@version replacing version with a git tag, commit, or branch name	（可选）锁定Caddy版本：执行`go get github.com/caddyserver/caddy/v2@version`，将version替换为Git标签、提交哈希或分支名称
+(optional) add plugins by adding their import: _ "import/path/here"	（可选）通过添加插件的导入来添加插件： _ "import/path/here"
+compile: go build -tags=nobadger,nomysql,nopgx	编译：go build -tags=nobadger,nomysql,nopgx
+the caddy website has documentation that includes tutorials, quick-start guides, reference, and more	Caddy网站上的文档包括教程、快速入门指南、参考资料等
+we recommend that all users -- regardless of experience level -- do our getting started guide to become familiar with using caddy	我们建议所有用户（无论经验水平如何）都按照我们的入门指南熟悉使用Caddy
+if you've only got a minute, the website has several quick-start tutorials to choose from	若您时间紧张，网站提供多种快速入门教程方案可供选择
+however, after finishing a quick-start tutorial, please read more documentation to understand how the software works	但是，在完成快速入门教程后，请阅读更多文档以了解软件的工作原理
+caddy is most often used as an https server, but it is suitable for any long-running go program	Caddy最常用作HTTPS服务器，但也适用于任何需要长期运行的Go程序
+first and foremost, it is a platform to run go applications	首先，它是一个运行Go应用程序的平台
+caddy "apps" are just go programs that are implemented as caddy modules	Caddy的"apps"本质上是作为Caddy模块实现的Go程序
+two apps -- tls and http -- ship standard with caddy	tls与http两大核心应用随Caddy预装提供
+caddy apps instantly benefit from automated documentation, graceful on-line config changes via api, and unification with other caddy apps	Caddy应用能立即受益于自动文档生成、通过API的优雅在线配置变更，以及与其他Caddy应用的无缝统一
+although json is caddy's native config language, caddy can accept input from config adapters which can essentially convert any config format of your choice into json: caddyfile, json 5, yaml, toml, nginx config, and more	尽管JSON是Caddy的原生配置语言，但Caddy可通过配置适配器接受输入，这些适配器能将您选择的任意配置格式（如Caddyfile、JSON5、YAML、TOML、NGINX配置等）转换为JSON
+the primary way to configure caddy is through its api, but if you prefer config files, the command-line interface supports those too	配置Caddy的主要方式是通过其API，但若您更喜欢配置文件，命令行界面同样支持此类配置
+caddy exposes an unprecedented level of control compared to any web server in existence	与现有的任何Web服务器相比，Caddy展现了前所未有的控制水平
+in caddy, you are usually setting the actual values of the initialized types in memory that power everything from your http handlers and tls handshakes to your storage medium	在Caddy中，您通常是在内存中为已初始化的类型设定实际值，这些值驱动着从HTTP处理器、TLS握手协议到底层存储介质的全部核心功能
+caddy is also ridiculously extensible, with a powerful plugin system that makes vast improvements over other web servers	Caddy的扩展性惊人，其强大的插件系统使它在功能上远超其他Web服务器
+to wield the power of this design, you need to know how the config document is structured	要掌握此设计的精髓，您需要先理解配置文件文档的结构
+please see our documentation site for details about caddy's config structure	有关Caddy配置结构的详细信息，请参阅我们的文档网站
+nearly all of caddy's configuration is contained in a single config document, rather than being scattered across cli flags and env variables and a configuration file as with other web servers	几乎Caddy的所有配置都包含在一个配置文档中，而不是像其他Web服务器那样分散在CLI标志、环境变量和配置文件中
+this makes managing your server config more straightforward and reduces hidden variables/factors	这使得管理服务器配置更加简单，并减少了隐藏的变量/因素
+our website has complete documentation	我们的网站有完整的文档
+the docs are also open source	文档也是开源的
+you can contribute to them here	你可以在这里为之做出贡献
+we advise companies using caddy to secure a support contract through ardan labs before help is needed	我们建议各企业：在使用Caddy前应与Ardan Labs签订支持合同，而非等到需要帮助时
+a sponsorship goes a long way	赞助走得更远
+we can offer private help to sponsors	我们可以为赞助商提供专属支持
+if caddy is benefitting your company, please consider a sponsorship	若Caddy正在为您的企业创造价值，请考虑成为赞助伙伴
+this not only helps fund full-time work to ensure the longevity of the project, it provides your company the resources, support, and discounts you need; along with being a great look for your company to your customers and potential customers	这不仅助力项目可持续发展，更为贵司解锁核心资源、优先技术支持与专属折扣；同时为您的客户和潜在客户提供出色的公司形象
+individuals can exchange help for free on our community forum at https://caddy.community	个人可以在我们的社区论坛https://caddy.community上免费互助
+remember that people give help out of their spare time and good will	请记住，人们是利用自己的业余时间和善意来提供帮助的
+the best way to get help is to give it first	获得帮助的最好方法是先给予帮助
+please use our issue tracker only for bug reports and feature requests, i.e. actionable development items (support questions will usually be referred to the forums)	请使用我们的问题跟踪器仅用于报告错误和提出功能请求，即可操作的开发事项（支持问题通常会被引导至论坛处理）
+matthew holt began developing caddy in 2014 while studying computer science at brigham young university	马修·霍尔特（Matthew Holt）于2014年在杨百翰大学（Brigham Young University）攻读计算机科学期间开始开发Caddy项目
+the name "caddy" was chosen because this software helps with the tedious, mundane tasks of serving the web, and is also a single place for multiple things to be organized together	命名「Caddy」的灵感源于：该软件如同数字化管家，能代劳枯燥的Web服务运维事务，同时提供多功能一体化管理平台
+it soon became the first web server to use https automatically and by default, and now has hundreds of contributors and has served trillions of https requests	它很快成为自动且默认使用HTTPS的首个Web服务器，如今已拥有数百名贡献者并处理了数万亿次HTTPS请求
+the name "caddy" is trademarked	“Caddy”这个名字是商标
+the name of the software is "caddy", not "caddy server" or "caddyserver"	该软件的名称是“Caddy”，而不是“Caddy Server”或“CaddyServer”
+please call it "caddy" or, if you wish to clarify, "the caddy web server"	请将其称为“Caddy”，或者，如果您想澄清，请称为“Caddy Web服务器”
+caddy is a registered trademark of stack holdings gmbh	Caddy™是Stack Holdings有限责任公司（Stack Holdings GmbH）持有的注册商标
+project on x: @caddyserver	X上的项目：@caddyserver
+author on x: @mholt6	X上的作者:@mholt6
+caddy is a project of zerossl, a stack holdings company	Caddy™项目隶属于Stack Holdings有限责任公司旗下子公司ZeroSSL
+debian package repository hosting is graciously provided by cloudsmith	Debian软件包存储库托管由Cloudsmith慷慨提供
+cloudsmith is the only fully hosted, cloud-native, universal package management solution, that enables your organization to create, store and share packages in any format, to any place, with total confidence	Cloudsmith是唯一完全托管的、云原生的通用包管理解决方案，使您的组织能够以任何格式创建、存储和共享包，并可完全可靠地分发至任何地点
+releases 128	发行版128
+learn more about github sponsors	了解更多关于GitHub Sponsors的信息
+used by 1k	1K使用
+github homepage	GitHub首页
