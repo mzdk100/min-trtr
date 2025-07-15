@@ -1999,3 +1999,142 @@ usage of this library is at your own risk, and the author does not receive any f
 users are responsible for complying with third-party terms of service, including those of google translator or any other translation service provider	用户需自行遵守第三方服务条款，包括Google翻译或其他翻译服务提供商的相关条款
 free google translator without api key and limits	没有API密钥和限制的免费谷歌翻译器
 report repository	举报仓库
+winio is a single-threaded asynchronous gui runtime	Winio是一个单线程异步GUI运行时
+it is based on compio, and the gui part is powered by win32, qt, gtk and cocoa	它基于compio，图形用户界面部分由Win32、Qt、GTK和Cocoa驱动
+all io requests could be issued in the same thread as gui, without blocking the user interface	所有I/O请求都可以在与GUI相同的线程中发出，而不会阻塞用户界面
+winio follows elm-like design, inspired by yew and relm4	Winio采用类ELM设计模式，其设计灵感源自Yew和Relm4框架
+the application starts with a root component	应用程序从根组件启动
+create & initialize the window	创建并初始化窗口
+listen to events	监听事件
+update the window	更新窗口
+deal with custom messages	处理自定义消息
+the root component output stops the application	根组件输出停止应用程序
+need not to call `render`	无需调用`render`
+adjust layout and draw widgets here	调整布局并在此处绘制小部件
+single-threaded asynchronous gui runtime	单线程异步GUI运行时
+no releases published	未发布任何版本
+fork your own copy of compio-rs/winio	复刻你自己的compio-rs/winio副本
+contribute back to compio-rs/winio by adding your own branch	通过添加自己的分支为compio-rs/winio做出贡献
+change your avatar	更改您的头像
+introducing user status	新增用户状态
+now you can set a status message about what you're currently doing on github	现在您可以设置关于在GitHub上工作进展的状态消息
+this status will be publicly visible to other users when they view your profile	当其他用户查看您的个人资料时，此状态将对其公开可见
+got it	知道了
+set status	设置状态
+edit profile	编辑资料
+5 followers · 2 following	5个粉丝·2个关注
+you unlocked new achievements with private contributions	您通过私有贡献解锁了新成就
+show them off by including private contributions in your profile in settings	通过在您的个人资料设置中包含私有贡献来展示它们
+customize your pins	自定义置顶项
+contribution settings	贡献设置
+275 contributions in the last year	去年有275次贡献
+contribution graph	贡献图
+learn how we count contributions	了解我们如何统计贡献次数
+no contributions	无贡献
+low contributions	低贡献
+medium-low contributions	中低贡献
+medium-high contributions	中高贡献
+high contributions	高贡献
+year: 2025	年份：2025
+contribution activity	贡献活动
+july 2025	2025年7月
+created 1 commit in 1 repository	在1个存储库中创建了1个提交
+1 commit	1个提交
+created 1 repository	已创建1个存储库
+this contribution was made on jul 15	该贡献于7月15日完成
+opened 1 pull request in 1 repository	在1个存储库中打开了1个拉取请求
+this contribution was made on jul 2	该贡献于7月2日完成
+opened 1 issue in 1 repository	在1个存储库中打开了1个问题
+do you have any examples	你有一些示例吗
+this contribution was made on jul 14	该贡献于7月14日完成
+show more activity	显示更多活动
+seeing something unexpected	遇到异常情况
+take a look at the github profile guide	请查看GitHub个人资料指南
+moderation options	审核选项
+code and automation	代码和自动化
+advanced security	高级安全性
+deploy keys	部署秘钥
+secrets and variables	Secrets与变量
+github apps	GitHub应用
+email notifications	电子邮件通知
+template repository	模板存储库
+template repositories let users generate new repositories with the same directory structure and files	模板存储库功能允许用户快速生成具有相同目录结构和文件的新仓库
+learn more about template repositories	了解有关模板存储库的更多信息
+enabling this setting will require contributors to sign off on commits made through github’s web interface	启用此设置将要求贡献者签署通过GitHub网页界面提交的代码
+signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the developer certificate of origin (dco)	签署(Sign-off)是贡献者确认其提交符合仓库条款（通常为开发者原创证书/DCO）的法定声明方式
+learn more about signing off on commits	了解更多关于签署提交的信息
+default branch	默认分支
+the default branch is considered the “base” branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch	默认分支是仓库中的'基准'分支，所有拉取请求和代码提交将自动基于该分支进行（除非您指定其他分支）
+rename branch	重命名分支
+social preview	社交预览
+upload an image to customize your repository’s social media preview	上传图像以自定义存储库的社交媒体预览
+images should be at least 640×320px (1280×640px for best display)	图像应至少为640×320px（1280×640px以获得最佳显示效果）
+download template	下载模板
+wikis host documentation for your repository	Wiki系统托管您代码库的文档资源
+restrict editing to collaborators only	仅限合作者编辑
+public wikis will still be readable by everyone	公开Wiki仍对所有人保持可读权限
+issues integrate lightweight task tracking into your repository	Issues（问题跟踪）为您的代码库提供轻量级任务追踪功能
+keep projects on track with issue labels and milestones, and reference them in commit messages	通过问题标签和里程碑保持项目进度，并在提交信息中引用它们
+get organized with issue templates	使用问题模板进行组织
+give contributors issue templates that help you cut through the noise and help them push your project forward	为贡献者提供Issue模板，既帮助您高效筛选有效信息，又助力他们推动项目进展
+set up templates	设置模板
+sponsorships help your community know how to financially support this repository	赞助机制（Sponsorships）可帮助社区成员了解如何对该代码库进行财务支持
+display a "sponsor" button	显示「赞助」按钮
+add links to github sponsors or third-party methods your repository accepts for financial contributions to your project	添加项目接受的财务支持渠道链接（GitHub Sponsors 或第三方平台）
+set up sponsor button	设置赞助按钮
+preserve this repository	保留此存储库
+include this code in the github archive program	将此代码纳入GitHub存档计划
+discussions is the space for your community to have conversations, ask questions and post answers without opening issues	Discussions（讨论区）是您的社区成员进行对话、提问和解答的空间，无需创建Issue
+get started with discussions	开始使用Discussions
+engage your community by having discussions right in your repository, where your community already lives	在您的仓库中直接发起讨论，与社区成员互动交流
+set up discussions	设置Discussions
+projects on github are created at the repository owner's level (organization or user) and can be linked to a repository's projects tab	GitHub项目（Projects）创建于仓库所有者层级（组织或用户），可关联至代码仓库的「项目」标签页
+projects are suitable for cross-repository development efforts such as feature work, complex product roadmaps or even issue triage	项目（Projects）适用于跨仓库的开发协作场景，例如功能开发、复杂产品路线图管理，乃至Issue分类处理
+pull requests	拉取请求
+when merging pull requests, you can allow any combination of merge commits, squashing, or rebasing	合并Pull Request时，您可选择任意组合的合并方式：合并提交、压缩合并或变基合并
+at least one option must be enabled	必须至少启用一个选项
+if you have linear history requirement enabled on any protected branch, you must enable squashing or rebasing	若在受保护分支上启用了线性提交历史要求，则必须启用压缩或变基功能
+allow merge commits	允许合并提交
+add all commits from the head branch to the base branch with a merge commit	通过合并提交将头分支的所有提交添加到基分支
+default commit message	默认提交消息
+presented when merging a pull request with merge	在通过合并提交方式处理拉取请求时呈现
+default message	默认消息
+allow squash merging	允许压缩合并
+combine all commits from the head branch into a single commit in the base branch	将头分支的所有提交合并为基分支中的单个提交
+presented when merging a pull request with squash	在使用压缩合并方式处理拉取请求时呈现
+allow rebase merging	允许变基合并
+add all commits from the head branch onto the base branch individually	将头分支的所有提交逐个添加到基分支上
+control how and when users are prompted to update their branches if there are new changes available in the base branch	控制当基分支有新变更时，如何以及何时提示用户更新其分支
+always suggest updating pull request branches	始终建议更新拉取请求分支
+whenever there are new changes available in the base branch, present an “update branch” option in the pull request	当基分支有新变更时，在拉取请求界面显示'更新分支'选项
+you can allow setting pull requests to merge automatically once all required reviews and status checks have passed	您可启用自动合并功能：当拉取请求(PR)通过所有必要审查和状态检查后，系统将自动执行合并操作
+allow auto-merge	允许自动合并
+waits for merge requirements to be met and then merges automatically	等待满足合并条件后自动执行合并
+after pull requests are merged, you can have head branches deleted automatically	合并拉取请求后，您可以自动删除头分支
+automatically delete head branches	自动删除头分支
+deleted branches will still be able to be restored	已删除的分支仍可恢复
+when creating source code archives, you can choose to include files stored using git lfs in the archive	在创建源代码归档文件时，您可以选择将Git LFS存储的文件包含在归档中
+include git lfs objects in archives	在归档文件中包含Git LFS对象
+git lfs usage in archives is billed at the same rate as usage with the client	Git LFS在归档文件中的使用计费标准与客户端使用费率相同
+limit how many branches and tags can be updated in a single push	限制一次推送中可以更新的分支和标签数量
+pushes will be rejected if they attempt to update more than this	如果推送尝试更新超出此限制，则将被拒绝
+learn more about this setting, and send us your feedback	了解有关此设置的更多信息，并向我们发送您的反馈
+after merging a pull request, linked issues can be closed automatically	合并拉取请求后，可以自动关闭链接的问题
+auto-close issues with merged linked pull requests	自动关闭已合并关联PR的问题
+whenever linked pull requests have merged, auto-close the issue	每当链接的拉取请求合并时，自动关闭该问题
+danger zone	危险区域
+change visibility	更改可见性
+change repository visibility	更改存储库可见性
+this repository is currently public	此存储库当前是公开的
+disable branch protection rules	禁用分支保护规则
+disable branch protection rules enforcement and apis	禁用分支保护规则执行和API
+transfer ownership	转移所有权
+transfer this repository to another user or to an organization where you have the ability to create repositories	将此仓库转移至其他用户账户，或您有创建仓库权限的组织
+archive this repository	将此存储库存档
+mark this repository as archived and read-only	将此存储库标记为已存档且只读
+delete this repository	删除此存储库
+once you delete a repository, there is no going back	一旦您删除存储库，则不可逆
+please be certain	请确认
+i want to delete this repository	我想删除此存储库
+unexpected bad things will happen if you don’t read this	如果你不阅读此处，会发生意想不到的事情
+i have read and understand these effects	我已经阅读并理解这些影响
