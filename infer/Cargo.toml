@@ -12,7 +12,7 @@ fancy-regex ="0.15.0"
 
 [dev-dependencies]
 anyhow = "1.0.98"
-tokio = { version = "1.46.1",features = ["macros", "rt-multi-thread"] }
+tokio = { version = "1.47.0",features = ["macros", "rt-multi-thread"] }
 
 [workspace]
 members = ["examples/android"]

@@ -171,7 +171,7 @@ another test	另一个测试
 fixed compile error	修复编译错误
 different qwen variants working	不同的Qwen变体正在工作
 added moe model	添加了MOE模型
-added additional eos token	添加了额外的EOS令牌
+added additional eos token	添加了额外的EOS标记
 translated korean comments to english as well as i can	将韩语注释翻译为英语
 running the example	运行示例
 cast the audio data to the correct sampling rate for the model	将音频数据转换为适合模型的正确采样率
@@ -1817,7 +1817,7 @@ history:1 commit	历史：1次提交
 history:12 commits	历史：12次提交
 update license	更新许可证
 official model for	官方模型
-spark-tts: an efficient llm-based text-to-speech model with single-stream decoupled speech tokens	Spark-TTS：一种基于大语言模型的高效文本转语音模型——单流解耦语音令牌架构
+spark-tts: an efficient llm-based text-to-speech model with single-stream decoupled speech tokens	Spark-TTS：一种基于大语言模型的高效文本转语音模型——单流解耦语音标记架构
 spark-tts logo	Spark-TTS徽标
 spark-tts is an advanced text-to-speech system that uses the power of large language models (llm) for highly accurate and natural-sounding voice synthesis	Spark-TTS是一个先进的文本到语音系统，它利用大型语言模型（LLM）的强大功能进行高度准确和自然的语音合成
 it is designed to be efficient, flexible, and powerful for both research and production use	用于研究与生产用途的高效、灵活和强大的设计
@@ -2138,3 +2138,115 @@ please be certain	请确认
 i want to delete this repository	我想删除此存储库
 unexpected bad things will happen if you don’t read this	如果你不阅读此处，会发生意想不到的事情
 i have read and understand these effects	我已经阅读并理解这些影响
+this is an inference engine for the language model of rwkv implemented in pure webgpu	这是一个在纯WebGPU中实现的RWKV语言模型的推理引擎
+no dependencies on cuda/python	不依赖CUDA/Python
+support nvidia/amd/intel gpus, including integrated gpus	支持Nvidia/AMD/Intel GPU，包括集成显卡
+vulkan/dx12/opengl backends	Vulkan/Dx12/OpenGL后端
+wasm support (can run in browser)	WASM支持（可以在浏览器中运行）
+batched inference	批量推理
+int8 and float4 quantization	INT8和FP4量化
+very fast	非常快
+lora merging at loading time	加载时合并LoRA模型
+support rwkv v4 through v7	支持RWKV V4至V7
+hooks to intervene the inference process at any point	在任何阶段干预推理过程的钩子
+model (de)serialization	模型（反）序列化
+note that web-rwkv is only an inference engine	请注意，web-rwkv只是一个推理引擎
+it only provides the following functionalities	它仅提供以下功能
+a tokenizer	一个标记器
+model loading	模型加载
+state creation and updating	状态创建和更新
+model implements run function that takes in prompt tokens and returns logits, and a softmax function that turns logits into predicted next token probabilities	模型实现了run函数，该函数接收提示标记（prompt tokens）并返回对数概率（logits），以及一个将对数概率转换为预测下一标记（next token）概率的softmax函数
+both of them are executed on gpu	两者都在GPU上执行
+model quantization and (de)serialization	模型量化和（反）序列化
+wasm bindings	WASM绑定
+it does not provide the following	它不提供以下内容
+openai api or apis of any kind	OpenAI API或任何类型的API
+if you would like to deploy an api server, check ai00 rwkv server which is a fully-functional openai-compatible api server built upon web-rwkv	如果您需部署API服务器，建议使用AI00 RWKV Server——这是一款基于web-rwkv构建的完整兼容OpenAI接口的API服务器
+you could also check the web-rwkv-axum project if you want some fancy inference pipelines, including classifier-free guidance (cfg), backus–naur form (bnf) guidance, and more	如果您需使用高级推理管道（无分类器引导采样CFG、巴科斯范式BNF引导等），也可查看web-rwkv-axum项目
+samplers, though in the examples a basic nucleus sampler is implemented, this is not included in the library itself	采样器方面，虽然示例中实现了基础核采样器（nucleus sampler），但该功能并未内置于库中
+state caching or management system	状态缓存或管理系统
+python bindings	Python绑定
+for devs: check the slides for technique details about the architecture, history and optimizations	对于开发人员：请查看幻灯片，了解有关架构、历史和优化的技术细节
+install rust	安装Rust
+download the model from huggingface, and convert it using convert_safetensors.py	从HuggingFace下载模型，并使用convert_safetensors.py进行转换
+put the .st model under assets/models	将.st模型放在assets/models下
+performance test	性能测试
+the test generates 500 tokens and measure the time cost	该测试生成500个token并测量耗时
+chat demo	聊天演示
+to chat with the model, run	要与模型聊天，请运行
+in this demo, type + to retry last round's generation; type - to exit	在本演示中，按`+`重新生成上一轮内容，按`-`退出程序
+to specify the location of your safetensors model, use	要指定你的safetensors模型的位置，请使用
+to load custom prompts for chat, use	要加载聊天的自定义提示，请使用
+see assets/prompt.json for details	详见assets/prompt.json
+to specify layer quantization, use --quant <layers> or --quant-nf4 <layers> to quantize the first <layers> layers	要指定层量化，可使用`--quant <LAYERS>`或`--quant-nf4 <LAYERS>`对前<LAYERS>层进行量化
+for example, use	例如，使用
+to quantize all 32 layers	量化所有32层
+this demo showcases generation of 4 batches of text with various lengths simultaneously	此演示展示了同时生成4批不同长度的文本
+the inspector demo is a guide to an advanced usage called hooks	inspector演示是使用钩子（hooks）这一高级功能的指导说明
+hooks allow user to inject any tensor ops into the model's inference process, fetching and modifying the contents of the runtime buffer, state, and even the model parameters	钩子允许用户在模型推理过程中注入任意张量操作，从而获取并修改运行时缓冲区内容、状态乃至模型参数
+hooks enable certain third-party implementations like dynamic lora, control net, and so on	钩子支持动态LoRA、ControlNet等第三方实现
+(de)serialization	（反）序列化
+all versions of models implements serde::ser::serialize and serde::de::deserializeseed<'de>, which means that one can save quantized or lora-merged model into a file and load it afterwards	所有模型版本均实现了serde::ser::Serialize和serde::de::DeserializeSeed<'de>，这意味着用户可以将量化或LoRA合并后的模型保存至文件，并在后续重新加载
+use in your project	在您的项目中使用
+to use in your own rust project, simply add web-rwkv = "0.10" as a dependency in your cargo.toml	要在您自己的Rust项目中使用，只需在Cargo.toml中添加`web-rwkv="0.10"`作为依赖项即可
+check examples on how to create the environment, the tokenizer and how to run the model	查看如何创建环境、标记器以及如何运行模型的示例
+inference runtime	推理运行时
+since v0.7 there is a runtime feature for the crate	自V0.7版本起，该Crate已支持运行时feature
+when enabled, applications can use infrastructures of the asynchronous runtime api	启用后，应用程序可以使用异步运行时API的基础结构
+in general, a runtime is an asynchronous task that is driven by tokio	通常来说，运行时是由tokio驱动的异步任务
+it allows cpu and gpu to work in parallel, maximizing the utilization of gpu computing resource	它允许CPU和GPU并行工作，最大限度地利用GPU计算资源
+check examples starting with rt for more information, and compare the generation speed with their non-rt counterparts	查看以rt开头的示例以获取更多信息，并将生成速度与非rt对应的示例进行比较
+since version v0.2.4, the engine supports batched inference, i.e., inference of a batch of prompts (with different length) in parallel	从V0.2.4版本开始，该引擎支持批量推理，即并行推理一批不同长度的提示
+this is achieved by a modified wkv kernel	这是通过修改WKV内核实现的
+when building the model, the user specifies token_chunk_size (default: 32, but for powerful gpus this could be much higher), which is the maximum number of tokens the engine could process in one run call	在构建模型时，用户需指定`token_chunk_size`参数（默认值为32，但对高性能GPU而言该值可显著提高），该参数决定了引擎单次推理能处理的最大标记数
+after creating the model, the user creates a modelstate with num_batch specified	在模型创建完成后，用户需通过指定`num_batch`参数来初始化ModelState
+this means that there are num_batch slots that could consume the inputs in parallel	这意味着有`num_batch`个槽位，可用于并行处理输入数据
+before calling run(), the user fills each slot with some tokens as prompt	在调用`run()`之前，用户在每个槽位中填充一些标记作为提示
+if a slot is empty, no inference will be run for it	如果槽位为空，则不会对其进行推理
+after calling run(), some (but may not be all) input tokens are consumed, and logits appears in their corresponding returned slots if the inference of that slot is finished during this run	在调用`run()`方法后，部分（但不一定是全部）输入标记会被处理，若该槽位的推理在此次运行中已完成，对应的logits将出现在返回的槽位中
+since there are only token_chunk_size tokens are processed during each run() call, there may be none of logits appearing in the results	由于每次调用`run()`仅处理`token_chunk_size`个标记，因此返回结果中可能不包含任何logits
+hooks are a very powerful tool for customizing model inference process	钩子是定制模型推理过程的一个非常强大的工具
+the library provides with the model::run_with_hooks function, which takes into a hookmap as a parameter	该库提供了`Model::run_with_hooks`函数，该函数将HookMap作为参数
+a hookmap is essentially a hashmap from model::hook to functions	HookMap本质上是一个将`Model::Hook`类型映射至函数指针的哈希表结构
+a model::hook defines a certain place the hook function can be injected into	Model::Hook定义了钩子函数可以注入特定位置
+a model generally has dozens of hooking points	一个模型通常有几十个挂钩点
+a hook function is a function of fn(&frame) -> result<tensorop, tensorerror>, where you can create tensor ops that reads/writes all the tensors you get here	钩子函数是一种遵循`Fn(&Frame) -> Result<TensorOp, TensorError>`签名的函数，您可以在其中创建张量操作来读取/写入在此处得到的所有张量
+a frame contains all accessible gpu buffers during the inference, including the state and all runtime buffers	`Frame`包含推理过程中所有可访问的GPU缓冲区，包括状态及运行时缓冲数据
+an example reading out every layer's output during inference	一个在推理过程中读取每一层输出的示例
+create a buffer to store each layer's output	创建一个缓冲区来存储每一层的输出
+cloning a buffer doesn't actually clone its internal data; use `deep_clone()` to clone to a new buffer	克隆缓冲区实际上并不克隆其内部数据；使用`deep_clone()`克隆到新的缓冲区
+figure out how many tokens this run has	计算此运行有多少标记
+"steal" the layer's output (activation), and put it into our buffer	"窃取"该层的输出（激活值），并将其存入我们的缓冲区
+now the data is available in `buffer`, we can read it back	现在数据在`buffer`中可用，我们可以读回它
+convert models	转换模型
+you must download the model and put in assets/models before running if you are building from source	如果您是从源代码构建的，则必须下载模型并在运行前放入`assets/models`
+you can now download the converted models here	您现在可以在此处下载转换后的模型
+you may download the official rwkv world series models from huggingface, and convert them via the provided convert_safetensors.py	您可以从HuggingFace下载官方RWKV World系列模型，并通过提供的convert_safetensors.py进行转换
+if you don't have python installed or don't want to, there is a pure rust converter	如果你没有安装Python或不想安装，有一个纯Rust转换器
+you can clone that repo and run	您可以克隆该仓库并运行
+your model is broken, mainly because you cloned the repo but did not set up git-lfs	您的模型损坏，主要原因是克隆了代码库但未配置Git LFS
+please download the model manually and overwrite that one in assets/models	请手动下载模型，并将其覆盖至`assets/models`下的同名文件
+your gpu is not responding	您的GPU没有响应
+maybe you are running a model that is just too big for your device	也许你运行的模型对你的设备来说太大了
+if the model doesn't fit into your vram, the driver needs to constantly swap and transfer the model parameters, causing it to be 10x slower	如果模型参数超出显存（VRAM）容量，驱动程序将被迫频繁进行模型参数交换与传输，导致性能下降至原速的1/10
+try to quantize your model first	尝试先量化你的模型
+debugging rust on windows	在Windows上调试Rust
+source: link	来源：链接
+the default toolchain installed on windows by rustup is the x86_64-pc-windows-msvc toolchain	Rustup在Windows系统上默认安装的工具链是x86_64-pc-windows-msvc
+this toolchain does not include rust-specific formatters for lldb, as it is assumed that users will primarily use windbg or microsoft visual studio's debugger for this target	此工具链未集成针对LLDB的Rust专用格式化器，因其默认假设用户会主要使用WinDbg或微软Visual Studio调试器进行目标平台调试
+if you prefer to use codelldb for debugging, you have two options	如果您更喜欢使用CodeLLDB进行调试，您有两个选择
+use the x86_64-pc-windows-gnu toolchain to compile your rust project	使用x86_64-pc-windows-gnu工具链编译你的Rust项目
+this option ensures full lldb visualization support for rust types	此选项可确保Rust类型的完整LLDB可视化支持
+compile with the x86_64-pc-windows-msvc toolchain but use lldb formatters from x86_64-pc-windows-gnu	使用x86_64-pc-windows-msvc工具链编译，但使用x86_64-pc-windows-gnu中的LLDB格式化程序
+to use this option, install the x86_64-pc-windows-gnu toolchain via rustup toolchain add x86_64-pc-windows-gnu	要使用此选项，请通过`rustup toolchain add x86_64-pc-windows-gnu`安装x86_64/pc-windows-gnu工具链
+then, configure codelldb to load its formatters by adding the following entry to your workspace configuration	然后，通过将以下条目添加到工作区配置中，配置CodeLLDB以加载其格式化程序
+note that this setup is less ideal due to differences in the debug information layout emitted by the rust compiler for enum data types when targeting msvc, which means enums may not be visualized correctly	请注意，由于Rust编译器在针对MSVC时为枚举数据类型发出的调试信息布局存在差异，因此此设置不太理想，这意味着枚举可能无法正确可视化
+however, lldb formatters will work for standard collections like strings and vectors	但是，LLDB格式化程序将适用于字符串和向量等标准集合
+tokenizer is implemented by @koute	Tokenizer由@koute实现
+the logo is inspired from the re;on type-zx7 logo by riez-on	该Logo的设计灵感源自Riez-ON公司推出的Re;ON Type-ZX7字体标志
+it is generated by flux dev and processed manually	它由Flux Dev生成并手动处理
+the original zx7 logo is licensed to be used in non-commercial projects	ZX7的原始徽标被授权用于非商业项目
+implementation of the rwkv language model in pure webgpu/rust	RWKV语言模型在纯WebGPU/Rust中的实现
+view license	查看许可证
+releases 143	发行版143
+3 weeks ago	3周前
