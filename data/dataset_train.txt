@@ -2250,3 +2250,105 @@ implementation of the rwkv language model in pure webgpu/rust	RWKV语言模型�
 view license	查看许可证
 releases 143	发行版143
 3 weeks ago	3周前
+funasr hopes to build a bridge between academic research and industrial applications on speech recognition	FunASR希望在语音识别的学术研究和工业应用之间架起一座桥梁
+by supporting the training & finetuning of the industrial-grade speech recognition model, researchers and developers can conduct research and production of speech recognition models more conveniently, and promote the development of speech recognition ecology	通过支持工业级语音识别模型的训练和微调，研究人员和开发人员可以更方便地进行语音识别模型的研究和生产，并推动语音识别生态的发展
+asr for fun	让语音识别更有趣
+model zoo	模型仓库
+funasr is a fundamental speech recognition toolkit that offers a variety of features, including speech recognition (asr), voice activity detection (vad), punctuation restoration, language models, speaker verification, speaker diarization and multi-talker asr	FunASR是一个基础语音识别工具包，提供多种功能，包括语音识别（ASR）、语音活动检测（VAD）、标点恢复、语言模型、说话人验证、说话人分离和多人对话语音识别等
+funasr provides convenient scripts and tutorials, supporting inference and fine-tuning of pre-trained models	FunASR提供了便捷的脚本和教程，支持预训练的模型的推理与微调
+we have released a vast collection of academic and industrial pretrained models on the modelscope and huggingface, which can be accessed through our model zoo	我们在ModelScope与HuggingFace上发布了大量学术和工业预训练的模型，可以通过我们的模型仓库访问
+the representative paraformer-large, a non-autoregressive end-to-end speech recognition model, has the advantages of high accuracy, high efficiency, and convenient deployment, supporting the rapid construction of speech recognition services	具有代表性的Paraformer-large是一种非自回归端到端语音识别模型，具有高精度、高效率、部署方便等优点，支持快速构建语音识别服务
+for more details on service deployment, please refer to the service deployment document	有关服务部署的更多详细信息，请参阅服务部署文档
+2024/10/29: real-time transcription service 1.12 released, the 2pass-offline mode supports the sensevoicesmall model;(docs)	2024年10月29日：实时语音听写服务1.12发布，2pass-offline模式支持SensevoiceSmall模型（文档）
+2024/10/10: added support for the whisper-large-v3-turbo model, a multitasking model that can perform multilingual speech recognition, speech translation, and language identification	2024年10月10日：增加了对Whisper-large-v3-turbo模型的支持，这是一种可以执行多语言语音识别、语音翻译和语言识别的多任务模型
+it can be downloaded from the modelscope, and openai	它可以从ModelScope和OpenAI下载
+2024/09/26: offline file transcription service 4.6, offline file transcription service of english 1.7, real-time transcription service 1.11 released, fix memory leak & support the sensevoicesmall onnx model; file transcription service 2.0 gpu released, fix gpu memory leak; (docs)	2024年9月26日：离线文件转写服务4.6，离线英语文件转写服务1.7，实时语音听写服务1.11发布，修复内存泄漏并支持SensevoiceSmall ONNX模型；文件转写服务2.0 GPU发布，修复显存泄漏（文档）
+2024/09/25: keyword spotting models are new supported	2024年9月25日：新支持关键字识别（语音唤醒）模型
+supports fine-tuning and inference for four models: fsmn_kws, fsmn_kws_mt, sanm_kws, sanm_kws_streaming	支持四种模型的微调和推理：fsmn_kws、fsmn_kws_mt、sanm_kws和sanm_kws_streaming
+2024/07/04: sensevoice is a speech foundation model with multiple speech understanding capabilities, including asr, lid, ser, and aed	2024年7月4日：SenseVoice是一个具有多种语音理解功能的语音基础模型，包括语音识别（ASR）、语言识别（LID）、情感识别（SER）以及音频事件检测（AED）
+2024/07/01: offline file transcription service gpu 1.1 released, optimize bladedisc model compatibility issues; ref to (docs)	2024年7月1日：离线文件转写服务GPU1.1发布，优化BladeDISC模型兼容性问题；参考（文档）
+2024/06/27: offline file transcription service gpu 1.0 released, supporting dynamic batch processing and multi-threading concurrency	2024年6月27日：离线文件转写服务GPU1.0发布，支持动态批处理和多线程并发
+in the long audio test set, the single-thread rtf is 0.0076, and multi-threads' speedup is 1200+ (compared to 330+ on cpu); ref to (docs)	在长音频测试集中，单线程RTF为0.0076，多线程的加速比为1200+（与CPU上的330+相比）；参考（文档）
+2024/05/15: emotion recognition models are new supported	2024年5月15日：新增支持情感识别模型
+currently supports the following categories: 0: angry 1: happy 2: neutral 3: sad 4: unknown	目前支持以下类别：0，生气；1，开心；2，中立；3，难过；4，未知
+2024/05/15: offline file transcription service 4.5, offline file transcription service of english 1.6, real-time transcription service 1.10 released, adapting to funasr 1.0 model structure;(docs)	2024年5月15日：离线文件转写服务4.5、英语离线文件转写服务1.6、实时语音听写服务1.10发布，适配FunASR 1.0模型结构（文档）
+full changelog	完整变更日志
+install for pypi	PYPI安装
+or install from source code	或从源代码安装
+install modelscope or huggingface_hub for the pretrained models (optional)	为预训练模型安装modelscope或huggingface_hub（可选）
+funasr has open-sourced a large number of pre-trained models on industrial data	FunASR已经开源了大量在工业数据上预训练的模型
+you are free to use, copy, modify, and share funasr models under the model license agreement	您可以在模型许可协议下自由使用、复制、修改和分享FunASR模型
+below are some representative models, for more models please refer to the model zoo	以下是一些有代表性的模型，更多模型请参考模型仓库
+note: ⭐ represents the modelscope model zoo, 🤗 represents the huggingface model zoo, 🍀 represents the openai model zoo	注：⭐表示ModelScope模型仓库，🤗表示HuggingFace模型仓库，🍀表示OpenAI模型仓库
+model name	模型名称
+task details	任务详情
+multiple speech understanding capabilities, including asr, itn, lid, ser, and aed, support languages such as zh, yue, en, ja, ko	多语音理解能力，包括语音识别（ASR）、逆文本正则化（ITN）、语言识别（LID）、情感识别（SER）和音频事件检测（AED），支持语言如中文（zh）、粤语（yue）、英语（en）、日语（ja）、韩语（ko）
+300000 hours	30万小时
+speech recognition, with timestamps, non-streaming	具有时间戳的非流式语音识别
+60000 hours, mandarin	6万小时，普通话
+speech recognition, streaming	语音识别、流式
+speech recognition, without timestamps, non-streaming	语音识别，无时间戳，非流式
+50000 hours, english	5万小时，英语
+speech recognition, non-streaming	非流式语音识别
+punctuation restoration	标点恢复
+100m, mandarin and english	100M，普通话和英语
+voice activity detection	语音活动检测
+5000 hours, mandarin and english	5千小时，普通话和英语
+keyword spotting, streaming	关键词识别（语音唤醒）、流式
+5000 hours, mandarin	5千小时，普通话
+timestamp prediction	时间戳预测
+speaker verification/diarization	说话人认证/分割
+audio-text multimodal models (pretraining)	音频文本多模态大模型（预训练）
+audio-text multimodal models (chat)	音频文本多模态大模型（聊天）
+speech emotion recognition	语音情感识别
+40000 hours	4万小时
+below is a quick start tutorial	下面是一个快速入门教程
+test audio files (mandarin, english)	测试音频文件（普通话、英语）
+command-line usage	命令行用法
+notes: support recognition of single audio file, as well as file list in kaldi-style wav.scp format: wav_id wav_path	注：支持单条音频文件识别，也支持文件列表，列表为Kaldi风格wav.scp：wav_id wav_path
+speech recognition (non-streaming)	语音识别（非流式）
+parameter description	参数描述
+model_dir: the name of the model, or the path to the model on the local disk	model_dir：模型的名称，或本地磁盘上模型的路径
+vad_model: this indicates the activation of vad (voice activity detection)	vad_model：这表示VAD（语音活动检测）的开启
+the purpose of vad is to split long audio into shorter clips	VAD的目的是将长音频分割成较短的片段
+in this case, the inference time includes both vad and sensevoice total consumption, and represents the end-to-end latency	在这种情况下，推理时间包括VAD和SenseVoice的总消耗，并表示端到端延迟
+if you wish to test the sensevoice model's inference time separately, the vad model can be disabled	如果您想单独测试SenseVoice模型的推理时间，可以禁用VAD模型
+vad_kwargs: specifies the configurations for the vad model	vad_kwargs：指定VAD模型的配置
+max_single_segment_time: denotes the maximum duration for audio segmentation by the vad_model, with the unit being milliseconds (ms)	max_single_segment_time：表示vad_model进行音频分割的最大持续时间，单位为毫秒（ms）
+use_itn: whether the output result includes punctuation and inverse text normalization	输出结果中是否包含标点与逆文本正则化
+batch_size_s: indicates the use of dynamic batching, where the total duration of audio in the batch is measured in seconds (s)	batch_size_s：表示使用动态批处理，其中批处理中音频的总持续时间以秒为单位
+merge_vad: whether to merge short audio fragments segmented by the vad model, with the merged length being merge_length_s, in seconds (s)	merge_vad：是否合并由VAD模型分割的短音频片段，合并长度为merge_length_s，单位为秒
+ban_emo_unk: whether to ban the output of the emo_unk token	ban_emo_unk：是否禁止输出emo_unk标记
+paraformer-zh is a multi-functional asr model	paraformer-zh是一种多功能ASR模型
+use vad, punc, spk or not as you need	根据需要使用vad、punc、spk或不使用
+note: hub: represents the model repository, ms stands for selecting modelscope download, hf stands for selecting huggingface download	注：hub：代表模型仓库，ms代表选择ModelScope下载，hf代表选择HuggingFace下载
+speech recognition (streaming)	语音识别（流式）
+note: chunk_size is the configuration for streaming latency	注：chunk_size是流式延迟的配置
+[0,10,5] indicates that the real-time display granularity is 10*60=600ms, and the lookahead information is 5*60=300ms	[0,10,5]表示实时显示粒度为10*60=600ms，未来信息为5*60=300ms
+each inference input is 600ms (sample points are 16000*0.6=9600), and the output is the corresponding text	每个推理输入为600ms（采样点为16000*0.6=9600），输出为相应的文本
+for the last speech segment input, is_final=true needs to be set to force the output of the last word	对于最后一个语音片段输入，需要设置`is_final=True`以强制输出最后一个字
+more examples	更多示例
+export onnx	导出ONNX
+test onnx	测试ONNX
+more examples ref to demo	更多示例请参考演示
+deployment service	部署服务
+funasr supports deploying pre-trained or further fine-tuned models for service	FunASR支持预训练或者进一步微调的模型进行服务部署
+currently, it supports the following types of service deployment	目前，支持以下类型的服务部署
+file transcription service, mandarin, cpu version, done	文件转写服务（普通话CPU版本），已完成
+the real-time transcription service, mandarin (cpu), done	实时语音识别服务普通话（CPU），已完成
+file transcription service, english, cpu version, done	文件转写服务（英语CPU版本），已完成
+file transcription service, mandarin, gpu version, in progress	文件转写服务（普通话GPU版本），进行中
+and more	更多
+for more detailed information, please refer to the service deployment documentation	有关更多详细信息，请参阅服务部署文档
+community communication	社区交流
+if you encounter problems in use, you can directly raise issues on the github page	如果您在使用中遇到问题，可以直接在GitHub页面上提出Issue
+you can also scan the following dingtalk group to join the community group for communication and discussion	您还可以扫描以下钉钉群，加入社区群进行交流和讨论
+dingtalk group	钉钉群
+the contributors can be found in contributors list	贡献者可以在贡献者名单中找到
+this project is licensed under the mit license	该项目根据MIT许可证获得许可
+funasr also contains various third-party components and some code modified from other repos under other open source licenses	FunASR还包含各种第三方组件和一些根据其他开源许可证从其他存储库修改的代码
+the use of pretraining model is subject to model license	预训练模型的使用需遵循模型许可
+a fundamental end-to-end speech recognition toolkit and open source sota pretrained models, supporting speech recognition, voice activity detection, text post-processing etc	一个基本的端到端语音识别工具包和开源SOTA预训练模型，支持语音识别、语音活动检测、文本后处理等
+1.2k forks	1.2K复刻
+used by 1.2k	被1.2K使用
+github-pages last year	去年的GitHub页面

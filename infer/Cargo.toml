@@ -8,11 +8,11 @@ async-stream="0.3.6"
 futures-util = "0.3.31"
 ndarray = "0.16.1"
 ort = "2.0.0-rc.10"
-fancy-regex ="0.15.0"
+fancy-regex ="0.16.1"
 
 [dev-dependencies]
 anyhow = "1.0.98"
-tokio = { version = "1.47.0",features = ["macros", "rt-multi-thread"] }
+tokio = { version = "1.47.1",features = ["macros", "rt-multi-thread"] }
 
 [workspace]
 members = ["examples/android"]
