@@ -2352,3 +2352,26 @@ a fundamental end-to-end speech recognition toolkit and open source sota pretrai
 1.2k forks	1.2K复刻
 used by 1.2k	被1.2K使用
 github-pages last year	去年的GitHub页面
+kitten tts is an open-source realistic text-to-speech model with just 15 million parameters, designed for lightweight deployment and high-quality voice synthesis	Kitten TTS是一款开源的真实感文本转语音模型，仅包含1500万参数，专为轻量级部署和高质量语音合成而设计
+currently in developer preview	目前处于开发者预览阶段
+join our discord	加入我们的Discord
+for custom support - fill this form	如需定制服务，请填写此表单
+email the creators with any questions: info@stellonlabs.com	如有任何问题，请通过以下邮箱联系创作者：info@stellonlabs.com
+ultra-lightweight: model size less than 25mb	超轻量级：模型体积不足25MB
+cpu-optimized: runs without gpu on any device	CPU优化：在任何设备上无需GPU即可运行
+high-quality voices: several premium voice options available	高质量语音：提供多种优质语音选项
+fast inference: optimized for real-time speech synthesis	快速推理：针对实时语音合成进行了优化
+🚀 quick start	🚀快速开始
+save the audio	保存音频
+💻 system requirements	💻系统要求
+works literally everywhere	随处可用
+completed task	已完成任务
+release a preview model	发布预览版模型
+incomplete task	未完成任务
+release the fully trained model weights	发布完全训练好的模型权重
+release mobile sdk	发布移动端SDK
+release web version	发布Web版本
+state-of-the-art tts model under 25mb 😻	25MB内的顶尖语音合成模型😻
+371 forks	371复刻
+releases 1	发行版1
+2 weeks ago	两周前

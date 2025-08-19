@@ -11,7 +11,7 @@ ort = "2.0.0-rc.10"
 fancy-regex ="0.16.1"
 
 [dev-dependencies]
-anyhow = "1.0.98"
+anyhow = "1.0.99"
 tokio = { version = "1.47.1",features = ["macros", "rt-multi-thread"] }
 
 [workspace]
