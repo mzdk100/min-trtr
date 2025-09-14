@@ -2412,3 +2412,60 @@ how to track	如何跟踪
 🙋ask for provider support	🙋请求提供者支持
 base model	基础模型
 this model	此模型
+xnnpack is a highly optimized solution for neural network inference on arm, x86, webassembly, and risc-v platforms	XNNPACK是ARM、x86、WebAssembly和RISC-V平台上神经网络推理的高度优化解决方案
+xnnpack is not intended for direct use by deep learning practitioners and researchers; instead it provides low-level performance primitives for accelerating high-level machine learning frameworks, such as tensorflow lite, tensorflow.js, pytorch, onnx runtime, executorch, and mediapipe	XNNPACK不适合深度学习从业者和研究人员直接使用；相反，它提供了低级性能原语，用于加速高级机器学习框架，如TensorFlow Lite、TensorFlow.js、PyTorch、ONNX Runtime、ExecuTorch和MediaPipe
+supported architectures	支持的架构
+arm64 on android, ios, macos, linux, and windows	安卓、iOS、macOS、Linux和Windows上的ARM64
+armv7 (with neon) on android	安卓上的ARMv7（带NEON）
+armv6 (with vfpv2) on linux	Linux上的ARMv6（带VFPv2）
+x86 and x86-64 (up to avx512) on windows, linux, macos, android, and ios simulator	Windows、Linux、macOS、Android和iOS模拟器上的x86和x86-64（支持至AVX512指令集）
+webassembly relaxed simd (experimental)	WebAssembly宽松SIMD（实验性功能）
+risc-v (rv32gc and rv64gc)	RISC-V（RV32GC和RV64GC）
+operator coverage	算子覆盖
+xnnpack implements the following neural network operators	XNNPACK实现了以下神经网络算子
+2d convolution (including grouped and depthwise)	2D卷积（包括分组卷积和深度可分离卷积）
+2d deconvolution (aka transposed convolution)	2D反卷积（又称转置卷积）
+2d average pooling	2D平均池化
+2d max pooling	2D最大池化
+2d argmax pooling (max pooling + indices)	2D带索引的最大池化（ArgMax Pooling）
+2d unpooling	2D反池化
+2d bilinear resize	2D双线性插值
+2d depth-to-space (aka pixel shuffle)	2D深度转空间（又称像素洗牌）
+add (including broadcasting, two inputs only)	加法（支持广播，仅限双输入）
+subtract (including broadcasting)	减法（支持广播）
+divide (including broadcasting)	除法（支持广播）
+maximum (including broadcasting)	最大值（支持广播）
+minimum (including broadcasting)	最小值（支持广播）
+multiply (including broadcasting)	乘法（支持广播）
+squared difference (including broadcasting)	平方差（支持广播）
+global average pooling	全局平均池化
+channel shuffle	通道重排
+fully connected	全连接
+abs (absolute value)	abs（绝对值）
+bankers' rounding (rounding to nearest, ties to even)	银行家舍入法（四舍五入到最近，平局时取偶）
+ceiling (rounding to integer above)	上限（向上取整）
+clamp (includes relu and relu6)	截断（包含ReLU和ReLU6）
+convert (includes fixed-point and half-precision quantization and dequantization)	类型转换（支持定点数和半精度量化/反量化）
+floor (rounding to integer below)	下限（向下取整）
+leaky relu	Leaky ReLU激活函数
+truncation (rounding to integer towards zero)	截断取整（向零取整）
+all operators in xnnpack support nhwc layout, but additionally allow custom stride along the channel dimension	XNNPACK所有算子均支持NHWC布局，并允许在通道维度自定义步长
+thus, operators can consume a subset of channels in the input tensor, and produce a subset of channels in the output tensor, providing a zero-cost channel split and channel concatenation operations	因此，算子可处理输入张量的部分通道，并输出部分通道，从而实现零成本的通道分割和通道拼接操作
+mobile phones	移动电话
+the table below presents single-threaded performance of xnnpack library on three generations of mobilenet models and three generations of pixel phones	下表显示了XNNPACK库在三代MobileNet模型和三代Pixel手机上的单线程性能
+the following table presents multi-threaded (using as many threads as there are big cores) performance of xnnpack library on three generations of mobilenet models and three generations of pixel phones	下表显示了XNNPACK库在三代MobileNet模型和三代Pixel手机上的多线程（使用与大内核一样多的线程）性能
+benchmarked on march 27, 2020 with end2end_bench --benchmark_min_time=5 on an android/arm64 build with android ndk r21 (bazel build -c opt --config android_arm64 :end2end_bench) and neural network models with randomized weights and inputs	2020年3月27日，在搭载Android NDK r21（bazel build -c opt --config android_arm64）的Android/ARM64设备上，使用随机权重和输入数据的神经网络模型，通过`end2end_bench --benchmark_min_time=5`进行基准测试
+raspberry pi	树莓派
+the table below presents multi-threaded performance of xnnpack library on three generations of mobilenet models and three generations of raspberry pi boards	下表显示了XNNPACK库在三代MobileNet模型和三代Raspberry Pi板上的多线程性能
+benchmarked on feb 8, 2022 with end2end-bench --benchmark_min_time=5 on a raspbian buster build with cmake (./scripts/build-local.sh) and neural network models with randomized weights and inputs	2022年2月8日，在基于Raspbian Buster的系统上，使用CMake（执行./scripts/build-local.sh）构建，并通过`end2end-bench --benchmark_min_time=5`对随机权重和输入数据的神经网络模型进行了基准测试
+int8 inference was evaluated on per-channel quantization schema	INT8推理采用逐通道量化方案进行评估
+minimum build requirements	最低构建要求
+machine learning frameworks	机器学习框架
+tensorflow.js webassembly backend	TensorFlow.js WebAssembly后端
+alibaba halo (heterogeneity-aware lowering and optimization)	阿里HALO（异构感知下放与优化）
+samsung one (on-device neural engine)	三星ONE（设备端神经网络引擎）
+xnnpack is based on qnnpack library	XNNPACK基于QNNPACK库
+over time its codebase diverged a lot, and xnnpack api is no longer compatible with qnnpack	随着时间推移，两者的代码库已大幅分化，XNNPACK的API也不再与QNNPACK兼容
+high-efficiency floating-point neural network inference operators for mobile, server, and web	面向移动端、服务器及Web的高效浮点神经网络推理算子
+security policy	安全策略
+440 forks	440复刻
