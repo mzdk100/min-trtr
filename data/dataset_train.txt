@@ -2469,3 +2469,48 @@ over time its codebase diverged a lot, and xnnpack api is no longer compatible w
 high-efficiency floating-point neural network inference operators for mobile, server, and web	面向移动端、服务器及Web的高效浮点神经网络推理算子
 security policy	安全策略
 440 forks	440复刻
+go to branches page	转到分支页面
+go to tags page	转到Tag页面
+go to file	转到文件
+add file	添加文件
+last commit message	最后提交消息
+enable cross import overlays (#153)	启用交叉导入覆盖（#153）
+view commit history for this file	查看此文件的提交历史记录
+add swiftlint (#104)	添加SwiftLint（#104）
+4 months ago	4个月前
+support vsc swiftlint extension (#108)	支持VSC SwiftLint扩展（#108）
+docs on creating app extensions (#139)	创建应用扩展（App Extensions）的文档（#139）
+2 months ago	两个月前
+support xtool --version (#53)	支持`xtool --version`（#53）
+work around fastlane pipeline bug (#118)	解决Fastlane管道错误（#118）
+3 months ago	3个月前
+add make rules, contributing.md (#70)	添加Make规则和CONTRIBUTING.md（#70）
+update code of conduct email (#50)	更新行为准则邮件通知（#50）
+fix spi linux build, hopefully (#21)	修复Linux下的SPI构建问题（但愿能行）（#21）
+add license	添加许可证
+10 months ago	10个月前
+update asc spec to v4.0.0 (#142)	更新ASC规范至v4.0.0版本（#142）
+support building with swift 6.2 (#114)	支持Swift 6.2构建（#114）
+improve tmpdir management (#147)	改进tmpdir管理（#147）
+fix readme image (again) (#67)	修复README图片（再次）（#67）
+create security.md (#48)	创建SECURITY.md（#48）
+rename main product	重命名主产品
+even more docc tweaks (#66)	进一步优化DocC文档（#66）
+cross-platform xcode replacement	跨平台Xcode替代方案
+build and deploy ios apps with swiftpm on linux, windows, and macos	在Linux、Windows和macOS上使用SwiftPM构建和部署iOS应用程序
+xtool is a cross-platform (linux/wsl/macos) tool that replicates xcode functionality with open standards	xtool是一款跨平台（Linux/WSL/macOS）工具，通过开放标准复现Xcode功能
+✅ build a swiftpm package into an ios app	✅将SwiftPM包构建到iOS应用程序中
+✅ sign and install ios apps	✅签名并安装iOS应用程序
+✅ interact with apple developer services programmatically	✅以编程方式与Apple开发者服务交互
+follow the guide to install xtool	按照指南安装xtool
+installation (linux/windows)	安装（Linux/Windows）
+installation (macos)	安装(macOS)
+create and run your first xtool-powered app by following the tutorial	按照教程创建并运行您的第一个xtool应用
+a screenshot of xtool being invoked from vscode	从VSCode调用xtool的屏幕截图
+command line interface	命令行界面
+xtool includes a library that you can use to interact with apple developer services, ios devices, and more from your own app	xtool包含一个库，您可以在自己的应用中使用它来与Apple开发者服务、iOS设备等进行交互
+you can use this by adding xkit as a swiftpm dependency	您可以通过将XKit添加为SwiftPM依赖项来使用
+package dependency	包依赖
+target dependency	目标依赖
+4.1k stars	4.1K颗星
+87 forks	87复刻
