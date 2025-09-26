@@ -1798,7 +1798,7 @@ please see demo_part2.ipynb for an example for languages seen or unseen in the m
 gradio demo	Gradio演示
 we provide a minimalist local gradio demo here	我们在这里提供极简的本地Gradio演示
 we strongly suggest the users to look into demo_part1.ipynb, demo_part2.ipynb and the qna if they run into issues with the gradio demo	如果在Gradio演示中遇到问题，我们强烈建议用户查看demo_part1.ipynb、demo_part2.ipynb和QnA
-launch a local gradio demo with python -m openvoice_app --share	使用`python -m openvoice_app --share`在本地启动Gradio演示
+launch a local gradio demo with python -m openvoice_app --share	使用`python -m openvoice\_app --share`在本地启动Gradio演示
 download the checkpoint from here and extract it to the checkpoints_v2 folder	从此处下载检查点并将其解压缩到checkpoints_v2文件夹
 install melotts	安装MeloTTS
 demo usage	演示用法
@@ -2198,19 +2198,19 @@ it allows cpu and gpu to work in parallel, maximizing the utilization of gpu com
 check examples starting with rt for more information, and compare the generation speed with their non-rt counterparts	查看以rt开头的示例以获取更多信息，并将生成速度与非rt对应的示例进行比较
 since version v0.2.4, the engine supports batched inference, i.e., inference of a batch of prompts (with different length) in parallel	从V0.2.4版本开始，该引擎支持批量推理，即并行推理一批不同长度的提示
 this is achieved by a modified wkv kernel	这是通过修改WKV内核实现的
-when building the model, the user specifies token_chunk_size (default: 32, but for powerful gpus this could be much higher), which is the maximum number of tokens the engine could process in one run call	在构建模型时，用户需指定`token_chunk_size`参数（默认值为32，但对高性能GPU而言该值可显著提高），该参数决定了引擎单次推理能处理的最大标记数
-after creating the model, the user creates a modelstate with num_batch specified	在模型创建完成后，用户需通过指定`num_batch`参数来初始化ModelState
-this means that there are num_batch slots that could consume the inputs in parallel	这意味着有`num_batch`个槽位，可用于并行处理输入数据
+when building the model, the user specifies token_chunk_size (default: 32, but for powerful gpus this could be much higher), which is the maximum number of tokens the engine could process in one run call	在构建模型时，用户需指定`token\_chunk\_size`参数（默认值为32，但对高性能GPU而言该值可显著提高），该参数决定了引擎单次推理能处理的最大标记数
+after creating the model, the user creates a modelstate with num_batch specified	在模型创建完成后，用户需通过指定`num\_batch`参数来初始化ModelState
+this means that there are num_batch slots that could consume the inputs in parallel	这意味着有`num\_batch`个槽位，可用于并行处理输入数据
 before calling run(), the user fills each slot with some tokens as prompt	在调用`run()`之前，用户在每个槽位中填充一些标记作为提示
 if a slot is empty, no inference will be run for it	如果槽位为空，则不会对其进行推理
 after calling run(), some (but may not be all) input tokens are consumed, and logits appears in their corresponding returned slots if the inference of that slot is finished during this run	在调用`run()`方法后，部分（但不一定是全部）输入标记会被处理，若该槽位的推理在此次运行中已完成，对应的logits将出现在返回的槽位中
-since there are only token_chunk_size tokens are processed during each run() call, there may be none of logits appearing in the results	由于每次调用`run()`仅处理`token_chunk_size`个标记，因此返回结果中可能不包含任何logits
+since there are only token_chunk_size tokens are processed during each run() call, there may be none of logits appearing in the results	由于每次调用`run()`仅处理`token\_chunk\_size`个标记，因此返回结果中可能不包含任何logits
 hooks are a very powerful tool for customizing model inference process	钩子是定制模型推理过程的一个非常强大的工具
-the library provides with the model::run_with_hooks function, which takes into a hookmap as a parameter	该库提供了`Model::run_with_hooks`函数，该函数将HookMap作为参数
+the library provides with the model::run_with_hooks function, which takes into a hookmap as a parameter	该库提供了`Model::run\_with\_hooks`函数，该函数将HookMap作为参数
 a hookmap is essentially a hashmap from model::hook to functions	HookMap本质上是一个将`Model::Hook`类型映射至函数指针的哈希表结构
 a model::hook defines a certain place the hook function can be injected into	Model::Hook定义了钩子函数可以注入特定位置
 a model generally has dozens of hooking points	一个模型通常有几十个挂钩点
-a hook function is a function of fn(&frame) -> result<tensorop, tensorerror>, where you can create tensor ops that reads/writes all the tensors you get here	钩子函数是一种遵循`Fn(&Frame) -> Result<TensorOp, TensorError>`签名的函数，您可以在其中创建张量操作来读取/写入在此处得到的所有张量
+a hook function is a function of fn(&frame) -> result<tensorop, tensorerror>, where you can create tensor ops that reads/writes all the tensors you get here	钩子函数是一种遵循`Fn(\&Frame) -> Result<TensorOp, TensorError>`签名的函数，您可以在其中创建张量操作来读取/写入在此处得到的所有张量
 a frame contains all accessible gpu buffers during the inference, including the state and all runtime buffers	`Frame`包含推理过程中所有可访问的GPU缓冲区，包括状态及运行时缓冲数据
 an example reading out every layer's output during inference	一个在推理过程中读取每一层输出的示例
 create a buffer to store each layer's output	创建一个缓冲区来存储每一层的输出
@@ -2238,7 +2238,7 @@ if you prefer to use codelldb for debugging, you have two options	如果您更�
 use the x86_64-pc-windows-gnu toolchain to compile your rust project	使用x86_64-pc-windows-gnu工具链编译你的Rust项目
 this option ensures full lldb visualization support for rust types	此选项可确保Rust类型的完整LLDB可视化支持
 compile with the x86_64-pc-windows-msvc toolchain but use lldb formatters from x86_64-pc-windows-gnu	使用x86_64-pc-windows-msvc工具链编译，但使用x86_64-pc-windows-gnu中的LLDB格式化程序
-to use this option, install the x86_64-pc-windows-gnu toolchain via rustup toolchain add x86_64-pc-windows-gnu	要使用此选项，请通过`rustup toolchain add x86_64-pc-windows-gnu`安装x86_64/pc-windows-gnu工具链
+to use this option, install the x86_64-pc-windows-gnu toolchain via rustup toolchain add x86_64-pc-windows-gnu	要使用此选项，请通过`rustup toolchain add x86\_64-pc-windows-gnu`安装x86_64/pc-windows-gnu工具链
 then, configure codelldb to load its formatters by adding the following entry to your workspace configuration	然后，通过将以下条目添加到工作区配置中，配置CodeLLDB以加载其格式化程序
 note that this setup is less ideal due to differences in the debug information layout emitted by the rust compiler for enum data types when targeting msvc, which means enums may not be visualized correctly	请注意，由于Rust编译器在针对MSVC时为枚举数据类型发出的调试信息布局存在差异，因此此设置不太理想，这意味着枚举可能无法正确可视化
 however, lldb formatters will work for standard collections like strings and vectors	但是，LLDB格式化程序将适用于字符串和向量等标准集合
@@ -2326,7 +2326,7 @@ speech recognition (streaming)	语音识别（流式）
 note: chunk_size is the configuration for streaming latency	注：chunk_size是流式延迟的配置
 [0,10,5] indicates that the real-time display granularity is 10*60=600ms, and the lookahead information is 5*60=300ms	[0,10,5]表示实时显示粒度为10*60=600ms，未来信息为5*60=300ms
 each inference input is 600ms (sample points are 16000*0.6=9600), and the output is the corresponding text	每个推理输入为600ms（采样点为16000*0.6=9600），输出为相应的文本
-for the last speech segment input, is_final=true needs to be set to force the output of the last word	对于最后一个语音片段输入，需要设置`is_final=True`以强制输出最后一个字
+for the last speech segment input, is_final=true needs to be set to force the output of the last word	对于最后一个语音片段输入，需要设置`is\_final=True`以强制输出最后一个字
 more examples	更多示例
 export onnx	导出ONNX
 test onnx	测试ONNX
@@ -2387,9 +2387,9 @@ this unique design enables efficient inference while maintaining powerful sequen
 📦 install dependencies	📦安装依赖项
 🟢 for nvidia cuda	🟢对于Nvidia CUDA
 🔴 for amd rocm	🔴对于AMD ROCm
-set os.environ["rwkv_cuda_on"] = '0'	设置`os.environ["RWKV_CUDA_ON"] = '0'`
+set os.environ["rwkv_cuda_on"] = '0'	设置`os.environ\["RWKV\_CUDA\_ON"] = '0'`
 😜 run the demo	😜运行演示
-change line 20 in webui_new.py to you own model weights path	将`webui_new.py`中的第20行更改为您自己的模型权重路径
+change line 20 in webui_new.py to you own model weights path	将`webui\_new.py`中的第20行更改为您自己的模型权重路径
 this model currently supports english → chinese translation only	此模型目前仅支持英语到中文的翻译
 now it support english → chinese & chinese → english	现在支持英译中和中译英
 💡 key advantages	💡主要优势
@@ -2454,10 +2454,10 @@ thus, operators can consume a subset of channels in the input tensor, and produc
 mobile phones	移动电话
 the table below presents single-threaded performance of xnnpack library on three generations of mobilenet models and three generations of pixel phones	下表显示了XNNPACK库在三代MobileNet模型和三代Pixel手机上的单线程性能
 the following table presents multi-threaded (using as many threads as there are big cores) performance of xnnpack library on three generations of mobilenet models and three generations of pixel phones	下表显示了XNNPACK库在三代MobileNet模型和三代Pixel手机上的多线程（使用与大内核一样多的线程）性能
-benchmarked on march 27, 2020 with end2end_bench --benchmark_min_time=5 on an android/arm64 build with android ndk r21 (bazel build -c opt --config android_arm64 :end2end_bench) and neural network models with randomized weights and inputs	2020年3月27日，在搭载Android NDK r21（bazel build -c opt --config android_arm64）的Android/ARM64设备上，使用随机权重和输入数据的神经网络模型，通过`end2end_bench --benchmark_min_time=5`进行基准测试
+benchmarked on march 27, 2020 with end2end_bench --benchmark_min_time=5 on an android/arm64 build with android ndk r21 (bazel build -c opt --config android_arm64 :end2end_bench) and neural network models with randomized weights and inputs	2020年3月27日，在搭载Android NDK r21（bazel build -c opt --config android_arm64）的Android/ARM64设备上，使用随机权重和输入数据的神经网络模型，通过`end2end\_bench --benchmark\_min\_time=5`进行基准测试
 raspberry pi	树莓派
 the table below presents multi-threaded performance of xnnpack library on three generations of mobilenet models and three generations of raspberry pi boards	下表显示了XNNPACK库在三代MobileNet模型和三代Raspberry Pi板上的多线程性能
-benchmarked on feb 8, 2022 with end2end-bench --benchmark_min_time=5 on a raspbian buster build with cmake (./scripts/build-local.sh) and neural network models with randomized weights and inputs	2022年2月8日，在基于Raspbian Buster的系统上，使用CMake（执行./scripts/build-local.sh）构建，并通过`end2end-bench --benchmark_min_time=5`对随机权重和输入数据的神经网络模型进行了基准测试
+benchmarked on feb 8, 2022 with end2end-bench --benchmark_min_time=5 on a raspbian buster build with cmake (./scripts/build-local.sh) and neural network models with randomized weights and inputs	2022年2月8日，在基于Raspbian Buster的系统上，使用CMake（执行./scripts/build-local.sh）构建，并通过`end2end-bench --benchmark\_min\_time=5`对随机权重和输入数据的神经网络模型进行了基准测试
 int8 inference was evaluated on per-channel quantization schema	INT8推理采用逐通道量化方案进行评估
 minimum build requirements	最低构建要求
 machine learning frameworks	机器学习框架
@@ -2514,3 +2514,60 @@ package dependency	包依赖
 target dependency	目标依赖
 4.1k stars	4.1K颗星
 87 forks	87复刻
+cloudflare tunnel client	Cloudflare Tunnel客户端
+contains the command-line client for cloudflare tunnel, a tunneling daemon that proxies traffic from the cloudflare network to your origins	包含Cloudflare Tunnel的命令行客户端，该隧道守护程序可将来自Cloudflare网络的流量代理到您的源站
+this daemon sits between cloudflare network and your origin (e.g. a webserver)	该守护程序位于Cloudflare网络与您的源站（如Web服务器）之间
+cloudflare attracts client requests and sends them to you via this daemon, without requiring you to poke holes on your firewall --- your origin can remain as closed as possible	Cloudflare会接收客户端请求，并通过该守护程序将请求转发给您，而无需您在防火墙上开孔——您的源站可以保持尽可能封闭的状态
+extensive documentation can be found in the cloudflare tunnel section of the cloudflare docs	您可以在Cloudflare文档的Cloudflare Tunnel版块中找到详尽的文档资料
+all usages related with proxying to your origins are available under cloudflared tunnel help	所有与将流量代理到源站相关的使用说明，都可以在`cloudflared tunnel help`中查看
+you can also use cloudflared to access tunnel origins (that are protected with cloudflared tunnel) for tcp traffic at layer 4 (i.e., not http/websocket), which is relevant for use cases such as ssh, rdp, etc	您还可以通过cloudflared访问受`cloudflared tunnel`保护的隧道源站（支持第四层TCP流量，即非HTTP/WebSocket协议），适用于SSH、RDP等
+such usages are available under cloudflared access help	此类用法可在`cloudflared access help`中查看
+you can instead use warp client to access private origins behind tunnels for layer 4 traffic without requiring cloudflared access commands on the client side	您可以直接使用WARP客户端访问隧道后方的私有源站（第四层流量），无需在客户端执行`cloudflared access`命令
+before you get started	开始之前
+before you use cloudflare tunnel, you'll need to complete a few steps in the cloudflare dashboard: you need to add a website to your cloudflare account	在使用Cloudflare Tunnel之前，您需要在Cloudflare控制面板中完成以下步骤：将网站添加到您的Cloudflare账户
+note that today it is possible to use tunnel without a website (e.g. for private routing), but for legacy reasons this requirement is still necessary	请注意，目前已经可以在没有网站的情况下使用Tunnel（例如用于私有路由），但出于历史原因，这一要求仍然必要
+add a website to cloudflare	将网站添加至Cloudflare
+change your domain nameservers to cloudflare	将域名DNS服务器修改为Cloudflare
+installing cloudflared	安装cloudflared
+downloads are available as standalone binaries, a docker image, and debian, rpm, and homebrew packages	下载提供独立二进制文件、Docker镜像以及Debian、RPM和Homebrew软件包
+you can also find releases here on the cloudflared github repository	您也可以在cloudflared的GitHub仓库中找到发布版本
+you can install on macos via homebrew or by downloading the latest darwin amd64 release	您可以通过Homebrew安装，或下载最新的Darwin amd64版本
+binaries, debian, and rpm packages for linux can be found here	Linux系统的二进制文件、Debian和RPM软件包可在此处找到
+a docker image of cloudflared is available on dockerhub	cloudflared的Docker镜像在DockerHub上可用
+you can install on windows machines with the steps here	您可以按照此处的步骤在Windows机器上安装
+to build from source, install the required version of go, mentioned in the development section below	如需从源码构建，请安装开发章节中指定的Go版本
+then you can run make cloudflared	然后你可以运行`make cloudflared`
+user documentation for cloudflare tunnel can be found at https://developers.cloudflare.com/cloudflare-one/connections/connect-apps	用户文档可在以下链接找到：https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+creating tunnels and routing traffic	创建隧道和路由流量
+once installed, you can authenticate cloudflared into your cloudflare account and begin creating tunnels to serve traffic to your origins	安装完成后，您可以将cloudflared认证到您的Cloudflare账户中，并开始创建隧道以将流量传输到您的源站
+create a tunnel with these instructions	按照这些说明创建隧道
+route traffic to that tunnel	路由到该隧道的流量
+via public dns records in cloudflare	通过Cloudflare中的公共DNS记录
+or via a public hostname guided by a cloudflare load balancer	或通过由Cloudflare负载平衡器指导的公共主机名
+or from warp client private traffic	或来自WARP客户端的私有流量
+want to test cloudflare tunnel before adding a website to cloudflare	想在将网站添加到Cloudflare之前测试Cloudflare Tunnel吗
+you can do so with trycloudflare using the documentation available here	您可以通过TryCloudflare实现此操作，相关文档可在此处获取
+deprecated versions	弃用的版本
+cloudflare currently supports versions of cloudflared that are within one year of the most recent release	Cloudflare目前支持距离最近发布版本不超过一年的cloudflared版本
+breaking changes unrelated to feature availability may be introduced that will impact versions released more than one year ago	可能会引入与功能可用性无关的重大变更，这些变更将影响一年前发布的版本
+you can read more about upgrading cloudflared in our developer documentation	您可以在我们的开发者文档中了解更多关于升级cloudflared的信息
+for example, as of january 2023 cloudflare will support cloudflared version 2023.1.1 to cloudflared 2022.1.1	例如，截至2023年1月，Cloudflare将支持从cloudflared2023.1.1版本到2022.1.1版本
+optional tools	可选工具
+to build cloudflared locally run make cloudflared	要在本地构建cloudflared，请运行`make cloudflared`
+to locally run the tests run make test	要在本地运行测试，请运行`make test`
+to format the code and keep a good code quality use make fmt and make lint	要格式化代码并保持良好代码质量，请使用`make fmt`和`make lint`
+after changes on interfaces you might need to regenerate the mocks, so run make mock	修改接口后可能需要重新生成mock，因此请运行`make mock`
+cloudflare tunnel client (formerly argo tunnel)	Cloudflare Tunnel客户端（原Argo Tunnel）
+apache-2.0 license	Apache-2.0许可证
+11.6k stars	11.6K颗星
+1k forks	1K复刻
+artificial intelligence is transforming our way of life	人工智能正在改变我们的生活方式
+this library houses over 500,000 ancient books	这座图书馆收藏了超过50万册古籍
+please ensure the meeting minutes are submitted by 10 am tomorrow	请确保会议纪要明天上午10点前提交
+quantum computing is expected to achieve commercial applications within a decade	量子计算有望在十年内实现商业化应用
+community volunteers provided free smartphone training for seniors	社区志愿者为老年人提供了免费智能手机培训
+latest research shows that 30-minute daily walks can reduce cardiovascular disease risks	最新研究表明，每天散步30分钟可降低心血管疾病风险
+cross-border e-commerce platforms need to optimize multilingual customer service systems	跨境电商平台需要优化多语言客户服务系统
+the palace museum brings cultural relics to life through digital technology	故宫博物院通过数字化技术让文物活起来
+autonomous vehicles' perception capabilities in heavy rain still require improvement	自动驾驶汽车在暴雨天气中的感知能力仍需改进
+carbon neutrality goals are driving rapid growth in renewable energy investments	碳中和目标推动可再生能源投资快速增长
