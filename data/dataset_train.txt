@@ -2734,3 +2734,134 @@ if forking termux plugins, check forking and local development for info on how t
 termux - a terminal emulator application for android os extendible by variety of packages	Termux——一款适用于Android系统的终端模拟器应用，可通过多种扩展包进行功能扩展
 45.4k stars	45.4K颗星
 5.1k forks	5.1K复刻
+navigate to main page	导航至主页
+ai assistant	AI助手
+ai in ides	IDE中的AI
+ai enterprise	人工智能企业
+ai news	AI新闻
+developer tools	开发者工具
+.net and visual studio	.NET和Visual Studio
+plugin marketplace	插件市场
+toolbox app	工具箱应用
+ide services	集成开发环境服务
+open source	开源
+course catalog	课程目录
+university programs	大学课程
+plans and pricing	计划和定价
+all products pack	所有产品套装
+technical support	技术支持
+jetbrains account	JetBrains账户
+jetbrains guide	JetBrains指南
+open-source partnerships	开源合作伙伴关系
+press and news	新闻资讯
+privacy and security	隐私和安全
+help improve this product in 2 minutes	使用两分钟帮助我们改进此产品
+choose your country/region	选择您的国家/地区
+your country/region choice helps us provide you with more relevant content, local events, and promotions	您所在的国家/地区选择有助于我们为您提供更相关的内容、本地活动及促销信息
+it will also be used as your billing country/region	它也将被用作您的账单国家/地区
+editor autoreparse delay has been restored to the default value 300ms	编辑器自动重新解析延迟已恢复为默认值300毫秒
+0 value is associated with potential ui freezes and not recommended	值为0可能导致用户界面冻结，不建议使用
+open settings	打开设置
+debdroid - debian on android	DebDroid——Android上的Debian
+this project only supports aarch64	本项目仅支持aarch64
+it will terminate immediately if run on a different architecture	如果在不同的架构上运行，它将立即终止
+this project is intended for android devices running linux kernel 3.10 or later (released december 2017)	该项目适用于运行Linux内核3.10或更高版本（2017年12月发布）的Android设备
+older kernels are likely to cause major issues and are unsupported	较旧的内核可能会导致重大问题并且不受支持
+debdroid provides a lightweight and minimal debian chroot environment for android devices	DebDroid为Android设备提供了一个轻量且精简的Debian chroot环境
+it manages an isolated, native debian, linux-like userland without depending on termux or additional user-space layers	它管理着一个独立的、原生的Debian类Linux用户空间，无需依赖Termux或额外的用户空间层
+it's ideal for power users, developers, and tinkerers who want to run a sandboxed debian environment as close to the actual android system	它非常适合高级用户、开发者以及喜欢折腾的用户，他们希望在尽可能接近真实Android系统的环境中运行沙盒化的Debian环境
+debian running on android	在Android上运行Debian
+debdroid is not termux	DebDroid不是Termux
+unlike termux or proot, which run linux tools via android-compiled binaries or user-space emulation, debdroid runs a real debian chroot directly on android	与通过Android编译二进制文件或用户空间模拟运行Linux工具的Termux或Proot不同，DebDroid直接在Android系统上运行真实的Debian chroot环境
+it ships its own programs, libraries, patches and links key android filesystems into the debian environment, providing near-native linux functionality and the ability to run almost any debian-compatible program	该方案自带程序、库文件及补丁，并将关键Android文件系统链接至Debian环境，提供近乎原生的Linux功能，可运行几乎所有兼容Debian的应用程序
+small and portable	小巧便携
+no external dependencies	无外部依赖
+runs a minimal debian linux userland in a isolated chroot environment	在隔离的chroot环境中运行精简版Debian Linux用户空间
+mounts key android system paths to provide near-native linux functionality	挂载关键Android系统路径以实现近乎原生的Linux功能
+employs unshare to isolate android mountpoints from the chroot environment	采用unshare技术将Android挂载点与chroot环境隔离
+supports /dev overlayfs, creating a writable layer over device files without modifying the real /dev	支持/dev overlayfs，在不修改真实/dev目录的情况下，在设备文件上创建可写层
+a rooted android device	已root的Android设备
+a minimum 1-5gb of available storage space	至少1-5GB可用存储空间
+the software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement	软件按"原样"提供，不附带任何明示或暗示的保证，包括但不限于适销性、特定用途适用性和不侵权保证
+in no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software	在任何情况下，作者或版权所有者均不对因软件或软件的使用或其他相关行为而产生的任何索赔、损害或其他责任负责，无论该责任是基于合同、侵权或其他法律行为而产生
+security implications	安全影响
+rng and cryptography	随机数生成与密码学
+this project patches certain system utilities, providing compatibility with the android system by overriding linux's randomness mechanisms, such as the getrandom syscall, getentropy function and glibc’s arc4random functions	本项目通过覆盖Linux系统的随机性机制（如getrandom系统调用、getentropy函数及glibc的arc4random函数），对部分系统工具进行修改，从而实现对Android系统的兼容性支持
+it replaces the default cryptographic randomness with direct /dev/urandom reads	它使用直接读取`/dev/urandom`的方式替代了默认的加密随机数生成机制
+this is generally safe on modern linux/android, because the kernel ensures /dev/urandom provides high-quality entropy	在现代Linux/Android系统中，这通常是安全的，因为内核会确保`/dev/urandom`提供高质量的熵源
+installation guide	安装指南
+this guide is written for novice users	本指南是为新手用户编写的
+you only need basic knowledge of android, like installing apps from unknown sources, extracting an archive, and a little experience using a terminal (command line)	您只需具备基础的Android操作知识，例如：从非官方来源安装应用、解压文件归档，以及少量终端（命令行）的使用经验
+what you need	你需要什么
+before starting, make sure you have these apps installed on your device	开始之前，请确保您的设备上安装了这些应用程序
+terminal emulator - lets you access android's command-line interface	终端模拟器——让您访问Android的命令行界面
+hacker's keyboard - an advanced keyboard that makes typing commands easier	黑客键盘——一款可大幅提升命令输入效率的高级键盘
+root explorer - lets you browse and manage android files	Root Explorer——让您浏览和管理Android文件
+alternatively, you can use a free alternative to root explorer, such as explorer or mixplorer	或者，您可以使用Root Explorer的免费替代品，例如Explorer或MiXplorer
+step 1: downloading and extracting the project	步骤1：下载并解压项目
+download the project zip file: debdroid-main.zip	下载项目压缩文件：DebDroid-main.zip
+locate debdroid-main.zip in your download folder (/sdcard/download)	在您的下载文件夹（/sdcard/Download）中找到DebDroid-main.zip文件
+extract the debdroid-main.zip archive inside the download folder	在Download文件夹中解压DebDroid-main.zip文件
+you can use an application such as root explorer or mixplorer for this task	您可以使用Root Explorer或MiXplorer等应用程序来完成此操作
+after extraction, you should have a folder named debdroid-main in your download folder	解压后，您的Download文件夹中应会出现一个名为DebDroid-main的文件夹
+step 2: installing debdroid	步骤2：安装DebDroid
+open the terminal emulator app	打开终端模拟器应用
+type the following commands, pressing enter after each one	输入以下命令，每输入一个后按回车键
+the script will automatically install debdroid files in	该脚本将自动安装DebDroid文件到
+after that, debdroid is ready to use	此后，DebDroid即可使用
+quickstart guide	快速入门指南
+to display debdroid's help page, run	要显示DebDroid的帮助页面，请运行
+debdroid hierarchy	DebDroid文件结构
+config script (paths, environment variables)	配置脚本（路径、环境变量）
+control script	控制脚本
+backend script (mounts and manages chroot)	后端脚本（挂载和管理chroot）
+debian root filesystem	Debian根文件系统
+patch scripts	补丁脚本
+command scripts	命令脚本
+scripts placed in patch provide easy-to-apply fixes and tweaks for the environment's misbehaving	放置在`patch`目录中的脚本可轻松应用于环境异常行为的修复与调整
+for more information, check out the patching section	如需更多信息，请参阅补丁章节
+the ones placed in the command folder can be easily executed to conduct specific tasks within the chroot environment, such as updating the system or managing ssh & vnc servers (coming soon!)	放置在`command`目录中的脚本可轻松执行，以便在chroot环境中完成特定任务，例如系统更新或管理SSH/VNC服务器（即将推出！）
+consult the running commands section	请参阅运行命令章节
+external binaries	外部二进制文件
+external libraries	外部库
+debian mount point	Debian挂载点
+programs stored in bin can be run directly inside the chroot as it is mounted and appended to $path	存储在`bin`目录下的程序可以直接在chroot环境中运行，因为该目录已挂载并添加到PATH环境变量中
+libraries placed inside lib will be automatically preloaded, allowing for custom overrides and patches without any modifications to linux system files	放置在`lib`目录下的库文件会被自动预加载，从而无需修改Linux系统文件即可实现自定义覆盖和补丁功能
+running interactive sessions	运行交互式会话
+this launches the environment and gives you a shell inside debian	这将启动环境并为您提供Debian内部的Shell
+inside the chroot shell, users can execute the exit command to leave the environment and automatically unmount the filesystems	在chroot环境中，用户可通过执行`exit`命令退出该环境，相关文件系统将自动卸载
+running commands	运行命令
+you can run a specific command inside the chroot without starting an interactive shell	您可以在chroot环境中执行特定命令，而无需启动交互式Shell
+debdroid provides pre-made command scripts located in /sdcard/debdroid/command, which automate common tasks such as maintenance, setup, or service management	DebDroid提供了预制的命令脚本，位于`/sdcard/debdroid/command`目录下，可自动完成维护、设置或服务管理等常见任务
+to list available command scripts, run	要列出可用的命令脚本，请运行
+to execute a command script, run	要执行命令脚本，请运行
+to execute other commands directly inside the chroot, run	要直接在chroot内执行其他命令，请运行
+or (explicit version)	或（明确版本）
+this will execute the apt update command directly in the chroot environment	这将直接在chroot环境中执行`apt update`命令
+if certain utilities or packages don’t work correctly inside the chroot, you can apply the provided patch scripts located in /sdcard/debdroid/patch	如果在chroot环境中某些工具或包无法正常运行，可以应用位于`/sdcard/debdroid/patch`目录下的补丁脚本
+these scripts fix common issues, such as networking problems or other environment-specific quirks	这些脚本可修复常见问题，例如网络故障或其他环境相关的异常情况
+to list all available patches, run	要列出所有可用补丁，请运行
+to apply a patch, run	要应用补丁，请运行
+image resizing	调整磁盘映像大小
+the debian root filesystem (debian.img) in debdroid has a fixed size	DebDroid中的Debian根文件系统（debian.img）具有固定大小
+if you need more space, you can easily expand it using the built-in resize helper	如果您需要更多空间，可以使用内置的调整大小助手轻松扩展它
+the following command expands the debian environment by 500mb	以下命令将Debian环境扩展500MB
+for additional usage instructions, run	有关其他用法说明，请运行
+make sure the image is not mounted when resizing	确保在调整磁盘映像大小时未被挂载
+ensure you have enough free storage on your device to accommodate the new image size	确保您的设备上有足够的可用存储空间，以适应新的映像大小
+patching apt	修补Apt
+the _apt user is responsible for managing package downloads and upgrades inside the chroot	_apt用户负责在chroot环境中管理软件包的下载和升级
+by default, it does not have network access due to android group restrictions	默认情况下，由于Android组的限制，它无法访问网络
+this can cause errors during apt update or apt upgrade	这会导致`apt update`或`apt upgrade`执行时出现错误
+fix the issue by applying the apt.sh patch	通过应用`apt.sh`补丁修复该问题
+after running this, the _apt user will have the necessary permissions to perform system upgrades without errors	执行此操作后，_apt用户将获得必要的权限，可无错误地执行系统升级
+user networking	用户网络
+due to android group restrictions, users inside the debdroid chroot need to be added to the inet group to access networking tools	由于Android组的限制，DebDroid容器内的用户需加入inet组才能访问网络工具
+after this, the user should be able to use networking commands like ping	完成此操作后，用户应能够使用诸如`ping`等网络命令
+patched programs	补丁程序
+the following programs have been analyzed and patched to run properly within the debdroid chroot environment	以下程序已经过分析并打补丁，可在DebDroid容器环境中正常运行
+gpg – gnu privacy guard	Gpg——GnuPG（GNU隐私卫士）
+sshd – openssh server	sshd——OpenSSH服务器
+xfce4 - xfce4 desktop environment (coming soon!)	xfce4——XFCE4桌面环境（即将推出！）
+124 stars	124颗星
+5 forks	5复刻
