@@ -2865,3 +2865,49 @@ sshd – openssh server	sshd——OpenSSH服务器
 xfce4 - xfce4 desktop environment (coming soon!)	xfce4——XFCE4桌面环境（即将推出！）
 124 stars	124颗星
 5 forks	5复刻
+the weather is so nice today, with a bright sunshine, perfect for a walk	今天天气真好，阳光明媚，适合出去散步
+he runs every morning to maintain his physical health	他每天早晨都会跑步，以保持身体健康
+this movie is very touching, and i've watched it several times without getting bored	这部电影非常感人，我看了好几遍都不腻
+she is studying english hard, hoping to pass the exam next year	她正在努力学习英语，希望能通过明年的考试
+the food at this restaurant is delicious, especially their signature dish	这家餐厅的菜很好吃，尤其是他们的招牌菜
+due to traffic congestion, we were an hour late	由于交通堵塞，我们迟到了一个小时
+he is a very experienced doctor, skilled in treating various diseases	他是一位非常有经验的医生，擅长治疗各种疾病
+this book is very interesting, and i want to read it again after finishing it	这本书很有趣，我读完之后还想再读一遍
+they plan to go to the beach for a weekend vacation, enjoying the sunshine and waves	他们计划周末去海边度假，享受阳光和海浪
+this project requires teamwork, and everyone needs to leverage their strengths	这个项目需要团队合作，每个人都要发挥自己的优势
+onnx simplifier	ONNX简化器
+pypi version	PyPI版本
+pypi pyversions	PyPI PY版本
+pypi license	PyPI许可证
+prs welcome	欢迎PR
+onnx is great, but sometimes too complicated	ONNX很棒，但有时太复杂
+one day i wanted to export the following simple reshape operation to onnx	有一天，我想将以下简单的reshape操作导出到ONNX
+the input shape in this model is static, so what i expected is	该模型的输入形状是静态的，因此我预期的是
+however, i got the following complicated model instead	然而，我得到的却是下面复杂的模型
+our solution	我们的解决方案
+onnx simplifier is presented to simplify the onnx model	ONNX简化器的出现是为了简化ONNX模型
+it infers the whole computation graph and then replaces the redundant operators with their constant outputs (a.k.a. constant folding)	它首先推断整个计算图，然后用常量的输出（即常量折叠）来替换冗余的算子
+web version	Web版本
+we have published onnx simplifier on convertmodel.com	我们在convertmodel.com上发布了ONNX简化器
+it works out of the box and doesn't need any installation	开箱即用，无需安装
+note that it runs in the browser locally and your model is completely safe	请注意，它会在本地浏览器中运行，您的模型将完全安全
+python version	Python版本
+for more advanced features, try the following command for help message	有关更高级的功能，请尝试以下命令查看帮助信息
+an overall comparison between a complicated model and its simplified version	复杂模型与其简化版本的整体比较
+comparison between old model and new model	旧模型与新模型的比较
+in-script workflow	脚本内工作流程
+if you would like to embed onnx simplifier python package in another script, it is just that simple	如果您想将ONNX简化器Python包嵌入到另一个脚本中，就是这么简单
+load your predefined onnx model	加载您预定义的ONNX模型
+convert model	转换模型
+use model_simp as a standard onnx model object	使用`model_simp`作为标准ONNX模型对象
+you can see more details of the api in onnxsim/onnx_simplifier.py	您可以在`onnxsim/onnx_simplifier.py`中查看该API的更多详细信息
+projects using onnx simplifier	使用ONNX简化器的项目
+we created a chinese qq group for onnx	我们为ONNX创建了中文QQ群
+onnx qq group (chinese): 1021964010, verification code: nndab	ONNX QQ群（中文）：1021964010，验证码：nndab
+welcome to join	欢迎加入
+for english users, i'm active on the onnx slack	对于英语用户，我活跃在ONNX Slack上
+you can find and chat with me (daquexian) there	你可以在那里找到我（daquexian）并聊天
+simplify your onnx model	简化您的ONNX模型
+4.2k stars	4.2K颗星
+415 forks	415复刻
+87 tags	87个标签

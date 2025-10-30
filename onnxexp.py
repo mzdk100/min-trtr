@@ -42,6 +42,7 @@ def export_onnx(model, src_vocab, tgt_vocab, onnx_dir, example_src='hello world'
               'src': {1: 'src_seq_len'},
               'src_pad_mask': {1: 'src_seq_len', 2: 'src_seq_len'},
             },
+            dynamo=False,
             do_constant_folding=True,                         # whether to execute constant folding for optimization
             opset_version=20,
 #            verbose=True
@@ -59,6 +60,7 @@ def export_onnx(model, src_vocab, tgt_vocab, onnx_dir, example_src='hello world'
               'tgt_pad_mask': {1: 'tgt_seq_len', 2: 'tgt_seq_len'},
               'enc_pad_mask': {1: 'tgt_seq_len', 2: 'src_seq_len'},
             },
+            dynamo=False,
             do_constant_folding=True,                         # whether to execute constant folding for optimization
             opset_version=20,
 #            verbose=True
