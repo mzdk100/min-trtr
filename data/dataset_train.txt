@@ -2732,7 +2732,7 @@ check building bootstrap, here and here	检查`bootstrap`的构建情况，这�
 currently, not all plugins use termuxconstants from termux-shared library and have hardcoded com.termux values and will need to be manually patched	目前并非所有插件都使用termux-shared库中的TermuxConstants，而是硬编码了com.termux值，这些插件需要手动打补丁
 if forking termux plugins, check forking and local development for info on how to use termux libraries for plugins	如果要对Termux插件进行复刻，请查阅《复刻与本地开发》章节，了解如何在插件中使用Termux库
 termux - a terminal emulator application for android os extendible by variety of packages	Termux——一款适用于Android系统的终端模拟器应用，可通过多种扩展包进行功能扩展
-45.4k stars	45.4K颗星
+45.4k stars	4.54W颗星
 5.1k forks	5.1K复刻
 navigate to main page	导航至主页
 ai assistant	AI助手
@@ -2911,3 +2911,164 @@ simplify your onnx model	简化您的ONNX模型
 4.2k stars	4.2K颗星
 415 forks	415复刻
 87 tags	87个标签
+built for web, data, and ai/ml professionals	专为网络、数据和AI/ML专业人士打造
+supercharged with an ai-enhanced ide experience	经过AI增强的集成开发环境体验
+free forever, plus one month of pro included	永久免费，另含1个月的专业版
+pycharm goes ai	PyCharm走向人工智能
+focus on code and data	专注于代码和数据
+pycharm will take care of the rest	PyCharm会处理剩下的事情
+stop switching between tools	无需在工具之间切换
+pycharm offers out-of-the-box support for python, databases, jupyter, git, conda, pytorch, tensorflow, hugging face, django, flask, fastapi, and more	PyCharm为Python、数据库、Jupyter、Git、Conda、PyTorch、TensorFlow、Hugging Face、Django、Flask、FastAPI等提供开箱即用的支持
+with the seamless integration of its context-aware ai assistant, you can get your work started quickly and make progress more efficiently	借助其上下文感知AI助手的无缝集成，您可以快速投入工作，并更高效地取得进展
+pycharm equips you with everything you need for all sorts of projects, from web development and data pipelines to ml model prototyping and data analysis	PyCharm为您提供从Web开发、数据管道到机器学习模型原型设计和数据分析等各类项目所需的一切
+speed up your workflows	加快您的工作流程
+pycharm accelerates coding with exceptional python and sql support along with a powerful context-aware ai assistant that generates complete code blocks and automates routine tasks	PyCharm凭借卓越的Python和SQL支持，以及强大的上下文感知AI助手，可生成完整代码块并自动化常规任务，从而加速编码
+whether you’re resolving git merge conflicts or renaming a variable across multiple files, all it takes is a few clicks	无论是解决Git合并冲突，还是批量重命名变量，都只需几次点击即可完成
+deliver high-impact results	交付高影响力的成果
+pycharm swiftly identifies and resolves code issues with intelligent refactoring, real-time error detection, quality tools, and a robust debugger	PyCharm通过智能重构、实时错误检测、质量工具和强大的调试器，能够快速识别并解决代码问题
+write efficient code, instantly access data insights, and use ai assistant to fix issues	编写高效代码，即时获取数据洞察，并利用AI助手解决问题
+focus on coding while pycharm handles the rest	专注于编码，PyCharm处理其余的事情
+data science	数据科学
+web development	Web开发
+turn your data into insights	将数据转化为洞察力
+build data pipelines, analyze data, and prototype and deploy ml models using pycharm’s extensive support for python, as well as scientific libraries, interactive jupyter notebooks, anaconda, rich sql and nosql databases, and more	使用PyCharm强大的Python支持，以及科学库、交互式Jupyter笔记本、Anaconda、丰富的SQL和NoSQL数据库等，构建数据管道、分析数据，并原型化和部署机器学习模型
+best-in-class python support	一流的Python支持
+pycharm enhances python with best-in-class support to ensure both speed and accuracy	PyCharm通过一流的支持增强了Python，以确保速度和准确性
+benefit from the smartest code completion, pep 8 compliance checks, intelligent refactorings, and a variety of inspections to meet all of your coding needs	得益于最智能的代码补全、PEP8合规性检查、智能重构以及多种检查，满足您所有的编码需求
+ai-powered local code completion	人工智能驱动的本地代码完成
+as you type, pycharm completes lines, functions, and entire code blocks with ai-powered suggestions tailored to your coding style, project context, and naming conventions	在您输入代码时，PyCharm会通过AI驱动的建议，根据您的编码风格、项目上下文和命名规范，自动补全代码行、函数乃至整个代码块
+plus, you can run llms locally without sending any code over the internet	此外，您还可以在本地运行大型语言模型，而无需将任何代码传输到互联网
+fast navigation and search	快速导航和搜索
+move through your code faster, regardless of your codebase size	无论代码库规模大小如何，都可以更快地浏览您的代码
+jump to the definition of any function, method, variable, component, or class, and find its usages easily	跳转到任何函数、方法、变量、组件或类的定义，并轻松查找其用法
+look for files, classes, variables, or methods, and review all of the matches in one place	查找文件、类、变量或方法，并集中查看所有匹配项
+integrated developer tools	集成开发工具
+access all of your essential tools in one place	一站式访问所有您的重要工具
+debug and test your python code and work with git and github	调试和测试您的Python代码，并使用Git和GitHub进行协作
+package managers – including pip, conda, uv, and poetry – an integrated terminal, and integration with docker are all available right in the ide	包管理器（包括pip、Conda、uv和Poetry）、集成终端以及与Docker的集成，在IDE中均可直接使用
+run, debug, and profile your application in a production-like environment	在类似生产的环境中运行、调试和分析您的应用程序
+configure a remote python interpreter or connect to a remote machine using ssh	配置远程Python解释器或使用SSH连接到远程机器
+work on a project in a remote environment hosted in cloud solutions, such as google cloud workstations or github codespaces	在云解决方案（如Google Cloud Workstation或GitHub Codespace）托管的远程环境中进行项目开发
+what professional developers and data scientists say about pycharm	专业开发人员和数据科学家如何评价PyCharm
+florian dedov	弗洛里安·德多夫
+from neuralnine↗	来自NeuralNine↗
+the jetbrains ides are by far my favorite development environments	JetBrains IDE是迄今为止我最喜欢的开发环境
+especially when working on large projects or code bases, pycharm makes my life much easier	尤其是在处理大型项目或代码库时，PyCharm让我的工作轻松许多
+it integrates so many useful tools and handles so many different file types in one single environment	它集成了如此多实用的工具，并能在一个统一的环境中处理如此多种不同的文件类型
+bonus points for the ideavim plugin, which works surprisingly well and also allows for enabling popular extensions like vim-commentary	对于IdeaVim插件，额外加分。它的表现令人惊喜，并且支持启用vim-commentary等热门扩展
+from @indently↗	来自@Indently↗
+i’ve always been a fan of jetbrains ides: the ui is incredibly intuitive, and the code completion, refactoring, and live template features make my daily programming routine actually enjoyable	我一直是JetBrains IDE的忠实用户：其界面设计极其直观，代码补全、重构和实时模板等功能让我的日常编程工作变得真正愉悦
+i use pycharm to teach programming to over 130k students, and it’s the first ide that i would recommend to anyone that wants to program using python	我使用PyCharm向超过13万学生教授编程，这也是我向所有希望用Python编程的人首推的集成开发环境
+it’s powerful, easy to use, and extremely intuitive	它功能强大、易于使用且极其直观
+x (formerly twitter)↗	X（以前的推特）↗
+i’ve used pycharm for years, and it’s always felt like a superpower	我使用PyCharm多年，总感觉它有超能力
+as a maintainer working across a number of complex projects, pycharm enables me to refactor with confidence, navigate across the stack, and stay focused on the code	作为负责多个复杂项目的维护者，PyCharm让我能够自信地进行重构、跨栈导航，并专注于代码本身
+with pycharm, the ide is never the limit	使用PyCharm，集成开发环境（IDE）从不是限制
+cory althoff	科里·阿尔索夫
+svp, software development programs at comptia and author of “the self-taught programmer“↗	SVP（高级副总裁），CompTIA软件开发项目负责人，以及《自学程序员》一书的作者↗
+pycharm is my favorite ide	PyCharm是我最喜欢的IDE
+from its beautiful ui to features that make my life as a coder easier, like full-line code completion and its support of jupyter notebooks, i can’t imagine life without it	从它精美的用户界面到让我的编程生活更轻松的功能，比如整行代码补全和对Jupyter笔记本的支持，我简直无法想象没有它的日子
+i’ve been using pycharm for over ten years, and i’m impressed with how it keeps getting better and better	我已经使用PyCharm超过十年了，它不断变得更好，这让我印象深刻
+moritz renftle	莫里茨·伦夫特尔
+data scientist, scieneers gmbh	数据科学家，Scieneers有限公司
+pycharm has a unique set of features compared to other ides: reliable and comprehensive refactoring capability and support for advanced run configurations	与其他IDE相比，PyCharm具有一组独特的功能：可靠且全面的重构功能以及对高级运行配置的支持
+furthermore, i like the “cockpit feeling“ of pycharm	此外，我喜欢PyCharm带来的“驾驶舱式”操作体验
+it’s a centralized space that allows me quick access to all the tools necessary for my work	这是一个集中式空间，让我能快速访问工作所需的所有工具
+read the full case study	阅读完整案例研究
+lysandre debut	吕桑德·德布
+chief open-source officer at hugging face	Hugging Face首席开源官
+as a hugging face user, even more so than as a hugging face team member, the hf integration in pycharm has been instrumental in speeding up the machine learning workflows i’ve worked on	作为Hugging Face用户（甚至比作为团队成员时更甚），PyCharm中的HF集成对我所参与的机器学习工作流加速起到了关键作用
+as a result, i find myself keeping my focus in the ide, with less context switching during development	因此，我发现自己能更专注于IDE，开发过程中减少了任务切换
+flavio adamo	弗拉维奥·阿达莫
+proud co-creator of http://codeishot.com↗	自豪的联合创建者（Proud co-creator），http://codeishot.com↗
+as a django developer, pycharm was one of the best investments i’ve ever made	作为Django开发者，PyCharm是我做过的最好的投资之一
+i was skeptical at first, but after experiencing it, i can’t imagine going back	起初我持怀疑态度，但亲身体验后，我无法想象再回到过去
+michael kennedy	迈克尔·肯尼迪
+python enthusiast and entrepreneur↗, host of the talk python and python bytes podcasts, founder of talk python training, and python software foundation fellow	Python爱好者与企业家，Talk Python和Python Bytes播客的主持人，Talk Python Training的创始人，以及Python软件基金会会员
+there is only one tool that i use day to day that fundamentally changes how i create and maintain apps in python, and that's pycharm	我日常使用的唯一一个从根本上改变了我用Python创建和维护应用程序方式的工具，那就是PyCharm
+there is simply no other editor or ide that understands the entire structure of my application like pycharm does	没有任何其他编辑器或IDE能像PyCharm这样，如此透彻地理解我的整个应用程序结构
+people may have heard me go on and on about how i love pycharm, but it's genuine	人们可能听我喋喋不休地谈论我有多爱PyCharm，但这是真心话
+pycharm is the one tool i will not show up to write code without	PyCharm是我写代码时不可或缺的工具
+nick kononov	尼克·科诺诺夫
+full-stack developer, dead set bit↗	全栈开发工程师，Dead Set Bit↗
+i love pycharm's batteries-included approach	我喜欢PyCharm的开箱即用
+instead of spending time endlessly configuring a text editor to act like an ide, i just fire and forget pycharm	与其花费大量时间将文本编辑器配置成IDE的样子，我更喜欢直接使用PyCharm，即开即用
+its incredible code refactoring functionality is like no other	其令人惊人的代码重构功能是独一无二的
+i spend more time refactoring and editing existing code, and pycharm allows me to do that with just a few keybinds	我花费更多时间在重构和修改现有代码上，而PyCharm让我只需几个快捷键就能做到这一点
+i believe it’s the tool if you want to get things done right away	我认为，如果你想要立即高效完成任务，它就是那个工具
+pycharm empowers 1m+ professionals in companies of various sizes and industries	PyCharm助力全球100万+专业人士，服务不同规模与行业的公司
+looking to roll out pycharm across your company	希望在公司内部全面部署PyCharm
+talk to our experts to explore solutions that best fit your business needs	与我们的专家交流，探索最适合您业务需求的解决方案
+pycharm for business	PyCharm企业版
+start your python journey with pycharm	使用PyCharm开始您的Python之旅
+send me the latest product and industry news	向我发送最新的产品和行业新闻
+@pycharm on x	X上的@PyCharm
+jetbrains ai	JetBrains人工智能
+customers and awards	客户与奖项
+jetbrains shanghai was officially established in shanghai in 2021 to provide customers in mainland china with rmb pricing plans for our full range of products, vat invoicing, localized sales and technical support, and other services	JetBrains上海于2021年在上海正式成立，旨在为大陆客户提供全线产品的人民币定价方案、增值税发票、本地化销售与技术支持等服务
+users in mainland china should visit our official chinese website at www.jetbrains.com.cn for the best access experience	中国大陆用户应访问我们的官方中文网站www.jetbrains.com.cn以获得最佳访问体验
+pycharmunified product	PyCharm统一产品
+system requirements	系统要求
+installation instructions	安装说明
+other versions	其他版本
+third-party software	第三方软件
+pycharm is now one unified product	PyCharm现在是一款统一产品
+all users now automatically start with a free one-month pro trial	所有用户现在均可自动获得一个月的专业版免费试用
+after that, you can subscribe to pro or keep using the core features for free – now with jupyter support included	之后，您可以订阅专业版，或继续免费使用核心功能——现在已包含对Jupyter的支持
+pycharm professional users are unaffected and will continue to enjoy full access to all pro features in the unified product	PyCharm专业版用户不受影响，将继续在统一产品中享受对所有专业功能的完整访问权限
+all refined jetbrains ai tools ‒ right in your ide, for free	所有经过优化的JetBrains AI工具——完全集成于您的IDE中，免费使用
+get started→	开始使用→
+pycharm unified product faq	PyCharm统一产品常见问题解答
+why has the distribution model for pycharm community edition and pycharm professional changed	PyCharm社区版和专业版的发行模式为何发生了变化
+what are the benefits of pycharm’s unified product model for me as a user	作为用户，PyCharm的统一产品模型能为我带来哪些好处
+can i really use pycharm for free	我真的可以免费使用PyCharm吗
+are the features from pycharm community edition still available in pycharm	PyCharm社区版的功能在PyCharm中是否仍然可用
+what advanced features are unlocked with the pycharm pro subscription	PyCharm Pro订阅解锁了哪些高级功能
+how will updates work for pycharm going forward	PyCharm未来的更新机制将如何运作
+do i need to uninstall pycharm community edition or pycharm professional before installing pycharm	在安装PyCharm之前，我需要先卸载PyCharm社区版或专业版吗
+will pycharm collect or share my data	PyCharm会收集或共享我的数据吗
+i have an active pycharm professional license	我拥有一个有效的PyCharm专业版许可证
+how does the new distribution model change affect me	新的分发模式会对我产生什么影响
+i am a student or a teacher	我是一名学生或教师
+can i use the pro subscription for free	我可以免费使用专业版订阅吗
+pycharm community edition	PyCharm社区版
+i’ve been using pycharm community edition	我一直在使用PyCharm社区版
+how does this change affect me	这一变化对我有何影响
+can pycharm coexist with pycharm community edition	PyCharm可以与PyCharm社区版共存吗
+can i migrate to the unified pycharm while keeping my current settings and projects	我可以迁移到统一的PyCharm并保留当前设置和项目吗
+will i be forced to pay to use pycharm now	现在使用PyCharm会被强制收费吗
+are the system requirements for pycharm different from pycharm community edition’s	PyCharm的系统要求与PyCharm社区版不同吗
+does pycharm have any limitations or restrictions compared to pycharm community edition	与PyCharm社区版相比，PyCharm是否有任何限制或约束
+where can i download pycharm community	在哪里可以下载PyCharm社区版
+can i still use pycharm community edition	我还能使用PyCharm社区版吗
+pro trial	专业版试用
+is there a free trial available for pro subscription features in pycharm	PyCharm中的Pro订阅功能是否可以免费试用
+how do i cancel a pro trial	如何取消Pro试用
+how do i prolong a pro trial	如何延长Pro试用期
+can i still use pycharm after the trial period is over	试用期结束后我还能继续使用PyCharm吗
+i have used pro subscription features in pycharm, but my trial period is over	我已使用过PyCharm专业版订阅功能，但试用期已结束
+what should i do	我应该怎么办
+what happens to features i used during the pro trial if they disappear after the trial has ended	如果我在Pro试用期间使用的功能在试用结束后消失了，会怎样
+will i lose my settings or configurations	我会丢失我的设置或配置吗
+pro subscription	专业版订阅
+what is a pro subscription	什么是专业版订阅
+how do i purchase a pro subscription	如何购买专业版订阅
+my pro subscription for pycharm has ended	我的PyCharm专业版订阅已结束
+can i still use pro features	我还能使用Pro功能吗
+will the plugins developed by the community still work with pycharm	由社区开发的插件在PyCharm中是否还能继续使用
+thank you for downloading pycharm	感谢您下载PyCharm
+make the most of your pro trial	充分利用您的Pro试用版
+get pycharm tips, tutorials, updates, and the latest industry news delivered straight to your inbox	获取PyCharm使用技巧、教程、更新和行业最新动态，直接发送至您的收件箱
+by submitting this form, i agree that jetbrains s.r.o. may process the personal data i provided above and my location for the purpose explained above and may engage third parties in such processing	提交此表单即表示，我同意JetBrains s.r.o.公司为上述目的处理我提供的个人数据及我的位置信息，并可能委托第三方进行此类处理
+the consent can be revoked in my profile at any time	该同意可随时在我的个人资料中撤销
+more details about the processing are in jetbrains privacy notice	有关处理的更多详细信息，请参阅JetBrains隐私声明
+in addition, an unsubscribe link is included in each email	此外，每封电子邮件中均包含取消订阅链接
+sign up now	立即注册
+new to pycharm	初次使用PyCharm
+follow us on x↗	在X上关注我们↗
+learning center	学习中心
+pycharm guide↗	PyCharm指南↗
+subscribe to our youtube channel↗	订阅我们的YouTube频道↗
+many databases, one tool	多种数据库，一种工具
+a powerful cross-platform tool for relational and nosql databases	适用于关系数据库和NoSQL数据库的强大跨平台工具
+the collaborative data science platform	协作式数据科学平台
