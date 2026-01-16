@@ -3072,3 +3072,420 @@ subscribe to our youtube channel↗	订阅我们的YouTube频道↗
 many databases, one tool	多种数据库，一种工具
 a powerful cross-platform tool for relational and nosql databases	适用于关系数据库和NoSQL数据库的强大跨平台工具
 the collaborative data science platform	协作式数据科学平台
+rust blog	Rust博客
+announcing rust 1.91.1	Rust1.91.1发布公告
+nov. 10, 2025 · the rust release team	2025年11月10日——Rust发布团队
+the rust team has published a new point release of rust, 1.91.1	Rust团队发布了Rust的新版本1.91.1
+rust is a programming language that is empowering everyone to build reliable and efficient software	Rust是一种编程语言，旨在帮助每个人构建可靠且高效的软件
+if you have a previous version of rust installed via rustup, getting rust 1.91.1 is as easy as	如果您之前已通过rustup安装了旧版本的Rust，那么获取Rust1.91.1将很简单
+if you don't have it already, you can get rustup from the appropriate page on our website	如果您还没有，您可以从我们网站上的相应页面获取rustup
+what's in 1.91.1	1.91.1中的功能
+rust 1.91.1 includes fixes for two regressions introduced in the 1.91.0 release	Rust1.91.1包含了对1.91.0版本中引入的两个回归问题的修复
+linker and runtime errors on wasm	Wasm上的链接器和运行时错误
+most targets supported by rust identify symbols by their name, but wasm identifies them with a symbol name and a wasm module name	大多数由Rust支持的目标平台通过名称来识别符号，但WebAssembly（Wasm）则是通过符号名称和Wasm模块名称来识别符号
+the #[link(wasm_import_module)] attribute allows to customize the wasm module name an extern block refers to	`#[link(wasm_import_module)]`属性允许自定义extern块所引用的WebAssembly模块名称
+rust 1.91.0 introduced a regression in the attribute, which could cause linker failures during compilation ("import module mismatch" errors) or the wrong function being used at runtime (leading to undefined behavior, including crashes and silent data corruption)	Rust1.91.0版本在属性处理中引入了一个回归问题，这可能导致编译时链接器失败（出现“import module mismatch”错误）或在运行时错误地调用函数（从而导致未定义行为，包括程序崩溃和静默数据损坏）
+this happened when the same symbol name was imported from two different wasm modules across multiple rust crates	当同一个符号名称从多个Rust包的两个不同Wasm模块中被导入时发生
+rust 1.91.1 fixes the regression	Rust1.91.1修复了此回归问题
+more details are available in issue #148347	更多详细信息可参见问题#148347
+cargo target directory locking broken on illumos	Cargo在illumos平台上的构建目录锁定失效
+cargo relies on locking the target/ directory during a build to prevent concurrent invocations of cargo from interfering with each other	Cargo在构建过程中会锁定`target/`目录，以防止Cargo的并发调用相互干扰
+not all filesystems support locking (most notably some networked ones): if the os returns the unsupported error when attempting to lock, cargo assumes locking is not supported and proceeds without it	并非所有文件系统都支持锁定（最典型的是某些网络文件系统）：如果操作系统在尝试锁定时返回“不支持”错误，Cargo将自动判定当前环境不支持锁定功能，并继续执行构建流程而无需锁定
+cargo 1.91.0 switched from custom code interacting with the os apis to the file::lock standard library method (recently stabilized in rust 1.89.0)	Cargo1.91.0已从直接调用操作系统API的自定义代码切换为使用`File::lock`标准库方法（最近在Rust1.89.0版本中稳定）
+due to an oversight, that method always returned unsupported on the illumos target, causing cargo to never lock the build directory on illumos regardless of whether the filesystem supported it	由于一个疏忽，该方法在illumos目标上总是返回Unsupported，导致Cargo在illumos上从不锁定构建目录，无论文件系统是否支持该功能
+rust 1.91.1 fixes the oversight in the standard library by enabling the file::lock family of functions on illumos, indirectly fixing the cargo regression	Rust1.91.1通过启用illumos平台上的`File::lock`系列函数，修复了标准库中的这一疏漏，从而间接修复了Cargo的回归问题
+contributors to 1.91.1	1.91.1的贡献者
+many people came together to create rust 1.91.1	许多人一起创建了Rust1.91.1
+we couldn't have done it without all of you	没有大家我们就不可能做到这一点
+contact the rust team	联系Rust团队
+main blog	主要博客
+"inside rust" blog	"Inside Rust"博客
+maintained by the rust team	由Rust团队维护
+see a typo	看到拼写错误
+send a fix here	在此处发送修正
+spring has arrived, and everything comes back to life	春天来了，万物复苏
+this project requires teamwork to be completed	这个项目需要团队合作才能完成
+she goes for a walk in the park every morning	她每天早晨都去公园散步
+artificial intelligence is transforming our lives	人工智能正在改变我们的生活
+this book is very interesting, and i recommend you read it	这本书非常有趣，我推荐你读一读
+global warming is a serious environmental issue	全球变暖是一个严峻的环境问题
+we plan to have a picnic in the countryside this weekend	这个周末我们计划去郊外野餐
+learning a new language can broaden your horizons	学习新语言可以开阔你的视野
+the movie won warm applause from the audience	这部电影赢得了观众的热烈掌声
+a healthy diet is crucial for maintaining physical health	健康饮食对保持身体健康至关重要
+the weather is so nice today, with bright sunshine	今天天气真好，阳光明媚
+do you prefer coffee or tea	你更喜欢喝咖啡还是茶
+i watched a very interesting movie yesterday	我昨天看了一部非常有趣的电影
+can you help me grab that blue box	你能帮我拿一下那个蓝色的盒子吗
+learning a new language requires time and patience	学习新语言需要时间和耐心
+we plan to have a picnic in the park this weekend	这个周末我们计划去公园野餐
+my phone is out of battery, can i borrow your charger	我的手机没电了，能借你的充电器吗
+she wakes up at six every morning to exercise	她每天早晨六点起床锻炼身体
+the ending of this book surprised me a lot	这本书的结局让我感到非常意外
+we need to finish this project as soon as possible	我们需要尽快完成这个项目
+sunlight filters through the window and spills onto the floor	阳光透过窗户洒在地板上
+children run joyfully in the park	孩子们在公园里欢快地奔跑
+she is learning how to cook pasta	她正在学习如何烹饪意大利面
+this city is renowned for its long history	这座城市以其悠久的历史而闻名
+tomorrow will be a sunny day	明天将会是一个晴朗的日子
+they discussed the importance of environmental protection	他们讨论了环境保护的重要性
+this book tells a story about courage and friendship	这本书讲述了一个关于勇气和友谊的故事
+after the concert, the audience applauded warmly	音乐会结束后，观众们报以热烈的掌声
+we need more cooperation to address global issues	我们需要更多的合作来解决全球性问题
+next-generation rust library for llm protocol abstraction with native multi-modal support	下一代支持原生多模态的Rust库，用于LLM协议抽象
+supports 11+ providers: openai, anthropic, aliyun, zhipu, ollama, tencent, volcengine, longcat, moonshot, deepseek, and more	支持11+提供商：OpenAI、Anthropic、阿里云、智谱、Ollama、腾讯、火山引擎、LongCat、Moonshot和DeepSeek等
+clean architecture with unified output format, multi-modal content support, and configuration-driven design for maximum flexibility	采用统一输出格式的整洁架构，支持多模态内容，并通过配置驱动设计实现最大灵活性
+multi-modal content support: native support for text + images in a single message (v0.5.0+)	多模态内容支持：原生支持单条消息中同时包含文本和图像（V0.5.0+版本）
+function calling / tools: full support for openai-compatible function calling with streaming	函数调用/工具：全面支持OpenAI兼容的流式函数调用
+reasoning models support: universal support for reasoning models (volcengine doubao-seed-code, deepseek r1, openai o1, etc.)	推理模型支持：全面支持推理模型（如火山引擎Doubao-Seed-Code、DeepSeek R1、OpenAI o1等）
+11+ provider support: openai, anthropic, aliyun, zhipu, ollama, tencent, volcengine, longcat, moonshot, deepseek, and more	11+提供商支持：OpenAI、Anthropic、阿里云、智谱、Ollama、腾讯、火山引擎、LongCat、Moonshot和DeepSeek等
+unified output format: all providers return the same streamingresponse type	统一输出格式：所有提供商返回相同的StreamingResponse类型
+configuration-driven architecture: clean protocol/provider separation with flexible configuration	配置驱动架构：通过灵活配置实现协议与提供者的清晰分离
+extreme performance: 7,000x+ faster client creation (7µs vs 53ms)	极致性能：客户端创建速度提升7千倍以上（7微秒对比53毫秒）
+memory efficient: only 16 bytes per client instance	内存高效：每个客户端实例仅占用16字节
+type-safe: full rust type safety with result-based error handling	类型安全：基于Result的错误处理实现完整的Rust类型安全
+no hardcoded models: use any model name without restrictions	无硬编码模型：无限制地使用任何模型名称
+online model discovery: fetch available models dynamically from api	在线模型发现：从API动态获取可用模型
+universal streaming: real-time streaming with format abstraction	通用流媒体：具有格式抽象的实时流式传输
+ollama model management: full crud operations for local models	Ollama模型管理：本地模型的完整CRUD操作
+add to your cargo.toml	添加到您的Cargo.toml
+optional features	可选功能
+streaming support	流式支持
+aliyun dashscope	阿里云DashScope
+zhipu glm	智谱GLM
+ollama (local, no api key needed)	Ollama（本地，无需API密钥）
+multi-modal content (v0.5.0+)	多模态内容(V0.5.0+)
+send text and images in a single message	在单条消息中发送文本和图像
+text + image url	文本+图像URL
+text + base64 image	文本+Base64图像
+supported content types	支持的内容类型
+messageblock::text(text) - text content	`MessageBlock::text(text)`——文本内容
+messageblock::image_url(url) - image from url (openai format)	`MessageBlock::image_url(url)`——来自URL的图像（OpenAI格式）
+messageblock::image_base64(media_type, data) - base64 encoded image	`MessageBlock::image_base64(media_type, data)`——Base64编码图像
+messageblock::image_url_anthropic(url) - image from url (anthropic format)	`MessageBlock::image_url_anthropic(url)`——来自URL的图像（Anthropic格式）
+provider support	提供商支持
+openai - full support (text + images)	OpenAI——全面支持（文本+图像）
+anthropic - full support (text + images)	Anthropic——全面支持（文本+图像）
+other providers - text only (images converted to text description)	其他提供商——仅文本（图像转换为文本描述）
+see examples/multimodal_basic.rs for more examples	有关更多示例，请参阅`examples/multimodal_basic.rs`
+list supported providers	列出支持的提供商
+get a list of all supported provider names	获取所有支持的提供商名称的列表
+see examples/list_providers.rs for a complete example	有关完整示例，请参阅`examples/list_providers.rs`
+supported providers	支持的提供商
+llm-connector supports 11+ llm providers with a unified interface	llm-connector通过统一的接口支持11+大语言模型提供商
+chat, streaming, tools, multi-modal, reasoning (o1)	聊天、流式、工具、多模态、推理(o1)
+chat, streaming, multi-modal	聊天、流式、多模态
+chat, streaming, qwen models	聊天、流式、Qwen模型
+chat, streaming, tools, glm models	聊天、流式、工具、GLM模型
+chat, streaming, local models, model management	聊天、流式、本地模型、模型管理
+chat, streaming, hunyuan models (native v3)	聊天、流式、混元模型（Native V3）
+chat, streaming, reasoning (doubao-seed-code)	聊天、流式、推理(Doubao-Seed-Code)
+chat, streaming, reasoning (r1)	聊天、流式、推理(R1)
+chat, streaming, long context	聊天、流式、长上下文
+chat, gemini models	聊天、Gemini模型
+chat, streaming	聊天、流式
+for detailed provider documentation and advanced configuration, see	有关详细的提供商文档和高级配置，请参阅
+detailed protocol information below	以下详细协议信息
+provider guides for provider-specific features	提供商指南（针对提供商特定功能）
+function calling / tools	函数调用/工具
+llm-connector supports openai-compatible function calling (tools) with both streaming and non-streaming modes	llm-connector支持兼容OpenAI的函数调用（工具），包括流式和非流式两种模式
+define tools	定义工具
+check if tools were called	检查工具是否被调用
+streaming tool calls	流式工具调用
+process tool calls incrementally	逐步处理工具调用
+automatic deduplication of streaming tool_calls	流式`tool_calls`的自动去重
+incremental accumulation support	支持增量累积
+compatible with openai streaming format	兼容OpenAI流式格式
+works with zhipu, openai, and other compatible providers	支持智谱、OpenAI及其他兼容的提供商
+for complete examples, see	有关完整示例，请参阅
+examples/zhipu_tools.rs - basic tool calling	`examples/zhipu_tools.rs`——基本工具调用
+examples/zhipu_multiround_tools.rs - multi-round conversations with tools	`examples/zhipu_multiround_tools.rs`——使用工具进行多轮对话
+examples/test_aliyun_streaming_tools.rs - streaming tool calls	`examples/test_aliyun_streaming_tools.rs`——流式工具调用
+technical details: see docs/architecture.md for implementation details	技术细节：实现细节请参阅`docs/ARCHITECTURE.md`
+llm-connector provides unified streaming support across all providers with the streaming feature	llm-connector为所有具备流式功能的提供商提供统一的流式支持
+enable streaming	启用流式
+basic streaming	基本流式
+all providers return the same streamingresponse type, making it easy to switch between providers without changing your code	所有提供商都返回相同的StreamingResponse类型，这使得在不更改代码的情况下，轻松实现提供商之间的切换
+for examples, see	有关示例，请参阅
+supported protocols	支持的协议
+openai protocol	OpenAI协议
+standard openai api format with multiple deployment options	标准OpenAI API格式，具有多种部署选项
+openai (default)	OpenAI（默认）
+custom base url	自定义基本URL
+openai-compatible services	兼容OpenAI的服务
+no hardcoded models - use any model name	无硬编码模型——使用任何模型名称
+online model discovery via models()	通过`models()`在线模型发现
+azure openai support	Azure OpenAI支持
+works with openai-compatible providers (deepseek, moonshot, etc.)	与OpenAI兼容的提供商（如DeepSeek、Moonshot等）协同工作
+example models: gpt-4, gpt-4-turbo, gpt-3.5-turbo, o1-preview, o1-mini	示例模型：gpt-4、gpt-4-turbo、gpt-3.5-turbo、o1-preview和o1-mini
+anthropic protocol	Anthropic协议
+claude messages api with multiple deployment options	具有多个部署选项的Claude Messages API
+standard anthropic api	标准Anthropic API
+google vertex ai	谷歌Vertex AI
+models: claude-3-5-sonnet-20241022, claude-3-opus, claude-3-haiku	模型：claude-3-5-sonnet-20241022、claude-3-opus和claude-3-haiku
+zhipu protocol (chatglm)	智谱协议（ChatGLM）
+supports both native and openai-compatible formats	支持原生格式和兼容OpenAI的格式
+native format	原生格式
+openai-compatible format (recommended)	兼容OpenAI的格式（推荐）
+models: glm-4, glm-4-flash, glm-4-air, glm-4-plus, glm-4x	模型：glm-4、glm-4-flash、glm-4-air、glm-4-plus和glm-4x
+aliyun protocol (dashscope)	阿里云协议（DashScope）
+custom protocol for qwen models with regional support	支持区域功能的Qwen模型自定义协议
+default (china)	默认（中国）
+private cloud	私有云
+models: qwen-turbo, qwen-plus, qwen-max	模型：qwen-turbo、qwen-plus和qwen-max
+ollama protocol (local)	Ollama协议（本地）
+local llm server with comprehensive model management	具有全面模型管理的本地LLM服务程序
+default: localhost:11434	默认localhost:11434
+custom url	自定义URL
+with custom configuration	带有自定义配置
+timeout in seconds	超时（以秒为单位）
+models: llama3.2, llama3.1, mistral, mixtral, qwen2.5, etc	模型：llama3.2、llama3.1、mistral、mixtral和qwen2.5等
+model listing and management	模型列表和管理
+pull, delete, and inspect models	拉取、删除和检查模型
+local server support with custom urls	本地服务程序支持自定义URL
+enhanced error handling for ollama-specific operations	针对Ollama特定操作的增强错误处理
+direct access to ollama-specific features	直接访问特定Ollama的功能
+tencent hunyuan	腾讯混元
+openai-compatible api for tencent cloud	腾讯云兼容OpenAI的API
+default (native api v3)	默认（原生API V3）
+base_url (uses default)	`base_url`（使用默认）
+streaming example	流式示例
+models: hunyuan-lite, hunyuan-standard, hunyuan-pro, hunyuan-turbo	模型：hunyuan-lite、hunyuan-standard、hunyuan-pro和hunyuan-turbo
+see examples/tencent_native_streaming.rs for a runnable end-to-end streaming example	请参阅`examples/tencent_native_streaming.rs`以获取可运行的端到端流式示例
+openai-compatible api with custom endpoint paths	带有自定义端点路径兼容OpenAI的API
+supports both standard chat models and reasoning models (doubao-seed-code)	同时支持标准聊天模型和推理模型(Doubao-Seed-Code)
+base_url (uses default: https://ark.cn-beijing.volces.com)	`base_url`（使用默认：https://ark.cn-beijing.volces.com）
+streaming example (works with both standard and reasoning models)	流式示例（适用于标准模型和推理模型）
+endpoint: uses /api/v3/chat/completions instead of /v1/chat/completions	端点：使用`/api/v3/chat/completions`而不是`/v1/chat/completions`
+standard models: use endpoint id (e.g., ep-...)	标准模型：使用端点ID（例如ep-...）
+reasoning models: doubao-seed-code (outputs via reasoning_content field, automatically handled)	推理模型：Doubao-Seed-Code（通过`reasoning_content`字段输出，自动处理）
+streaming support: full support for both standard and reasoning models	流式支持：完全支持标准模型和推理模型
+the library automatically extracts content from the appropriate field (content or reasoning_content)	此库自动从适当的字段（`content`或`reasoning_content`）中提取内容
+supports both openai and anthropic formats	支持OpenAI和Anthropic格式
+openai format	OpenAI格式
+anthropic format (with bearer auth)	Anthropic格式（带有Bearer验证）
+models: longcat-flash-chat and other longcat models	模型：LongCat-Flash-Chat等LongCat模型
+note: longcat's anthropic format uses authorization: bearer instead of x-api-key	注意：LongCat的Anthropic格式使用`Authorization: Bearer`而不是`x-api-key`
+openai-compatible api for moonshot ai	适用于Moonshot AI兼容OpenAI的API
+models: moonshot-v1-8k, moonshot-v1-32k, moonshot-v1-128k	模型：moonshot-v1-8k、moonshot-v1-32k和moonshot-v1-128k
+openai-compatible api format	兼容OpenAI的API格式
+long context support (up to 128k tokens)	长上下文支持（最多128k个标记）
+unified output format	统一的输出格式
+openai-compatible api with reasoning models support	兼容OpenAI的API（支持推理模型）
+deepseek-chat - standard chat model	deepseek-chat——标准聊天模型
+deepseek-reasoner - reasoning model with thinking process	deepseek-reasoner——具有思维过程的推理模型
+reasoning content support (thinking process)	推理内容支持（思维过程）
+automatic extraction of reasoning content	自动提取推理内容
+reasoning model example	推理模型示例
+get reasoning process (thinking)	得到推理过程（思考）
+get final answer	得到最终答案
+google gemini	谷歌Gemini
+native google gemini api support	原生谷歌Gemini API支持
+environment variable (recommended)	环境变量（推荐）
+models: gemini-2.0-flash, gemini-2.0-flash-lite-preview-02-05, gemini-1.5-flash, gemini-1.5-pro	模型：gemini-2.0-flash、gemini-2.0-flash-lite-preview-02-05、gemini-1.5-flash和gemini-1.5-pro
+native google api implementation	原生谷歌API实现
+chat completion support	聊天完成支持
+streaming chat completion support	流式聊天完成支持
+token usage tracking	标记使用跟踪
+see examples/google_basic.rs for a runnable end-to-end example	请参阅`examples/google_basic.rs`以获取可运行的端到端示例
+streaming example: examples/google_streaming.rs	流式示例：`examples/google_streaming.rs`
+run the streaming example	运行流式示例
+supported environment variables in google_streaming example	`google_streaming`示例中支持的环境变量
+gemini_api_key: google ai studio api key	`GEMINI_API_KEY`：谷歌AI Studio API密钥
+gemini_model: model name (e.g. gemini-2.5-flash)	`GEMINI_MODEL`：模型名称（例如gemini-2.5-flash）
+gemini_prompt: override the prompt text	`GEMINI_PROMPT`：覆盖提示文本
+gemini_max_tokens: override max_tokens (e.g. 4096)	`GEMINI_MAX_TOKENS`：覆盖`max_tokens`（例如4096）
+gemini_timeout_secs: per-chunk timeout used by the example	`GEMINI_TIMEOUT_SECS`：示例中使用的每块超时时间
+ollama model management	Ollama模型管理
+access ollama-specific features through the special interface	通过特殊接口访问特定Ollama的功能
+access ollama-specific features	访问特定Ollama的功能
+list all installed models	列出所有已安装模型
+pull a new model	拉取新模型
+get detailed model information	获取详细模型信息
+check if model exists	检查模型是否存在
+delete a model	删除一个模型
+supported ollama operations	支持的Ollama操作
+list models: models() - get all locally installed models	列出模型：`models()`——获取所有本地安装的模型
+pull models: pull_model(name) - download models from registry	拉取模型：`pull_model(name)`——从注册表下载模型
+delete models: delete_model(name) - remove local models	删除模型：`delete_model(name)`——删除本地模型
+show details: show_model(name) - get comprehensive model information	显示详情：`show_model(name)`——获取全面的模型信息
+check existence: model_exists(name) - verify if model is installed	检查存在：`model_exists(name)`——验证模型是否已安装
+universal streaming format support	通用流式格式支持
+the library provides comprehensive streaming support with universal format abstraction for maximum flexibility	该库通过通用格式抽象提供全面的流式支持，以实现最大程度的灵活性
+standard openai format (default)	标准OpenAI格式（默认）
+pure ollama format for tool integration	纯Ollama格式用于工具集成
+for perfect compatibility with tools like zed.dev, use the pure ollama streaming format	为了与Zed.dev等工具实现完美兼容，请使用纯Ollama流式格式
+use pure ollama format (perfect for zed.dev)	使用纯Ollama格式（非常适合Zed.dev）
+chunk is now a pure ollamastreamchunk	chunk现在是一个纯粹的`OllamaStreamChunk`
+check for final chunk	检查最终块
+legacy ollama format (embedded)	遗留Ollama格式（嵌入式）
+for backward compatibility, the embedded format is still available	为保持向后兼容性，嵌入式格式仍然可用
+use embedded ollama format (legacy)	使用嵌入式Ollama格式（旧版）
+chunk.content contains ollama-formatted json string	`chunk.content`包含Ollama格式的JSON字符串
+streaming chat completions	流式聊天完成
+for real-time streaming responses, use the streaming interface	要实现实时流式响应，请使用流式接口
+get content from the current chunk	从当前块获取内容
+access reasoning content (for providers that support it)	访问推理内容（适用于支持该功能的提供商）
+advanced streaming features	高级流式功能
+the streaming response provides rich information and convenience methods	流式响应提供丰富的信息和便捷的方法
+access structured data	访问结构化数据
+get content from first choice	从第一个选项中获取内容
+access all choices	访问所有选项
+check for completion	检查是否完成
+format comparison	格式比较
+output example	输出示例
+use case	使用情形
+api responses, standard json	API响应，标准JSON
+web real-time streaming	Web实时流式
+log processing, data pipelines	日志处理、数据管道
+enhanced anthropic streaming features	增强版Anthropic流式功能
+state management: proper handling of message_start, content_block_delta, message_delta, message_stop events	状态管理：正确处理`message_start`、`content_block_delta`、`message_delta`和`message_stop`事件
+event processing: correct parsing of complex anthropic streaming responses	事件处理：正确解析复杂的Anthropic流式响应
+usage tracking: real-time token usage statistics during streaming	使用跟踪：流式传输期间的实时标记使用统计
+error resilience: robust error handling for streaming interruptions	错误恢复：流式中断时的健壮错误处理
+model discovery	模型发现
+fetch the latest available models from the api	从API获取最新的可用模型
+fetch models online from the api	从API在线获取模型
+supported by	支持方
+openai protocol (including openai-compatible providers like deepseek, zhipu, moonshot)	OpenAI协议（包括兼容OpenAI的提供商，如DeepSeek、智谱和Moonshot）
+anthropic protocol (limited support - returns fallback endpoint)	Anthropic协议（有限支持——返回备用端点）
+ollama protocol (full support via /api/tags)	Ollama协议（通过`/api/tags`提供全面支持）
+aliyun protocol (not supported)	阿里云协议（不支持）
+example results	示例结果
+cache models() results to avoid repeated api calls	缓存`models()`的结果以避免重复的API调用
+for protocols that don't support model listing, you can use any model name directly in your requests	对于不支持模型列表的协议，你可以在请求中直接使用任何模型名称
+request examples	请求示例
+openai / openai-compatible	OpenAI/兼容OpenAI
+anthropic (requires max_tokens)	Anthropic（需要`max_tokens`）
+aliyun (dashscope)	阿里云(DashScope)
+ollama (local)	Ollama（本地）
+ollama streaming (glm-4.6 via remote gateway)	Ollama流式（通过远程网关使用GLM-4.6）
+if you expose an ollama-compatible api while the backend actually calls zhipu glm-4.6 (remote gateway), you do not need any local model installation	如果你在暴露一个兼容Ollama的API时，后端实际调用的是智谱GLM-4.6（远程网关），那么你无需任何本地模型安装
+just point the client to your gateway and use the model id defined by your service	只需将客户端指向您的网关，并使用您服务中定义的模型ID
+point to your remote ollama-compatible gateway (replace with your actual url)	将客户端指向您远程兼容Ollama的网关（请替换为您的实际URL）
+run example (requires streaming feature)	运行示例（需要流式功能）
+note: this setup targets a remote ollama-compatible gateway	注意：此设置针对远程兼容Ollama的网关
+the model id is defined by your backend (e.g. glm-4.6); no local installation is required	模型ID由您的后端定义（例如glm-4.6）；无需本地安装
+if your gateway uses a different identifier, replace it accordingly	如果您的网关使用不同的标识符，请相应地进行替换
+reasoning models support	推理模型支持
+llm-connector provides universal support for reasoning models across different providers	llm-connector为不同提供商的推理模型提供了通用支持
+no matter which field the reasoning content is in (reasoning_content, reasoning, thought, thinking), it's automatically extracted and available via get_content()	无论推理内容属于哪个字段（如`reasoning_content`、`reasoning`、`thought`和`thinking`），都会通过`get_content()`自动提取并可用
+supported reasoning models	支持的推理模型
+reasoning field	推理字段
+usage example	使用示例
+the same code works for all reasoning models	同一段代码适用于所有推理模型
+works with volcengine doubao-seed-code	支持火山引擎Doubao-Seed-Code
+works with deepseek r1	支持DeepSeek R1
+works with openai o1	支持OpenAI o1
+or "deepseek-reasoner", "o1-preview", etc	或者“deepseek-reasoner”和“o1-preview”等
+zero configuration: automatic field detection	零配置：自动字段检测
+unified interface: same code for all reasoning models	统一接口：所有推理模型使用相同代码
+backward compatible: standard models (gpt-4, claude) work as before	向后兼容：标准模型（GPT-4和Claude）保持与之前一致
+priority-based: standard content field takes precedence when available	基于优先级：优先使用可用的标准内容字段
+see reasoning models support guide for detailed documentation	有关详细文档，请参阅推理模型支持指南
+error handling	错误处理
+simple api key (recommended)	简单API密钥（推荐）
+protocol information	协议信息
+get provider name	获取提供商名称
+fetch models online (requires api call)	在线获取模型（需要API调用）
+reasoning synonyms	推理同义词
+many providers return hidden or provider-specific keys for model reasoning content (chain-of-thought)	许多提供商会为模型推理内容（思维链）返回隐藏的或特定于提供商的键
+to simplify usage across providers, we normalize four common keys	为了简化跨提供商的使用，我们对四个常用键进行了标准化处理
+post-processing automatically scans raw json and fills these optional fields on both regular messages (message) and streaming deltas (delta)	后处理会自动扫描原始JSON，并在常规消息（Message）和流式增量（Delta）上填充这些可选字段
+you can read the first available value via a convenience method	你可以通过一个便捷方法读取第一个可用的值
+fields remain none if the provider does not return any reasoning keys	如果提供商没有返回任何推理键，字段将保持为`None`
+the normalization is provider-agnostic and applied uniformly to openai, anthropic, aliyun (qwen), zhipu (glm), and deepseek flows (including streaming)	标准化处理是与提供商无关的，并统一应用于OpenAI、Anthropic、阿里云（Qwen）、智谱（GLM）和DeepSeek的流程（包括流式）
+streamingresponse also backfills its top-level reasoning_content from the first delta that contains reasoning	`StreamingResponse`也会从首个包含推理内容的增量数据中，回填其顶层的推理内容`reasoning_content`）
+all providers output the same unified streamingresponse format, regardless of their native api format	所有提供商输出的都是统一的`StreamingResponse`格式，无论其原生API格式如何
+different input formats → protocol conversion → unified streamingresponse	不同的输入格式→协议转换→统一的`StreamingResponse`
+why this matters	为什么这很重要
+consistent api - same code works with all providers	一致的API——同一份代码适用于所有提供商
+easy switching - change providers without changing business logic	轻松切换——更换提供商而不改变业务逻辑
+type safety - compile-time guarantees across all providers	类型安全——所有提供者的编译时保证
+lower learning curve - learn once, use everywhere	更低的学习曲线——学一次，处处可用
+same code works with any provider	相同的代码适用于任何提供商
+always streamingresponse	始终是`StreamingResponse`
+unified access methods	统一的访问方法
+how it works	它是如何运作的
+openai standard	OpenAI标准
+direct mapping	直接映射
+openai compatible	兼容OpenAI
+multi-event stream	多事件流
+custom parser	自定义解析器
+dashscope format	DashScope格式
+glm format	GLM格式
+all conversions happen transparently in the protocol layer - you just get consistent streamingresponse objects	所有转换都在协议层透明地进行——你只会得到一致的`StreamingResponse`对象
+debugging & troubleshooting	调试与故障排除
+common issues	常见问题
+authentication error	身份验证错误
+authentication failed: incorrect api key provided	身份验证失败：提供的API密钥不正确
+verify your api key is correct (no extra spaces)	验证您的API密钥是否正确（无多余空格）
+check if your account has credits	检查您的账户是否有余额
+generate a new api key from your provider's dashboard	从提供商的控制面板生成新的API密钥
+test with a simple chat request to verify the key works	使用简单的聊天请求进行测试以验证密钥是否有效
+timeout error	超时错误
+request timeout	请求超时
+check your network connection	检查您的网络连接
+increase timeout settings using *_with_timeout() methods	使用`*_with_timeout()`方法增加超时设置
+verify the provider's api endpoint is accessible	验证提供者的API端点是否可访问
+model not found	未找到模型
+use fetch_models() to get available models	使用`fetch_models()`获取可用模型
+check the model name spelling	检查模型名称拼写
+verify your account has access to the model	验证您的帐户有权访问该模型
+recent changes	最近的更改
+v0.5.8 (latest)	V0.5.8（最新）
+tencent native api v3	腾讯原生API V3
+replaced openai-compatible wrapper with native tencent cloud api v3 (tc3-hmac-sha256)	将兼容OpenAI的包装器替换为原生腾讯云API V3(TC3-HMAC-SHA256)
+improved security with proper signature authentication	通过正确的签名身份验证提高安全性
+breaking change: tencent() now accepts (secret_id, secret_key)	重大更改：`tencent()`现在接受(secret_id, secret_key)
+streaming tool calls fix	流式工具调用修复
+fixed: incremental accumulation and deduplication logic for streaming tool_calls	修复：流式`tool_calls`的增量累积和重复数据删除逻辑
+improved: support for openai streaming api's incremental tool_calls format	改进：支持OpenAI流式API的增量`tool_calls`格式
+guaranteed: each tool_call is sent only once, preventing duplicate execution	保证：每个`tool_call`仅发送一次，防止重复执行
+compatible: fully backward compatible, no impact on existing code	兼容：完全向后兼容，对现有代码没有影响
+universal reasoning models support	通用推理模型支持
+support for all major reasoning models (volcengine doubao-seed-code, deepseek r1, openai o1, etc.)	支持所有主流推理模型（火山引擎Doubao-Seed-Code、DeepSeek R1和OpenAI o1等）
+zero-configuration automatic field detection	零配置自动字段检测
+unified interface, same code works for all reasoning models	统一接口，相同的代码适用于所有推理模型
+simplified configuration architecture	简化的配置架构
+unified chat_stream() method	统一的`chat_stream()`方法
+3000x+ performance improvement	性能提升三千倍以上
+support for reasoning content and usage statistics	支持推理内容和使用统计
+for complete changelog, see changelog.md	有关完整的变更日志，请参阅`CHANGELOG.md`
+design philosophy	设计理念
+minimal by design	设计简约
+only 4 protocols to cover all major llm providers	仅4个协议即可涵盖所有主流LLM提供商
+no hardcoded model restrictions - use any model name	无硬编码模型限制——使用任何模型名称
+no complex configuration files or registries	无需复杂的配置文件或注册表
+direct api usage with clear abstractions	直接API使用，具备清晰的抽象层
+group providers by api protocol, not by company	按API协议对提供商进行分组，而非按公司划分
+openai-compatible providers share one implementation	兼容OpenAI的提供商共享同一套实现
+extensible through protocol adapters	可通过协议适配器进行扩展
+check out the examples/ directory for various usage examples	查看`examples/`目录以获取各种使用示例
+basic usage examples	基本使用示例
+multi-modal support	多模态支持
+streaming examples	流式示例
+list all available providers	列出所有可用的提供商
+example descriptions	示例描述
+basic examples	基本示例
+openai_basic.rs - simple openai chat example	`openai_basic.rs`——简单的OpenAI聊天示例
+anthropic_streaming.rs - anthropic streaming with proper event handling	`anthropic_streaming.rs`——Anthropic流式传输与适当的事件处理
+aliyun_basic.rs - aliyun dashscope basic usage	`aliyun_basic.rs`——阿里云DashScope基本用法
+zhipu_basic.rs - zhipu glm basic usage	`zhipu_basic.rs`——智谱GLM基本用法
+ollama_basic.rs - ollama local model usage	`ollama_basic.rs`——Ollama本地模型用法
+tencent_basic.rs - tencent hunyuan basic usage	`tencent_basic.rs`——腾讯混元基本用法
+advanced examples	高级示例
+multimodal_basic.rs - multi-modal content (text + images)	`multimodal_basic.rs`——多模态内容（文本+图像）
+ollama_model_management.rs - complete ollama model crud operations	`ollama_model_management.rs`——完整的Ollama模型CRUD操作
+zhipu_tools.rs - function calling with zhipu	`zhipu_tools.rs`——智谱函数调用
+zhipu_multiround_tools.rs - multi-round conversation with tools	`zhipu_multiround_tools.rs`——与工具进行多轮对话
+volcengine_streaming.rs - volcengine streaming with reasoning models	`volcengine_streaming.rs`——火山引擎具有推理模型的流式传输
+utility examples	实用程序示例
+list_providers.rs - list all available providers and their configurations	`list_providers.rs`——列出所有可用的提供商及其配置
+contributions are welcome	欢迎贡献
+please feel free to submit a pull request	请随时提交拉取请求
+please check rules.md for project rules and docs/contributing.md for development guidelines	请查看`RULES.md`了解项目规则，查看`docs/CONTRIBUTING.md`了解开发指南
+llm connector - a unified interface for connecting to various large language model providers	LLM Connector——用于连接各种大型语言模型提供商的统一接口
+9 stars	9颗星
+1 fork	1复刻
+releases 8	发行版8
