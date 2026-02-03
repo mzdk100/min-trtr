@@ -24,3 +24,4 @@ thank you	谢谢你
 input your project version	输入您的项目版本
 no dependencies other than a clang binary	除了Clang二进制程序之外没有其他依赖项
 spring has arrived, and everything comes back to life	春天来了，万物复苏
+the library closes at five o'clock in the afternoon	图书馆在下午五点关闭

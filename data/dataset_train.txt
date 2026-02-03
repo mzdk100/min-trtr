@@ -584,7 +584,7 @@ for triton 3.2, you need	对于Triton3.2，您需要
 special notes for comfyui with embeded python	ComfyUI与嵌入式Python的特别说明
 there should be a python folder	应该有一个Python文件夹
 other ai software may put the python folder at a different path	其他AI软件可能会将Python文件夹放在不同的路径上
-if you created a venv, depending on how you created it, the python folder may be the venv folder or the venv\scripts\ folder	如果你创建了一个venv，根据你创建它的方式，Python文件夹可能是venv文件夹或venv\Scripts\文件夹
+if you created a venv, depending on how you created it, the python folder may be the venv folder or the venv\scripts\ folder	如果你创建了一个venv，根据你创建它的方式，Python文件夹可能是`venv`文件夹或`venv\Scripts\`文件夹
 you need to put two folders include and libs into the python folder to make triton work	您需要将两个文件夹include和libs放入Python文件夹中，才能使Triton工作
 be careful: it is 'libs', not 'lib'	小心：这是“libs”，不是“lib”
 there may already be a folder lib in the python folder, containing things like site-packages or __future__.py	Python文件夹中可能已经有一个文件夹Lib，其中包含站点包或__future__.py等内容
@@ -618,7 +618,7 @@ delete the cache folders	删除缓存文件夹
 you may also need to delete these cache folders when you change the python version, install another version of triton, or change the c compiler or cuda	当您更改Python版本、安装其他版本的Triton或更改C编译器或CUDA时，可能还需要删除这些缓存文件夹
 it's ok if these folders do not exist on your computer	如果您的计算机上不存在这些文件夹，也没关系
 the first folder exists only if you have used triton.jit (which is used by packages like sageattention), and the second folder exists only if you have used torch.compile	第一个文件夹仅在您使用triton.jit（由SageAttention等包使用）时存在，第二个文件夹仅在您使用torch.compile时存在
-double check your python version: you can run get-command -all python in powershell (or where python in cmd) to see the installation path of python, and python --version to see its version	请仔细检查您的Python版本：在PowerShell中可运行Get-Command -All python（或在CMD中运行where python）查看Python安装路径，运行python --version查看其版本号
+double check your python version: you can run get-command -all python in powershell (or where python in cmd) to see the installation path of python, and python --version to see its version	请仔细检查您的Python版本：在PowerShell中可运行`Get-Command -All python`（或在CMD中运行`where python`）查看Python安装路径，运行`python --version`查看其版本号
 if you're using comfyui with embeded python, make sure that you copy-pasted the folders include and libs from the correct version of python	如果您将ComfyUI与嵌入式Python一起使用，请确保从正确版本的Python复制粘贴文件夹include和libs
 you also need to delete the cache folders above	您还需要删除上面的缓存文件夹
 if the above still doesn't work, you may try	如果上述方法仍然无效，您可以尝试
@@ -652,7 +652,7 @@ this has been fixed since pytorch 2.6	自PyTorch2.6起，这个问题已经修�
 error with model offloading	模型卸载错误
 if you're using comfyui, the model is compiled, and you see error messages like	如果您使用的是ComfyUI，则模型会被编译，您会看到类似的错误消息
 pointer argument (at 0) cannot be accessed from triton (cpu tensor?)	无法从Triton（CPU张量？）访问指针参数（在0处）
-then you may use --gpu-only when launching comfyui to disable model offloading	然后，您可以仅在启动ComfyUI时使用--gpu-only来禁用模型卸载
+then you may use --gpu-only when launching comfyui to disable model offloading	然后，您可以仅在启动ComfyUI时使用`--gpu-only`来禁用模型卸载
 no module named 'triton.ops'	没有名为“triton.ops”的模块
 triton.ops was removed in triton 3.1, and this is because some of your python package is outdated (most likely bitsandbytes)	Triton3.1中删除了triton.ops，这是因为您的一些Python包已经过时（最有可能是bitsandbytes）
 this is for developers	这是为开发人员准备的
@@ -686,9 +686,9 @@ files changed	文件更改
 show options	显示选项
 sorry for making the commit on this day, but i'm really, really not fooling	很抱歉在这一天做出提交，但我真的不是在开玩笑
 however, this is not thoroughly tested by myself, i can't guarantee that it's free of bugs	然而，这并没有经过我自己的彻底测试，我不能保证它没有错误
-the --classpath option(s) of d8 doesn't act like that of javac: the :/; separator is likely to cause problems here	d8工具的--classpath选项与javac行为不同，使用:或;分隔符可能导致问题
+the --classpath option(s) of d8 doesn't act like that of javac: the :/; separator is likely to cause problems here	d8工具的`--classpath`选项与javac行为不同，使用`:`或`;`分隔符可能导致问题
 the multidex format may cause problem on old android versions (loading it using dexclassloader instead of inmemorydexclassloader introduced in api 26), even if there is only one classes.dex output file	即使只有一个classes.dex输出文件，Multidex格式在旧版Android上也可能会导致问题（使用DexClassLoader而不是API26中引入的InMemoryDexClassLoader进行加载）
-specifying --min-api 20 solves this problem	指定--min-api 20解决了这个问题
+specifying --min-api 20 solves this problem	指定`--min-api 20`解决了这个问题
 newer jdk versions (including jdk 21 and above) may not work with android d8 if there are anonymous classes in the java code, which produces files like cls$1.class	如果Java代码中存在匿名类，则较新的JDK版本（包括JDK21及更高版本）可能无法与Android D8兼容，从而产生类似Cls$1.class的文件
 this is fixed in build tools 35.0.0	在构建工具35.0.0中已经修复此问题
 i'm not sure if it's good to add this warning here	我不确定在此处添加此警告是否合适
@@ -703,7 +703,7 @@ great work on the documentation, it's very nice	文档做得很好，非常细�
 can you add the "notes" that you posted in the pr description as doc comments on the dexer type such that future users of said type will be made aware of those caveats	您能否将您在PR描述中发布的“注释”添加为Dexer类型的文档注释，以便该类型的未来用户了解这些注意事项
 fix dexer docs	修复Dexer文档
 i've made these requested changes	我已经做了这些要求的更改
---lib and --classpath options are probably redundant under --no-desugaring, but they don't cause any problem under my test case	--lib和--classpath选项在--no-desugaring下可能是多余的，但它们在我的测试用例下不会引起任何问题
+--lib and --classpath options are probably redundant under --no-desugaring, but they don't cause any problem under my test case	`--lib`和`--classpath`选项在`--no-desugaring`下可能是多余的，但它们在我的测试用例下不会引起任何问题
 thanks, much appreciated	谢谢，非常感谢
 i'll release the crate to crates.io shortly	我会很快把库发布到crates.io
 published v0.1.2 to crates.io	已发布V0.1.2到crates.io
@@ -948,7 +948,7 @@ there is also collection of standard test vectors which are not included in this
 compiling libopus for windows and alternative build systems	Windows平台及替代构建系统下的libopus编译
 see cmake/readme.md or meson/readme.md	参见cmake/README.md或meson/README.md
 portability notes	可移植性说明
-this implementation uses floating-point by default but can be compiled to use only fixed-point arithmetic by setting --enable-fixed-point (if using autoconf) or by defining the fixed_point macro (if building manually)	该实现默认使用浮点运算，但可通过两种方式编译为纯定点运算：使用autoconf时设置--enable-fixed-point参数，或手动构建时定义FIXED_POINT宏
+this implementation uses floating-point by default but can be compiled to use only fixed-point arithmetic by setting --enable-fixed-point (if using autoconf) or by defining the fixed_point macro (if building manually)	该实现默认使用浮点运算，但可通过两种方式编译为纯定点运算：使用autoconf时设置`--enable-fixed-point`参数，或手动构建时定义`FIXED_POINT`宏
 the fixed point implementation has somewhat lower audio quality and is slower on platforms with fast fpus, it is normally only used in embedded environments	定点实现的音频质量稍低，在具有快速FPU的平台上速度较慢，通常仅用于嵌入式环境
 the implementation can be compiled with either a c89 or a c99 compiler	该实现可以用C89或C99编译器编译
 while it does not rely on any _undefined behavior_ as defined by c89 or c99, it relies on common _implementation-defined behavior_ for two's complement architectures	虽然该实现不依赖C89或C99标准定义的任何未定义行为，但需要依赖二进制补码架构中常见的实现定义行为
@@ -1084,16 +1084,16 @@ the fast way from v source to an apk is	从V源代码到APK的快速方法是
 yes, that's it	是的，就是这样
 your apk should now reside in the current directory	您的APK现在应该位于当前目录中
 the fast way from source to a run on the device (build, package, deploy and launch app on device) is	从源代码到在设备上运行（在设备上构建、打包、部署和启动应用程序）的快速方法是
-the --archs flag control what architectures your app is built for	--archs标志控制应用程序的构建架构
-you can specify multiple archs with --archs 'armeabi-v7a, arm64-v8a'	您可以使用--archs参数指定多个架构，例如'armeabi-v7a,arm64-v8a'
+the --archs flag control what architectures your app is built for	`--archs`标志控制应用程序的构建架构
+you can specify multiple archs with --archs 'armeabi-v7a, arm64-v8a'	您可以使用`--archs`参数指定多个架构，例如'armeabi-v7a,arm64-v8a'
 by default vab will build for all 4 supported cpu architectures (arm64-v8a, armeabi-v7a, x86 and x86_64)	默认情况下，vab将为所有4种受支持的CPU架构（arm64-v8a、armeabi-v7a、x86和x86_64）构建
 you can build an android app ready for the play store with the following command	您可以使用以下命令构建适用于Play Store的Android应用
 do not submit apps using default values	不要使用默认值提交应用
 please make sure to adhere to all guidelines of the app store you're publishing to	请务必遵守您所发布应用商店的所有指南要求
 aab package format	AAB包格式
 vab supports outputting android app bundles (aab)	vab支持输出Android应用捆绑包（AAB）
-to output an .aab file you can specify the package format with the --package flag	要输出.aab文件，可以使用--package标志指定包格式
-alternatively it will be inferred if you use the --output/-o flag	或者，如果您使用--output/-o标志，则会推断出
+to output an .aab file you can specify the package format with the --package flag	要输出.aab文件，可以使用`--package`标志指定包格式
+alternatively it will be inferred if you use the --output/-o flag	或者，如果您使用`--output/-o`标志，则会推断出
 environment variables	环境变量
 if vab should fail to detect a tool or location on your build host you can use the following env variables to help vab understand your android development setup	如果vab在构建主机上无法检测到某个工具或路径位置，您可以通过设置以下环境变量来帮助vab识别您的Android开发环境配置
 complete list of env variables recognized	已识别的环境变量完整列表
@@ -1116,8 +1116,8 @@ runtime tests can be run with vab test-runtime (also part of vab test-all)	运�
 extending vab	扩展vab
 the vab command-line tool can be extended with custom user commands	vab命令行工具可以通过自定义用户命令进行扩展
 see the "extending vab" section in the documentation	请参阅文档中的“扩展vab”部分
-vab targets as low an api level as possible by default for maximum compatibility, you can however tell it to target newer android versions by using the --api flag	vab默认会尽可能选择最低的API级别以实现最大兼容性，但您可以通过--api参数指定更高的Android版本作为目标平台
-installed api levels can be listed with vab --list-apis	可通过执行vab --list-apis命令列出已安装的API级别
+vab targets as low an api level as possible by default for maximum compatibility, you can however tell it to target newer android versions by using the --api flag	vab默认会尽可能选择最低的API级别以实现最大兼容性，但您可以通过`--api`参数指定更高的Android版本作为目标平台
+installed api levels can be listed with vab --list-apis	可通过执行`vab --list-apis`命令列出已安装的API级别
 android is a complex ecosystem that has differences between build hosts and tool versions - consult our faq for answers to frequently asked questions	Android是一个复杂的生态系统，构建主机和工具版本之间存在差异——请参阅我们的常见问题解答
 dear valued client	尊敬的客户
 happy summer from byethost.com and ifastnet	谨代表Byethost.com和iFastNet，祝您夏日愉快
@@ -1300,7 +1300,7 @@ if c2v_config is set, it should contain the c2v.toml path	如果设置了C2V_CON
 the project folder (the last folder passed to c2v) + /c2v.toml	项目文件夹（传递给c2v的最后一个文件夹）+/c2v.toml
 that file has the following format	该文件具有以下格式
 in the above: uses_sdl is a boolean, that defaults to false	在上面：uses_sdl是一个布尔值，默认为false
-when it is true, c2v will append the result of sdl2-config --cflags to additional_flags	当它为true时，c2v会将sdl2-config --cflags的结果附加到additional_flags
+when it is true, c2v will append the result of sdl2-config --cflags to additional_flags	当它为true时，c2v会将`sdl2-config --cflags`的结果附加到additional_flags
 output_dirname is a string, that defaults to c2v_output	output_dirname是一个字符串，默认为c2v_output
 c2v will create that folder, if it does not exist, and it will put all the translated .v files there	C2V将创建该文件夹（如果它不存在），它将所有翻译的.v文件放在那里
 additional_flags is a string, that will be passed verbatim to the clang parser for each .c file	additional_flags是一个字符串，它将逐字传递给Clang解析器以处理每个.c文件
@@ -2454,10 +2454,10 @@ thus, operators can consume a subset of channels in the input tensor, and produc
 mobile phones	移动电话
 the table below presents single-threaded performance of xnnpack library on three generations of mobilenet models and three generations of pixel phones	下表显示了XNNPACK库在三代MobileNet模型和三代Pixel手机上的单线程性能
 the following table presents multi-threaded (using as many threads as there are big cores) performance of xnnpack library on three generations of mobilenet models and three generations of pixel phones	下表显示了XNNPACK库在三代MobileNet模型和三代Pixel手机上的多线程（使用与大内核一样多的线程）性能
-benchmarked on march 27, 2020 with end2end_bench --benchmark_min_time=5 on an android/arm64 build with android ndk r21 (bazel build -c opt --config android_arm64 :end2end_bench) and neural network models with randomized weights and inputs	2020年3月27日，在搭载Android NDK r21（bazel build -c opt --config android_arm64）的Android/ARM64设备上，使用随机权重和输入数据的神经网络模型，通过`end2end\_bench --benchmark\_min\_time=5`进行基准测试
+benchmarked on march 27, 2020 with end2end_bench --benchmark_min_time=5 on an android/arm64 build with android ndk r21 (bazel build -c opt --config android_arm64 :end2end_bench) and neural network models with randomized weights and inputs	2020年3月27日，在搭载Android NDK r21（`bazel build -c opt --config android_arm64`）的Android/ARM64设备上，使用随机权重和输入数据的神经网络模型，通过`end2end_bench --benchmark_min_time=5`进行基准测试
 raspberry pi	树莓派
 the table below presents multi-threaded performance of xnnpack library on three generations of mobilenet models and three generations of raspberry pi boards	下表显示了XNNPACK库在三代MobileNet模型和三代Raspberry Pi板上的多线程性能
-benchmarked on feb 8, 2022 with end2end-bench --benchmark_min_time=5 on a raspbian buster build with cmake (./scripts/build-local.sh) and neural network models with randomized weights and inputs	2022年2月8日，在基于Raspbian Buster的系统上，使用CMake（执行./scripts/build-local.sh）构建，并通过`end2end-bench --benchmark\_min\_time=5`对随机权重和输入数据的神经网络模型进行了基准测试
+benchmarked on feb 8, 2022 with end2end-bench --benchmark_min_time=5 on a raspbian buster build with cmake (./scripts/build-local.sh) and neural network models with randomized weights and inputs	2022年2月8日，在基于Raspbian Buster的系统上，使用CMake（执行`./scripts/build-local.sh`）构建，并通过`end2end-bench --benchmark_min_time=5`对随机权重和输入数据的神经网络模型进行了基准测试
 int8 inference was evaluated on per-channel quantization schema	INT8推理采用逐通道量化方案进行评估
 minimum build requirements	最低构建要求
 machine learning frameworks	机器学习框架
@@ -3489,3 +3489,166 @@ llm connector - a unified interface for connecting to various large language mod
 9 stars	9颗星
 1 fork	1复刻
 releases 8	发行版8
+the weather is sunny today, perfect for going out for a walk	今天天气晴朗，适合外出散步
+the library closes at five o'clock in the afternoon	图书馆在下午五点关闭
+this movie won several international awards	这部电影获得了多项国际奖项
+do we need to reserve seats in advance	我们需要提前预订座位吗
+the flowers in the garden bloom in spring	花园里的花朵在春天绽放
+he rides his bicycle to work every day	他每天骑自行车上班
+the children are having a great time playing in the park	孩子们在公园里玩得很开心
+the solution to this problem is very complex	这个问题的解决方案非常复杂
+we are planning to travel to europe next month	我们计划下个月去欧洲旅行
+copy path	复制路径
+more file actions	更多文件操作
+add files via upload	通过上传添加文件
+2 days ago	两天前
+file metadata and controls	文件元数据和控件
+ask copilot about this file	向Copilot询问此文件
+download raw file	下载原始文件
+fork this repository and edit the file	复刻此存储库并编辑文件
+more edit options	更多编辑选项
+hugging face demo	Hugging Face演示
+modelscope demo	ModelScope演示
+we release qwen3-tts, a series of powerful speech generation capabilities developed by qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control	我们正式发布Qwen3-TTS，这是通义千问团队打造的一系列强大的语音生成能力，全面支持语音克隆、音色设计、超高质量拟人化语音生成以及基于自然语言的语音控制
+it provides developers and users with the most extensive set of speech generation features available	它为开发者与用户提供了目前可用的最全面的语音生成功能集
+2026.1.22: 🎉🎉🎉 we have released qwen3-tts series (0.6b/1.7b) based on qwen3-tts-tokenizer-12hz	2026年1月22日：🎉🎉🎉我们发布了基于Qwen3-TTS-Tokenizer-12Hz的Qwen3-TTS系列（6亿/17亿）
+please check our blog	请查看我们的博客
+model architecture	模型架构
+released models description and download	已发布模型说明及下载
+environment setup	环境搭建
+python package usage	Python包用法
+custom voice generation	自定义语音生成
+voice design	音色设计
+voice design then clone	音色设计后克隆
+tokenizer encode and decode	标记器编码和解码
+launch local web ui demo	启动本地Web UI演示
+dashscope api usage	DashScope API用法
+vllm usage	vLLM用法
+fine tuning	微调
+qwen3-tts covers 10 major languages (chinese, english, japanese, korean, german, french, russian, portuguese, spanish, and italian) as well as multiple dialectal voice profiles to meet global application needs	Qwen3-TTS涵盖10种主要语言（中文、英语、日语、韩语、德语、法语、俄语、葡萄牙语、西班牙语和意大利语）及多种方言语音特征，以满足全球应用场景的需求
+in addition, the models feature strong contextual understanding, enabling adaptive control of tone, speaking rate, and emotional expression based on instructions and text semantics, and they show markedly improved robustness to noisy input text	此外，这些模型具备强大的上下文理解能力，能够根据指令和文本语义自适应地控制语调、语速和情感表达，并且对有噪声输入文本的鲁棒性显著提升
+powerful speech representation: powered by the self-developed qwen3-tts-tokenizer-12hz, it achieves efficient acoustic compression and high-dimensional semantic modeling of speech signals	强大的语音表征能力：基于自研的Qwen3-TTS-Tokenizer-12Hz，实现了语音信号的高效声学压缩与高维语义建模
+it fully preserves paralinguistic information and acoustic environmental features, enabling high-speed, high-fidelity speech reconstruction through a lightweight non-dit architecture	它完整保留了副语言信息和声音环境特征，并能通过轻量化的非DiT架构，实现高速、高保真的语音重建
+universal end-to-end architecture: utilizing a discrete multi-codebook lm architecture, it realizes full-information end-to-end speech modeling	通用端到端架构：采用离散多码本语言模型架构，实现全信息的端到端语音建模
+this completely bypasses the information bottlenecks and cascading errors inherent in traditional lm+dit schemes, significantly enhancing the model’s versatility, generation efficiency, and performance ceiling	这完全规避了传统LM+DiT方案中固有的信息瓶颈与级联错误，显著提升了模型的通用性、生成效率与性能上限
+extreme low-latency streaming generation: based on the innovative dual-track hybrid streaming generation architecture, a single model supports both streaming and non-streaming generation	极低延迟流式生成：基于创新的双轨混合流式生成架构，单一模型同时支持流式与非流式生成
+it can output the first audio packet immediately after a single character is input, with end-to-end synthesis latency as low as 97ms, meeting the rigorous demands of real-time interactive scenarios	输入单个字符后即可立即输出首音频包，端到端合成延迟低至97毫秒，满足实时交互场景的严苛要求
+intelligent text understanding and voice control: supports speech generation driven by natural language instructions, allowing for flexible control over multi-dimensional acoustic attributes such as timbre, emotion, and prosody	智能文本理解与语音控制：支持通过自然语言指令驱动语音生成，可灵活控制音色、情感、韵律等多维声学属性
+by deeply integrating text semantic understanding, the model adaptively adjusts tone, rhythm, and emotional expression, achieving lifelike “what you imagine is what you hear” output	通过深度融合文本语义理解，模型能自适应调整语调、节奏与情感表达，实现生动的“所想即所听”输出效果
+below is an introduction and download information for the qwen3-tts models that have already been released	以下是已经发布的Qwen3-TTS模型的介绍和下载信息
+other models mentioned in the technical report will be released in the near future	技术报告中提到的其他模型将于近期发布
+please select and download the model that fits your needs	请选择并下载适合您需求的模型
+tokenizer name	标记器名称
+the qwen3-tts-tokenizer-12hz model which can encode the input speech into codes and decode them back into speech	Qwen3-TTS-Tokenizer-12Hz模型可将输入语音编码为代码，并将代码解码回语音
+language support	语言支持
+instruction control	指令控制
+performs voice design based on user-provided descriptions	根据用户提供的描述执行音色设计
+chinese, english, japanese, korean, german, french, russian, portuguese, spanish, italian	中文、英语、日语、韩语、德语、法语、俄语、葡萄牙语、西班牙语和意大利语
+provides style control over target timbres via user instructions; supports 9 premium timbres covering various combinations of gender, age, language, and dialect	通过用户指令提供目标音色的风格控制；支持9种精品音色，覆盖性别、年龄、语言和方言的各种组合
+base model capable of 3-second rapid voice clone from user audio input; can be used for fine-tuning (ft) other models	基座模型支持基于用户音频输入的3秒快速语音克隆；可用于对其他模型进行微调（FT）
+supports 9 premium timbres covering various combinations of gender, age, language, and dialect	支持9种精品音色，覆盖性别、年龄、语言和方言的各种组合
+during model loading in the qwen-tts package or vllm, model weights will be automatically downloaded based on the model name	在qwen-tts包或vLLM中加载模型时，模型权重将根据模型名称自动下载
+however, if your runtime environment is not conducive to downloading weights during execution, you can refer to the following commands to manually download the model weights to a local directory	但是，如果您的运行时环境不利于在执行时下载权重，可以参考以下命令将模型权重手动下载到本地目录
+download through modelscope (recommended for users in mainland china)	通过ModelScope下载（中国大陆用户推荐）
+download through hugging face	通过Hugging Face下载
+the easiest way to quickly use qwen3-tts is to install the qwen-tts python package from pypi	快速使用Qwen3-TTS的最简单方法是通过PyPI安装qwen-tts Python包
+this will pull in the required runtime dependencies and allow you to load any released qwen3-tts model	这将拉取所需的运行时依赖项，并允许您加载任何已发布的Qwen3-TTS模型
+we recommend using a fresh, isolated environment to avoid dependency conflicts with existing packages	我们推荐使用一个干净、隔离的环境，以避免与现有包产生依赖冲突
+you can create a clean python 3.12 environment like this	您可以创建一个干净的Python3.12环境，像这样
+then run	然后运行
+if you want to develop or modify the code locally, install from source in editable mode	如果您想在本地开发或修改代码，请以可编辑模式从源代码安装
+additionally, we recommend using flashattention 2 to reduce gpu memory usage	此外，我们推荐使用FlashAttention2来降低GPU显存占用
+if your machine has less than 96gb of ram and lots of cpu cores, run	如果您的机器内存小于96GB且CPU核心较多，请运行
+also, you should have hardware that is compatible with flashattention 2	另外，您应该拥有与FlashAttention2兼容的硬件
+read more about it in the official documentation of the flashattention repository	在FlashAttention存储库的官方文档中阅读更多
+flashattention 2 can only be used when a model is loaded in torch.float16 or torch.bfloat16	FlashAttention2仅在模型以`torch.float16`或`torch.bfloat16`加载时可用
+after installation, you can import qwen3ttsmodel to run custom voice tts, voice design, and voice clone	安装后，您可以导入Qwen3TTSModel来运行自定义语音TTS、音色设计和语音克隆
+the model weights can be specified either as a hugging face model id (recommended) or as a local directory path you downloaded	模型权重可以指定为Hugging Face模型ID（推荐）或您下载的本地目录路径
+for all the generate_* functions below, besides the parameters shown and explicitly documented, you can also pass generation kwargs supported by hugging face transformers model.generate, e.g., max_new_tokens, top_p, etc	对于下面的所有`generate_*`函数，除了显示和明确记录的参数之外，您还可以传递Hugging Face Transformers `model.generate`支持的生成kwargs，例如`max_new_tokens`、`top_p`等
+for custom voice models (qwen3-tts-12hz-1.7b/0.6b-customvoice), you just need to call generate_custom_voice, passing a single string or a batch list, along with language, speaker, and optional instruct	对于自定义语音模型（Qwen3-TTS-12Hz-1.7B/0.6B-CustomVoice），您只需调用`generate_custom_voice`，传入一个字符串或一个批量列表，同时指定语言、说话人以及可选的指令
+you can also call model.get_supported_speakers() and model.get_supported_languages() to see which speakers and languages the current model supports	您还可以调用`model.get_supported_speakers()`和`model.get_supported_languages()`来查看当前模型支持哪些说话人和语言
+single inference	单次推理
+pass `auto` (or omit) for auto language adaptive; if the target language is known, set it explicitly	传递`Auto`（或省略）以进行自动语言适应；如果目标语言已知，请显式设置
+omit if not needed	如果不需要则省略
+batch inference	批量推理
+for qwen3-tts-12hz-1.7b/0.6b-customvoice models, the supported speaker list and speaker descriptions are provided below	对于Qwen3-TTS-12Hz-1.7B/0.6B-CustomVoice模型，支持的说话人列表及描述如下
+we recommend using each speaker’s native language for the best quality	我们推荐使用每种说话人的母语以获得最佳质量
+of course, each speaker can speak any language supported by the model	当然，每个说话人都能说模型支持的任何语言
+voice description	语音描述
+native language	母语
+bright, slightly edgy young female voice	明亮、略带棱角的年轻女声
+warm, gentle young female voice	温暖、柔和的年轻女声
+seasoned male voice with a low, mellow timbre	具有低沉、醇厚音色的成熟男声
+youthful beijing male voice with a clear, natural timbre	具有清朗、自然音色的年轻北京男声
+chinese (beijing dialect)	中文（北京方言）
+lively chengdu male voice with a slightly husky brightness	略带沙哑清亮的活泼成都男声
+chinese (sichuan dialect)	中文（四川方言）
+dynamic male voice with strong rhythmic drive	具有强烈节奏感的活力男声
+sunny american male voice with a clear midrange	具有中频清晰的阳光美国男声
+playful japanese female voice with a light, nimble timbre	具有轻盈、灵动音色的俏皮日本女声
+warm korean female voice with rich emotion	具有丰富情感的温暖韩国女声
+for the voice design model (qwen3-tts-12hz-1.7b-voicedesign), you can use generate_voice_design to provide the target text and a natural-language instruct description	对于音色设计模型(Qwen3-TTS-12Hz-1.7B-VoiceDesign)，您可以使用`generate_voice_design`，提供目标文本和一个自然语言的指令描述
+for the voice clone model (qwen3-tts-12hz-1.7b/0.6b-base), to clone a voice and synthesize new content, you just need to provide a reference audio clip (ref_audio) along with its transcript (ref_text)	对于语音克隆模型(Qwen3-TTS-12Hz-1.7B/0.6B-Base)，要克隆一个声音并合成新内容，您只需提供一段参考音频(ref_audio)及其转写文本(ref_text)
+ref_audio can be a local file path, a url, a base64 string, or a (numpy_array, sample_rate) tuple	`ref_audio`可以是本地文件路径、URL、base64字符串，或一个`(numpy_array, sample_rate)`元组
+if you set x_vector_only_mode=true, only the speaker embedding is used so ref_text is not required, but cloning quality may be reduced	如果您设置`x_vector_only_mode=True`，则仅使用说话人嵌入，因此不需要`ref_text`，但克隆质量可能会降低
+if you need to reuse the same reference prompt across multiple generations (to avoid recomputing prompt features), build it once with create_voice_clone_prompt and pass it via voice_clone_prompt	如果您需要在多次生成中重复使用相同的参考提示（以避免重新计算提示特征），请用`create_voice_clone_prompt`构建一次，并通过`voice_clone_prompt`传递
+for more examples of reusable voice clone prompts, batch cloning, and batch inference, please refer to the example codes	有关可复用语音克隆提示、批量克隆和批量推理的更多示例，请参阅示例代码
+with those examples and the generate_voice_clone function description, you can explore more advanced usage patterns	结合这些示例和`generate_voice_clone`函数的说明，您可以探索更多高级用法
+if you want a designed voice that you can reuse like a cloned speaker, a practical workflow is	如果您想要一个可以像克隆说话人一样重复使用的定制音色，一个实用的工作流程是
+(1) use the voicedesign model to synthesize a short reference clip that matches your target persona, (2) feed that clip into create_voice_clone_prompt to build a reusable prompt, and then (3) call generate_voice_clone with voice_clone_prompt to generate new content without re-extracting features every time	（1）使用VoiceDesign模型合成一个与您的目标人设符合的短参考片段，（2）将该片段输入到`create_voice_clone_prompt`以构建可复用的提示，然后（3）调用`generate_voice_clone`并传入`voice_clone_prompt`来生成新内容，无需每次都重新提取特征
+this is especially useful when you want a consistent character voice across many lines	当你想在多行中保持一致的角色声音时，这特别有用
+create a reference audio in the target style using the voicedesign model	使用VoiceDesign模型创建目标风格的参考音频
+build a reusable clone prompt from the voice design reference	基于音色设计参考构建可复用的克隆提示
+or "voice_design_reference.wav"	或者"voice_design_reference.wav"
+reuse it for multiple single calls	将其重复用于多个单次调用
+or batch generate in one call	或在一次调用中批量生成
+if you only want to encode and decode audio for transport or training and so on, qwen3ttstokenizer supports encode/decode with paths, urls, numpy waveforms, and dict/list payloads, for example	如果您只想对音频进行编解码以用于传输或训练等，Qwen3TTSTokenizer支持通过路径、URL、numpy波形以及字典/列表负载进行编码/解码，例如
+for more tokenizer examples (including different input formats and batch usage), please refer to the example codes	有关更多标记器的示例（包括不同输入格式和批量用法），请参阅示例代码
+with those examples and the description for qwen3ttstokenizer, you can explore more advanced usage patterns	结合这些示例和Qwen3TTSTokenizer的说明，您可以探索更多高级用法
+to launch the qwen3-tts web ui demo, simply install the qwen-tts package and run qwen-tts-demo	要启动Qwen3-TTS的Web UI演示，只需安装qwen-tts包并运行`qwen-tts-demo`
+use the command below for help	使用以下命令获取帮助
+to launch the demo, you can use the following commands	要启动演示，您可以使用以下命令
+customvoice model	CustomVoice模型
+voicedesign model	VoiceDesign模型
+and then open http://<your-ip>:8000, or access it via port forwarding in tools like vs code	然后打开http://<your-ip>:8000，或通过像VS Code工具的端口转发进行访问
+base model https notes	基础模型HTTPS说明
+to avoid browser microphone permission issues after deploying the server, for base model deployments, it is recommended/required to run the gradio service over https (especially when accessed remotely or behind modern browsers/gateways)	对于基座模型部署，为了避免部署服务器后出现浏览器麦克风权限问题，建议/要求通过HTTPS运行Gradio服务（尤其是在远程或通过现代浏览器/网关访问时）
+use --ssl-certfile and --ssl-keyfile to enable https	使用`--ssl-certfile`和`--ssl-keyfile`启用HTTPS
+first we need to generate a private key and a self-signed cert (valid for 365 days)	首先我们需要生成一个私钥和一个自签名证书（有效期365天）
+then run the demo with https	然后使用HTTPS运行演示
+and open https://<your-ip>:8000 to experience it	并打开https://<your-ip>:8000进行体验
+if your browser shows a warning, it’s expected for self-signed certificates	如果您的浏览器显示警告，则正是自签名证书
+for production, use a real certificate	对于生产环境请使用真实证书
+to further explore qwen3-tts, we encourage you to try our dashscope api for a faster and more efficient experience	为了进一步探索Qwen3-TTS，我们鼓励您尝试我们的DashScope API以获得更快、更高效的体验
+for detailed api information and documentation, please refer to the following	有关详细API信息及文档，请参阅以下内容
+api description	API描述
+api documentation (mainland china)	API文档（中国大陆）
+api documentation (international)	API文档（国际）
+real-time api for qwen3-tts of custom voice model	自定义语音模型Qwen3-TTS的实时API
+real-time api for qwen3-tts of voice clone model	语音克隆模型Qwen3-TTS的实时API
+real-time api for qwen3-tts of voice design model	音色设计模型Qwen3-TTS的实时API
+vllm officially provides day-0 support for qwen3-tts	vLLM正式为Qwen3-TTS提供首日支持
+welcome to use vllm-omni for qwen3-tts deployment and inference	欢迎使用vLLM-Omni进行Qwen3-TTS的部署和推理
+for installation and more details, please check vllm-omni official documentation	有关安装和更多详细信息，请查看vLLM-Omni官方文档
+now only offline inference is supported	目前仅支持离线推理
+online serving will be supported later, and vllm-omni will continue to offer support and optimization for qwen3-tts in areas such as inference speed and streaming capabilities	在线服务将在后续支持，vLLM-Omni也将继续在推理速度、流式能力等方面为Qwen3-TTS提供支持和优化
+offline inference	离线推理
+you can use vllm-omni to inference qwen3-tts locally, we provide examples in vllm-omni repo which can generate audio output	您可以使用vLLM-Omni在本地对Qwen3-TTS进行推理，我们在vLLM-Omni仓库中提供了可以生成音频输出的示例
+run a single sample with customvoice task	使用CustomVoice任务运行单个样本
+batch sample (multiple prompts in one run) with customvoice task	使用CustomVoice任务的批量示例（一次运行多个提示）
+run a single sample with voicedesign task	使用VoiceDesign任务运行单个样本
+batch sample (multiple prompts in one run) with voicedesign task	使用VoiceDesign任务的批量示例（一次运行多个提示）
+run a single sample with base task in icl mode-tag	在icl模式标签下使用Base任务运行单个样本
+please refer to qwen3-tts-finetuning for detailed instructions on fine-tuning qwen3-tts	请参阅Qwen3-TTS-Finetuning了解微调Qwen3-TTS的详细说明
+during evaluation, we ran inference for all models with dtype=torch.bfloat16 and set max_new_tokens=2048	在评估期间，我们对所有模型的推理使用`dtype=torch.bfloat16`并设置`max_new_tokens=2048`
+all other sampling parameters used the defaults from the checkpoint’s generate_config.json	所有其他采样参数均使用检查点的`generate_config.json`中的默认值
+for the seed-test and instructtts-eval test sets, we set language="auto", while for all other test sets we explicitly passed the corresponding language	对于Seed-Test和InstructTTS-Eval测试集，我们设置`language="auto"`；而对于所有其他测试集，我们明确传递了对应的语言
+the detailed results are shown below	详细结果如下所示
+speech generation benchmarks	语音生成基准测试
+speech tokenizer benchmarks	语音标记器基准测试
+if you find our paper and code useful in your research, please consider giving a star ⭐ and citation 📝	如果您发现我们的论文和代码对您的研究有用，请考虑给予一颗星⭐并引用📝
+star history	星标历史
+star history chart	星标历史图表
+qwen3-tts is an open-source series of tts models developed by the qwen team at alibaba cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning	Qwen3-TTS是由阿里云通义千问团队开发的开源TTS模型系列，支持可靠、富有表现力和流式的语音生成，自由形式的音色设计以及生动的语音克隆
+6.3k stars	6.3K颗星
+731 forks	731复刻
