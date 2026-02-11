@@ -131,7 +131,7 @@ if __name__ == "__main__":
     if os.path.exists(model_path):
         model.load_state_dict(load(model_path))
 
-    optimizer = optim.AdamW(model.parameters(), lr=0.0003)
+    optimizer = optim.AdamW(model.parameters(), lr=0.0002)
     criterion = nn.CrossEntropyLoss(ignore_index=0, label_smoothing=.1)  # 使用交叉熵损失函数，忽略填充标记的损失
 
     # 训练模型

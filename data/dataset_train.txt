@@ -1329,7 +1329,7 @@ you can customize the name to distinguish it further	您可以自定义名称以
 description (optional)	描述（可选）
 a cross-platform ui library written in v	一个用V编写的跨平台UI库
 copy the master branch only	仅复制主分支
-contribute back to vlang/ui by adding your own branch	通过添加自己的分支为vlang/ui做出贡献
+contribute back to vlang/ui by adding your own branch	通过添加您自己的分支为vlang/ui做出贡献
 you are creating a fork in your personal account	您正在您的个人帐户中创建复刻
 create fork	创建复刻
 edit pull request title	编辑Pull Request标题
@@ -3652,3 +3652,195 @@ star history chart	星标历史图表
 qwen3-tts is an open-source series of tts models developed by the qwen team at alibaba cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning	Qwen3-TTS是由阿里云通义千问团队开发的开源TTS模型系列，支持可靠、富有表现力和流式的语音生成，自由形式的音色设计以及生动的语音克隆
 6.3k stars	6.3K颗星
 731 forks	731复刻
+owner(required)*	所有者（必填）*
+mzdk100, owner (required)	mzdk100，所有者（必须）
+repository name*	存储库名称*
+osm-pbf is available	osm-pbf可用
+parse and write the osm pbf format in rust	在Rust中解析并写入OSM PBF格式
+42 / 350 characters	42/350个字符
+copy the main branch only	仅复制`main`分支
+contribute back to sameer/osm-pbf by adding your own branch	通过添加您自己的分支为sameer/osm-pbf做出贡献
+forked from sameer/osm-pbf	从sameer/osm-pbf复刻
+see your forks of this repository	查看您的此存储库复刻
+open menu	打开菜单
+type / to search	键入`/`进行搜索
+chat with copilot	与Copilot聊天
+open copilot…	打开Copilot……
+search or jump to…	搜索或跳至……
+create new...	新建……
+repository navigation	存储库导航
+this branch is up to date with sameer/osm-pbf:main	该分支与sameer/osm-pbf:main保持同步
+sync fork	同步复刻
+3 years ago	3年前
+read and write the pbf format for open street map (osm)	读写Open Street Map(OSM)的PBF格式
+there are two steps to reading the pbf format: parsing and decoding	读取PBF格式有两个步骤：解析和解码
+parsing builds fileblocks out of the raw data	解析从原始数据中构建`fileblocks`
+decoding converts fileblocks into the osm elements that they contain	解码将`fileblocks`转换为它们包含的OSM元素
+similarly, there are two steps to writing the pbf format: encoding and serialization	同样，写入PBF格式也有两个步骤：编码和序列化
+encoding converts osm elements into fileblocks	编码将OSM元素转换为`fileblocks`
+this crate does not support encoding yet	该库尚不支持编码
+serialization flattens fileblocks into raw data	序列化将`fileblocks`扁平化为原始数据
+this crate is written with async i/o for use with tokio	该库是用异步I/O编写的，可与tokio一起使用
+the code is serial in nature but it's possible to parallelize encoding/decoding since fileblocks are independent in pbf	该代码本质上是串行的，但由于`fileblocks`在PBF中是独立的，因此可以并行编码/解码
+read parallelization example	读取并行化示例
+call get_osm_pbf_locations to get a stream of fileblock locations	调用`get_osm_pbf_locations`获取`fileblocks`位置流
+call parse_osm_pbf_at_location for each location independently	为每个位置独立调用`parse_osm_pbf_at_location`
+process blocks as desired	按需处理`blocks`
+write parallelization example	写入并行化示例
+split your blocks into chunks	将你的`blocks`分成块
+call write_osm_pbf for each chunk independently with an in-memory vector as the writer	为每个块独立调用`write_osm_pbf`，并使用内存向量作为写入器
+as each call completes, write them to their final destination (i.e. a file)	每次调用完成后，将它们写入最终目的地（即文件）
+there is a feature for each supported compression algorithm	每种受支持的压缩算法都有一个对应的`feature`
+default feature	默认功能
+lz4 support is not available yet	Lz4是不受支持的
+bzip2 has been deprecated for years so it is not supported	Bzip2已被弃用多年，因此不被支持
+there isn't any fine-grained control over encoding but feel free to file an issue if you are interested	对编码没有任何细粒度的控制，但如果您感兴趣，请随时提出问题
+edit repository metadata	编辑存储库元数据
+0 stars	0颗星
+0 forks	0复刻
+create a new release	创建一个新发行版
+publish your first package	发布你的第一个包
+suggested workflows	建议的工作流程
+based on your tech stack	基于你的技术栈
+configure rust	配置Rust
+slsa generic generator	SLSA通用生成器
+configure slsa generic generator	配置SLSA通用生成器
+more workflows	更多工作流程
+dismiss suggestions	驳回建议
+3 days ago	3天前
+ccc — claude's c compiler	CCC——Claude的C编译器
+a c compiler written entirely from scratch in rust, targeting x86-64, i686, aarch64, and risc-v 64	一个完全从头开始用Rust编写的C编译器，目标架构包括x86-64、i686、AArch64和RISC-V64
+zero compiler-specific dependencies — the frontend, ssa-based ir, optimizer, code generator, peephole optimizers, assembler, linker, and dwarf debug info generation are all implemented from scratch	无特定编译器的依赖——其前端、基于SSA的中间表示、优化器、代码生成器、窥孔优化器、汇编器、链接器以及DWARF调试信息生成器均从头实现
+claude's c compiler produces elf executables without any external toolchain	Claude的C编译器可生成ELF可执行程序，无需任何外部工具链
+note: with the exception of this one paragraph that was written by a human, 100% of the code and documentation in this repository was written by claude opus 4.6	注：除本段为人工撰写外，本仓库中100%的代码与文档均由Claude Opus4.6编写
+a human guided some of this process by writing test cases that claude was told to pass, but never interactively pair-programmed with claude to debug or to provide feedback on code quality	由人工编写Claude需通过的测试用例来指导部分流程，但从未与Claude进行交互式结对编程以调试或提供代码质量反馈
+as a result, i do not recommend you use this code	因此，我不建议您使用此代码
+none of it has been validated for correctness	均未验证其正确性
+claude wrote this exclusively on a linux host; it probably will not work on macos/windows — neither i nor claude have tried	这专门由Claude在Linux主机上编写；它很可能无法在MacOS/Windows上运行——我与Claude均未尝试过
+the docs may be wrong and make claims that are false	文档可能有误并且所做声明可能不实
+see our blog post for more detail	请参阅我们的博客文章了解更多详细信息
+rust (stable, 2021 edition) — install via rustup	Rust（稳定，2021版）——通过`rustup`安装
+linux host — the compiler targets linux elf executables and relies on linux system headers / c runtime libraries (glibc or musl) being installed on the host	Linux主机——该编译器针对Linux ELF可执行程序，并依赖于主机上已安装的Linux系统头文件和C运行时库（glibc或musl）
+for cross-compilation targets (arm, risc-v, i686), the corresponding cross-compilation sysroots should be installed (e.g., aarch64-linux-gnu-gcc, riscv64-linux-gnu-gcc)	对于交叉编译目标（如ARM、RISC-V、i686），应安装相应的交叉编译sysroot（例如：aarch64-linux-gnu-gcc、riscv64-linux-gnu-gcc）
+this produces five binaries in target/release/, all compiled from the same source	这会在`target/release/`中生成五个二进制文件，全部从相同的源代码编译而来
+the target architecture is selected by the binary name at runtime	目标架构由运行时的二进制名称选择
+x86-64 (default)	x86-64（默认）
+risc-v 64	RISC-V64
+i686 (32-bit x86)	i686（32位x86）
+compile and run a simple c program	编译并运行一个简单的C程序
+write a test program	编写一个测试程序
+compile and run (x86-64)	编译并运行（x86-64）
+cross-compile for aarch64 and run under qemu	交叉编译AArch64并在QEMU下运行
+ccc works as a drop-in gcc replacement	CCC可作为GCC的直接替代品
+point your build system at it	将您的构建系统指向它
+build a project with make	使用make构建项目
+build a project with cmake	使用CMake构建项目
+build a project with configure scripts	使用配置脚本构建项目
+compile and link	编译并链接
+gcc-compatible flags	兼容GCC的标志
+emit assembly	发出汇编
+compile to object file	编译为目标文件
+preprocess only	仅预处理
+optimize (accepts -o0 through -o3, -os, -oz)	优化（接受`-O0`到`-O3`、`-Os`、`-Oz`）
+dwarf debug info	DWARF调试信息
+define macros, add include paths	定义宏，添加`include`路径
+warning control	警告控制
+position-independent code	位置无关代码（PIC）
+read from stdin	从标准输入读取
+build system integration (reports as gcc 14.2.0 for compatibility)	构建系统集成（对于兼容性报告为GCC14.2.0）
+the compiler accepts most gcc flags	编译器接受大多数GCC标志
+unrecognized flags (e.g., architecture-specific -m flags, unknown -f flags) are silently ignored so ccc can serve as a drop-in gcc replacement in build systems	未被识别的标志（例如特定架构的`-m`标志、未知的`-f`标志）会被静默忽略，以便CCC能在构建系统中作为GCC的直接替代品
+assembler and linker modes	汇编器和链接器模式
+by default, the compiler uses its builtin assembler and linker for all four architectures	默认情况下，编译器对所有四种架构使用其内置的汇编器和链接器
+no external toolchain is required	不需要外部工具链
+you can verify this with --version, which shows backend: standalone when using the builtin tools	您可以使用`--version`验证这一点，当使用内置工具时，它会显示“Backend: standalone”
+to build with optional gcc fallback support (e.g., for debugging), enable cargo features at compile time	若需使用可选的GCC回退支持进行构建（例如用于调试），请在编译时启用Cargo的feature
+build with gcc assembler and linker fallback	使用回退的GCC汇编器和链接器进行构建
+build with gcc fallback for -m16 boot code only	仅针对`-m16`引导代码使用GCC回退方案进行构建
+use gcc as the assembler instead of the builtin	使用GCC作为汇编器而不是内置的
+use gcc as the linker instead of the builtin	使用GCC作为链接器而不是内置的
+use gcc for -m16 (16-bit real mode boot code)	将GCC用于`-m16`（16位实模式引导代码）
+when compiled with gcc fallback features enabled, --version shows which components use gcc (e.g., backend: gcc_assembler, gcc_linker)	当启用GCC回退功能进行编译时，`--version`会显示哪些组件使用了GCC（例如：“Backend: gcc_assembler, gcc_linker”）
+the compiler can build real-world c codebases across all four architectures, including the linux kernel	该编译器能构建跨所有四种架构的现实C代码库，包括Linux内核
+projects that compile and pass their test suites include postgresql (all 237 regression tests), sqlite, quickjs, zlib, lua, libsodium, libpng, jq, libjpeg-turbo, mbedtls, libuv, redis, libffi, musl, tcc, and doom — all using the fully standalone assembler and linker with no external toolchain	已成功编译并使其测试套件通过的项目包括：PostgreSQL（全部237项回归测试）、SQLite、QuickJS、zlib、Lua、libsodium、libpng、jq、libjpeg-turbo、mbedTLS、libuv、Redis、libffi、musl、TCC以及DOOM——所有这些均使用完全独立的汇编器和链接器，无需外部工具链
+over 150 additional projects have also been built successfully, including ffmpeg (all 7331 fate checkasm tests on x86-64 and aarch64), gnu coreutils, busybox, cpython, qemu, and luajit	超过150个其他项目也已成功构建，包括FFmpeg（在x86-64和AArch64上通过了全部7331项FATE checkasm测试）、GNU coreutils、Busybox、CPython、QEMU和LuaJIT
+known limitations	已知局限性
+optimization levels: all levels (-o0 through -o3, -os, -oz) run the same optimization pipeline	优化级别：所有级别（-O0至-O3、-Os、-Oz）都运行相同的优化流水线
+separate tiers will be added as the compiler matures	随着编译器成熟，将添加独立的层级
+long double: x86 80-bit extended precision is supported via x87 fpu instructions	`long double`：x86的80位扩展精度通过x87浮点单元指令支持
+on arm/risc-v, long double is ieee binary128 via compiler-rt/libgcc soft-float libcalls	在ARM/RISC-V上，`long double`是通过compiler-rt/libgcc软浮点库调用实现的IEEE binary128
+complex numbers: _complex arithmetic has some edge-case failures	复数：_Complex算术存在一些边界情况的失败
+gnu extensions: partial __attribute__ support	GNU扩展：部分__attribute__支持
+neon intrinsics are partially implemented (core 128-bit operations work)	NEON内建函数部分实现（核心128位操作可用）
+atomics: _atomic is parsed but treated as the underlying type (the qualifier is not tracked through the type system)	原子操作：_Atomic会被解析，但被视为底层类型（该限定符未在类型系统中跟踪）
+the compiler has two kinds of tests	编译器有两类测试
+unit tests (in-source #[test] functions for individual passes and modules)	单元测试（源码内使用`#[test]`函数对独立pass和模块进行测试）
+integration tests (end-to-end compilation tests in tests/)	集成测试（`tests/`目录下的端到端编译测试）
+each test is a directory containing a main.c source file and expected output files	每个测试都是一个目录，其中包含一个`main.c`源文件和预期输出文件
+c source to compile	编译的C源代码
+expected stdout (if any)	预期的标准输出（如果有）
+expected exit code (if any)	预期退出代码（如果有）
+skip marker for specific architectures (optional)	跳过特定架构的标记（可选）
+tests are run by compiling main.c with ccc, executing the resulting binary, and comparing stdout and the exit code against the expected files	运行测试使用CCC编译`main.c`，执行生成的二进制程序，并将标准输出和退出码与预期文件进行比较
+print per-phase compilation timing to stderr	将每阶段编译时间打印到标准错误输出
+print per-pass optimization timing and change counts to stderr	将每个pass的优化时间和变更计数打印到标准错误输出
+disable specific optimization passes (comma-separated, or all)	禁用特定优化pass（以逗号分隔，或使用`all`）
+preserve intermediate .s files next to output	在输出旁边保留中间`.s`文件
+dump preprocessed assembly to /tmp/asm_debug_<name>.s	将预处理后的汇编转储到`/tmp/asm_debug_<name>.s`
+project organization	项目组织
+compiler source code (rust)	编译器源代码（Rust）
+c source -> typed ast (preprocessor, lexer, parser, sema)	C源代码->类型化AST（预处理器、词法分析器、语法分析器、语义分析器）
+target-independent ssa ir (lowering, mem2reg)	目标无关SSA IR（降级、mem2reg）
+ssa optimization passes (15 passes + shared loop analysis)	SSA优化pass（15个pass+共享循环分析）
+ir -> assembly -> machine code -> elf (4 architectures)	IR->汇编->机器码->ELF（4种架构）
+shared types, symbol table, diagnostics	共享类型、符号表和诊断系统
+cli parsing, pipeline orchestration	CLI解析和流水线编排
+bundled c headers (x86 simd: sse through avx-512, aes-ni, fma, sha, bmi2; arm neon)	捆绑的C头文件（x86 SIMD：SSE至AVX-512、AES-NI、FMA、SHA、BMI2；ARM NEON）
+compiler tests (each test is a directory with main.c and expected output)	编译器测试（每个测试都是一个带有`main.c`和预期输出的目录）
+future work proposals and improvement notes	未来工作提案与改进说明
+each src/ subdirectory has its own readme.md with detailed design documentation	每个`src/`子目录都有自己的`README.md`，其中包含详细的设计文档
+for the full architecture, compilation pipeline data flow, and key design decisions, see design_doc.md	有关完整的架构、编译流水线数据流和关键设计决策，请参见`DESIGN_DOC.md`
+claude opus 4.6 wrote a dependency-free c compiler in rust, with backends targeting x86 (64- and 32-bit), arm, and risc-v, capable of compiling a booting linux kernel	Claude Opus4.6用Rust编写了一个无依赖的C编译器，后端针对x86（64位和32位）、ARM和RISC-V，能够编译出可引导的Linux内核
+cc0-1.0 license	CC0-1.0许可证
+1.6k stars	1.6K颗星
+81 forks	81复刻
+openclaw installer	OpenClaw安装程序
+[ok] windows detected	[很好]检测到Windows
+[ok] node.js v22.19.0 found	[很好]找到Node.JS V22.19.0
+[*] installing openclaw (openclaw@latest)...	[*]正在安装OpenClaw(openclaw@latest)……
+[ok] openclaw installed	[很好]OpenClaw已安装
+openclaw installed successfully (2026.2.6-3)	OpenClaw安装成功（2026.2.6-3）
+the lobster has landed	龙虾已经上岸了
+your terminal will never be the same	您的终端将永远与众不同
+starting setup...	开始安装……
+🦞 openclaw 2026.2.6-3 (85ed6c7) — meta wishes they shipped this fast	🦞OpenClaw2026.2.6-3(85ed6c7)——Meta希望他们能这么快发货
+windows detected — openclaw runs great on wsl2	检测到Windows——OpenClaw在WSL2上运行良好
+native windows might be trickier	原生Windows可能会更棘手
+quick setup: wsl --install (one command, one reboot)	快速设置：`wsl --install`（一条命令，一次重启）
+guide: https://docs.openclaw.ai/windows	指南：https://docs.openclaw.ai/windows
+openclaw onboarding	OpenClaw入门
+security warning — please read	安全警告——请阅读
+openclaw is a hobby project and still in beta	OpenClaw是一个业余爱好项目，仍处于测试阶段
+expect sharp edges	可能会有明显的不足
+this bot can read files and run actions if tools are enabled	如果启用了工具，此机器人可以读取文件并运行操作
+a bad prompt can trick it into doing unsafe things	错误的提示可能会诱骗它做不安全的事情
+if you’re not comfortable with basic security and access control, don’t run openclaw	如果您对基本安全性和访问控制不满意，请不要运行OpenClaw
+ask someone experienced to help before enabling tools or exposing it to the internet	在启用工具或将其暴露到互联网之前请有经验的人提供帮助
+recommended baseline	推荐基准
+pairing/allowlists + mention gating	配对/允许列表+提及门控
+sandbox + least-privilege tools	沙箱+最低权限工具
+keep secrets out of the agent’s reachable filesystem	将敏感信息排除在智能体可访问的文件系统之外
+use the strongest available model for any bot with tools or untrusted inboxes	对于任何配备工具或处理不可信收件箱的机器人，应使用最强大的可用模型
+run regularly	定期运行
+must read: https://docs.openclaw.ai/gateway/security	必读：https://docs.openclaw.ai/gateway/security
+i understand this is powerful and inherently risky	我明白这很强大并且存在固有风险
+○ yes / ● no	○是/●否
+she gets up at six o'clock every morning and then goes for a walk in the park	她每天早上六点起床，然后去公园散步
+this book tells a story about courage and adventure	这本书讲述了一个关于勇气与冒险的故事
+the flight was canceled due to bad weather	由于天气不好，航班被取消了
+he can not only sing but also play the piano	他不仅会唱歌，还会弹钢琴
+scientists have discovered a new treatment method	科学家们发现了一种新的治疗方法
+if you study hard, you will achieve good grades	如果你努力学习，就会取得好成绩
+the traffic in this city is very congested	这座城市的交通非常拥堵
+she enjoys reading books in the cafe on weekends	她喜欢周末在咖啡馆看书
+global warming has had a significant impact on the environment	全球变暖对环境造成了严重影响
