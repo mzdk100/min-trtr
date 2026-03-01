@@ -15,7 +15,7 @@ async fn run() -> Result<(), Box<dyn Error>> {
     let stream = translate_stream(
         assets_dir.join("translation_encoder.onnx"),
         assets_dir.join("translation_decoder.onnx"),
-        "thank you for help",
+        "thank for your help",
     )
     .await?;
 

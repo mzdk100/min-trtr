@@ -118,7 +118,7 @@ def inference(model, src_sentence, src_vocab, tgt_vocab, max_len=500):
 if __name__ == "__main__":
     # 解析命令行参数
     parser = argparse.ArgumentParser()
-    parser.add_argument("--num-epochs", type=int, default=10)
+    parser.add_argument("--num-epochs", type=int, default=5)
     args = parser.parse_args()
 
     with open('data/vocab_source.txt', 'r', encoding='utf-8') as f1, open('data/vocab_target.txt', 'r', encoding='utf-8') as f2:
