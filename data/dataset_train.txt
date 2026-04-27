@@ -3077,7 +3077,7 @@ announcing rust 1.91.1	Rust1.91.1发布公告
 nov. 10, 2025 · the rust release team	2025年11月10日——Rust发布团队
 the rust team has published a new point release of rust, 1.91.1	Rust团队发布了Rust的新版本1.91.1
 rust is a programming language that is empowering everyone to build reliable and efficient software	Rust是一种编程语言，旨在帮助每个人构建可靠且高效的软件
-if you have a previous version of rust installed via rustup, getting rust 1.91.1 is as easy as	如果您之前已通过rustup安装了旧版本的Rust，那么获取Rust1.91.1将很简单
+if you have a previous version of rust installed via rustup, getting rust 1.91.1 is as easy as	如果您已通过rustup安装了Rust的旧版本，那么获取Rust1.91.1将很简单
 if you don't have it already, you can get rustup from the appropriate page on our website	如果您还没有，您可以从我们网站上的相应页面获取rustup
 what's in 1.91.1	1.91.1中的功能
 rust 1.91.1 includes fixes for two regressions introduced in the 1.91.0 release	Rust1.91.1包含了对1.91.0版本中引入的两个回归问题的修复
@@ -4081,3 +4081,263 @@ couldn't load subscription status	不能加载订阅状态
 github-pages queued	github-pages队列
 + 78 deployments	+78次部署
 + 120 contributors	+120名贡献者
+now let me create the main data and utilities file	现在让我创建主要数据和实用程序文件
+now create the intro scene	现在创建片头场景
+now create the rankings scene (the main part)	现在创建排名场景（主要部分）
+now the outro scene	现在是片尾场景
+now the main videocomposition	现在主要VideoComposition
+now install dependencies and render	现在安装依赖项并渲染
+npm notice	npm通知
+npm notice new minor version of npm available! 11.10.1 -> 11.11.1	npm通知 npm新的小版本可用！11.10.1->11.11.1
+npm notice changelog: https://github.com/npm/cli/releases/tag/v11.11.1	npm通知 变更日志：https://github.com/npm/cli/releases/tag/v11.11.1
+npm notice to update run: npm install -g npm@11.11.1	npm通知 要更新请运行：`npm install -g npm@11.11.1`
+ollama's cloud is now much faster and reliable using the latest nvidia hardware	使用最新的Nvidia硬件，Ollama的云资源现在更快且更可靠
+ollama's cloud is updated to use nvidia's latest data center hardware: b300 for moonshot ai's kimi k2.5 and z ai's glm-5 models	Ollama的云更新采用Nvidia最新数据中心硬件B300，用于运行Moonshot AI的Kimi K2.5及Z AI的GLM-5模型
+this significantly improves the model performance with faster throughput and lower latency while maintaining reliable tool calls for integrations	这显着提高了模型性能，具有更快的吞吐量和更低的延迟，同时保持可靠的集成工具调用
+all this works with ollama's integrations via ollama's launch command and over 45,000 custom integrations from github	所有这一切都可以通过Ollama的启动命令与Ollama的集成以及来自GitHub的超过45K个自定义集成配合使用
+ollama's cloud	Ollama云资源
+ollama's cloud subscription also comes with a free tier for you to experience the models	Ollama的云订阅还附带免费套餐，供您体验模型
+kimi k2.5 with openclaw	Kimi K2.5与OpenClaw
+ollama is officially integrated into openclaw's default onboarding	Ollama已正式集成到OpenClaw的默认onboarding中
+kimi k2.5 is one of the most recommended models for use with openclaw	Kimi K2.5是最推荐与OpenClaw配合使用的模型之一
+it is now much faster and more reliable with ollama's cloud using the latest hardware	Ollama的云资源使用最新的硬件，现在它更快且更可靠
+by default, ollama will enhance openclaw with web search so you always have the latest information if needed	默认情况下，Ollama将通过网络搜索增强OpenClaw，以便您始终按需获得最新信息
+predictable costs	可预知的成本
+ollama's cloud comes with fixed subscription rates at $0, $20, and $100	Ollama的云资源提供0美元、20美元和100美元的固定订阅档位
+this means you won't wake up to surprise overage bills if you leave claude code or openclaw running	这意味着，即使你保持Claude Code或OpenClaw运行，也不会醒来就发现意外的超支账单
+in the future, we are adding additional plans for higher usage	未来，我们将推出针对更高使用量的附加方案
+if you have any feedback, reply directly to this email or join ollama's discord channel	如果您有任何反馈，请直接回复此电子邮件或加入Ollama的Discord频道
+you are receiving this email because you opted-in to receive updates from ollama	您收到这封电子邮件是因为您选择接收来自Ollama的更新
+return to kaggle home page	返回到Kaggle主页
+game arena	游戏竞技场
+kaggle learn	Kaggle学习
+more on kaggle	有关Kaggle的更多信息
+view active events	查看活跃的事件
+mzdk100's profile	mzdk100的个人资料
+mzdk100 · 12h ago · 27 views · private	mzdk100·12小时前·27次查看·私有
+0 votes	0个投票
+more options for this notebook	此笔记本的更多选项
+edit title	编辑标题
+script, 1 of 6	脚本，第1项（共6项）
+input, 2 of 6	输入，第2项（共6项）
+output, 3 of 6	输出，第3项（共6项）
+logs, 4 of 6	日志，第4项（共6项）
+comments (0), 5 of 6	评论（0），第5项（共6项）
+settings, 6 of 6	设置，第6项（共6项）
+notebook canceled	笔记本已取消
+view the status under the logs tab	在日志选项卡下查看状态
+output data	输出数据
+hide tree	隐藏树视图
+show tree	显示树视图
+download notebook output	下载笔记本输出
+view cli documentation	查看CLI文档
+output actions	输出操作
+expand checkpoints	展开检查点
+collapse config.json	折叠`config.json`
+download logs	下载日志
+version 10 was canceled after 43200.6s (timeout exceeded)	版本10在43200.6秒后被取消（超时）
+latest container image opens in new window	最新容器镜像（在新窗口中打开）
+your notebook was stopped because it exceeded the max allowed execution duration	您的笔记本因超出允许的最大执行持续时间而停止
+exit code: 137	退出代码：137
+log message	日志消息
+0 comments	0条评论
+select combobox	选择组合框
+hotness currently selected	当前选择最热
+more options for comments	更多评论选项
+insert heading	插入标题
+insert link	插入链接
+insert quote	插入引用
+insert code block	插入代码块
+insert numbered list	插入有序列表
+insert bulleted list	插入无序列表
+more formatting options	更多格式选项
+comment here	在这里评论
+be patient, be friendly, and focus on ideas	要有耐心、友善并专注于想法
+we're all here to learn and improve	我们都是在这里学习和进步的
+this comment will be viewable by those with access to the notebook forum	此评论将可供有权访问笔记本论坛的人查看
+post comment	发表评论
+notebook settings	笔记本设置
+schedule a notebook to run	安排笔记本运行
+schedule this notebook to run and save a new version on a future date	安排此笔记本在将来的日期运行并保存新版本
+view all of your scheduled notebooks	查看您所有已安排的笔记本
+link to competition	竞赛链接
+only joined competitions will appear here	只有参加的比赛才会出现在这里
+save changes	保存更改
+welcome, mzdk100	欢迎，mzdk100
+you're on a roll	你势头正旺
+jump back in, or start something new	重新参与，或开启新章
+login streak	连续登录
+a new record	一个新纪录
+tier progress	等级进度
+to expert	致专家
+public activity	公共活动
+mon mar 16 2026 13:59:22 gmt+0800	2026年3月16日周一13时59分22秒（格林威治标准时间+0800）
+tue mar 17 2026 13:59:22 gmt+0800	2026年3月17日周二13时59分22秒（格林威治标准时间+0800）
+wed mar 18 2026 13:59:22 gmt+0800	2026年3月18日周三13时59分22秒（格林威治标准时间+0800）
+thu mar 19 2026 13:59:22 gmt+0800	2026年3月19日周四13时59分22秒（格林威治标准时间+0800）
+fri mar 20 2026 13:59:22 gmt+0800	2026年3月20日周五13时59分22秒（格林威治标准时间+0800）
+sat mar 21 2026 13:59:22 gmt+0800	2026年3月21日周六13时59分22秒（格林威治标准时间+0800）
+sun mar 22 2026 13:59:22 gmt+0800	2026年3月22日周日13时59分22秒（格林威治标准时间+0800）
+mon mar 23 2026 13:59:22 gmt+0800	2026年3月23日周一13时59分22秒（格林威治标准时间+0800）
+tue mar 24 2026 13:59:22 gmt+0800	2026年3月24日周二13时59分22秒（格林威治标准时间+0800）
+wed mar 25 2026 13:59:22 gmt+0800	2026年3月25日周三13时59分22秒（格林威治标准时间+0800）
+thu mar 26 2026 13:59:22 gmt+0800	2026年3月26日周四13时59分22秒（格林威治标准时间+0800）
+fri mar 27 2026 13:59:22 gmt+0800	2026年3月27日周五13时59分22秒（格林威治标准时间+0800）
+sat mar 28 2026 13:59:22 gmt+0800	2026年3月28日周六13时59分22秒（格林威治标准时间+0800）
+sun mar 29 2026 13:59:22 gmt+0800	2026年3月29日周日13时59分22秒（格林威治标准时间+0800）
+mon mar 30 2026 13:59:22 gmt+0800	2026年3月30日周一13时59分22秒（格林威治标准时间+0800）
+tue mar 31 2026 13:59:22 gmt+0800	2026年3月31日周二13时59分22秒（格林威治标准时间+0800）
+wed apr 01 2026 13:59:22 gmt+0800	2026年4月1日周三13时59分22秒（格林威治标准时间+0800）
+thu apr 02 2026 13:59:22 gmt+0800	2026年4月2日周四13时59分22秒（格林威治标准时间+0800）
+fri apr 03 2026 13:59:22 gmt+0800	2026年4月3日周五13时59分22秒（格林威治标准时间+0800）
+sat apr 04 2026 13:59:22 gmt+0800	2026年4月4日周六13时59分22秒（格林威治标准时间+0800）
+sun apr 05 2026 13:59:22 gmt+0800	2026年4月5日周日13时59分22秒（格林威治标准时间+0800）
+total created	总共创建
+total joined	总共加入
+total posted	总共发帖
+total completed	总共完成
+hide stats	隐藏统计数据
+show stats	显示统计数据
+how to start: choose a focus for today	如何开始：选择今日焦点
+help us make relevant suggestions for you	帮助我们为您提出相关建议
+learn to compete on kaggle	学习在Kaggle上比赛
+improve and test your skills	提高和测试你的技能
+take a short course	参加短期课程
+our courses are the fastest way to learn data science	我们的课程是学习数据科学的最快方式
+browse inspiring data and code	浏览启发性数据与代码
+improve your data science projects	改进您的数据科学项目
+next steps	下一步
+jump back in	重新参与
+commit complete 13 hours ago	13小时前提交完成
+usability rating: 1.18 · last updated a day ago	可用性评分：1.18·最后更新于一天前
+more things to do	更多待办事项
+join a conversation opens in new window	加入对话（在新窗口中打开）
+cast your first upvote opens in new window	投下您的第一赞成票（在新窗口中打开）
+make a competition submission opens in new window	提交竞赛作品（在新窗口中打开）
+new and exciting	全新且令人兴奋
+introducing community hackathons	介绍社区黑客松
+create your own hackathon in minutes	几分钟内创建你自己的黑客松
+measuring progress toward agi - cognitive abilities	衡量AGI的进展——认知能力
+design high-quality benchmarks that go beyond recall to evaluate how frontier models truly reason, act, and judge	设计超越召回率的高质量基准测试，以评估前沿模型真实的推理、行动和判断能力
+nvidia nemotron model reasoning challenge	Nvidia Nemotron模型推理挑战赛
+advance reasoning techniques using nvidia nemotron open models on a novel benchmark	在新颖基准测试上利用Nvidia Nemotron开源模型推进推理技术
+acoustic species identification in the pantanal, south america	南美洲潘塔纳尔湿地的声学物种识别
+new from kagglers you follow	你关注的Kaggle用户的新内容
+the newsfeed is now in an experimental state	新闻推送目前处于测试状态
+now you will see new content from only users you follow, and announcements from kaggle	现在，你将只看到关注用户的新内容，以及Kaggle的公告
+competition ended a month ago	比赛于一个月前结束
+predicting heart disease	预测心脏病
+playground series - season 6 episode 2	Playground系列——第六季第二集
+final results	最终结果
+masaya kawamata	川又诚矢
+go to profile for masaya kawamata opens in new window	前往川又诚矢的个人资料（在新窗口中打开）
+akiyoshi kinoshita	木下昭义
+go to profile for akiyoshi kinoshita opens in new window	前往木下昭义的个人资料（在新窗口中打开）
+go to profile for mert bayraktar opens in new window	前往梅尔特·拜拉克塔尔的个人资料（在新窗口中打开）
+top solution write-up	最佳解决方案撰写
+go to solution write-up opens in new window	转到解决方案撰写（在新窗口中打开）
+competition launched a month ago	比赛于一个月前启动
+predict customer churn	预测客户流失
+playground series - season 6 episode 3	Playground系列——第六季第三集
+welcome to the 2026 kaggle playground series	欢迎来到2026年Kaggle Playground系列
+we plan to continue in the spirit of previous playgrounds, providing interesting and approachable datasets for our community to practice their machine learning skills, and anticipate a competition each month	我们计划延续以往Playground系列的精神，为我们的社区提供有趣且易于上手的数据集以练习机器学习技能，并预计每月举办一场比赛
+your goal: predict the likelihood of customer churn	您的目标：预测客户流失的可能性
+competition deadline	比赛截止时间
+march 31, 2026	2026年3月31日
+join competition	参加比赛
+march machine learning mania 2026	三月机器学习狂热2026
+forecast the 2026 ncaa basketball tournaments	预测2026年NCAA篮球锦标赛
+you will be forecasting the outcomes of both the men's and women's 2026 collegiate basketball tournaments, by submitting predictions for every possible tournament matchup	你将通过提交对所有可能锦标赛对阵的预测，来预测2026年男女大学篮球锦标赛的赛果
+april 7, 2026	2026年4月7日
+competition ended 2 months ago	比赛于两个月前结束
+predicting student test scores	预测学生考试成绩
+playground series - season 6 episode 1	Playground系列——第六季第一集
+go to profile for mahog opens in new window	前往Mahog的个人资料（在新窗口中打开）
+go to profile for tilii opens in new window	前往Tilii的个人资料（在新窗口中打开）
+go to profile for funguscakehead opens in new window	前往Funguscakehead的个人资料（在新窗口中打开）
+santa 2025 - christmas tree packing challenge	圣诞老人2025——圣诞树打包挑战
+how many christmas trees can fit in a box	一个盒子里可以装多少棵圣诞树
+help solve a classic optimization problem with a festive twist	帮助解决带有节日气氛的经典优化问题
+jeroen cottaar	杰罗恩·科塔尔
+go to profile for jeroen cottaar opens in new window	前往杰罗恩·科塔尔的个人资料（在新窗口中打开）
+go to profile for nagiss opens in new window, go to profile for terry_u16 opens in new window, go to profile for c-number opens in new window	前往nagiss的个人资料（在新窗口中打开），前往terry_u16的个人资料（在新窗口中打开），前往c-number的个人资料（在新窗口中打开）
+🎄 jingle bins 🎄	🎄叮当垃圾桶🎄
+go to profile for kha vo opens in new window, go to profile for zidmie opens in new window, go to profile for gilles vandewiele opens in new window, go to profile for delporte robbe opens in new window, go to profile for oleh uhnivenko opens in new window	前往卡沃的个人资料（在新窗口中打开）；前往Zidmie的个人资料（在新窗口中打开）；前往吉尔·范德维尔的个人资料（在新窗口中打开）；前往德尔波特·罗贝的个人资料（在新窗口中打开）；前往乌尼文科的个人资料（在新窗口中打开）
+draft saved	草稿已保存
+save version	保存版本
+show versions	显示版本
+add cell	添加单元格
+add cell options	添加单元格选项
+cut cell	剪切单元格
+copy cell	复制单元格
+paste cell	粘贴单元格
+run current cell	运行当前单元格
+stop execution	停止执行
+show options	显示选项
+draft session	草稿会话
+3h:34m	3小时34分钟
+more settings	更多设置
+move cell up	上移单元格
+move cell down	下移单元格
+delete cell	删除单元格
+execute cell	执行单元
+cell executed in 1.913s at 9:25am	单元格于上午9点25分在1.913秒内执行
+show more outputs	显示更多输出
+open console	打开控制台
+open command palette	打开命令面板
+session started	会话开始
+are you still there	你还在吗
+you haven't made changes within your interactive session in over 40 minutes	您已超过40分钟没有在交互式会话中进行更改
+would you like to keep your interactive session running	您想让您的交互式会话继续运行吗
+this choice won't stop running versions	此选择不会停止运行版本
+continue editing	继续编辑
+announcing rust 1.95.0	Rust1.95.0发布公告
+apr. 16, 2026 · the rust release team	2026年4月16日——Rust发布团队
+the rust team is happy to announce a new version of rust, 1.95.0	Rust团队很高兴发布Rust的新版本1.95.0
+rust is a programming language empowering everyone to build reliable and efficient software	Rust是一种编程语言，使每个人都能构建可靠且高效的软件
+if you have a previous version of rust installed via rustup, you can get 1.95.0 with	如果您已通过rustup安装了Rust的旧版本，则可以使用以下方式获取1.95.0
+if you don't have it already, you can get rustup from the appropriate page on our website, and check out the detailed release notes for 1.95.0	如果您还没有，您可以从我们网站上的相应页面获取rustup，并查看1.95.0的详细发行说明
+if you'd like to help us out by testing future releases, you might consider updating locally to use the beta channel (rustup default beta) or the nightly channel (rustup default nightly)	如果您想通过测试未来的版本来帮助我们，您可以考虑在本地更新以使用beta通道（`rustup default beta`）或nightly通道（`rustup default nightly`）
+please report any bugs you might come across	请报告您可能遇到的任何错误
+what's in 1.95.0 stable	1.95.0稳定版中的功能
+rust 1.95 introduces a cfg_select! macro that acts roughly similar to a compile-time match on cfgs	Rust1.95引入了`cfg_select!`宏，其行为大致类似于对配置（cfg）的编译时匹配
+this fulfills the same purpose as the popular cfg-if crate, although with a different syntax	这实现与流行的cfg-if库相同的目的（尽管语法不同）
+cfg_select! expands to the right-hand side of the first arm whose configuration predicate evaluates to true	`cfg_select!`会展开到第一个配置谓词评估为`true`分支的右侧
+some examples	一些例子
+if-let guards in matches	match中的if-let守卫
+rust 1.88 stabilized let chains	Rust1.88稳定了let链
+rust 1.95 brings that capability into match expressions, allowing for conditionals based on pattern matching	Rust1.95将该功能引入到match表达式中，允许基于模式匹配的条件
+both `x` and `y` are available here	`x`和`y`都在这可用
+note that the compiler will not currently consider the patterns matched in if let guards as part of the exhaustiveness evaluation of the overall match, just like if guards	注意，编译器目前不会将if let守卫中的模式视为整体match的穷尽性评估的一部分，这与if守卫类似
+stabilized apis	稳定的API
+these previously stable apis are now stable in const contexts	这些以前稳定的API现在在const上下文中也稳定
+destabilized json target specs	JSON目标规范的不稳定化
+rust 1.95 removes support on stable for passing a custom target specification to rustc	Rust1.95在稳定版中移除了对向rustc传递自定义目标规范的支持
+this should not affect any rust users using a fully stable toolchain, as building the standard library (including just core) already required using nightly-only features	这不应影响任何使用完全稳定工具链的Rust用户，因为构建标准库（包括core）已经需要使用仅限nightly的功能
+we're also gathering use cases for custom targets on the tracking issue as we consider whether some form of this feature should eventually be stabilized	我们还在收集有关跟踪问题的自定义目标的用例，以考虑是否最终应稳定此功能的某种形式
+check out everything that changed in rust, cargo, and clippy	查看Rust、Cargo和Clippy中的所有更改
+contributors to 1.95.0	1.95.0的贡献者
+many people came together to create rust 1.95.0	许多人一起创建了Rust1.95.0
+screen reader support	屏幕阅读器支持
+do you want to enable screen reader support in rustrover	您想在RustRover中启用屏幕阅读器支持吗
+you have been successfully authorized in github	您已成功在GitHub授权
+you can close the page	您可以关闭页面
+create account	创建账户
+jetbrains privacy policy	JetBrains隐私政策
+jetbrains account agreement	JetBrains帐户协议
+action toolbar	操作工具栏
+migrating options / downloading plugin 'subversion'	迁移选项/下载插件“Subversion”
+do you want to enable screen reader support in pycharm	您想在PyCharm中启用屏幕阅读器支持吗
+as spring arrives, flowers in the park are competing to bloom, and the colorful scenery has attracted numerous tourists	春天到了，公园里的花朵竞相开放，五彩斑斓的景色吸引了众多游客
+with the rapid development of technology, artificial intelligence is playing an increasingly important role in fields such as medical care and education	随着科技的飞速发展，人工智能在医疗和教育等领域发挥着越来越重要的作用
+keeping reading for half an hour every day can not only increase knowledge but also cultivate good thinking habits	每天坚持阅读半小时，不仅能增长知识，还能培养良好的思维习惯
+this time-honored ancient city has witnessed the rise and fall of countless dynasties, and every brick and stone carries the memories of the years	这座历史悠久的古城见证了无数朝代的兴衰，每一块砖石都承载着岁月的记忆
+in the face of difficulties, we should maintain an optimistic attitude and actively look for ways to solve problems	面对困难，我们应该保持乐观的心态，积极寻找解决问题的方法
+environmental protection is everyone's responsibility	环境保护是每个人的责任
+we should start from small things around us and jointly protect our earth home	我们要从身边的小事做起，共同守护地球家园
+with indomitable perseverance and unremitting efforts, he finally realized his long-cherished dream	他凭借顽强的毅力和不懈的努力，终于实现了自己多年的梦想
+in today's globalization, cross-cultural exchanges have become increasingly frequent, and it is crucial to understand the ways of thinking of people from different cultural backgrounds	在全球化的今天，跨文化交流变得愈发频繁，了解不同文化背景人们的思维方式至关重要
+a sudden rainstorm disrupted people's travel plans	一场突如其来的暴雨打乱了人们的出行计划
+the streets were flooded with water, and vehicles were moving slowly	街道上积水成河，车辆行驶缓慢
+music has the power to heal the soul	音乐具有治愈心灵的力量
+when we feel tired or depressed, a beautiful song can often cheer us up again	当我们感到疲惫或沮丧时，一首动听的歌曲往往能让我们重新振作起来

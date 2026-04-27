@@ -12,14 +12,13 @@ fn main() {
 
 async fn run() -> Result<(), Box<dyn Error>> {
     let assets_dir = Path::new("/data/local/tmp");
-    let stream = translate_stream(
+    let mut stream = translate_stream(
         assets_dir.join("translation_encoder.onnx"),
         assets_dir.join("translation_decoder.onnx"),
         "thank for your help",
     )
     .await?;
 
-    pin_mut!(stream);
     while let Some(item) = stream.next().await {
         println!("{:?}", item?);
     }

@@ -1,4 +1,4 @@
-pub use futures_util::{StreamExt, pin_mut};
+pub use futures_util::StreamExt;
 use {
     super::{TranslationError, get_word, get_word_id, get_word_ids},
     async_stream::stream,
@@ -8,18 +8,19 @@ use {
     ort::{inputs, session::RunOptions, session::Session, value::TensorRef},
     std::{
         path::Path,
+        pin::Pin,
         sync::LazyLock,
         time::{Duration, SystemTime},
     },
+    tokio::fs::read,
 };
 
 fn split_word<S>(sentence: S) -> Result<Vec<String>, TranslationError>
 where
     S: AsRef<str>,
 {
-    static RE: LazyLock<Result<Regex, RegexError>> = LazyLock::new(|| {
-        Regex::new(r#"\d{3}(?=\d*\b)|\d{2}\b|\d\b|\b\w(?:[\w'-]*\w)?\b|[^\w\s]"#)
-    });
+    static RE: LazyLock<Result<Regex, RegexError>> =
+        LazyLock::new(|| Regex::new(r#"\d{3}(?=\d*\b)|\d{2}\b|\d\b|\b\w(?:[\w'-]*\w)?\b|[^\w\s]"#));
 
     Ok(RE
         .as_ref()
@@ -53,14 +54,13 @@ where
 ///
 /// #[tokio::main]
 /// async fn main() -> anyhow::Result<()> {
-///     let stream = translate_stream(
+///     let mut stream = translate_stream(
 ///         "../checkpoint/translation_encoder.onnx",
 ///         "../checkpoint/translation_decoder.onnx",
 ///         "thank you for help",
 ///     )
 ///     .await?;
 ///
-///     pin_mut!(stream);
 ///     while let Some(item) = stream.next().await {
 ///         println!("{:?}", item?);
 ///     }
@@ -72,15 +72,23 @@ pub async fn translate_stream<P, S>(
     encoder: P,
     decoder: P,
     en_text: S,
-) -> Result<impl Stream<Item = Result<(&'static str, Duration), TranslationError>>, TranslationError>
+) -> Result<
+    Pin<Box<impl Stream<Item = Result<(&'static str, Duration), TranslationError>>>>,
+    TranslationError,
+>
 where
     P: AsRef<Path>,
     S: AsRef<str>,
 {
     const MAX_LEN: usize = 20;
 
-    let mut encoder = Session::builder()?.commit_from_file(encoder)?;
-    let mut decoder = Session::builder()?.commit_from_file(decoder)?;
+    let encoder_bytes = read(encoder).await?;
+    let mut encoder = Session::builder()?.commit_from_memory(&encoder_bytes)?;
+    drop(encoder_bytes);
+    let decoder_bytes = read(decoder).await?;
+    let mut decoder = Session::builder()?.commit_from_memory(&decoder_bytes)?;
+    drop(decoder_bytes);
+
     let pad = get_word_id(false, "<pad>")?;
     let sos = get_word_id(false, "<sos>")?;
     let eos = get_word_id(false, "<eos>")?;
@@ -90,7 +98,7 @@ where
     let src_pad_mask = Array::from_elem((1, src.len(), src.len()), false);
     let options = RunOptions::new()?;
 
-    Ok(stream! {
+    Ok(Box::pin(stream! {
         let src_tensor = TensorRef::from_array_view(&src)?;
         let src_pad_mask_tensor = TensorRef::from_array_view(&src_pad_mask)?;
         let output = encoder.run_async(
@@ -131,7 +139,7 @@ where
                 .map(|i| {
                     i.iter()
                         .enumerate()
-                        .max_by(|i, j| i.1.total_cmp(&j.1))
+                        .max_by(|i, j| i.1.total_cmp(j.1))
                         .map(|i| i.0 as _)
                         .unwrap_or(pad)
                 })
@@ -143,5 +151,5 @@ where
             ys.push(prob);
             yield Ok((get_word(false, prob)?, t.elapsed()?));
         }
-    })
+    }))
 }

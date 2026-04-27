@@ -7,12 +7,13 @@ edition = "2024"
 async-stream="0.3.6"
 futures-util = "0.3.32"
 ndarray = "0.17.2"
-ort = { version = "2.0.0-rc.11", features = ["load-dynamic"] }
-fancy-regex ="0.17.0"
+ort = "2.0.0-rc.12"
+fancy-regex ="0.18.0"
+tokio = {version = "1.52.1", features = ["fs"]}
 
 [dev-dependencies]
 anyhow = "1.0.102"
-tokio = { version = "1.49.0",features = ["macros", "rt-multi-thread"] }
+tokio = { version = "1.52.1",features = ["macros", "rt-multi-thread"] }
 
 [workspace]
 members = ["examples/android"]
